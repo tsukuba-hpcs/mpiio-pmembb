@@ -1,0 +1,45 @@
+x-common: &x-common
+  build:
+    context: .
+    dockerfile: Dockerfile
+  init: true
+  environment:
+    MPI_HOSTS: h1,h2,h3,h4
+  volumes:
+    - ..:/workspaces/mpiio-pmembb:cached
+    - spack-root:/home/vscode/.cache/spack
+    - spack-settings:/home/vscode/.spack
+  networks:
+    - mpiio_pmembb_net
+  cap_add:
+    - SYS_PTRACE
+  security_opt:
+    - seccomp:unconfined
+  privileged: true
+  command: >
+    bash -c "sudo service ssh restart && sleep infinity"
+
+services:
+  h1:
+    <<: *x-common
+    hostname: h1
+    container_name: mpiio-pmembb-h1
+  h2:
+    <<: *x-common
+    hostname: h2
+    container_name: mpiio-pmembb-h2
+  h3:
+    <<: *x-common
+    hostname: h3
+    container_name: mpiio-pmembb-h3
+  h4:
+    <<: *x-common
+    hostname: h4
+    container_name: mpiio-pmembb-h4
+
+networks:
+  mpiio_pmembb_net:
+
+volumes:
+  spack-root:
+  spack-settings:
