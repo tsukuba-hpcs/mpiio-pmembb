@@ -1,0 +1,4 @@
+[submodule "projects/rpmembb"]
+	path = projects/rpmembb
+	url = https://github.com/tsukuba-hpcs/rpmembb.git
+	update = merge
