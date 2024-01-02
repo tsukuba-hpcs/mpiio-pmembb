@@ -2,3 +2,7 @@
 	path = projects/rpmembb
 	url = https://github.com/tsukuba-hpcs/rpmembb.git
 	update = merge
+[submodule "spack/repos/tsukuba-hpcs"]
+	path = spack/repos/tsukuba-hpcs
+	url = https://github.com/tsukuba-hpcs/spack-packages.git
+	update = merge
