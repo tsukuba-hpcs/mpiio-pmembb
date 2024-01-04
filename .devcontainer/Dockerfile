@@ -32,6 +32,9 @@ RUN \
   && apt-get -y install --no-install-recommends \
     flex \
     liburing-dev \
+    autoconf \
+    automake \
+    libtool \
   # Clean up
   && apt-get autoremove -y \
   && apt-get clean -y \
