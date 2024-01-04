@@ -6,3 +6,7 @@
 	path = spack/repos/tsukuba-hpcs
 	url = https://github.com/tsukuba-hpcs/spack-packages.git
 	update = merge
+[submodule "projects/ompi"]
+	path = projects/ompi
+	url = https://github.com/tsukuba-hpcs/ompi-pmembb.git
+	update = merge
