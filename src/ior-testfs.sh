@@ -68,8 +68,8 @@ echo "${cmd_ior[@]}" -w
 "${cmd_ior[@]}" -w
 
 export OMPI_MCA_hook_pmembb_load=true
-echo "${cmd_ior[@]}" -r -R
-"${cmd_ior[@]}" -r -R
+echo "${cmd_ior[@]}" -r -R -C -Q 1
+"${cmd_ior[@]}" -r -R -C -Q 1
 
 # export LD_PRELOAD=$(spack location -i rpmbb)/lib/rpmbb_c/librpmbb_c.so
 # gdb -ex run --args "${cmd_ior[@]}"
