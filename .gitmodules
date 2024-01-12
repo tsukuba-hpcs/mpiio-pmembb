@@ -10,3 +10,7 @@
 	path = projects/ompi
 	url = https://github.com/tsukuba-hpcs/ompi-pmembb.git
 	update = merge
+[submodule "projects/ior"]
+	path = projects/ior
+	url = https://github.com/hpc/ior.git
+	update = merge
