@@ -3,10 +3,13 @@ set -eu
 
 env_list=(
   mpiio-pmembb
+  mpiio-pmembb-profile
   mpiio-pmembb-no-optim
   mpiio-pmembb-deferred-open
   mpiio-pmembb-agg-read
 )
+
+spack uninstall --force --all --dependents openmpi
 
 for spack_env in "${env_list[@]}"; do
   echo $spack_env
