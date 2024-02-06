@@ -1,0 +1,157 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  Loading requirement: gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg
+    libevent/2.1.12-gcc-11.4.0-re6vsz5 numactl/2.0.14-gcc-11.4.0-xjgucn6
+    openssh/8.2p1-gcc-11.4.0-yzvstio
+    rdma-core/2307mlnx47-1.2310055-gcc-11.4.0-y6s6vqp
+    ucx/1.14.1-gcc-11.4.0-6abgs7j zlib-ng/2.1.5-gcc-11.4.0-g5u35yd
+2024.02.05-18.47.41 2024-02-05 18:47:41,586 h5bench - INFO - Starting h5bench Suite
+2024.02.05-18.47.41 2024-02-05 18:47:41,599 h5bench - INFO - Lustre support detected
+2024.02.05-18.47.41 2024-02-05 18:47:41,599 h5bench - DEBUG - LD_LIBRARY_PATH: /home/NBB/hiraga/.cache/spack/var/spack/environments/mpiio-pmembb-deferred-open/.spack-env/view/lib
+2024.02.05-18.47.41 2024-02-05 18:47:41,599 h5bench - DEBUG - DYLD_LIBRARY_PATH: 
+2024.02.05-18.47.41 2024-02-05 18:47:41,599 h5bench - DEBUG - LD_PRELOAD: 
+2024.02.05-18.47.41 2024-02-05 18:47:41,599 h5bench - INFO - JOBID: 0:169906.nqsv
+2024.02.05-18.47.41 2024-02-05 18:47:41,599 h5bench - INFO - h5bench [write] - Starting
+2024.02.05-18.47.41 2024-02-05 18:47:41,599 h5bench - INFO - h5bench [write] - DIR: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage/bb9a3c86-0:169906.nqsv/
+2024.02.05-18.47.41 2024-02-05 18:47:41,600 h5bench - INFO - Parallel setup: mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169906.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.22.58-default/2024.02.05-18.47.39-169906.nqsv-16/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 512 -map-by ppr:32:node -mca hook_pmembb_load false -mca hook_pmembb_save true
+2024.02.05-18.47.41 2024-02-05 18:47:41,601 h5bench - INFO - mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169906.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.22.58-default/2024.02.05-18.47.39-169906.nqsv-16/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 512 -map-by ppr:32:node -mca hook_pmembb_load false -mca hook_pmembb_save true /home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/h5bench-1.4-pmembb-3f57tcm3x6mh4si52raabjkgrfs24rrr/bin//h5bench_write /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage/bb9a3c86-0:169906.nqsv/h5bench.cfg /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage/rw.h5
+2024.02.05-18.49.07 2024-02-05 18:49:07,125 h5bench - INFO - SUCCESS (all output files are located at /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage/bb9a3c86-0:169906.nqsv)
+2024.02.05-18.49.07 2024-02-05 18:49:07,126 h5bench - INFO - Runtime: 85.5261648 seconds (elapsed time, includes allocation wait time)
+2024.02.05-18.49.07 2024-02-05 18:49:07,126 h5bench - INFO - h5bench [write] - Complete
+2024.02.05-18.49.07 2024-02-05 18:49:07,126 h5bench - INFO - Finishing h5bench Suite
+2024.02.05-18.49.08 2024-02-05 18:49:08,152 h5bench - INFO - Starting h5bench Suite
+2024.02.05-18.49.08 2024-02-05 18:49:08,153 h5bench - WARNING - Base directory already exists: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage
+2024.02.05-18.49.08 2024-02-05 18:49:08,165 h5bench - INFO - Lustre support detected
+2024.02.05-18.49.08 2024-02-05 18:49:08,165 h5bench - DEBUG - LD_LIBRARY_PATH: /home/NBB/hiraga/.cache/spack/var/spack/environments/mpiio-pmembb-deferred-open/.spack-env/view/lib
+2024.02.05-18.49.08 2024-02-05 18:49:08,165 h5bench - DEBUG - DYLD_LIBRARY_PATH: 
+2024.02.05-18.49.08 2024-02-05 18:49:08,165 h5bench - DEBUG - LD_PRELOAD: 
+2024.02.05-18.49.08 2024-02-05 18:49:08,165 h5bench - INFO - JOBID: 0:169906.nqsv
+2024.02.05-18.49.08 2024-02-05 18:49:08,165 h5bench - INFO - h5bench [read] - Starting
+2024.02.05-18.49.08 2024-02-05 18:49:08,165 h5bench - INFO - h5bench [read] - DIR: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage/a77834e7-0:169906.nqsv/
+2024.02.05-18.49.08 2024-02-05 18:49:08,166 h5bench - INFO - Parallel setup: mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169906.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.22.58-default/2024.02.05-18.47.39-169906.nqsv-16/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 512 -map-by ppr:32:node -mca hook_pmembb_load true -mca hook_pmembb_save false
+2024.02.05-18.49.08 2024-02-05 18:49:08,167 h5bench - INFO - mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169906.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.22.58-default/2024.02.05-18.47.39-169906.nqsv-16/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 512 -map-by ppr:32:node -mca hook_pmembb_load true -mca hook_pmembb_save false /home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/h5bench-1.4-pmembb-3f57tcm3x6mh4si52raabjkgrfs24rrr/bin//h5bench_read /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage/a77834e7-0:169906.nqsv/h5bench.cfg /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage/rw.h5
+2024.02.05-18.50.32 2024-02-05 18:50:32,718 h5bench - INFO - SUCCESS (all output files are located at /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage/a77834e7-0:169906.nqsv)
+2024.02.05-18.50.32 2024-02-05 18:50:32,718 h5bench - INFO - Runtime: 84.5521188 seconds (elapsed time, includes allocation wait time)
+2024.02.05-18.50.32 2024-02-05 18:50:32,718 h5bench - INFO - h5bench [read] - Complete
+2024.02.05-18.50.32 2024-02-05 18:50:32,718 h5bench - INFO - Finishing h5bench Suite
+2024.02.05-18.50.33 2024-02-05 18:50:33,769 h5bench - INFO - Starting h5bench Suite
+2024.02.05-18.50.33 2024-02-05 18:50:33,770 h5bench - WARNING - Base directory already exists: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage
+2024.02.05-18.50.33 2024-02-05 18:50:33,782 h5bench - INFO - Lustre support detected
+2024.02.05-18.50.33 2024-02-05 18:50:33,782 h5bench - DEBUG - LD_LIBRARY_PATH: /home/NBB/hiraga/.cache/spack/var/spack/environments/mpiio-pmembb-deferred-open/.spack-env/view/lib
+2024.02.05-18.50.33 2024-02-05 18:50:33,782 h5bench - DEBUG - DYLD_LIBRARY_PATH: 
+2024.02.05-18.50.33 2024-02-05 18:50:33,782 h5bench - DEBUG - LD_PRELOAD: 
+2024.02.05-18.50.33 2024-02-05 18:50:33,782 h5bench - INFO - JOBID: 0:169906.nqsv
+2024.02.05-18.50.33 2024-02-05 18:50:33,782 h5bench - INFO - h5bench [metadata] - Starting
+2024.02.05-18.50.33 2024-02-05 18:50:33,782 h5bench - INFO - h5bench [metadata] - DIR: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage/478311db-0:169906.nqsv/
+2024.02.05-18.50.33 2024-02-05 18:50:33,783 h5bench - INFO - Parallel setup: mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169906.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.22.58-default/2024.02.05-18.47.39-169906.nqsv-16/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 256 -map-by ppr:16:node -mca hook_pmembb_load false -mca hook_pmembb_save false
+2024.02.05-18.50.33 2024-02-05 18:50:33,785 h5bench - INFO - mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169906.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.22.58-default/2024.02.05-18.47.39-169906.nqsv-16/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 256 -map-by ppr:16:node -mca hook_pmembb_load false -mca hook_pmembb_save false /home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/h5bench-1.4-pmembb-3f57tcm3x6mh4si52raabjkgrfs24rrr/bin//h5bench_hdf5_iotest /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage/478311db-0:169906.nqsv/hdf5_iotest.ini
+2024.02.05-18.51.47 2024-02-05 18:51:47,458 h5bench - INFO - SUCCESS (all output files are located at /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.47.39-169906.nqsv-16/0/storage/478311db-0:169906.nqsv)
+2024.02.05-18.51.47 2024-02-05 18:51:47,459 h5bench - INFO - Runtime: 73.6748853 seconds (elapsed time, includes allocation wait time)
+2024.02.05-18.51.47 2024-02-05 18:51:47,459 h5bench - INFO - h5bench [metadata] - Complete
+2024.02.05-18.51.47 2024-02-05 18:51:47,459 h5bench - INFO - Finishing h5bench Suite
+
+============================================================
+Request ID:             169906.nqsv
+Request Name:           h5bench-pmembb.job.sh
+Queue:                  gpu_low@nqsv
+Number of Jobs:         16
+User Name:              hiraga
+Group Name:             NBB
+Created Request Time:   Mon Feb  5 17:22:59 2024
+Started Request Time:   Mon Feb  5 18:47:37 2024
+Ended Request Time:     Mon Feb  5 18:51:47 2024
+Resources Information:
+  Elapse:               254S
+  Remaining Elapse:     10546S
+============================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0002 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0003 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0004 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0005 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0006 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0007 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0008 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0009 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0010 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0011 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0012 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0013 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0014 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0015 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed

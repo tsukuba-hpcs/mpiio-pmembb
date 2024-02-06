@@ -1,0 +1,85 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  Loading requirement: gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg
+    libevent/2.1.12-gcc-11.4.0-re6vsz5 numactl/2.0.14-gcc-11.4.0-xjgucn6
+    openssh/8.2p1-gcc-11.4.0-yzvstio
+    rdma-core/2307mlnx47-1.2310055-gcc-11.4.0-y6s6vqp
+    ucx/1.14.1-gcc-11.4.0-6abgs7j zlib-ng/2.1.5-gcc-11.4.0-g5u35yd
+2024.02.05-18.36.40 2024-02-05 18:36:40,372 h5bench - INFO - Starting h5bench Suite
+2024.02.05-18.36.40 2024-02-05 18:36:40,384 h5bench - INFO - Lustre support detected
+2024.02.05-18.36.40 2024-02-05 18:36:40,384 h5bench - DEBUG - LD_LIBRARY_PATH: /home/NBB/hiraga/.cache/spack/var/spack/environments/mpiio-pmembb-deferred-open/.spack-env/view/lib
+2024.02.05-18.36.40 2024-02-05 18:36:40,385 h5bench - DEBUG - DYLD_LIBRARY_PATH: 
+2024.02.05-18.36.40 2024-02-05 18:36:40,385 h5bench - DEBUG - LD_PRELOAD: 
+2024.02.05-18.36.40 2024-02-05 18:36:40,385 h5bench - INFO - JOBID: 0:169926.nqsv
+2024.02.05-18.36.40 2024-02-05 18:36:40,385 h5bench - INFO - h5bench [write] - Starting
+2024.02.05-18.36.40 2024-02-05 18:36:40,385 h5bench - INFO - h5bench [write] - DIR: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage/50829211-0:169926.nqsv/
+2024.02.05-18.36.40 2024-02-05 18:36:40,385 h5bench - INFO - Parallel setup: mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169926.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.24.55-default/2024.02.05-18.36.37-169926.nqsv-4/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 128 -map-by ppr:32:node -mca hook_pmembb_load false -mca hook_pmembb_save true
+2024.02.05-18.36.40 2024-02-05 18:36:40,386 h5bench - INFO - mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169926.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.24.55-default/2024.02.05-18.36.37-169926.nqsv-4/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 128 -map-by ppr:32:node -mca hook_pmembb_load false -mca hook_pmembb_save true /home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/h5bench-1.4-pmembb-3f57tcm3x6mh4si52raabjkgrfs24rrr/bin//h5bench_write /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage/50829211-0:169926.nqsv/h5bench.cfg /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage/rw.h5
+2024.02.05-18.38.04 2024-02-05 18:38:04,764 h5bench - INFO - SUCCESS (all output files are located at /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage/50829211-0:169926.nqsv)
+2024.02.05-18.38.04 2024-02-05 18:38:04,764 h5bench - INFO - Runtime: 84.3790090 seconds (elapsed time, includes allocation wait time)
+2024.02.05-18.38.04 2024-02-05 18:38:04,764 h5bench - INFO - h5bench [write] - Complete
+2024.02.05-18.38.04 2024-02-05 18:38:04,764 h5bench - INFO - Finishing h5bench Suite
+2024.02.05-18.38.05 2024-02-05 18:38:05,792 h5bench - INFO - Starting h5bench Suite
+2024.02.05-18.38.05 2024-02-05 18:38:05,793 h5bench - WARNING - Base directory already exists: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage
+2024.02.05-18.38.05 2024-02-05 18:38:05,805 h5bench - INFO - Lustre support detected
+2024.02.05-18.38.05 2024-02-05 18:38:05,805 h5bench - DEBUG - LD_LIBRARY_PATH: /home/NBB/hiraga/.cache/spack/var/spack/environments/mpiio-pmembb-deferred-open/.spack-env/view/lib
+2024.02.05-18.38.05 2024-02-05 18:38:05,805 h5bench - DEBUG - DYLD_LIBRARY_PATH: 
+2024.02.05-18.38.05 2024-02-05 18:38:05,805 h5bench - DEBUG - LD_PRELOAD: 
+2024.02.05-18.38.05 2024-02-05 18:38:05,805 h5bench - INFO - JOBID: 0:169926.nqsv
+2024.02.05-18.38.05 2024-02-05 18:38:05,805 h5bench - INFO - h5bench [read] - Starting
+2024.02.05-18.38.05 2024-02-05 18:38:05,805 h5bench - INFO - h5bench [read] - DIR: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage/01c4cbd4-0:169926.nqsv/
+2024.02.05-18.38.05 2024-02-05 18:38:05,806 h5bench - INFO - Parallel setup: mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169926.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.24.55-default/2024.02.05-18.36.37-169926.nqsv-4/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 128 -map-by ppr:32:node -mca hook_pmembb_load true -mca hook_pmembb_save false
+2024.02.05-18.38.05 2024-02-05 18:38:05,807 h5bench - INFO - mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169926.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.24.55-default/2024.02.05-18.36.37-169926.nqsv-4/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 128 -map-by ppr:32:node -mca hook_pmembb_load true -mca hook_pmembb_save false /home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/h5bench-1.4-pmembb-3f57tcm3x6mh4si52raabjkgrfs24rrr/bin//h5bench_read /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage/01c4cbd4-0:169926.nqsv/h5bench.cfg /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage/rw.h5
+2024.02.05-18.39.25 2024-02-05 18:39:25,711 h5bench - INFO - SUCCESS (all output files are located at /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage/01c4cbd4-0:169926.nqsv)
+2024.02.05-18.39.25 2024-02-05 18:39:25,712 h5bench - INFO - Runtime: 79.9058707 seconds (elapsed time, includes allocation wait time)
+2024.02.05-18.39.25 2024-02-05 18:39:25,712 h5bench - INFO - h5bench [read] - Complete
+2024.02.05-18.39.25 2024-02-05 18:39:25,712 h5bench - INFO - Finishing h5bench Suite
+2024.02.05-18.39.26 2024-02-05 18:39:26,759 h5bench - INFO - Starting h5bench Suite
+2024.02.05-18.39.26 2024-02-05 18:39:26,761 h5bench - WARNING - Base directory already exists: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage
+2024.02.05-18.39.26 2024-02-05 18:39:26,773 h5bench - INFO - Lustre support detected
+2024.02.05-18.39.26 2024-02-05 18:39:26,773 h5bench - DEBUG - LD_LIBRARY_PATH: /home/NBB/hiraga/.cache/spack/var/spack/environments/mpiio-pmembb-deferred-open/.spack-env/view/lib
+2024.02.05-18.39.26 2024-02-05 18:39:26,774 h5bench - DEBUG - DYLD_LIBRARY_PATH: 
+2024.02.05-18.39.26 2024-02-05 18:39:26,774 h5bench - DEBUG - LD_PRELOAD: 
+2024.02.05-18.39.26 2024-02-05 18:39:26,774 h5bench - INFO - JOBID: 0:169926.nqsv
+2024.02.05-18.39.26 2024-02-05 18:39:26,774 h5bench - INFO - h5bench [metadata] - Starting
+2024.02.05-18.39.26 2024-02-05 18:39:26,774 h5bench - INFO - h5bench [metadata] - DIR: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage/a88635bf-0:169926.nqsv/
+2024.02.05-18.39.26 2024-02-05 18:39:26,774 h5bench - INFO - Parallel setup: mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169926.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.24.55-default/2024.02.05-18.36.37-169926.nqsv-4/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 64 -map-by ppr:16:node -mca hook_pmembb_load false -mca hook_pmembb_save false
+2024.02.05-18.39.26 2024-02-05 18:39:26,776 h5bench - INFO - mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169926.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.24.55-default/2024.02.05-18.36.37-169926.nqsv-4/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 64 -map-by ppr:16:node -mca hook_pmembb_load false -mca hook_pmembb_save false /home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/h5bench-1.4-pmembb-3f57tcm3x6mh4si52raabjkgrfs24rrr/bin//h5bench_hdf5_iotest /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage/a88635bf-0:169926.nqsv/hdf5_iotest.ini
+2024.02.05-18.40.37 2024-02-05 18:40:37,874 h5bench - INFO - SUCCESS (all output files are located at /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169926.nqsv-4/0/storage/a88635bf-0:169926.nqsv)
+2024.02.05-18.40.37 2024-02-05 18:40:37,875 h5bench - INFO - Runtime: 71.1000724 seconds (elapsed time, includes allocation wait time)
+2024.02.05-18.40.37 2024-02-05 18:40:37,875 h5bench - INFO - h5bench [metadata] - Complete
+2024.02.05-18.40.37 2024-02-05 18:40:37,875 h5bench - INFO - Finishing h5bench Suite
+
+============================================================
+Request ID:             169926.nqsv
+Request Name:           h5bench-pmembb.job.sh
+Queue:                  gpu_low@nqsv
+Number of Jobs:         4
+User Name:              hiraga
+Group Name:             NBB
+Created Request Time:   Mon Feb  5 17:24:56 2024
+Started Request Time:   Mon Feb  5 18:36:35 2024
+Ended Request Time:     Mon Feb  5 18:40:37 2024
+Resources Information:
+  Elapse:               247S
+  Remaining Elapse:     10553S
+============================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0002 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0003 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed

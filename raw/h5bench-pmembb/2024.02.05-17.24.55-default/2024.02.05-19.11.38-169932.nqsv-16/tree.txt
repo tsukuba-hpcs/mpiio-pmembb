@@ -1,0 +1,21 @@
+[       4096]  /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-19.11.38-169932.nqsv-16/0
+└── [       4096]  storage
+    ├── [       4096]  6c5ab166-0:169932.nqsv
+    │   ├── [        343]  h5bench.cfg
+    │   ├── [        306]  output-read.csv
+    │   ├── [      84186]  stderr
+    │   └── [       1915]  stdout
+    ├── [       4096]  de3503cc-0:169932.nqsv
+    │   ├── [        327]  h5bench.cfg
+    │   ├── [        307]  output-write.csv
+    │   ├── [      84186]  stderr
+    │   └── [       1923]  stdout
+    ├── [       4096]  ee05942c-0:169932.nqsv
+    │   ├── [        484]  hdf5_iotest.ini
+    │   ├── [        487]  output-meta.csv
+    │   ├── [      28378]  stderr
+    │   └── [        742]  stdout
+    ├── [   81922048]  meta.h5
+    └── [1374389553208]  rw.h5
+
+5 directories, 14 files

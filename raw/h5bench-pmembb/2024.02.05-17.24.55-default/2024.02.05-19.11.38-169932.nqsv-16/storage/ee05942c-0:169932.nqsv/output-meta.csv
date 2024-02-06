@@ -1,0 +1,2 @@
+steps,arrays,rows,cols,scaling,proc-rows,proc-cols,slowdim,rank,layout,mpi-io,wall [s],fsize [B],write-phase-min [s],write-phase-max [s],creat-min [s],creat-max [s],write-min [s],write-max [s],write-rate-min [MiB/s],write-rate-max [MiB/s],read-phase-min [s],read-phase-max [s],read-min [s],read-max [s],read-rate-min [MiB/s],read-rate-max [MiB/s]
+20,500,2,2,weak,16,16,step,4,contiguous,independent,2.07,81922048,0.06,0.06,0.02,0.02,0.02,0.03,11.29,12.23,1.98,1.99,0.02,0.02,12.34,14.98

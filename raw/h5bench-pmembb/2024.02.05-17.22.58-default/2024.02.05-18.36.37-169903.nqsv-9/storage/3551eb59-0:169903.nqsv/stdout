@@ -1,0 +1,25 @@
+Config loaded from '/work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169903.nqsv-9/0/storage/3551eb59-0:169903.nqsv/hdf5_iotest.ini':
+	steps=20, arrays=500, rows=2, columns=2, scaling=weak
+	proc-grid=12x12, slowest-dimension=step, rank=4
+	layout=contiguous, mpi-io=independent
+
+Wall clock [s]:		1.13
+File size [B]:		46082048
+---------------------------------------------
+Measurement:		_MIN (over MPI ranks)
+			^MAX (over MPI ranks)
+---------------------------------------------
+Write phase [s]:	_0.05
+			^0.05
+Create time [s]:	_0.02
+			^0.02
+Write time [s]:		_0.02
+			^0.03
+Write rate [MiB/s]:	_11.25
+			^12.32
+Read phase [s]:		_1.05
+			^1.06
+Read time [s]:		_0.02
+			^0.02
+Read rate [MiB/s]:	_12.28
+			^14.97

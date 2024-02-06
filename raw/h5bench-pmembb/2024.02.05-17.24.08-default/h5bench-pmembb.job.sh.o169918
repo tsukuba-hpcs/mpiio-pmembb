@@ -1,0 +1,169 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.05-19.52.29 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.24.08-default/2024.02.05-19.52.28-169918.nqsv-64
+2024.02.05-19.52.29 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-19.52.28-169918.nqsv-64
+2024.02.05-19.52.29 prepare test_dir
+2024.02.05-19.52.29 /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-19.52.28-169918.nqsv-64/0
+2024.02.05-19.52.29 stripe_count:  1 stripe_size:   2097152 pattern:       raid0 stripe_offset: -1
+2024.02.05-19.52.29 
+2024.02.05-19.52.29 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169918.10/mpinodes -np 64 -map-by ppr:1:node dropcaches 3
+2024.02.05-19.54.03 sending incremental file list
+2024.02.05-19.54.03 storage/
+2024.02.05-19.54.03 storage/cfa45225-0:169918.nqsv/
+2024.02.05-19.54.03 storage/cfa45225-0:169918.nqsv/h5bench.cfg
+2024.02.05-19.54.03 storage/cfa45225-0:169918.nqsv/output-write.csv
+2024.02.05-19.54.03 storage/cfa45225-0:169918.nqsv/stderr
+2024.02.05-19.54.03 storage/cfa45225-0:169918.nqsv/stdout
+2024.02.05-19.54.03 
+2024.02.05-19.54.03 sent 339,544 bytes  received 100 bytes  679,288.00 bytes/sec
+2024.02.05-19.54.03 total size is 339,079  speedup is 1.00
+2024.02.05-19.54.03 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169918.10/mpinodes -np 64 -map-by ppr:1:node dropcaches 3
+2024.02.05-19.55.32 sending incremental file list
+2024.02.05-19.55.32 ./
+2024.02.05-19.55.32 storage/
+2024.02.05-19.55.32 storage/252b25ae-0:169918.nqsv/
+2024.02.05-19.55.32 storage/252b25ae-0:169918.nqsv/h5bench.cfg
+2024.02.05-19.55.32 storage/252b25ae-0:169918.nqsv/output-read.csv
+2024.02.05-19.55.32 storage/252b25ae-0:169918.nqsv/stderr
+2024.02.05-19.55.32 storage/252b25ae-0:169918.nqsv/stdout
+2024.02.05-19.55.32 
+2024.02.05-19.55.32 sent 339,713 bytes  received 108 bytes  679,642.00 bytes/sec
+2024.02.05-19.55.32 total size is 678,165  speedup is 2.00
+2024.02.05-19.55.32 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169918.10/mpinodes -np 64 -map-by ppr:1:node dropcaches 3
+2024.02.05-19.57.00 sending incremental file list
+2024.02.05-19.57.00 ./
+2024.02.05-19.57.00 storage/
+2024.02.05-19.57.00 storage/27c66439-0:169918.nqsv/
+2024.02.05-19.57.00 storage/27c66439-0:169918.nqsv/hdf5_iotest.ini
+2024.02.05-19.57.00 storage/27c66439-0:169918.nqsv/output-meta.csv
+2024.02.05-19.57.00 storage/27c66439-0:169918.nqsv/stderr
+2024.02.05-19.57.00 storage/27c66439-0:169918.nqsv/stdout
+2024.02.05-19.57.00 
+2024.02.05-19.57.00 sent 115,722 bytes  received 109 bytes  231,662.00 bytes/sec
+2024.02.05-19.57.00 total size is 793,181  speedup is 6.85
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
+
+%NQSV(INFO): ------- Output from job:0016 -------
+
+%NQSV(INFO): ------- Output from job:0017 -------
+
+%NQSV(INFO): ------- Output from job:0018 -------
+
+%NQSV(INFO): ------- Output from job:0019 -------
+
+%NQSV(INFO): ------- Output from job:0020 -------
+
+%NQSV(INFO): ------- Output from job:0021 -------
+
+%NQSV(INFO): ------- Output from job:0022 -------
+
+%NQSV(INFO): ------- Output from job:0023 -------
+
+%NQSV(INFO): ------- Output from job:0024 -------
+
+%NQSV(INFO): ------- Output from job:0025 -------
+
+%NQSV(INFO): ------- Output from job:0026 -------
+
+%NQSV(INFO): ------- Output from job:0027 -------
+
+%NQSV(INFO): ------- Output from job:0028 -------
+
+%NQSV(INFO): ------- Output from job:0029 -------
+
+%NQSV(INFO): ------- Output from job:0030 -------
+
+%NQSV(INFO): ------- Output from job:0031 -------
+
+%NQSV(INFO): ------- Output from job:0032 -------
+
+%NQSV(INFO): ------- Output from job:0033 -------
+
+%NQSV(INFO): ------- Output from job:0034 -------
+
+%NQSV(INFO): ------- Output from job:0035 -------
+
+%NQSV(INFO): ------- Output from job:0036 -------
+
+%NQSV(INFO): ------- Output from job:0037 -------
+
+%NQSV(INFO): ------- Output from job:0038 -------
+
+%NQSV(INFO): ------- Output from job:0039 -------
+
+%NQSV(INFO): ------- Output from job:0040 -------
+
+%NQSV(INFO): ------- Output from job:0041 -------
+
+%NQSV(INFO): ------- Output from job:0042 -------
+
+%NQSV(INFO): ------- Output from job:0043 -------
+
+%NQSV(INFO): ------- Output from job:0044 -------
+
+%NQSV(INFO): ------- Output from job:0045 -------
+
+%NQSV(INFO): ------- Output from job:0046 -------
+
+%NQSV(INFO): ------- Output from job:0047 -------
+
+%NQSV(INFO): ------- Output from job:0048 -------
+
+%NQSV(INFO): ------- Output from job:0049 -------
+
+%NQSV(INFO): ------- Output from job:0050 -------
+
+%NQSV(INFO): ------- Output from job:0051 -------
+
+%NQSV(INFO): ------- Output from job:0052 -------
+
+%NQSV(INFO): ------- Output from job:0053 -------
+
+%NQSV(INFO): ------- Output from job:0054 -------
+
+%NQSV(INFO): ------- Output from job:0055 -------
+
+%NQSV(INFO): ------- Output from job:0056 -------
+
+%NQSV(INFO): ------- Output from job:0057 -------
+
+%NQSV(INFO): ------- Output from job:0058 -------
+
+%NQSV(INFO): ------- Output from job:0059 -------
+
+%NQSV(INFO): ------- Output from job:0060 -------
+
+%NQSV(INFO): ------- Output from job:0061 -------
+
+%NQSV(INFO): ------- Output from job:0062 -------
+
+%NQSV(INFO): ------- Output from job:0063 -------

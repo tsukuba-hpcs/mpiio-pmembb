@@ -1,0 +1,49 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.05-18.36.37 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.05-17.24.55-default/2024.02.05-18.36.37-169925.nqsv-4
+2024.02.05-18.36.37 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169925.nqsv-4
+2024.02.05-18.36.37 prepare test_dir
+2024.02.05-18.36.37 /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.05-18.36.37-169925.nqsv-4/0
+2024.02.05-18.36.37 stripe_count:  1 stripe_size:   2097152 pattern:       raid0 stripe_offset: -1
+2024.02.05-18.36.37 
+2024.02.05-18.36.38 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169925.10/mpinodes -np 4 -map-by ppr:1:node dropcaches 3
+2024.02.05-18.38.04 sending incremental file list
+2024.02.05-18.38.04 storage/
+2024.02.05-18.38.04 storage/d482deb1-0:169925.nqsv/
+2024.02.05-18.38.04 storage/d482deb1-0:169925.nqsv/h5bench.cfg
+2024.02.05-18.38.04 storage/d482deb1-0:169925.nqsv/output-write.csv
+2024.02.05-18.38.04 storage/d482deb1-0:169925.nqsv/stderr
+2024.02.05-18.38.04 storage/d482deb1-0:169925.nqsv/stdout
+2024.02.05-18.38.04 
+2024.02.05-18.38.04 sent 23,922 bytes  received 100 bytes  48,044.00 bytes/sec
+2024.02.05-18.38.04 total size is 23,545  speedup is 0.98
+2024.02.05-18.38.04 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169925.10/mpinodes -np 4 -map-by ppr:1:node dropcaches 3
+2024.02.05-18.39.26 sending incremental file list
+2024.02.05-18.39.26 ./
+2024.02.05-18.39.26 storage/
+2024.02.05-18.39.26 storage/1b4b42b8-0:169925.nqsv/
+2024.02.05-18.39.26 storage/1b4b42b8-0:169925.nqsv/h5bench.cfg
+2024.02.05-18.39.26 storage/1b4b42b8-0:169925.nqsv/output-read.csv
+2024.02.05-18.39.26 storage/1b4b42b8-0:169925.nqsv/stderr
+2024.02.05-18.39.26 storage/1b4b42b8-0:169925.nqsv/stdout
+2024.02.05-18.39.26 
+2024.02.05-18.39.26 sent 24,071 bytes  received 108 bytes  48,358.00 bytes/sec
+2024.02.05-18.39.26 total size is 47,099  speedup is 1.95
+2024.02.05-18.39.26 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.169925.10/mpinodes -np 4 -map-by ppr:1:node dropcaches 3
+2024.02.05-18.40.37 sending incremental file list
+2024.02.05-18.40.37 ./
+2024.02.05-18.40.37 storage/
+2024.02.05-18.40.37 storage/10b6f526-0:169925.nqsv/
+2024.02.05-18.40.37 storage/10b6f526-0:169925.nqsv/hdf5_iotest.ini
+2024.02.05-18.40.37 storage/10b6f526-0:169925.nqsv/output-meta.csv
+2024.02.05-18.40.37 storage/10b6f526-0:169925.nqsv/stderr
+2024.02.05-18.40.37 storage/10b6f526-0:169925.nqsv/stdout
+2024.02.05-18.40.37 
+2024.02.05-18.40.37 sent 9,414 bytes  received 109 bytes  19,046.00 bytes/sec
+2024.02.05-18.40.37 total size is 55,843  speedup is 5.86
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
