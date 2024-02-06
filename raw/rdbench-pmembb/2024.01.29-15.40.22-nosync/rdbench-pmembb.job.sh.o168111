@@ -1,0 +1,295 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.01.29-18.20.42 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-pmembb/2024.01.29-15.40.22-nosync/2024.01.29-18.20.41-168111.nqsv-64
+2024.01.29-18.20.42 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/rdbench-pmembb/2024.01.29-18.20.41-168111.nqsv-64
+2024.01.29-18.20.42 /work/0/NBB/hiraga/work/mpiio-pmembb/backend/rdbench-pmembb/2024.01.29-18.20.41-168111.nqsv-64
+2024.01.29-18.20.42 stripe_count:  1 stripe_size:   2097152 pattern:       raid0,overstriped stripe_offset: -1
+2024.01.29-18.20.42 
+2024.01.29-18.20.42 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.168111.10/mpinodes -np 64 -map-by ppr:1:node dropcaches 3
+2024.01.29-18.20.43 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-pmembb/2024.01.29-15.40.22-nosync/2024.01.29-18.20.41-168111.nqsv-64/time_0.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.168111.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-pmembb/2024.01.29-15.40.22-nosync/2024.01.29-18.20.41-168111.nqsv-64/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca osc_ucx_acc_single_intrinsic true -np 3072 -map-by ppr:48:node -mca hook_pmembb_load false -mca hook_pmembb_save true rdbench --length 393216 --output /work/0/NBB/hiraga/work/mpiio-pmembb/backend/rdbench-pmembb/2024.01.29-18.20.41-168111.nqsv-64/o_ --nomkdir --iotype view --steps 640 --interval 64 --novalidate --disable-initial-output --prettify --xnp 48 --nosync
+2024.01.29-18.29.16 {
+2024.01.29-18.29.16     "version": "0.11.1",
+2024.01.29-18.29.16     "nprocs": 3072,
+2024.01.29-18.29.16     "topology": [
+2024.01.29-18.29.16         3072
+2024.01.29-18.29.16     ],
+2024.01.29-18.29.16     "xnp": 48,
+2024.01.29-18.29.16     "ynp": 64,
+2024.01.29-18.29.16     "L": 393216,
+2024.01.29-18.29.16     "chunkSizeX": 8192,
+2024.01.29-18.29.16     "chunkSizeY": 6144,
+2024.01.29-18.29.16     "collective": false,
+2024.01.29-18.29.16     "iotype": "view",
+2024.01.29-18.29.16     "sync": false,
+2024.01.29-18.29.17     "validate": false,
+2024.01.29-18.29.17     "steps": 640,
+2024.01.29-18.29.17     "interval": 64,
+2024.01.29-18.29.17     "fixedX": false,
+2024.01.29-18.29.17     "fixedY": false,
+2024.01.29-18.29.17     "initialOutput": false,
+2024.01.29-18.29.17     "nfiles": 10,
+2024.01.29-18.29.17     "fileSize": 1236950581248,
+2024.01.29-18.29.17     "totalWriteSizeByte": 12369505812480,
+2024.01.29-18.29.17     "calcTimeSec": 390.436367781,
+2024.01.29-18.29.17     "commTimeSec": 45.475938503,
+2024.01.29-18.29.17     "writeTimeSec": 11.205764159,
+2024.01.29-18.29.17     "writeBandwidthByte": 1103852056581.55,
+2024.01.29-18.29.17     "initialTimeSec": 36.629459989,
+2024.01.29-18.29.17     "finalizeTimeSec": 61.974288308,
+2024.01.29-18.29.17     "phaseDurationsSec": [
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "init",
+2024.01.29-18.29.17             36.629459989
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "comm",
+2024.01.29-18.29.17             7.193707457
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "calc",
+2024.01.29-18.29.17             40.007247234
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "write",
+2024.01.29-18.29.17             2.377656036
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "comm",
+2024.01.29-18.29.17             4.516009301
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "calc",
+2024.01.29-18.29.17             40.102122269
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "write",
+2024.01.29-18.29.17             1.147053943
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "comm",
+2024.01.29-18.29.17             4.942667934
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "calc",
+2024.01.29-18.29.17             39.922351755
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "write",
+2024.01.29-18.29.17             1.134194324
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "comm",
+2024.01.29-18.29.17             5.424634784
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "calc",
+2024.01.29-18.29.17             40.117215847
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "write",
+2024.01.29-18.29.17             1.176848889
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "comm",
+2024.01.29-18.29.17             5.832824482
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "calc",
+2024.01.29-18.29.17             40.185431484
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "write",
+2024.01.29-18.29.17             1.138363616
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "comm",
+2024.01.29-18.29.17             5.091003117
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "calc",
+2024.01.29-18.29.17             40.095339486
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "write",
+2024.01.29-18.29.17             1.121377522
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "comm",
+2024.01.29-18.29.17             5.085399319
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "calc",
+2024.01.29-18.29.17             40.095252975
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "write",
+2024.01.29-18.29.17             1.079177468
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "comm",
+2024.01.29-18.29.17             4.526851022
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "calc",
+2024.01.29-18.29.17             40.206189434
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "write",
+2024.01.29-18.29.17             1.14531378
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "comm",
+2024.01.29-18.29.17             4.471333493
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "calc",
+2024.01.29-18.29.17             39.898274215
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "write",
+2024.01.29-18.29.17             1.141297242
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "comm",
+2024.01.29-18.29.17             4.144556022
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "calc",
+2024.01.29-18.29.17             39.950445108
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "write",
+2024.01.29-18.29.17             1.095922537
+2024.01.29-18.29.17         ],
+2024.01.29-18.29.17         [
+2024.01.29-18.29.17             "finalize",
+2024.01.29-18.29.17             61.974288308
+2024.01.29-18.29.17         ]
+2024.01.29-18.29.17     ]
+2024.01.29-18.29.17 }
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
+
+%NQSV(INFO): ------- Output from job:0016 -------
+
+%NQSV(INFO): ------- Output from job:0017 -------
+
+%NQSV(INFO): ------- Output from job:0018 -------
+
+%NQSV(INFO): ------- Output from job:0019 -------
+
+%NQSV(INFO): ------- Output from job:0020 -------
+
+%NQSV(INFO): ------- Output from job:0021 -------
+
+%NQSV(INFO): ------- Output from job:0022 -------
+
+%NQSV(INFO): ------- Output from job:0023 -------
+
+%NQSV(INFO): ------- Output from job:0024 -------
+
+%NQSV(INFO): ------- Output from job:0025 -------
+
+%NQSV(INFO): ------- Output from job:0026 -------
+
+%NQSV(INFO): ------- Output from job:0027 -------
+
+%NQSV(INFO): ------- Output from job:0028 -------
+
+%NQSV(INFO): ------- Output from job:0029 -------
+
+%NQSV(INFO): ------- Output from job:0030 -------
+
+%NQSV(INFO): ------- Output from job:0031 -------
+
+%NQSV(INFO): ------- Output from job:0032 -------
+
+%NQSV(INFO): ------- Output from job:0033 -------
+
+%NQSV(INFO): ------- Output from job:0034 -------
+
+%NQSV(INFO): ------- Output from job:0035 -------
+
+%NQSV(INFO): ------- Output from job:0036 -------
+
+%NQSV(INFO): ------- Output from job:0037 -------
+
+%NQSV(INFO): ------- Output from job:0038 -------
+
+%NQSV(INFO): ------- Output from job:0039 -------
+
+%NQSV(INFO): ------- Output from job:0040 -------
+
+%NQSV(INFO): ------- Output from job:0041 -------
+
+%NQSV(INFO): ------- Output from job:0042 -------
+
+%NQSV(INFO): ------- Output from job:0043 -------
+
+%NQSV(INFO): ------- Output from job:0044 -------
+
+%NQSV(INFO): ------- Output from job:0045 -------
+
+%NQSV(INFO): ------- Output from job:0046 -------
+
+%NQSV(INFO): ------- Output from job:0047 -------
+
+%NQSV(INFO): ------- Output from job:0048 -------
+
+%NQSV(INFO): ------- Output from job:0049 -------
+
+%NQSV(INFO): ------- Output from job:0050 -------
+
+%NQSV(INFO): ------- Output from job:0051 -------
+
+%NQSV(INFO): ------- Output from job:0052 -------
+
+%NQSV(INFO): ------- Output from job:0053 -------
+
+%NQSV(INFO): ------- Output from job:0054 -------
+
+%NQSV(INFO): ------- Output from job:0055 -------
+
+%NQSV(INFO): ------- Output from job:0056 -------
+
+%NQSV(INFO): ------- Output from job:0057 -------
+
+%NQSV(INFO): ------- Output from job:0058 -------
+
+%NQSV(INFO): ------- Output from job:0059 -------
+
+%NQSV(INFO): ------- Output from job:0060 -------
+
+%NQSV(INFO): ------- Output from job:0061 -------
+
+%NQSV(INFO): ------- Output from job:0062 -------
+
+%NQSV(INFO): ------- Output from job:0063 -------
