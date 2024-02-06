@@ -57,6 +57,14 @@ function determine_queue() {
   fi
 }
 
+get_spack_env_name() {
+  re_spack_env_status="==> In environment (.+)$"
+  if [[ $(spack env status) =~ $re_spack_env_status ]]; then
+    echo "${BASH_REMATCH[1]}"
+  fi
+}
+
+
 #qsubのラッパーコマンドです。--afterを自動で追加します。その他の引数はそのままqsubに渡ります。
 # usage: qsub_lustre -A NBBG -q gen_S job.sh
 function qsub_lustre() {

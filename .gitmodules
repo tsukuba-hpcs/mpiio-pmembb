@@ -17,3 +17,4 @@
 [submodule "projects/h5bench"]
 	path = projects/h5bench
 	url = https://github.com/tsukuba-hpcs/h5bench-pmembb.git
+	update = merge

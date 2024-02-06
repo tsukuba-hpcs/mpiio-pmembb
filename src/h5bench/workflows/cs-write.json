@@ -1,0 +1,30 @@
+{
+  "mpi": {
+    "command": "mpirun",
+    "configuration": "${MPI_ARGS}"
+  },
+  "vol": {},
+  "file-system": {},
+  "directory": "storage",
+  "benchmarks": [
+    {
+      "benchmark": "write",
+      "file": "test.h5",
+      "configuration": {
+        "MEM_PATTERN": "CONTIG",
+        "FILE_PATTERN": "CONTIG",
+        "TIMESTEPS": "1",
+        "DELAYED_CLOSE_TIMESTEPS": "2",
+        "COLLECTIVE_DATA": "NO",
+        "COLLECTIVE_METADATA": "NO",
+        "EMULATED_COMPUTE_TIME_PER_TIMESTEP": "1 s",
+        "NUM_DIMS": "2",
+        "DIM_1": "32",
+        "DIM_2": "32",
+        "DIM_3": "1",
+        "CSV_FILE": "output.csv",
+        "MODE": "SYNC"
+      }
+    }
+  ]
+}

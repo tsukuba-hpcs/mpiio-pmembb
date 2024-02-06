@@ -94,8 +94,8 @@ save_job_params() {
   "pmem_path": "${PMEM_PATH}",
   "pmem_size": ${PMEM_SIZE},
   "lustre_version": "$(lfs --version | awk '{print $2}')",
-  "lustre_stripe_size": $((2**20)),
-  "lustre_stripe_count": 1,
+  "lustre_stripe_size": ${stripe_size},
+  "lustre_stripe_count": ${stripe_count},
   "spack_env_name": "${SPACK_ENV_NAME}"
 }
 EOS
@@ -120,14 +120,14 @@ for ppn in "${ppn_list[@]}"; do
       test_file="${test_dir}/test_file"
       mkdir -p "${test_dir}"
 
-      # cmd_lfs_setstripe=(
-      #   lfs setstripe
-      #   -C "$stripe_count"
-      #   --stripe-index -1
-      #   --stripe-size "${stripe_size}"
-      #   "${test_dir}"
-      # )
-      # "${cmd_lfs_setstripe[@]}"
+      cmd_lfs_setstripe=(
+        lfs setstripe
+        -C "$stripe_count"
+        --stripe-index -1
+        --stripe-size "${stripe_size}"
+        "${test_dir}"
+      )
+      "${cmd_lfs_setstripe[@]}"
       lfs getstripe "${test_dir}"
 
       cmd_mpirun=(
@@ -141,7 +141,7 @@ for ppn in "${ppn_list[@]}"; do
         -mca hook_pmembb_pmem_size "${PMEM_SIZE}"
         -mca io romio341
         -mca osc ucx
-        # --mca pml ucx
+        -mca pml ucx
         # --mca pml_ucx_tls any
         -mca osc_ucx_acc_single_intrinsic true
         -np "$np"
@@ -204,7 +204,7 @@ for ppn in "${ppn_list[@]}"; do
         time_json -o "${JOB_OUTPUT_DIR}/time_${runid}.json"
         "${cmd_mpirun[@]}"
         -mca hook_pmembb_load true
-        -mca hook_pmembb_save false
+        -mca hook_pmembb_save true
         "${cmd_ior[@]}"
         # -O "stoneWallingStatusFile=${JOB_OUTPUT_DIR}/ior_stonewall_${runid}"
         -O "summaryFile=${JOB_OUTPUT_DIR}/ior_summary_${runid}.json"

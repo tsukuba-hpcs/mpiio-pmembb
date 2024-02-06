@@ -1,0 +1,30 @@
+{
+  "mpi": {
+    "command": "mpirun",
+    "configuration": "${MPI_ARGS}"
+  },
+  "vol": {},
+  "file-system": {},
+  "directory": "${TEST_DIR}/storage",
+  "benchmarks": [
+    {
+      "benchmark": "metadata",
+      "file": "meta.h5",
+      "configuration": {
+        "version": "0",
+        "steps": "20",
+        "arrays": "500",
+        "rows": "2",
+        "columns": "2",
+        "process-rows": "${META_PROC_ROWS}",
+        "process-columns": "${META_PROC_COLS}",
+        "scaling": "weak",
+        "dataset-rank": "4",
+        "slowest-dimension": "step",
+        "layout": "contiguous",
+        "mpi-io": "independent",
+        "csv-file": "output-meta.csv"
+      }
+    }
+  ]
+}

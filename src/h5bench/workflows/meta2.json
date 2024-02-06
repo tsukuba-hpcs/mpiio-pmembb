@@ -1,0 +1,30 @@
+{
+  "mpi": {
+    "command": "mpirun",
+    "configuration": "${MPI_ARGS}"
+  },
+  "vol": {},
+  "file-system": {},
+  "directory": "storage",
+  "benchmarks": [
+    {
+      "benchmark": "metadata",
+      "file": "hdf5_iotest.h5",
+      "configuration": {
+        "version": "0",
+        "steps": "1",
+        "arrays": "1",
+        "rows": "2",
+        "columns": "2",
+        "process-rows": "2",
+        "process-columns": "2",
+        "scaling": "weak",
+        "dataset-rank": "4",
+        "slowest-dimension": "step",
+        "layout": "contiguous",
+        "mpi-io": "independent",
+        "csv-file": "hdf5_iotest.csv"
+      }
+    }
+  ]
+}
