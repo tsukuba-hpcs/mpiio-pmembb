@@ -1,0 +1,13 @@
+{
+  "nnodes": 2,
+  "ppn": 48,
+  "np": 96,
+  "jobid": "167269.nqsv",
+  "runid": 18,
+  "pmem_path": "/dev/dax0.0",
+  "pmem_size": 0,
+  "lustre_version": "2.12.9_ddn38",
+  "lustre_stripe_size": 1048576,
+  "lustre_stripe_count": 1,
+  "spack_env_name": "mpiio-pmembb-no-optim"
+}

@@ -1,0 +1,5 @@
+romio_cb_read disable
+romio_cb_write disable
+romio_cb_alltoall disable
+romio_ds_read disable
+romio_ds_write disable
