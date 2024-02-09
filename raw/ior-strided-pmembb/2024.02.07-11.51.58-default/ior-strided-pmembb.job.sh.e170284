@@ -1,0 +1,53 @@
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-r5rhxc6
+  Loading requirement: gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg
+    libevent/2.1.12-gcc-11.4.0-re6vsz5 numactl/2.0.14-gcc-11.4.0-xjgucn6
+    openssh/8.2p1-gcc-11.4.0-yzvstio
+    rdma-core/2307mlnx47-1.2310055-gcc-11.4.0-y6s6vqp
+    ucx/1.14.1-gcc-11.4.0-6abgs7j zlib-ng/2.1.5-gcc-11.4.0-g5u35yd
+2024.02.07-12.12.15 [bnode116:2461675] hook:pmembb:rpmbb_store_create 4.410
+2024.02.07-12.12.15 [bnode116:2461679] hook:pmembb:rpmbb_store_create 4.410
+2024.02.07-12.12.15 [bnode116:2461676] hook:pmembb:rpmbb_store_create 4.410
+2024.02.07-12.12.15 [bnode116:2461680] hook:pmembb:rpmbb_store_create 4.410
+2024.02.07-12.12.15 [bnode116:2461677] hook:pmembb:rpmbb_store_create 4.410
+2024.02.07-12.12.15 [bnode116:2461678] hook:pmembb:rpmbb_store_create 4.410
+2024.02.07-12.12.15 [bnode116:2461681] hook:pmembb:rpmbb_store_create 4.410
+2024.02.07-12.12.15 [bnode116:2461674] hook:pmembb:rpmbb_store_create 4.410
+2024.02.07-12.12.16 [bnode116:2461681] hook:pmembb:rpmbb_store_load 0.565
+2024.02.07-12.12.16 [bnode116:2461680] hook:pmembb:rpmbb_store_load 0.567
+2024.02.07-12.12.16 [bnode116:2461679] hook:pmembb:rpmbb_store_load 0.568
+2024.02.07-12.12.16 [bnode116:2461678] hook:pmembb:rpmbb_store_load 0.570
+2024.02.07-12.12.16 [bnode116:2461677] hook:pmembb:rpmbb_store_load 0.571
+2024.02.07-12.12.16 [bnode116:2461676] hook:pmembb:rpmbb_store_load 0.573
+2024.02.07-12.12.16 [bnode116:2461674] hook:pmembb:rpmbb_store_load 0.601
+2024.02.07-12.12.16 [bnode116:2461675] hook:pmembb:rpmbb_store_load 0.603
+2024.02.07-12.12.16 [bnode116:2461681] hook:pmembb:rpmbb_store_save 0.134
+2024.02.07-12.12.16 [bnode116:2461679] hook:pmembb:rpmbb_store_save 0.137
+2024.02.07-12.12.16 [bnode116:2461680] hook:pmembb:rpmbb_store_save 0.138
+2024.02.07-12.12.16 [bnode116:2461678] hook:pmembb:rpmbb_store_save 0.139
+2024.02.07-12.12.16 [bnode116:2461674] hook:pmembb:rpmbb_store_save 0.140
+2024.02.07-12.12.16 [bnode116:2461675] hook:pmembb:rpmbb_store_save 0.142
+2024.02.07-12.12.16 [bnode116:2461676] hook:pmembb:rpmbb_store_save 0.143
+2024.02.07-12.12.16 [bnode116:2461677] hook:pmembb:rpmbb_store_save 0.143
+2024.02.07-12.12.16 [bnode116:2461676] hook:pmembb:rpmbb_store_free 0.048
+2024.02.07-12.12.16 [bnode116:2461681] hook:pmembb:rpmbb_store_free 0.057
+2024.02.07-12.12.16 [bnode116:2461678] hook:pmembb:rpmbb_store_free 0.052
+2024.02.07-12.12.16 [bnode116:2461677] hook:pmembb:rpmbb_store_free 0.048
+2024.02.07-12.12.16 [bnode116:2461679] hook:pmembb:rpmbb_store_free 0.053
+2024.02.07-12.12.16 [bnode116:2461680] hook:pmembb:rpmbb_store_free 0.052
+2024.02.07-12.12.16 [bnode116:2461675] hook:pmembb:rpmbb_store_free 0.048
+2024.02.07-12.12.16 [bnode116:2461674] hook:pmembb:rpmbb_store_free 0.073
+
+============================================================
+Request ID:             170284.nqsv
+Request Name:           ior-strided-pmembb.job.sh
+Queue:                  gpu_low@nqsv
+Number of Jobs:         1
+User Name:              hiraga
+Group Name:             NBB
+Created Request Time:   Wed Feb  7 11:51:59 2024
+Started Request Time:   Wed Feb  7 12:11:02 2024
+Ended Request Time:     Wed Feb  7 12:16:16 2024
+Resources Information:
+  Elapse:               318S
+  Remaining Elapse:     3282S
+============================================================

@@ -1,0 +1,223 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.06-18.37.39 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32
+2024.02.06-18.37.39 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-strided-pmembb/2024.02.06-18.37.39-170112.nqsv-32
+2024.02.06-18.37.39 prepare test_dir
+2024.02.06-18.37.39 /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-strided-pmembb/2024.02.06-18.37.39-170112.nqsv-32/0
+2024.02.06-18.37.39 stripe_count:  1 stripe_size:   2097152 pattern:       raid0 stripe_offset: -1
+2024.02.06-18.37.39 
+2024.02.06-18.37.39 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.170112.10/mpinodes -np 32 -map-by ppr:1:node dropcaches 3
+2024.02.06-18.37.42 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/time_0.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.170112.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-f2chy6oowutzndjmq4klk5xcbylvlh7v/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 256 -map-by ppr:8:node -mca hook_pmembb_load false -mca hook_pmembb_save true ior -a MPIIO -l timestamp -g -G -1401473791 -k -i 1 -o /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-strided-pmembb/2024.02.06-18.37.39-170112.nqsv-32/0/test_file -O summaryFormat=JSON -s 262144 -b 1024 -t 1024 -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/ior_summary_0.json -w
+2024.02.06-18.39.45 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.170112.10/mpinodes -np 32 -map-by ppr:1:node dropcaches 3
+2024.02.06-18.39.46 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/time_warn.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.170112.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-f2chy6oowutzndjmq4klk5xcbylvlh7v/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 256 -map-by ppr:8:node -mca hook_pmembb_load true -mca hook_pmembb_save true ior -a MPIIO -l timestamp -g -G -1401473791 -k -i 1 -o /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-strided-pmembb/2024.02.06-18.37.39-170112.nqsv-32/0/test_file -O summaryFormat=JSON -s 1 -b 1024 -t 1024 -r
+2024.02.06-18.40.23 {
+2024.02.06-18.40.23   "Version": "3.3.0", 
+2024.02.06-18.40.23   "Began": "Tue Feb  6 18:40:23 2024", 
+2024.02.06-18.40.23   "Command line": "ior -a MPIIO -l timestamp -g -G -1401473791 -k -i 1 -o /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-strided-pmembb/2024.02.06-18.37.39-170112.nqsv-32/0/test_file -O summaryFormat=JSON -s 1 -b 1024 -t 1024 -r", 
+2024.02.06-18.40.23   "Machine": "Linux bnode027", 
+2024.02.06-18.40.23   "tests": [
+2024.02.06-18.40.23     {
+2024.02.06-18.40.23     "TestID": 0, 
+2024.02.06-18.40.23     "StartTime": "Tue Feb  6 18:40:23 2024"    , "Path": "/work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-strided-pmembb/2024.02.06-18.37.39-170112.nqsv-32/0","Capacity": "100.0 TiB", "Used Capacity": "36.4%","Inodes": "5682.7 Mi", "Used Inodes" : "3.4%"
+2024.02.06-18.40.23 , 
+2024.02.06-18.40.23     "Parameters": {
+2024.02.06-18.40.23       "testID": 0, 
+2024.02.06-18.40.23       "refnum": 0, 
+2024.02.06-18.40.23       "api": "MPIIO", 
+2024.02.06-18.40.23       "platform": "bnode(Linux)", 
+2024.02.06-18.40.23       "testFileName": "/work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-strided-pmembb/2024.02.06-18.37.39-170112.nqsv-32/0/test_file", 
+2024.02.06-18.40.23       "hintsFileName": "(null)", 
+2024.02.06-18.40.23       "deadlineForStonewall": 0, 
+2024.02.06-18.40.23       "stoneWallingWearOut": 0, 
+2024.02.06-18.40.23       "maxTimeDuration": 0, 
+2024.02.06-18.40.23       "outlierThreshold": 0, 
+2024.02.06-18.40.23       "options": "(null)", 
+2024.02.06-18.40.23       "dryRun": 0, 
+2024.02.06-18.40.23       "nodes": 32, 
+2024.02.06-18.40.23       "memoryPerTask": 0, 
+2024.02.06-18.40.23       "memoryPerNode": 0, 
+2024.02.06-18.40.23       "tasksPerNode": 8, 
+2024.02.06-18.40.23       "repetitions": 1, 
+2024.02.06-18.40.23       "multiFile": 0, 
+2024.02.06-18.40.23       "interTestDelay": 0, 
+2024.02.06-18.40.23       "fsync": 0, 
+2024.02.06-18.40.23       "fsyncperwrite": 0, 
+2024.02.06-18.40.23       "useExistingTestFile": 0, 
+2024.02.06-18.40.23       "showHints": 0, 
+2024.02.06-18.40.23       "uniqueDir": 0, 
+2024.02.06-18.40.23       "individualDataSets": 0, 
+2024.02.06-18.40.23       "singleXferAttempt": 0, 
+2024.02.06-18.40.23       "readFile": 1, 
+2024.02.06-18.40.23       "writeFile": 0, 
+2024.02.06-18.40.23       "filePerProc": 0, 
+2024.02.06-18.40.23       "reorderTasks": 0, 
+2024.02.06-18.40.23       "reorderTasksRandom": 0, 
+2024.02.06-18.40.23       "reorderTasksRandomSeed": 0, 
+2024.02.06-18.40.23       "randomOffset": 0, 
+2024.02.06-18.40.23       "checkWrite": 0, 
+2024.02.06-18.40.23       "checkRead": 0, 
+2024.02.06-18.40.23       "preallocate": 0, 
+2024.02.06-18.40.23       "useFileView": 0, 
+2024.02.06-18.40.23       "setAlignment": 1, 
+2024.02.06-18.40.23       "storeFileOffset": 0, 
+2024.02.06-18.40.23       "useSharedFilePointer": 0, 
+2024.02.06-18.40.23       "useStridedDatatype": 0, 
+2024.02.06-18.40.23       "keepFile": 1, 
+2024.02.06-18.40.23       "keepFileWithError": 0, 
+2024.02.06-18.40.23       "quitOnError": 0, 
+2024.02.06-18.40.23       "verbose": 0, 
+2024.02.06-18.40.23       "data packet type": "t", 
+2024.02.06-18.40.23       "setTimeStampSignature/incompressibleSeed": -1401473791, 
+2024.02.06-18.40.23       "collective": 0, 
+2024.02.06-18.40.23       "segmentCount": 1, 
+2024.02.06-18.40.23       "transferSize": 1024, 
+2024.02.06-18.40.23       "blockSize": 1024
+2024.02.06-18.40.23     }
+2024.02.06-18.40.23 , 
+2024.02.06-18.40.23     "Options": {
+2024.02.06-18.40.23       "api": "MPIIO", 
+2024.02.06-18.40.23       "apiVersion": "(3.1)", 
+2024.02.06-18.40.23       "test filename": "/work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-strided-pmembb/2024.02.06-18.37.39-170112.nqsv-32/0/test_file", 
+2024.02.06-18.40.23       "access": "single-shared-file", 
+2024.02.06-18.40.23       "type": "independent", 
+2024.02.06-18.40.23       "segments": 1, 
+2024.02.06-18.40.23       "ordering in a file": "sequential", 
+2024.02.06-18.40.23       "ordering inter file": "no tasks offsets", 
+2024.02.06-18.40.23       "nodes": 32, 
+2024.02.06-18.40.23       "tasks": 256, 
+2024.02.06-18.40.23       "clients per node": 8, 
+2024.02.06-18.40.23       "repetitions": 1, 
+2024.02.06-18.40.23       "xfersize": "1024 bytes", 
+2024.02.06-18.40.23       "blocksize": "1024 bytes", 
+2024.02.06-18.40.23       "aggregate filesize": "262144 bytes"
+2024.02.06-18.40.23     }
+2024.02.06-18.40.23 , 
+2024.02.06-18.40.23     "Results": [
+2024.02.06-18.40.23       [ WARNING: Expected aggregate file size       = 262144.
+2024.02.06-18.40.23 WARNING: Stat() of aggregate file size      = 68719476736.
+2024.02.06-18.40.23 WARNING: Using actual aggregate bytes moved = 262144.
+2024.02.06-18.40.23             {
+2024.02.06-18.40.23         "access": "read", 
+2024.02.06-18.40.23         "bwMiB": 27.1180, 
+2024.02.06-18.40.23         "blockKiB": 1.0000, 
+2024.02.06-18.40.23         "xferKiB": 1.0000, 
+2024.02.06-18.40.23         "iops": 2571468.7506, 
+2024.02.06-18.40.23         "latency": 0.0000, 
+2024.02.06-18.40.23         "openTime": 0.0087, 
+2024.02.06-18.40.23         "wrRdTime": 0.0001, 
+2024.02.06-18.40.23         "closeTime": 0.0004, 
+2024.02.06-18.40.23         "totalTime": 0.0092
+2024.02.06-18.40.23       }
+2024.02.06-18.40.23 ]
+2024.02.06-18.40.23 ]
+2024.02.06-18.40.23 , 
+2024.02.06-18.40.23   "max": {
+2024.02.06-18.40.23     "readMiB": 27.1180, 
+2024.02.06-18.40.23     "readMB": 28.4353
+2024.02.06-18.40.23   }
+2024.02.06-18.40.23 
+2024.02.06-18.40.23 }
+2024.02.06-18.40.23 ]
+2024.02.06-18.40.23 , 
+2024.02.06-18.40.23 "summary": [
+2024.02.06-18.40.23 {
+2024.02.06-18.40.23   "operation": "read", 
+2024.02.06-18.40.23   "API": "MPIIO", 
+2024.02.06-18.40.23   "TestID": 0, 
+2024.02.06-18.40.23   "ReferenceNumber": 0, 
+2024.02.06-18.40.23   "segmentCount": 1, 
+2024.02.06-18.40.23   "blockSize": 1024, 
+2024.02.06-18.40.23   "transferSize": 1024, 
+2024.02.06-18.40.23   "numTasks": 256, 
+2024.02.06-18.40.23   "tasksPerNode": 8, 
+2024.02.06-18.40.23   "repetitions": 1, 
+2024.02.06-18.40.23   "filePerProc": 0, 
+2024.02.06-18.40.23   "reorderTasks": 0, 
+2024.02.06-18.40.23   "taskPerNodeOffset": 1, 
+2024.02.06-18.40.23   "reorderTasksRandom": 0, 
+2024.02.06-18.40.23   "reorderTasksRandomSeed": 0, 
+2024.02.06-18.40.23   "segmentCount": 1, 
+2024.02.06-18.40.23   "blockSize": 1024, 
+2024.02.06-18.40.23   "transferSize": 1024, 
+2024.02.06-18.40.23   "bwMaxMIB": 27.1180, 
+2024.02.06-18.40.23   "bwMinMIB": 27.1180, 
+2024.02.06-18.40.23   "bwMeanMIB": 27.1180, 
+2024.02.06-18.40.23   "bwStdMIB": 0.0000, 
+2024.02.06-18.40.23   "OPsMax": 27768.8499, 
+2024.02.06-18.40.23   "OPsMin": 27768.8499, 
+2024.02.06-18.40.23   "OPsMean": 27768.8499, 
+2024.02.06-18.40.23   "OPsSD": 0.0000, 
+2024.02.06-18.40.23   "MeanTime": 0.0092, 
+2024.02.06-18.40.23   "xsizeMiB": 0.2500
+2024.02.06-18.40.23 }
+2024.02.06-18.40.23 ]
+2024.02.06-18.40.23 , 
+2024.02.06-18.40.23 "Finished": "Tue Feb  6 18:40:23 2024"
+2024.02.06-18.40.23 }
+2024.02.06-18.41.32 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/time_1.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.170112.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-f2chy6oowutzndjmq4klk5xcbylvlh7v/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 256 -map-by ppr:8:node -mca hook_pmembb_load true -mca hook_pmembb_save false ior -a MPIIO -l timestamp -g -G -1401473791 -k -i 1 -o /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-strided-pmembb/2024.02.06-18.37.39-170112.nqsv-32/0/test_file -O summaryFormat=JSON -s 262144 -b 1024 -t 1024 -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/ior_summary_1.json -r -C -Q 1
+2024.02.06-18.43.11 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.170112.10/mpinodes -np 32 -map-by ppr:1:node dropcaches 3
+2024.02.06-18.43.13 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/time_2.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.170112.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-f2chy6oowutzndjmq4klk5xcbylvlh7v/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 256 -map-by ppr:8:node -mca hook_pmembb_load true -mca hook_pmembb_save false ior -a MPIIO -l timestamp -g -G -1401473791 -k -i 1 -o /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-strided-pmembb/2024.02.06-18.37.39-170112.nqsv-32/0/test_file -O summaryFormat=JSON -s 262144 -b 1024 -t 1024 -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/ior_summary_2.json -r
+2024.02.06-18.44.52 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.170112.10/mpinodes -np 32 -map-by ppr:1:node dropcaches 3
+2024.02.06-18.44.53 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/time_3.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.170112.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-f2chy6oowutzndjmq4klk5xcbylvlh7v/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 256 -map-by ppr:8:node -mca hook_pmembb_load true -mca hook_pmembb_save false ior -a MPIIO -l timestamp -g -G -1401473791 -k -i 1 -o /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-strided-pmembb/2024.02.06-18.37.39-170112.nqsv-32/0/test_file -O summaryFormat=JSON -s 256 -b 1048576 -t 1048576 -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.16.59-default/2024.02.06-18.37.39-170112.nqsv-32/ior_summary_3.json -r
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
+
+%NQSV(INFO): ------- Output from job:0016 -------
+
+%NQSV(INFO): ------- Output from job:0017 -------
+
+%NQSV(INFO): ------- Output from job:0018 -------
+
+%NQSV(INFO): ------- Output from job:0019 -------
+
+%NQSV(INFO): ------- Output from job:0020 -------
+
+%NQSV(INFO): ------- Output from job:0021 -------
+
+%NQSV(INFO): ------- Output from job:0022 -------
+
+%NQSV(INFO): ------- Output from job:0023 -------
+
+%NQSV(INFO): ------- Output from job:0024 -------
+
+%NQSV(INFO): ------- Output from job:0025 -------
+
+%NQSV(INFO): ------- Output from job:0026 -------
+
+%NQSV(INFO): ------- Output from job:0027 -------
+
+%NQSV(INFO): ------- Output from job:0028 -------
+
+%NQSV(INFO): ------- Output from job:0029 -------
+
+%NQSV(INFO): ------- Output from job:0030 -------
+
+%NQSV(INFO): ------- Output from job:0031 -------

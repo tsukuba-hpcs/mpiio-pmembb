@@ -1,0 +1,27 @@
+Command exited with non-zero status 139
+{
+  "Command": "mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.170123.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-ilqbombdwvlawyvpauhcftummcfizigi/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.17.48-default/2024.02.06-22.40.45-170123.nqsv-64/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 512 -map-by ppr:8:node -mca hook_pmembb_load false -mca hook_pmembb_save true ior -a MPIIO -l timestamp -g -G -1401473791 -k -i 1 -o /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-strided-pmembb/2024.02.06-22.40.45-170123.nqsv-64/0/test_file -O summaryFormat=JSON -s 262144 -b 1024 -t 1024 -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-strided-pmembb/2024.02.06-16.17.48-default/2024.02.06-22.40.45-170123.nqsv-64/ior_summary_0.json -w",
+  "UnsharedDataSize(KB)": 0,
+  "ElapsedTime": "0:33.49",
+  "MajorPageFaults": 52,
+  "FileSystemInputs": 29152,
+  "TotalMemory(KB)": 0,
+  "MaxResidentSetSize(KB)": 3847468,
+  "FileSystemOutputs": 19144,
+  "CpuUsage": "561%",
+  "MinorPageFaults": 8561048,
+  "SystemCpuSeconds": 155.83,
+  "UserCpuSeconds": 32.15,
+  "Swaps": 0,
+  "SharedTextSize(KB)": 0,
+  "PageSize(Bytes)": 4096,
+  "InvoluntaryContextSwitches": 4037,
+  "ElapsedTime(Seconds)": 33.49,
+  "SignalsDelivered": 0,
+  "UnsharedStackSize(KB)": 0,
+  "SocketMessagesReceived": 0,
+  "SocketMessagesSent": 0,
+  "AverageResidentSetSize(KB)": 0,
+  "VoluntaryContextSwitches": 156940,
+  "ExitStatus": 139
+}

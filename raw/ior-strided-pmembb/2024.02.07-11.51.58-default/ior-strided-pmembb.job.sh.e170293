@@ -1,0 +1,184 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  Loading requirement: gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg
+    libevent/2.1.12-gcc-11.4.0-re6vsz5 numactl/2.0.14-gcc-11.4.0-xjgucn6
+    openssh/8.2p1-gcc-11.4.0-yzvstio
+    rdma-core/2307mlnx47-1.2310055-gcc-11.4.0-y6s6vqp
+    ucx/1.14.1-gcc-11.4.0-6abgs7j zlib-ng/2.1.5-gcc-11.4.0-g5u35yd
+2024.02.07-13.06.38 Warning: the ECDSA host key for 'bnode111' differs from the key for the IP address '10.120.0.111'
+2024.02.07-13.06.38 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:9
+2024.02.07-13.06.38 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:123
+2024.02.07-13.07.52 Warning: the ECDSA host key for 'bnode111' differs from the key for the IP address '10.120.0.111'
+2024.02.07-13.07.52 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:9
+2024.02.07-13.07.52 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:123
+2024.02.07-13.07.53 Warning: the ECDSA host key for 'bnode111' differs from the key for the IP address '10.120.0.111'
+2024.02.07-13.07.53 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:9
+2024.02.07-13.07.53 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:123
+2024.02.07-13.08.00 [bnode109:2603923] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode109:2603918] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode109:2603922] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode109:2603916] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode109:2603920] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode109:2603917] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode109:2603921] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode109:2603919] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode110:2614820] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode112:2570294] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode110:2614816] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode112:2570301] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode110:2614817] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode112:2570296] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode110:2614818] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode112:2570298] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode110:2614821] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode112:2570295] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode110:2614819] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode112:2570300] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode110:2614815] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode112:2570299] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode110:2614822] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode112:2570297] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode111:2605531] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode111:2605534] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode111:2605527] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode111:2605530] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode111:2605529] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode111:2605532] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode111:2605533] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.00 [bnode111:2605528] hook:pmembb:rpmbb_store_create 4.509
+2024.02.07-13.08.03 [bnode111:2605532] hook:pmembb:rpmbb_store_load 2.581
+2024.02.07-13.08.03 [bnode112:2570301] hook:pmembb:rpmbb_store_load 2.582
+2024.02.07-13.08.03 [bnode112:2570296] hook:pmembb:rpmbb_store_load 2.583
+2024.02.07-13.08.03 [bnode110:2614817] hook:pmembb:rpmbb_store_load 2.583
+2024.02.07-13.08.03 [bnode109:2603916] hook:pmembb:rpmbb_store_load 2.585
+2024.02.07-13.08.03 [bnode111:2605530] hook:pmembb:rpmbb_store_load 2.587
+2024.02.07-13.08.03 [bnode109:2603917] hook:pmembb:rpmbb_store_load 2.588
+2024.02.07-13.08.03 [bnode109:2603922] hook:pmembb:rpmbb_store_load 2.588
+2024.02.07-13.08.03 [bnode109:2603923] hook:pmembb:rpmbb_store_load 2.588
+2024.02.07-13.08.03 [bnode112:2570297] hook:pmembb:rpmbb_store_load 2.589
+2024.02.07-13.08.03 [bnode112:2570299] hook:pmembb:rpmbb_store_load 2.590
+2024.02.07-13.08.03 [bnode112:2570294] hook:pmembb:rpmbb_store_load 2.591
+2024.02.07-13.08.03 [bnode112:2570300] hook:pmembb:rpmbb_store_load 2.591
+2024.02.07-13.08.03 [bnode112:2570295] hook:pmembb:rpmbb_store_load 2.592
+2024.02.07-13.08.03 [bnode110:2614818] hook:pmembb:rpmbb_store_load 2.592
+2024.02.07-13.08.03 [bnode111:2605529] hook:pmembb:rpmbb_store_load 2.592
+2024.02.07-13.08.03 [bnode110:2614822] hook:pmembb:rpmbb_store_load 2.593
+2024.02.07-13.08.03 [bnode110:2614815] hook:pmembb:rpmbb_store_load 2.593
+2024.02.07-13.08.03 [bnode111:2605534] hook:pmembb:rpmbb_store_load 2.594
+2024.02.07-13.08.03 [bnode110:2614816] hook:pmembb:rpmbb_store_load 2.596
+2024.02.07-13.08.03 [bnode112:2570298] hook:pmembb:rpmbb_store_load 2.598
+2024.02.07-13.08.03 [bnode111:2605528] hook:pmembb:rpmbb_store_load 2.600
+2024.02.07-13.08.03 [bnode109:2603920] hook:pmembb:rpmbb_store_load 2.603
+2024.02.07-13.08.03 [bnode110:2614820] hook:pmembb:rpmbb_store_load 2.606
+2024.02.07-13.08.03 [bnode111:2605531] hook:pmembb:rpmbb_store_load 2.761
+2024.02.07-13.08.03 [bnode111:2605533] hook:pmembb:rpmbb_store_load 2.762
+2024.02.07-13.08.03 [bnode110:2614821] hook:pmembb:rpmbb_store_load 2.765
+2024.02.07-13.08.03 [bnode110:2614819] hook:pmembb:rpmbb_store_load 2.765
+2024.02.07-13.08.03 [bnode109:2603921] hook:pmembb:rpmbb_store_load 2.766
+2024.02.07-13.08.03 [bnode109:2603919] hook:pmembb:rpmbb_store_load 2.768
+2024.02.07-13.08.03 [bnode109:2603918] hook:pmembb:rpmbb_store_load 2.772
+2024.02.07-13.08.03 [bnode111:2605527] hook:pmembb:rpmbb_store_load 2.830
+2024.02.07-13.08.03 [bnode110:2614821] hook:pmembb:rpmbb_store_save 0.630
+2024.02.07-13.08.03 [bnode110:2614819] hook:pmembb:rpmbb_store_save 0.644
+2024.02.07-13.08.03 [bnode109:2603919] hook:pmembb:rpmbb_store_save 0.650
+2024.02.07-13.08.03 [bnode111:2605534] hook:pmembb:rpmbb_store_save 0.659
+2024.02.07-13.08.03 [bnode110:2614818] hook:pmembb:rpmbb_store_save 0.661
+2024.02.07-13.08.03 [bnode112:2570296] hook:pmembb:rpmbb_store_save 0.662
+2024.02.07-13.08.03 [bnode109:2603921] hook:pmembb:rpmbb_store_save 0.663
+2024.02.07-13.08.03 [bnode109:2603917] hook:pmembb:rpmbb_store_save 0.663
+2024.02.07-13.08.03 [bnode111:2605532] hook:pmembb:rpmbb_store_save 0.664
+2024.02.07-13.08.03 [bnode111:2605527] hook:pmembb:rpmbb_store_save 0.668
+2024.02.07-13.08.03 [bnode112:2570300] hook:pmembb:rpmbb_store_save 0.668
+2024.02.07-13.08.03 [bnode110:2614816] hook:pmembb:rpmbb_store_save 0.672
+2024.02.07-13.08.04 [bnode109:2603916] hook:pmembb:rpmbb_store_save 0.672
+2024.02.07-13.08.04 [bnode109:2603923] hook:pmembb:rpmbb_store_save 0.674
+2024.02.07-13.08.04 [bnode111:2605530] hook:pmembb:rpmbb_store_save 0.674
+2024.02.07-13.08.04 [bnode110:2614815] hook:pmembb:rpmbb_store_save 0.678
+2024.02.07-13.08.04 [bnode112:2570299] hook:pmembb:rpmbb_store_save 0.680
+2024.02.07-13.08.04 [bnode112:2570301] hook:pmembb:rpmbb_store_save 0.683
+2024.02.07-13.08.04 [bnode110:2614817] hook:pmembb:rpmbb_store_save 0.685
+2024.02.07-13.08.04 [bnode110:2614820] hook:pmembb:rpmbb_store_save 0.685
+2024.02.07-13.08.04 [bnode109:2603918] hook:pmembb:rpmbb_store_save 0.685
+2024.02.07-13.08.04 [bnode109:2603922] hook:pmembb:rpmbb_store_save 0.686
+2024.02.07-13.08.04 [bnode109:2603920] hook:pmembb:rpmbb_store_save 0.687
+2024.02.07-13.08.04 [bnode110:2614822] hook:pmembb:rpmbb_store_save 0.687
+2024.02.07-13.08.04 [bnode111:2605531] hook:pmembb:rpmbb_store_save 0.688
+2024.02.07-13.08.04 [bnode111:2605528] hook:pmembb:rpmbb_store_save 0.689
+2024.02.07-13.08.04 [bnode111:2605533] hook:pmembb:rpmbb_store_save 0.690
+2024.02.07-13.08.04 [bnode111:2605529] hook:pmembb:rpmbb_store_save 0.691
+2024.02.07-13.08.04 [bnode112:2570294] hook:pmembb:rpmbb_store_save 0.698
+2024.02.07-13.08.04 [bnode112:2570295] hook:pmembb:rpmbb_store_save 0.698
+2024.02.07-13.08.04 [bnode112:2570298] hook:pmembb:rpmbb_store_save 0.699
+2024.02.07-13.08.04 [bnode112:2570297] hook:pmembb:rpmbb_store_save 0.700
+2024.02.07-13.08.04 [bnode109:2603917] hook:pmembb:rpmbb_store_free 0.233
+2024.02.07-13.08.04 [bnode109:2603921] hook:pmembb:rpmbb_store_free 0.234
+2024.02.07-13.08.04 [bnode109:2603923] hook:pmembb:rpmbb_store_free 0.223
+2024.02.07-13.08.04 [bnode110:2614817] hook:pmembb:rpmbb_store_free 0.212
+2024.02.07-13.08.04 [bnode110:2614821] hook:pmembb:rpmbb_store_free 0.267
+2024.02.07-13.08.04 [bnode111:2605534] hook:pmembb:rpmbb_store_free 0.335
+2024.02.07-13.08.04 [bnode111:2605532] hook:pmembb:rpmbb_store_free 0.330
+2024.02.07-13.08.04 [bnode111:2605528] hook:pmembb:rpmbb_store_free 0.305
+2024.02.07-13.08.04 [bnode111:2605531] hook:pmembb:rpmbb_store_free 0.306
+2024.02.07-13.08.04 [bnode111:2605530] hook:pmembb:rpmbb_store_free 0.321
+2024.02.07-13.08.04 [bnode111:2605533] hook:pmembb:rpmbb_store_free 0.305
+2024.02.07-13.08.04 [bnode111:2605529] hook:pmembb:rpmbb_store_free 0.304
+2024.02.07-13.08.04 [bnode112:2570300] hook:pmembb:rpmbb_store_free 0.327
+2024.02.07-13.08.04 [bnode112:2570299] hook:pmembb:rpmbb_store_free 0.315
+2024.02.07-13.08.04 [bnode112:2570301] hook:pmembb:rpmbb_store_free 0.312
+2024.02.07-13.08.04 [bnode112:2570296] hook:pmembb:rpmbb_store_free 0.334
+2024.02.07-13.08.04 [bnode112:2570298] hook:pmembb:rpmbb_store_free 0.298
+2024.02.07-13.08.04 [bnode110:2614820] hook:pmembb:rpmbb_store_free 0.311
+2024.02.07-13.08.04 [bnode110:2614816] hook:pmembb:rpmbb_store_free 0.325
+2024.02.07-13.08.04 [bnode112:2570295] hook:pmembb:rpmbb_store_free 0.298
+2024.02.07-13.08.04 [bnode110:2614819] hook:pmembb:rpmbb_store_free 0.353
+2024.02.07-13.08.04 [bnode112:2570297] hook:pmembb:rpmbb_store_free 0.296
+2024.02.07-13.08.04 [bnode109:2603919] hook:pmembb:rpmbb_store_free 0.346
+2024.02.07-13.08.04 [bnode109:2603922] hook:pmembb:rpmbb_store_free 0.310
+2024.02.07-13.08.04 [bnode109:2603918] hook:pmembb:rpmbb_store_free 0.311
+2024.02.07-13.08.04 [bnode110:2614818] hook:pmembb:rpmbb_store_free 0.336
+2024.02.07-13.08.04 [bnode110:2614822] hook:pmembb:rpmbb_store_free 0.310
+2024.02.07-13.08.04 [bnode109:2603920] hook:pmembb:rpmbb_store_free 0.310
+2024.02.07-13.08.04 [bnode111:2605527] hook:pmembb:rpmbb_store_free 0.348
+2024.02.07-13.08.04 [bnode110:2614815] hook:pmembb:rpmbb_store_free 0.340
+2024.02.07-13.08.04 [bnode109:2603916] hook:pmembb:rpmbb_store_free 0.347
+2024.02.07-13.08.04 [bnode112:2570294] hook:pmembb:rpmbb_store_free 0.321
+2024.02.07-13.10.14 Warning: the ECDSA host key for 'bnode111' differs from the key for the IP address '10.120.0.111'
+2024.02.07-13.10.14 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:9
+2024.02.07-13.10.14 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:123
+2024.02.07-13.11.25 Warning: the ECDSA host key for 'bnode111' differs from the key for the IP address '10.120.0.111'
+2024.02.07-13.11.25 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:9
+2024.02.07-13.11.25 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:123
+
+============================================================
+Request ID:             170293.nqsv
+Request Name:           ior-strided-pmembb.job.sh
+Queue:                  gpu_low@nqsv
+Number of Jobs:         4
+User Name:              hiraga
+Group Name:             NBB
+Created Request Time:   Wed Feb  7 11:51:59 2024
+Started Request Time:   Wed Feb  7 13:06:35 2024
+Ended Request Time:     Wed Feb  7 13:12:35 2024
+Resources Information:
+  Elapse:               364S
+  Remaining Elapse:     3236S
+============================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0002 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
+
+%NQSV(INFO): ------- Output from job:0003 -------
+Loading openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+  ERROR: Unable to locate a modulefile for
+    'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg'
+  ERROR: Load of requirement 'gcc-runtime/11.4.0-gcc-11.4.0-mkvpfyg' failed
