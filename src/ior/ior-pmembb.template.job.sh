@@ -54,7 +54,8 @@ trap 'rm -rf "${JOB_BACKEND_DIR}" ; exit 0' EXIT
 
 ppn_list=(
   # 48 32 16 8 4 2 1
-  48
+  # 48
+  16
 )
 
 min_io_size_per_proc=$((20 * 2 ** 30)) # 20 GiB/proc, 20 * 48 ppn == 960 GiB/node
@@ -187,8 +188,8 @@ for ppn in "${ppn_list[@]}"; do
 
       echo "${cmd_write[@]}"
       "${cmd_write[@]}" \
-        > >(tee "${JOB_OUTPUT_DIR}/ior_stdout_${runid}.txt") \
-        2> >(tee "${JOB_OUTPUT_DIR}/ior_stderr_${runid}.txt" >&2)
+        > "${JOB_OUTPUT_DIR}/ior_stdout_${runid}.txt" \
+        2> "${JOB_OUTPUT_DIR}/ior_stderr_${runid}.txt"
 
       runid=$((runid + 1))
 
@@ -215,8 +216,8 @@ for ppn in "${ppn_list[@]}"; do
 
       echo "${cmd_read_remote[@]}"
       "${cmd_read_remote[@]}" \
-        > >(tee "${JOB_OUTPUT_DIR}/ior_stdout_${runid}.txt") \
-        2> >(tee "${JOB_OUTPUT_DIR}/ior_stderr_${runid}.txt" >&2)
+        > "${JOB_OUTPUT_DIR}/ior_stdout_${runid}.txt" \
+        2> "${JOB_OUTPUT_DIR}/ior_stderr_${runid}.txt"
 
       runid=$((runid + 1))
 
@@ -240,8 +241,8 @@ for ppn in "${ppn_list[@]}"; do
 
       echo "${cmd_read_local[@]}"
       "${cmd_read_local[@]}" \
-        > >(tee "${JOB_OUTPUT_DIR}/ior_stdout_${runid}.txt") \
-        2> >(tee "${JOB_OUTPUT_DIR}/ior_stderr_${runid}.txt" >&2)
+        > "${JOB_OUTPUT_DIR}/ior_stdout_${runid}.txt" \
+        2> "${JOB_OUTPUT_DIR}/ior_stderr_${runid}.txt"
 
       runid=$((runid + 1))
       workflow_id=$((workflow_id + 1))
