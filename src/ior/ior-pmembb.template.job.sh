@@ -54,8 +54,8 @@ trap 'rm -rf "${JOB_BACKEND_DIR}" ; exit 0' EXIT
 
 ppn_list=(
   # 48 32 16 8 4 2 1
-  # 48
-  16
+  48
+  # 16
 )
 
 min_io_size_per_proc=$((20 * 2 ** 30)) # 20 GiB/proc, 20 * 48 ppn == 960 GiB/node
@@ -67,10 +67,11 @@ segment_count_list=(
 
 xfer_size_list=(
   # 2M
-  1M
+  # 1M
   # 512K 256K
   # 128K 64K 32K 16K 8K 4K 2K 1K
   # 512 256
+  47008 3901
 )
 
 cmd_dropcaches=(
@@ -115,6 +116,8 @@ for ppn in "${ppn_list[@]}"; do
     for xfer_size_human in "${xfer_size_list[@]}"; do
       xfer_size=$(numfmt --from=iec "$xfer_size_human")
       block_size=$(((min_io_size_per_proc + segment_count - 1) / segment_count))
+      block_size=$(((block_size + xfer_size - 1) / xfer_size * xfer_size))
+      block_size=$(((block_size + 7) / 8 * 8))
 
       echo "prepare test_dir"
       test_dir="${JOB_BACKEND_DIR}/${workflow_id}"
@@ -128,7 +131,8 @@ for ppn in "${ppn_list[@]}"; do
         --stripe-size "${stripe_size}"
         "${test_dir}"
       )
-      "${cmd_lfs_setstripe[@]}"
+      stripe_count=1
+      #"${cmd_lfs_setstripe[@]}"
       lfs getstripe "${test_dir}"
 
       cmd_mpirun=(
