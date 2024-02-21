@@ -18,3 +18,7 @@
 	path = projects/h5bench
 	url = https://github.com/tsukuba-hpcs/h5bench-pmembb.git
 	update = merge
+[submodule "projects/ior-evaluation"]
+	path = projects/ior-evaluation
+	url = https://github.com/tsukuba-hpcs/ior-evaluation.git
+	update = merge
