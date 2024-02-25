@@ -5,25 +5,18 @@ source "${SCRIPT_DIR}/common.sh"
 TIMESTAMP="$(timestamp)"
 
 # default params 
-: ${ELAPSTIM_REQ:="3:00:00"}
+: ${ELAPSTIM_REQ:="24:00:00"}
 : ${LABEL:=default}
-# : ${NQSV_MPI_VER:="5.0.0rc12-pmembb-gcc-11.4.0-u6s35fd"}
 
 JOB_FILE="$(remove_ext "$(this_file)").job.sh"
 JOB_TEMPLATE_FILE="$(remove_ext "$(this_file)").template.job.sh"
 PROJECT_ROOT="$(to_fullpath "$(this_directory)/../..")"
 OUTPUT_DIR="$PROJECT_ROOT/raw/$(remove_ext "$(this_file_name)")/${TIMESTAMP}-${LABEL}"
-BACKEND_DIR="$PROJECT_ROOT/backend/$(remove_ext "$(this_file_name)")"
 mkdir -p "${OUTPUT_DIR}"
 cd "${OUTPUT_DIR}"
-mkdir -p "${BACKEND_DIR}"
 
 nnodes_list=(
-  # 1 4 9 16 25 36
-  # 49 64
-  # 4
-  # 1 2 4 8 16 32 64
-  32
+  1 2 4 8 16 32 64
 )
 niter=1
 
@@ -70,11 +63,9 @@ for nnodes in "${nnodes_list[@]}"; do
         -T openmpi
         -v NQSV_MPI_VER="${NQSV_MPI_VER}"
         -b "$nnodes"
-        -v USE_DEVDAX=pmemkv
-        -v NUM_DEVDAX=1
+        -v USE_PMEM_BEEOND=1
         -v OUTPUT_DIR="$OUTPUT_DIR"
         -v SCRIPT_DIR="$SCRIPT_DIR"
-        -v BACKEND_DIR="$BACKEND_DIR"
         -v LABEL="$LABEL"
         -v SPACK_ENV_NAME="$SPACK_ENV_NAME"
         "${JOB_FILE}"
