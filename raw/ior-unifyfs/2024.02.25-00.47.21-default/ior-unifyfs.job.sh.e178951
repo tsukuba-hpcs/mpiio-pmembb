@@ -1,0 +1,31 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+============================================================
+Request ID:             178951.nqsv
+Request Name:           ior-unifyfs.job.sh
+Queue:                  gen_S@nqsv
+Number of Jobs:         4
+User Name:              hiraga
+Group Name:             NBBG
+Created Request Time:   Sun Feb 25 00:47:21 2024
+Started Request Time:   Sun Feb 25 00:49:34 2024
+Ended Request Time:     Sun Feb 25 01:06:03 2024
+Resources Information:
+  Elapse:               993S
+  Remaining Elapse:     9807S
+============================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0002 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0003 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0

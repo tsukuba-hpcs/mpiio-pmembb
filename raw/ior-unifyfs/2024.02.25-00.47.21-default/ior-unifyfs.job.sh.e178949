@@ -1,0 +1,17 @@
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+============================================================
+Request ID:             178949.nqsv
+Request Name:           ior-unifyfs.job.sh
+Queue:                  gen_S@nqsv
+Number of Jobs:         1
+User Name:              hiraga
+Group Name:             NBBG
+Created Request Time:   Sun Feb 25 00:47:21 2024
+Started Request Time:   Sun Feb 25 00:47:51 2024
+Ended Request Time:     Sun Feb 25 01:03:53 2024
+Resources Information:
+  Elapse:               966S
+  Remaining Elapse:     9834S
+============================================================

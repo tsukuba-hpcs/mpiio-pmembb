@@ -1,0 +1,140 @@
+{
+  "Version": "3.3.0", 
+  "Began": "Sun Feb 25 00:56:57 2024", 
+  "Command line": "ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 4294967296 -t 1048576 -o /unifyfs/testfile0 -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.02.25-00.47.21-default/2024.02.25-00.48.00-178950.nqsv-2/ior_summary_2.json -r", 
+  "Machine": "Linux bnode108", 
+  "tests": [
+    {
+    "TestID": 0, 
+    "StartTime": "Sun Feb 25 00:56:57 2024", 
+    "Parameters": {
+      "testID": 0, 
+      "refnum": 0, 
+      "api": "MPIIO", 
+      "platform": "bnode(Linux)", 
+      "testFileName": "/unifyfs/testfile0", 
+      "hintsFileName": "(null)", 
+      "deadlineForStonewall": 0, 
+      "stoneWallingWearOut": 0, 
+      "maxTimeDuration": 0, 
+      "outlierThreshold": 0, 
+      "options": "(null)", 
+      "dryRun": 0, 
+      "nodes": 2, 
+      "memoryPerTask": 0, 
+      "memoryPerNode": 0, 
+      "tasksPerNode": 32, 
+      "repetitions": 1, 
+      "multiFile": 0, 
+      "interTestDelay": 0, 
+      "fsync": 1, 
+      "fsyncperwrite": 0, 
+      "useExistingTestFile": 0, 
+      "showHints": 0, 
+      "uniqueDir": 0, 
+      "individualDataSets": 0, 
+      "singleXferAttempt": 0, 
+      "readFile": 1, 
+      "writeFile": 0, 
+      "filePerProc": 0, 
+      "reorderTasks": 0, 
+      "reorderTasksRandom": 0, 
+      "reorderTasksRandomSeed": 0, 
+      "randomOffset": 0, 
+      "checkWrite": 0, 
+      "checkRead": 0, 
+      "preallocate": 0, 
+      "useFileView": 0, 
+      "setAlignment": 1, 
+      "storeFileOffset": 0, 
+      "useSharedFilePointer": 0, 
+      "useStridedDatatype": 0, 
+      "keepFile": 1, 
+      "keepFileWithError": 0, 
+      "quitOnError": 0, 
+      "verbose": 0, 
+      "data packet type": "t", 
+      "setTimeStampSignature/incompressibleSeed": -1401473791, 
+      "collective": 0, 
+      "segmentCount": 1, 
+      "transferSize": 1048576, 
+      "blockSize": 4294967296
+    }
+, 
+    "Options": {
+      "api": "MPIIO", 
+      "apiVersion": "(3.1)", 
+      "test filename": "/unifyfs/testfile0", 
+      "access": "single-shared-file", 
+      "type": "independent", 
+      "segments": 1, 
+      "ordering in a file": "sequential", 
+      "ordering inter file": "no tasks offsets", 
+      "nodes": 2, 
+      "tasks": 64, 
+      "clients per node": 32, 
+      "repetitions": 1, 
+      "xfersize": "1 MiB", 
+      "blocksize": "4 GiB", 
+      "aggregate filesize": "256 GiB"
+    }
+, 
+    "Results": [
+      [             {
+        "access": "read", 
+        "bwMiB": 610.0933, 
+        "blockKiB": 4194304.0000, 
+        "xferKiB": 1024.0000, 
+        "iops": 610.1445, 
+        "latency": 0.1031, 
+        "openTime": 0.0356, 
+        "wrRdTime": 429.6425, 
+        "closeTime": 0.0008, 
+        "totalTime": 429.6785
+      }
+]
+]
+, 
+  "max": {
+    "readMiB": 610.0933, 
+    "readMB": 639.7292
+  }
+
+}
+]
+, 
+"summary": [
+{
+  "operation": "read", 
+  "API": "MPIIO", 
+  "TestID": 0, 
+  "ReferenceNumber": 0, 
+  "segmentCount": 1, 
+  "blockSize": 4294967296, 
+  "transferSize": 1048576, 
+  "numTasks": 64, 
+  "tasksPerNode": 32, 
+  "repetitions": 1, 
+  "filePerProc": 0, 
+  "reorderTasks": 0, 
+  "taskPerNodeOffset": 1, 
+  "reorderTasksRandom": 0, 
+  "reorderTasksRandomSeed": 0, 
+  "segmentCount": 1, 
+  "blockSize": 4294967296, 
+  "transferSize": 1048576, 
+  "bwMaxMIB": 610.0933, 
+  "bwMinMIB": 610.0933, 
+  "bwMeanMIB": 610.0933, 
+  "bwStdMIB": 0.0000, 
+  "OPsMax": 610.0933, 
+  "OPsMin": 610.0933, 
+  "OPsMean": 610.0933, 
+  "OPsSD": 0.0000, 
+  "MeanTime": 429.6785, 
+  "xsizeMiB": 262144.0000
+}
+]
+, 
+"Finished": "Sun Feb 25 01:04:07 2024"
+}

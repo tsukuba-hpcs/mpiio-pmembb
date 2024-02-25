@@ -22,3 +22,6 @@
 	path = projects/ior-evaluation
 	url = https://github.com/tsukuba-hpcs/ior-evaluation.git
 	update = merge
+[submodule "projects/UnifyFS"]
+	path = projects/UnifyFS
+	url = https://github.com/LLNL/UnifyFS.git
