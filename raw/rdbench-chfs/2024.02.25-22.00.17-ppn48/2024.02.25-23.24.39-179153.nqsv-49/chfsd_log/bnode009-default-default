@@ -1,0 +1,3 @@
+2024-02-25 23:34:51.132449452 +0900: <notice> kv_lock (fs_inode_write): home/NBB/hiraga/o_344064x344064-8192x6144-000007.bin:3645808 size 65536 offset 0 wait 1.520094353 sec for lock of home/NBB/hiraga/o_344064x344064-8192x6144-000007.bin:9834508 (fs_inode_write) hold 1.595564058 sec before 0.000002497 sec
+2024-02-25 23:34:51.133686924 +0900: <notice> kv_lock (fs_inode_write): home/NBB/hiraga/o_344064x344064-8192x6144-000007.bin:1845450 size 65536 offset 0 wait 1.408699912 sec for lock of home/NBB/hiraga/o_344064x344064-8192x6144-000007.bin:11153049 (fs_inode_write) hold 0.000057909 sec before 0.000386076 sec
+2024-02-25 23:38:52.756634241 +0900: <notice> handle_sig: signal 15 caught

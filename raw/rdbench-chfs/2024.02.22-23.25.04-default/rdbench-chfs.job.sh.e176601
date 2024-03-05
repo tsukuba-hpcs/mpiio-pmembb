@@ -1,0 +1,16 @@
+2024.02.22-23.25.41 fusermount: entry for /scr/chfs not found in /etc/mtab
+
+============================================================
+Request ID:             176601.nqsv
+Request Name:           rdbench-chfs.job.sh
+Queue:                  gpu_low@nqsv
+Number of Jobs:         1
+User Name:              hiraga
+Group Name:             NBB
+Created Request Time:   Thu Feb 22 23:25:04 2024
+Started Request Time:   Thu Feb 22 23:25:36 2024
+Ended Request Time:     Thu Feb 22 23:33:39 2024
+Resources Information:
+  Elapse:               487S
+  Remaining Elapse:     10313S
+============================================================

@@ -1,0 +1,3 @@
+2024-02-25 22:36:38.883736015 +0900: <notice> handle_sig: signal 15 caught
+2024-02-25 22:37:08.873315997 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.57:33317): HG_TIMEOUT
+2024-02-25 22:37:08.873389001 +0900: <notice> start_election: HG_TIMEOUT

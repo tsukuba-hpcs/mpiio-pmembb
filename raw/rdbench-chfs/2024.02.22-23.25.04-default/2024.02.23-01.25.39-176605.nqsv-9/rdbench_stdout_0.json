@@ -1,0 +1,160 @@
+{
+    "version": "0.11.1",
+    "nprocs": 324,
+    "topology": [
+        324
+    ],
+    "xnp": 18,
+    "ynp": 18,
+    "L": 147456,
+    "chunkSizeX": 8192,
+    "chunkSizeY": 8192,
+    "collective": false,
+    "iotype": "view",
+    "sync": false,
+    "validate": false,
+    "steps": 640,
+    "interval": 64,
+    "fixedX": false,
+    "fixedY": false,
+    "initialOutput": false,
+    "nfiles": 10,
+    "fileSize": 173946175488,
+    "totalWriteSizeByte": 1739461754880,
+    "calcTimeSec": 403.323944665,
+    "commTimeSec": 37.16007754,
+    "writeTimeSec": 53.602723732,
+    "writeBandwidthByte": 32450995654.19,
+    "initialTimeSec": 5.177206509,
+    "finalizeTimeSec": 1.637289995,
+    "phaseDurationsSec": [
+        [
+            "init",
+            5.177206509
+        ],
+        [
+            "comm",
+            3.880229496
+        ],
+        [
+            "calc",
+            40.297882383
+        ],
+        [
+            "write",
+            7.337568631
+        ],
+        [
+            "comm",
+            3.768549933
+        ],
+        [
+            "calc",
+            40.335513821
+        ],
+        [
+            "write",
+            5.087844995
+        ],
+        [
+            "comm",
+            3.711075043
+        ],
+        [
+            "calc",
+            40.337708141
+        ],
+        [
+            "write",
+            5.084595547
+        ],
+        [
+            "comm",
+            3.721823257
+        ],
+        [
+            "calc",
+            40.336705952
+        ],
+        [
+            "write",
+            5.08983713
+        ],
+        [
+            "comm",
+            3.717426019
+        ],
+        [
+            "calc",
+            40.334178554
+        ],
+        [
+            "write",
+            5.215588851
+        ],
+        [
+            "comm",
+            3.723308391
+        ],
+        [
+            "calc",
+            40.335068481
+        ],
+        [
+            "write",
+            5.217060497
+        ],
+        [
+            "comm",
+            3.762578574
+        ],
+        [
+            "calc",
+            40.338761086
+        ],
+        [
+            "write",
+            5.252231446
+        ],
+        [
+            "comm",
+            3.781878529
+        ],
+        [
+            "calc",
+            40.336810248
+        ],
+        [
+            "write",
+            5.204031922
+        ],
+        [
+            "comm",
+            3.763426144
+        ],
+        [
+            "calc",
+            40.336264314
+        ],
+        [
+            "write",
+            5.110999449
+        ],
+        [
+            "comm",
+            3.705023383
+        ],
+        [
+            "calc",
+            40.335051685
+        ],
+        [
+            "write",
+            5.01832293
+        ],
+        [
+            "finalize",
+            1.637289995
+        ]
+    ]
+}

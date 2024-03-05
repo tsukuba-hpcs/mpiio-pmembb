@@ -1,0 +1,242 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.23-02.35.08 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-chfs/2024.02.22-23.25.04-default/2024.02.23-02.35.08-176609.nqsv-25
+2024.02.23-02.35.08 clean up chfsd and chfuse of prev job
+2024.02.23-02.35.10 chfsctl -h /var/opt/nec/nqsv/jsv/jobfile/0.176609.10/nodelist -L /work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-chfs/2024.02.22-23.25.04-default/2024.02.23-02.35.08-176609.nqsv-25/chfsd_log -p verbs -x FI_UNIVERSE_SIZE=4096 -i 1 -NUMACTL --physcpubind 40-47 -D -c /dev/dax0.0 -O -H 0 -t 30000 -L 'notice' -T 8 -l 2 start
+2024.02.23-02.35.51 CHFS_SERVER="ofi+verbs;ofi_rxm://10.110.0.83:44345,ofi+verbs;ofi_rxm://10.110.0.92:38783,ofi+verbs;ofi_rxm://10.110.0.75:49925,ofi+verbs;ofi_rxm://10.110.0.76:42256,ofi+verbs;ofi_rxm://10.110.0.74:39576,ofi+verbs;ofi_rxm://10.110.0.77:45749,ofi+verbs;ofi_rxm://10.110.0.89:51538,ofi+verbs;ofi_rxm://10.110.0.81:45019,ofi+verbs;ofi_rxm://10.110.0.86:50040,ofi+verbs;ofi_rxm://10.110.0.95:56142,ofi+verbs;ofi_rxm://10.110.0.90:56268,ofi+verbs;ofi_rxm://10.110.0.85:52150,ofi+verbs;ofi_rxm://10.110.0.94:60008,ofi+verbs;ofi_rxm://10.110.0.82:57775,ofi+verbs;ofi_rxm://10.110.0.87:44657,ofi+verbs;ofi_rxm://10.110.0.93:53166,ofi+verbs;ofi_rxm://10.110.0.84:37123,ofi+verbs;ofi_rxm://10.110.0.72:46145,ofi+verbs;ofi_rxm://10.110.0.78:47716,ofi+verbs;ofi_rxm://10.110.0.80:54179,ofi+verbs;ofi_rxm://10.110.0.91:42657,ofi+verbs;ofi_rxm://10.110.0.96:36209,ofi+verbs;ofi_rxm://10.110.0.73:41725,ofi+verbs;ofi_rxm://10.110.0.88:47151,ofi+verbs;ofi_rxm://10.110.0.79:58689"; export CHFS_SERVER;
+2024.02.23-02.35.51 wait for chfsd to start
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.83:44345 ofi+verbs;ofi_rxm://10.110.0.83: 0758FF87
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.92:38783 ofi+verbs;ofi_rxm://10.110.0.92: 0854B6EF
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.75:49925 ofi+verbs;ofi_rxm://10.110.0.75: 0B40F6A0
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.76:42256 ofi+verbs;ofi_rxm://10.110.0.76: 16132EBF
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.74:39576 ofi+verbs;ofi_rxm://10.110.0.74: 178146E4
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.77:45749 ofi+verbs;ofi_rxm://10.110.0.77: 1B45D60E
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.89:51538 ofi+verbs;ofi_rxm://10.110.0.89: 1BCFFB27
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.81:45019 ofi+verbs;ofi_rxm://10.110.0.81: 405D81CD
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.86:50040 ofi+verbs;ofi_rxm://10.110.0.86: 4B31D88F
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.95:56142 ofi+verbs;ofi_rxm://10.110.0.95: 585F660D
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.90:56268 ofi+verbs;ofi_rxm://10.110.0.90: 6535955C
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.85:52150 ofi+verbs;ofi_rxm://10.110.0.85: 6D40397E
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.94:60008 ofi+verbs;ofi_rxm://10.110.0.94: 70341334
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.82:57775 ofi+verbs;ofi_rxm://10.110.0.82: 75D5BA08
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.87:44657 ofi+verbs;ofi_rxm://10.110.0.87: 7CDD7770
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.93:53166 ofi+verbs;ofi_rxm://10.110.0.93: 8EBADD36
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.84:37123 ofi+verbs;ofi_rxm://10.110.0.84: A11E18EA
+2024.02.23-02.35.56 ofi+verbs;ofi_rxm://10.110.0.72:46145 ofi+verbs;ofi_rxm://10.110.0.72: A803933F
+2024.02.23-02.35.57 ofi+verbs;ofi_rxm://10.110.0.78:47716 ofi+verbs;ofi_rxm://10.110.0.78: AB8BDCCE
+2024.02.23-02.35.57 ofi+verbs;ofi_rxm://10.110.0.80:54179 ofi+verbs;ofi_rxm://10.110.0.80: B6432260
+2024.02.23-02.35.57 ofi+verbs;ofi_rxm://10.110.0.91:42657 ofi+verbs;ofi_rxm://10.110.0.91: D4F23A28
+2024.02.23-02.35.57 ofi+verbs;ofi_rxm://10.110.0.96:36209 ofi+verbs;ofi_rxm://10.110.0.96: DB387861
+2024.02.23-02.35.57 ofi+verbs;ofi_rxm://10.110.0.73:41725 ofi+verbs;ofi_rxm://10.110.0.73: E1331243
+2024.02.23-02.35.57 ofi+verbs;ofi_rxm://10.110.0.88:47151 ofi+verbs;ofi_rxm://10.110.0.88: E7B6D7BA
+2024.02.23-02.35.57 ofi+verbs;ofi_rxm://10.110.0.79:58689 ofi+verbs;ofi_rxm://10.110.0.79: E82B6794
+2024.02.23-02.35.57 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176609.10/nodelist -np 25 -ppn 1 dropcaches 3
+2024.02.23-02.35.58 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-chfs/2024.02.22-23.25.04-default/2024.02.23-02.35.08-176609.nqsv-25/time_0.json mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176609.10/nodelist -np 900 -ppn 36 -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-chfs/2024.02.22-23.25.04-default/2024.02.23-02.35.08-176609.nqsv-25/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.83:44345,ofi+verbs;ofi_rxm://10.110.0.92:38783,ofi+verbs;ofi_rxm://10.110.0.75:49925,ofi+verbs;ofi_rxm://10.110.0.76:42256,ofi+verbs;ofi_rxm://10.110.0.74:39576,ofi+verbs;ofi_rxm://10.110.0.77:45749,ofi+verbs;ofi_rxm://10.110.0.89:51538,ofi+verbs;ofi_rxm://10.110.0.81:45019,ofi+verbs;ofi_rxm://10.110.0.86:50040,ofi+verbs;ofi_rxm://10.110.0.95:56142,ofi+verbs;ofi_rxm://10.110.0.90:56268,ofi+verbs;ofi_rxm://10.110.0.85:52150,ofi+verbs;ofi_rxm://10.110.0.94:60008,ofi+verbs;ofi_rxm://10.110.0.82:57775,ofi+verbs;ofi_rxm://10.110.0.87:44657,ofi+verbs;ofi_rxm://10.110.0.93:53166,ofi+verbs;ofi_rxm://10.110.0.84:37123,ofi+verbs;ofi_rxm://10.110.0.72:46145,ofi+verbs;ofi_rxm://10.110.0.78:47716,ofi+verbs;ofi_rxm://10.110.0.80:54179,ofi+verbs;ofi_rxm://10.110.0.91:42657,ofi+verbs;ofi_rxm://10.110.0.96:36209,ofi+verbs;ofi_rxm://10.110.0.73:41725,ofi+verbs;ofi_rxm://10.110.0.88:47151,ofi+verbs;ofi_rxm://10.110.0.79:58689 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=65536 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 rdbench --length 245760 --output o_ --nomkdir --iotype view --steps 640 --interval 64 --novalidate --disable-initial-output --prettify --xnp 30 --nosync
+2024.02.23-02.43.53 {
+2024.02.23-02.43.53     "version": "0.11.1",
+2024.02.23-02.43.53     "nprocs": 900,
+2024.02.23-02.43.53     "topology": [
+2024.02.23-02.43.53         900
+2024.02.23-02.43.53     ],
+2024.02.23-02.43.53     "xnp": 30,
+2024.02.23-02.43.53     "ynp": 30,
+2024.02.23-02.43.53     "L": 245760,
+2024.02.23-02.43.53     "chunkSizeX": 8192,
+2024.02.23-02.43.53     "chunkSizeY": 8192,
+2024.02.23-02.43.53     "collective": false,
+2024.02.23-02.43.53     "iotype": "view",
+2024.02.23-02.43.53     "sync": false,
+2024.02.23-02.43.53     "validate": false,
+2024.02.23-02.43.53     "steps": 640,
+2024.02.23-02.43.53     "interval": 64,
+2024.02.23-02.43.53     "fixedX": false,
+2024.02.23-02.43.53     "fixedY": false,
+2024.02.23-02.43.53     "initialOutput": false,
+2024.02.23-02.43.53     "nfiles": 10,
+2024.02.23-02.43.53     "fileSize": 483183820800,
+2024.02.23-02.43.53     "totalWriteSizeByte": 4831838208000,
+2024.02.23-02.43.53     "calcTimeSec": 404.188242602,
+2024.02.23-02.43.53     "commTimeSec": 28.606376413,
+2024.02.23-02.43.53     "writeTimeSec": 61.583883491,
+2024.02.23-02.43.53     "writeBandwidthByte": 78459459425.06,
+2024.02.23-02.43.53     "initialTimeSec": 6.632079747,
+2024.02.23-02.43.53     "finalizeTimeSec": 2.120997177,
+2024.02.23-02.43.53     "phaseDurationsSec": [
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "init",
+2024.02.23-02.43.53             6.632079747
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "comm",
+2024.02.23-02.43.53             2.887806243
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "calc",
+2024.02.23-02.43.53             40.399194069
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "write",
+2024.02.23-02.43.53             7.39758773
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "comm",
+2024.02.23-02.43.53             2.850147975
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "calc",
+2024.02.23-02.43.53             40.417564597
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "write",
+2024.02.23-02.43.53             6.129085644
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "comm",
+2024.02.23-02.43.53             2.924527123
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "calc",
+2024.02.23-02.43.53             40.422068856
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "write",
+2024.02.23-02.43.53             6.083151772
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "comm",
+2024.02.23-02.43.53             2.857971389
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "calc",
+2024.02.23-02.43.53             40.424134442
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "write",
+2024.02.23-02.43.53             6.021135889
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "comm",
+2024.02.23-02.43.53             2.8675076329999998
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "calc",
+2024.02.23-02.43.53             40.425392483
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "write",
+2024.02.23-02.43.53             5.933518381
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "comm",
+2024.02.23-02.43.53             2.872446049
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "calc",
+2024.02.23-02.43.53             40.424154798000004
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "write",
+2024.02.23-02.43.53             6.040279329
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "comm",
+2024.02.23-02.43.53             2.892005885
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "calc",
+2024.02.23-02.43.53             40.425952008
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "write",
+2024.02.23-02.43.53             5.992031059
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "comm",
+2024.02.23-02.43.53             2.895823843
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "calc",
+2024.02.23-02.43.53             40.421691245
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "write",
+2024.02.23-02.43.53             6.07371561
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "comm",
+2024.02.23-02.43.53             2.854859872
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "calc",
+2024.02.23-02.43.53             40.43271292
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "write",
+2024.02.23-02.43.53             5.992343969
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "comm",
+2024.02.23-02.43.53             2.859193678
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "calc",
+2024.02.23-02.43.53             40.422595502
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "write",
+2024.02.23-02.43.53             5.999378177
+2024.02.23-02.43.53         ],
+2024.02.23-02.43.53         [
+2024.02.23-02.43.53             "finalize",
+2024.02.23-02.43.53             2.120997177
+2024.02.23-02.43.53         ]
+2024.02.23-02.43.53     ]
+2024.02.23-02.43.53 }
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
+
+%NQSV(INFO): ------- Output from job:0016 -------
+
+%NQSV(INFO): ------- Output from job:0017 -------
+
+%NQSV(INFO): ------- Output from job:0018 -------
+
+%NQSV(INFO): ------- Output from job:0019 -------
+
+%NQSV(INFO): ------- Output from job:0020 -------
+
+%NQSV(INFO): ------- Output from job:0021 -------
+
+%NQSV(INFO): ------- Output from job:0022 -------
+
+%NQSV(INFO): ------- Output from job:0023 -------
+
+%NQSV(INFO): ------- Output from job:0024 -------
