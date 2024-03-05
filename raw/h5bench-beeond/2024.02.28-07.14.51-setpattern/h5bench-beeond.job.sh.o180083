@@ -1,0 +1,60 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.28-08.51.03 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-beeond/2024.02.28-07.14.51-setpattern/2024.02.28-08.51.03-180083.nqsv-16
+2024.02.28-08.51.03 prepare test_dir
+2024.02.28-08.51.03 New chunksize: 524288
+2024.02.28-08.51.03 New number of storage targets: 16
+2024.02.28-08.51.03 
+2024.02.28-08.51.03 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.180083.10/mpinodes -np 16 -map-by ppr:1:node dropcaches 3
+2024.02.28-08.52.24 sending incremental file list
+2024.02.28-08.52.24 storage/
+2024.02.28-08.52.24 storage/e51c0301-0:180083.nqsv/
+2024.02.28-08.52.24 storage/e51c0301-0:180083.nqsv/h5bench.cfg
+2024.02.28-08.52.24 storage/e51c0301-0:180083.nqsv/output-write.csv
+2024.02.28-08.52.24 storage/e51c0301-0:180083.nqsv/stderr
+2024.02.28-08.52.24 storage/e51c0301-0:180083.nqsv/stdout
+2024.02.28-08.52.24 
+2024.02.28-08.52.24 sent 2,584 bytes  received 100 bytes  5,368.00 bytes/sec
+2024.02.28-08.52.24 total size is 2,210  speedup is 0.82
+2024.02.28-08.52.24 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.180083.10/mpinodes -np 16 -map-by ppr:1:node dropcaches 3
+2024.02.28-08.53.26 sending incremental file list
+2024.02.28-08.53.26 ./
+2024.02.28-08.53.26 storage/
+2024.02.28-08.53.26 storage/0e6448e4-0:180083.nqsv/
+2024.02.28-08.53.26 storage/0e6448e4-0:180083.nqsv/h5bench.cfg
+2024.02.28-08.53.26 storage/0e6448e4-0:180083.nqsv/output-read.csv
+2024.02.28-08.53.26 storage/0e6448e4-0:180083.nqsv/stderr
+2024.02.28-08.53.26 storage/0e6448e4-0:180083.nqsv/stdout
+2024.02.28-08.53.26 
+2024.02.28-08.53.26 sent 2,665 bytes  received 108 bytes  5,546.00 bytes/sec
+2024.02.28-08.53.26 total size is 4,339  speedup is 1.56
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------

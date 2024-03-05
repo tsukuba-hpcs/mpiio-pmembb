@@ -1,0 +1,6 @@
+Warning: the ECDSA host key for 'bnode118' differs from the key for the IP address '10.120.0.118'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:3
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:126
+Warning: the ECDSA host key for 'bnode111' differs from the key for the IP address '10.120.0.111'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:9
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:123

@@ -1,0 +1,15 @@
+[          1]  /beeond/0
+└── [          3]  storage
+    ├── [          4]  83ebf738-0:180082.nqsv
+    │   ├── [        256]  h5bench.cfg
+    │   ├── [        308]  output-read.csv
+    │   ├── [        436]  stderr
+    │   └── [       1568]  stdout
+    ├── [          4]  e4acdfdd-0:180082.nqsv
+    │   ├── [        240]  h5bench.cfg
+    │   ├── [        309]  output-write.csv
+    │   ├── [        436]  stderr
+    │   └── [       1664]  stdout
+    └── [687194785848]  rw.h5
+
+4 directories, 9 files

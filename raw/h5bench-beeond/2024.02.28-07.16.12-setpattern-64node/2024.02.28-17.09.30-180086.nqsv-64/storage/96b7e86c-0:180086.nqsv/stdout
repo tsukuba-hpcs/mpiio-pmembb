@@ -1,0 +1,50 @@
+Configuration file: /beeond/0/storage/96b7e86c-0:180086.nqsv/h5bench.cfg
+Output data file: /beeond/0/storage/rw.h5
+
+================ Benchmark Configuration ==================
+File: /beeond/0/storage/96b7e86c-0:180086.nqsv/h5bench.cfg
+Number of particles per rank: 16777216
+Number of time steps: 5
+Emulated compute time per timestep: 0
+Mode: SYNC
+Collective metadata operations: NO
+Collective buffering for data operations: NO
+Number of dimensions: 3
+    Dim_1: 256
+    Dim_2: 256
+    Dim_3: 256
+===========================================================
+
+Start benchmark: h5bench_write
+Number of particles per rank: 16 M
+Total number of particles: 32768M
+Collective Metadata operations: OFF
+Opened HDF5 file... 
+Writing Timestep_0 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+Computing...
+Writing Timestep_1 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+Computing...
+Writing Timestep_2 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+Computing...
+Writing Timestep_3 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+Computing...
+Writing Timestep_4 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+
+=================== Performance Results ==================
+Total number of ranks: 2048
+Total emulated compute time: 0.000 s
+Total write size: 5.000 TB
+Raw write time: 17.734 s
+Metadata time: 0.003 s
+H5Fcreate() time: 1.453 s
+H5Fflush() time: 21.018 s
+H5Fclose() time: 0.002 s
+Observed completion time: 40.283 s
+SYNC Raw write rate: 288.709 GB/s 
+SYNC Observed write rate: 127.101 GB/s
+===========================================================

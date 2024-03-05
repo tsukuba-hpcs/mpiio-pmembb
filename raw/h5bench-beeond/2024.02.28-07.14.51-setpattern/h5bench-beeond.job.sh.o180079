@@ -1,0 +1,28 @@
+2024.02.28-07.25.02 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-beeond/2024.02.28-07.14.51-setpattern/2024.02.28-07.25.02-180079.nqsv-1
+2024.02.28-07.25.02 prepare test_dir
+2024.02.28-07.25.02 New chunksize: 524288
+2024.02.28-07.25.02 New number of storage targets: 1
+2024.02.28-07.25.02 
+2024.02.28-07.25.02 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.180079.10/mpinodes -np 1 -map-by ppr:1:node dropcaches 3
+2024.02.28-07.25.51 sending incremental file list
+2024.02.28-07.25.51 storage/
+2024.02.28-07.25.51 storage/8611f50e-0:180079.nqsv/
+2024.02.28-07.25.51 storage/8611f50e-0:180079.nqsv/h5bench.cfg
+2024.02.28-07.25.51 storage/8611f50e-0:180079.nqsv/output-write.csv
+2024.02.28-07.25.51 storage/8611f50e-0:180079.nqsv/stderr
+2024.02.28-07.25.51 storage/8611f50e-0:180079.nqsv/stdout
+2024.02.28-07.25.51 
+2024.02.28-07.25.51 sent 2,579 bytes  received 100 bytes  5,358.00 bytes/sec
+2024.02.28-07.25.51 total size is 2,204  speedup is 0.82
+2024.02.28-07.25.51 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.180079.10/mpinodes -np 1 -map-by ppr:1:node dropcaches 3
+2024.02.28-07.26.17 sending incremental file list
+2024.02.28-07.26.17 ./
+2024.02.28-07.26.17 storage/
+2024.02.28-07.26.17 storage/f6b01600-0:180079.nqsv/
+2024.02.28-07.26.17 storage/f6b01600-0:180079.nqsv/h5bench.cfg
+2024.02.28-07.26.17 storage/f6b01600-0:180079.nqsv/output-read.csv
+2024.02.28-07.26.17 storage/f6b01600-0:180079.nqsv/stderr
+2024.02.28-07.26.17 storage/f6b01600-0:180079.nqsv/stdout
+2024.02.28-07.26.17 
+2024.02.28-07.26.17 sent 2,634 bytes  received 108 bytes  5,484.00 bytes/sec
+2024.02.28-07.26.17 total size is 4,322  speedup is 1.58

@@ -1,0 +1,8 @@
+Entry type: directory
+EntryID: 0-65DE7558-1
+Metadata node: bnode088 [ID: 1]
+Stripe pattern details:
++ Type: RAID0
++ Chunksize: 512K
++ Number of storage targets: desired: 16
++ Storage Pool: 1 (Default)
