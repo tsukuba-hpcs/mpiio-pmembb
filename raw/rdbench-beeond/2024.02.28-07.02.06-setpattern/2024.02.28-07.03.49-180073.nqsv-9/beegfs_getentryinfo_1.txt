@@ -1,0 +1,8 @@
+Entry type: directory
+EntryID: 1-65DE5EAD-1
+Metadata node: bnode107 [ID: 1]
+Stripe pattern details:
++ Type: RAID0
++ Chunksize: 64K
++ Number of storage targets: desired: 9
++ Storage Pool: 1 (Default)

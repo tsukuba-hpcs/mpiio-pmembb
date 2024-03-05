@@ -1,0 +1,10 @@
+{
+  "nnodes": 36,
+  "ppn": 48,
+  "np": 1728,
+  "jobid": "180076.nqsv",
+  "runid": 1,
+  "lustre_version": "2.12.9_ddn38",
+  "spack_env_name": "mpiio-pmembb",
+  "storageSystem": "BeeOND"
+}
