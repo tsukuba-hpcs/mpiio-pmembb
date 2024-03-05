@@ -1,0 +1,82 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.13-15.01.46 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32
+2024.02.13-15.01.46 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-pmembb/2024.02.13-15.01.45-172848.nqsv-32
+2024.02.13-15.01.46 prepare test_dir
+2024.02.13-15.01.46 /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-pmembb/2024.02.13-15.01.45-172848.nqsv-32/0
+2024.02.13-15.01.46 stripe_count:  1 stripe_size:   1048576 pattern:       0 stripe_offset: -1
+2024.02.13-15.01.46 
+2024.02.13-15.01.46 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.172848.10/mpinodes -np 32 -map-by ppr:1:node dropcaches 3
+2024.02.13-15.01.47 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32/time_0.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.172848.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-f2chy6oowutzndjmq4klk5xcbylvlh7v/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 1536 -map-by ppr:48:node -mca hook_pmembb_load false -mca hook_pmembb_save true ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 21474852672 -t 47008 -o /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-pmembb/2024.02.13-15.01.45-172848.nqsv-32/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32/ior_summary_0.json -w
+2024.02.13-15.04.07 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.172848.10/mpinodes -np 32 -map-by ppr:1:node dropcaches 3
+2024.02.13-15.04.08 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32/time_1.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.172848.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-f2chy6oowutzndjmq4klk5xcbylvlh7v/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 1536 -map-by ppr:48:node -mca hook_pmembb_load true -mca hook_pmembb_save true ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 21474852672 -t 47008 -o /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-pmembb/2024.02.13-15.01.45-172848.nqsv-32/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32/ior_summary_1.json -r -C -Q 1
+2024.02.13-15.06.28 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.172848.10/mpinodes -np 32 -map-by ppr:1:node dropcaches 3
+2024.02.13-15.06.29 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32/time_2.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.172848.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-f2chy6oowutzndjmq4klk5xcbylvlh7v/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 1536 -map-by ppr:48:node -mca hook_pmembb_load true -mca hook_pmembb_save false ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 21474852672 -t 47008 -o /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-pmembb/2024.02.13-15.01.45-172848.nqsv-32/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32/ior_summary_2.json -r
+2024.02.13-15.08.18 prepare test_dir
+2024.02.13-15.08.18 /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-pmembb/2024.02.13-15.01.45-172848.nqsv-32/1
+2024.02.13-15.08.18 stripe_count:  1 stripe_size:   1048576 pattern:       0 stripe_offset: -1
+2024.02.13-15.08.18 
+2024.02.13-15.08.18 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.172848.10/mpinodes -np 32 -map-by ppr:1:node dropcaches 3
+2024.02.13-15.08.19 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32/time_3.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.172848.10/mpinodes -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/rpmbb-0.10.3-f2chy6oowutzndjmq4klk5xcbylvlh7v/lib/rpmbb_c/librpmbb_c.so -x ROMIO_FSTYPE_FORCE=pmembb: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32/romio_hints -mca hook_pmembb_pmem_path /dev/dax0.0 -mca hook_pmembb_pmem_size 0 -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 1536 -map-by ppr:48:node -mca hook_pmembb_load false -mca hook_pmembb_save true ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 21474837257 -t 3901 -o /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-pmembb/2024.02.13-15.01.45-172848.nqsv-32/1/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-pmembb/2024.02.13-15.01.07-default/2024.02.13-15.01.45-172848.nqsv-32/ior_summary_3.json -w
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
+
+%NQSV(INFO): ------- Output from job:0016 -------
+
+%NQSV(INFO): ------- Output from job:0017 -------
+
+%NQSV(INFO): ------- Output from job:0018 -------
+
+%NQSV(INFO): ------- Output from job:0019 -------
+
+%NQSV(INFO): ------- Output from job:0020 -------
+
+%NQSV(INFO): ------- Output from job:0021 -------
+
+%NQSV(INFO): ------- Output from job:0022 -------
+
+%NQSV(INFO): ------- Output from job:0023 -------
+
+%NQSV(INFO): ------- Output from job:0024 -------
+
+%NQSV(INFO): ------- Output from job:0025 -------
+
+%NQSV(INFO): ------- Output from job:0026 -------
+
+%NQSV(INFO): ------- Output from job:0027 -------
+
+%NQSV(INFO): ------- Output from job:0028 -------
+
+%NQSV(INFO): ------- Output from job:0029 -------
+
+%NQSV(INFO): ------- Output from job:0030 -------
+
+%NQSV(INFO): ------- Output from job:0031 -------
