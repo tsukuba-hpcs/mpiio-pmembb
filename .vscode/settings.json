@@ -1,0 +1,22 @@
+{
+  "files.associations": {
+    "*.tcc": "cpp",
+    "streambuf": "cpp"
+  },
+  "files.watcherExclude": {
+    "**/backend/**": true,
+    "**/raw/**": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/*-beeond.job.sh": true,
+    "**/*-lustre.job.sh": true,
+    "**/*-pmembb.job.sh": true,
+    "**/*-strided-pmembb.job.sh": true
+  }
+}
