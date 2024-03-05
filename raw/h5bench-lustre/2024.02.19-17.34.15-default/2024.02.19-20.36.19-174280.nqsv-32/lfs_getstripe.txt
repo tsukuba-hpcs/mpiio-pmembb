@@ -1,0 +1,6 @@
+/work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-lustre/2024.02.19-20.36.19-174280.nqsv-32/0
+stripe_count:  1024 stripe_size:   2097152 pattern:       raid0,overstriped stripe_offset: -1
+
+/work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-lustre/2024.02.19-20.36.19-174280.nqsv-32/0/storage
+stripe_count:  1024 stripe_size:   2097152 pattern:       raid0,overstriped stripe_offset: -1
+

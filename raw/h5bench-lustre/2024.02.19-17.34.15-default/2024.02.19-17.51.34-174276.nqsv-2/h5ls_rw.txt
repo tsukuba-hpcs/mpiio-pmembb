@@ -1,0 +1,46 @@
+/                        Group
+/Timestep_0              Group
+/Timestep_0/id_1         Dataset {16384, 256, 256}
+/Timestep_0/id_2         Dataset {16384, 256, 256}
+/Timestep_0/px           Dataset {16384, 256, 256}
+/Timestep_0/py           Dataset {16384, 256, 256}
+/Timestep_0/pz           Dataset {16384, 256, 256}
+/Timestep_0/x            Dataset {16384, 256, 256}
+/Timestep_0/y            Dataset {16384, 256, 256}
+/Timestep_0/z            Dataset {16384, 256, 256}
+/Timestep_1              Group
+/Timestep_1/id_1         Dataset {16384, 256, 256}
+/Timestep_1/id_2         Dataset {16384, 256, 256}
+/Timestep_1/px           Dataset {16384, 256, 256}
+/Timestep_1/py           Dataset {16384, 256, 256}
+/Timestep_1/pz           Dataset {16384, 256, 256}
+/Timestep_1/x            Dataset {16384, 256, 256}
+/Timestep_1/y            Dataset {16384, 256, 256}
+/Timestep_1/z            Dataset {16384, 256, 256}
+/Timestep_2              Group
+/Timestep_2/id_1         Dataset {16384, 256, 256}
+/Timestep_2/id_2         Dataset {16384, 256, 256}
+/Timestep_2/px           Dataset {16384, 256, 256}
+/Timestep_2/py           Dataset {16384, 256, 256}
+/Timestep_2/pz           Dataset {16384, 256, 256}
+/Timestep_2/x            Dataset {16384, 256, 256}
+/Timestep_2/y            Dataset {16384, 256, 256}
+/Timestep_2/z            Dataset {16384, 256, 256}
+/Timestep_3              Group
+/Timestep_3/id_1         Dataset {16384, 256, 256}
+/Timestep_3/id_2         Dataset {16384, 256, 256}
+/Timestep_3/px           Dataset {16384, 256, 256}
+/Timestep_3/py           Dataset {16384, 256, 256}
+/Timestep_3/pz           Dataset {16384, 256, 256}
+/Timestep_3/x            Dataset {16384, 256, 256}
+/Timestep_3/y            Dataset {16384, 256, 256}
+/Timestep_3/z            Dataset {16384, 256, 256}
+/Timestep_4              Group
+/Timestep_4/id_1         Dataset {16384, 256, 256}
+/Timestep_4/id_2         Dataset {16384, 256, 256}
+/Timestep_4/px           Dataset {16384, 256, 256}
+/Timestep_4/py           Dataset {16384, 256, 256}
+/Timestep_4/pz           Dataset {16384, 256, 256}
+/Timestep_4/x            Dataset {16384, 256, 256}
+/Timestep_4/y            Dataset {16384, 256, 256}
+/Timestep_4/z            Dataset {16384, 256, 256}

@@ -1,0 +1,29 @@
+{
+  "mpi": {
+    "command": "mpirun",
+    "configuration": "--leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.174281.10/mpinodes -x PATH -x ROMIO_FSTYPE_FORCE=ufs: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-lustre/2024.02.19-17.34.15-default/2024.02.19-23.31.53-174281.nqsv-64/romio_hints -mca hook_pmembb_enable false -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 2048 -map-by ppr:32:node"
+  },
+  "vol": {},
+  "file-system": {},
+  "directory": "/work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-lustre/2024.02.19-23.31.53-174281.nqsv-64/0/storage",
+  "benchmarks": [
+    {
+      "benchmark": "write",
+      "file": "rw.h5",
+      "configuration": {
+        "MEM_PATTERN": "CONTIG",
+        "FILE_PATTERN": "CONTIG",
+        "TIMESTEPS": "5",
+        "COLLECTIVE_DATA": "NO",
+        "COLLECTIVE_METADATA": "NO",
+        "EMULATED_COMPUTE_TIME_PER_TIMESTEP": "0 s",
+        "NUM_DIMS": "3",
+        "DIM_1": "256",
+        "DIM_2": "256",
+        "DIM_3": "256",
+        "CSV_FILE": "output-write.csv",
+        "MODE": "SYNC"
+      }
+    }
+  ]
+}

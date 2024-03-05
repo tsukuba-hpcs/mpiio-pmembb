@@ -1,0 +1,29 @@
+2024.02.19-17.48.38 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-lustre/2024.02.19-17.34.15-default/2024.02.19-17.48.38-174275.nqsv-1
+2024.02.19-17.48.38 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-lustre/2024.02.19-17.48.38-174275.nqsv-1
+2024.02.19-17.48.38 prepare test_dir
+2024.02.19-17.48.38 /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-lustre/2024.02.19-17.48.38-174275.nqsv-1/0
+2024.02.19-17.48.38 stripe_count:  32 stripe_size:   2097152 pattern:       raid0,overstriped stripe_offset: -1
+2024.02.19-17.48.38 
+2024.02.19-17.48.38 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.174275.10/mpinodes -np 1 -map-by ppr:1:node dropcaches 3
+2024.02.19-17.49.35 sending incremental file list
+2024.02.19-17.49.35 storage/
+2024.02.19-17.49.35 storage/e8edd429-0:174275.nqsv/
+2024.02.19-17.49.35 storage/e8edd429-0:174275.nqsv/h5bench.cfg
+2024.02.19-17.49.35 storage/e8edd429-0:174275.nqsv/output-write.csv
+2024.02.19-17.49.35 storage/e8edd429-0:174275.nqsv/stderr
+2024.02.19-17.49.35 storage/e8edd429-0:174275.nqsv/stdout
+2024.02.19-17.49.35 
+2024.02.19-17.49.35 sent 2,919 bytes  received 100 bytes  6,038.00 bytes/sec
+2024.02.19-17.49.35 total size is 2,549  speedup is 0.84
+2024.02.19-17.49.35 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.174275.10/mpinodes -np 1 -map-by ppr:1:node dropcaches 3
+2024.02.19-17.50.14 sending incremental file list
+2024.02.19-17.50.14 ./
+2024.02.19-17.50.14 storage/
+2024.02.19-17.50.14 storage/12c486da-0:174275.nqsv/
+2024.02.19-17.50.14 storage/12c486da-0:174275.nqsv/h5bench.cfg
+2024.02.19-17.50.14 storage/12c486da-0:174275.nqsv/output-read.csv
+2024.02.19-17.50.14 storage/12c486da-0:174275.nqsv/stderr
+2024.02.19-17.50.14 storage/12c486da-0:174275.nqsv/stdout
+2024.02.19-17.50.14 
+2024.02.19-17.50.14 sent 3,062 bytes  received 108 bytes  6,340.00 bytes/sec
+2024.02.19-17.50.14 total size is 5,101  speedup is 1.61

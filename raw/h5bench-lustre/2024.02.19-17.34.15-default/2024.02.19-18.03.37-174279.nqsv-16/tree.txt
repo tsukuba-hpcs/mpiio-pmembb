@@ -1,0 +1,15 @@
+[       4096]  /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-lustre/2024.02.19-18.03.37-174279.nqsv-16/0
+└── [       4096]  storage
+    ├── [       4096]  20aadb8a-0:174279.nqsv
+    │   ├── [        343]  h5bench.cfg
+    │   ├── [        306]  output-read.csv
+    │   ├── [        218]  stderr
+    │   └── [       1915]  stdout
+    ├── [       4096]  93689357-0:174279.nqsv
+    │   ├── [        327]  h5bench.cfg
+    │   ├── [        309]  output-write.csv
+    │   ├── [        218]  stderr
+    │   └── [       1925]  stdout
+    └── [1374389553208]  rw.h5
+
+4 directories, 9 files

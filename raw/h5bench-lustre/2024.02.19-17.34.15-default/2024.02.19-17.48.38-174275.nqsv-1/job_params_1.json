@@ -1,0 +1,12 @@
+{
+  "nnodes": 1,
+  "ppn": 32,
+  "np": 32,
+  "jobid": "174275.nqsv",
+  "runid": 1,
+  "lustre_version": "2.12.9_ddn38",
+  "lustre_stripe_size": 2097152,
+  "lustre_stripe_count": 32,
+  "spack_env_name": "mpiio-pmembb",
+  "storageSystem": "Lustre"
+}
