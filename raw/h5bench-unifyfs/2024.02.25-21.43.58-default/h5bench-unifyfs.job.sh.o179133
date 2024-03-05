@@ -1,0 +1,246 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.25-23.10.09 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-23.10.09-179133.nqsv-64
+2024.02.25-23.10.09 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-unifyfs/2024.02.25-23.10.09-179133.nqsv-64
+2024.02.25-23.10.09 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179133.10/mpinodes -x PATH -x UNIFYFS_RUNSTATE_DIR -x UNIFYFS_LOGIO_CHUNK_SIZE -x UNIFYFS_LOG_DIR -x UNIFYFS_MARGO_SERVER_TIMEOUT -x UNIFYFS_DAEMONIZE -x UNIFYFS_LOGIO_SPILL_SIZE -x UNIFYFS_SERVER_INIT_TIMEOUT -x UNIFYFS_MARGO_CLIENT_POOL_SIZE -x UNIFYFS_CLIENT_NODE_LOCAL_EXTENTS -x UNIFYFS_SERVER_LOCAL_EXTENTS -x UNIFYFS_SERVER_MAX_APP_CLIENTS -x UNIFYFS_MARGO_SERVER_POOL_SIZE -x UNIFYFS_MOUNTPOINT -x UNIFYFS_CLIENT_LOCAL_EXTENTS -x UNIFYFS_MARGO_CLIENT_TIMEOUT -x UNIFYFS_MARGO_TCP -x UNIFYFS_LOG_VERBOSITY -x UNIFYFS_LOGIO_SHMEM_SIZE -x UNIFYFS_LOGIO_SPILL_DIR -np 64 -rf /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-23.10.09-179133.nqsv-64/rankfile unifyfsd --unifyfs-cleanup on --server-hostfile /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-23.10.09-179133.nqsv-64/unifyfsd.hosts --sharedfs-dir /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-unifyfs/2024.02.25-23.10.09-179133.nqsv-64
+2024.02.25-23.10.10 wait for unifyfsd to start
+2024.02.25-23.10.40 Attempting to call unifyfs_get_gfids()...
+2024.02.25-23.10.40 ...and done.  ret=0	num_gfids=1
+2024.02.25-23.10.40 GFIDs received:
+2024.02.25-23.10.40   40755 30081 30293       0 1708870240 /unifyfs
+2024.02.25-23.10.41 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179133.10/mpinodes -np 64 -map-by ppr:1:node dropcaches 3
+2024.02.25-23.10.43 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179133.10/mpinodes -mca io romio321 -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/unifyfs-develop-insgggyksgjztlflskmpth44w32is3b7/lib/libunifyfs_mpi_gotcha.so -x UNIFYFS_RUNSTATE_DIR -x UNIFYFS_LOGIO_CHUNK_SIZE -x UNIFYFS_LOG_DIR -x UNIFYFS_MARGO_SERVER_TIMEOUT -x UNIFYFS_DAEMONIZE -x UNIFYFS_LOGIO_SPILL_SIZE -x UNIFYFS_SERVER_INIT_TIMEOUT -x UNIFYFS_MARGO_CLIENT_POOL_SIZE -x UNIFYFS_CLIENT_NODE_LOCAL_EXTENTS -x UNIFYFS_SERVER_LOCAL_EXTENTS -x UNIFYFS_SERVER_MAX_APP_CLIENTS -x UNIFYFS_MARGO_SERVER_POOL_SIZE -x UNIFYFS_MOUNTPOINT -x UNIFYFS_CLIENT_LOCAL_EXTENTS -x UNIFYFS_MARGO_CLIENT_TIMEOUT -x UNIFYFS_MARGO_TCP -x UNIFYFS_LOG_VERBOSITY -x UNIFYFS_LOGIO_SHMEM_SIZE -x UNIFYFS_LOGIO_SPILL_DIR -x FI_UNIVERSE_SIZE=4096 -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-23.10.09-179133.nqsv-64/romio_hints -np 2048 -map-by ppr:32:node -bind-to core h5bench_write /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-23.10.09-179133.nqsv-64/write.cfg /unifyfs/rw.h5
+2024.02.25-23.11.05 Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-23.10.09-179133.nqsv-64/write.cfg
+2024.02.25-23.11.05 Output data file: /unifyfs/rw.h5
+2024.02.25-23.11.05 
+2024.02.25-23.11.05 ================ Benchmark Configuration ==================
+2024.02.25-23.11.05 File: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-23.10.09-179133.nqsv-64/write.cfg
+2024.02.25-23.11.05 Number of particles per rank: 16777216
+2024.02.25-23.11.05 Number of time steps: 5
+2024.02.25-23.11.05 Emulated compute time per timestep: 0
+2024.02.25-23.11.05 Mode: SYNC
+2024.02.25-23.11.05 Collective metadata operations: NO
+2024.02.25-23.11.05 Collective buffering for data operations: NO
+2024.02.25-23.11.05 Number of dimensions: 3
+2024.02.25-23.11.05     Dim_1: 256
+2024.02.25-23.11.05     Dim_2: 256
+2024.02.25-23.11.05     Dim_3: 256
+2024.02.25-23.11.05 ===========================================================
+2024.02.25-23.11.05 
+2024.02.25-23.11.05 Start benchmark: h5bench_write
+2024.02.25-23.11.05 Number of particles per rank: 16 M
+2024.02.25-23.11.05 Total number of particles: 32768M
+2024.02.25-23.11.05 Collective Metadata operations: OFF
+2024.02.25-23.11.05 Opened HDF5 file... 
+2024.02.25-23.11.05 Writing Timestep_0 ... 
+2024.02.25-23.11.05     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.25-23.11.05 Computing...
+2024.02.25-23.11.05 Writing Timestep_1 ... 
+2024.02.25-23.11.05     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.25-23.11.05 Computing...
+2024.02.25-23.11.05 Writing Timestep_2 ... 
+2024.02.25-23.11.05     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.25-23.11.05 Computing...
+2024.02.25-23.11.05 Writing Timestep_3 ... 
+2024.02.25-23.11.05     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.25-23.11.05 Computing...
+2024.02.25-23.11.05 Writing Timestep_4 ... 
+2024.02.25-23.11.05     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.25-23.11.11 
+2024.02.25-23.11.11 =================== Performance Results ==================
+2024.02.25-23.11.11 Total number of ranks: 2048
+2024.02.25-23.11.11 Total emulated compute time: 0.000 s
+2024.02.25-23.11.11 Total write size: 5.000 TB
+2024.02.25-23.11.11 Raw write time: 7.814 s
+2024.02.25-23.11.11 Metadata time: 0.006 s
+2024.02.25-23.11.11 H5Fcreate() time: 1.093 s
+2024.02.25-23.11.11 H5Fflush() time: 0.604 s
+2024.02.25-23.11.11 H5Fclose() time: 0.052 s
+2024.02.25-23.11.11 Observed completion time: 9.834 s
+2024.02.25-23.11.11 SYNC Raw write rate: 655.218 GB/s 
+2024.02.25-23.11.11 SYNC Observed write rate: 520.644 GB/s
+2024.02.25-23.11.11 ===========================================================
+2024.02.25-23.11.19 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179133.10/mpinodes -np 64 -map-by ppr:1:node dropcaches 3
+2024.02.25-23.11.20 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179133.10/mpinodes -mca io romio321 -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/unifyfs-develop-insgggyksgjztlflskmpth44w32is3b7/lib/libunifyfs_mpi_gotcha.so -x UNIFYFS_RUNSTATE_DIR -x UNIFYFS_LOGIO_CHUNK_SIZE -x UNIFYFS_LOG_DIR -x UNIFYFS_MARGO_SERVER_TIMEOUT -x UNIFYFS_DAEMONIZE -x UNIFYFS_LOGIO_SPILL_SIZE -x UNIFYFS_SERVER_INIT_TIMEOUT -x UNIFYFS_MARGO_CLIENT_POOL_SIZE -x UNIFYFS_CLIENT_NODE_LOCAL_EXTENTS -x UNIFYFS_SERVER_LOCAL_EXTENTS -x UNIFYFS_SERVER_MAX_APP_CLIENTS -x UNIFYFS_MARGO_SERVER_POOL_SIZE -x UNIFYFS_MOUNTPOINT -x UNIFYFS_CLIENT_LOCAL_EXTENTS -x UNIFYFS_MARGO_CLIENT_TIMEOUT -x UNIFYFS_MARGO_TCP -x UNIFYFS_LOG_VERBOSITY -x UNIFYFS_LOGIO_SHMEM_SIZE -x UNIFYFS_LOGIO_SPILL_DIR -x FI_UNIVERSE_SIZE=4096 -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-23.10.09-179133.nqsv-64/romio_hints -np 2048 -map-by ppr:32:node -bind-to core h5bench_read /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-23.10.09-179133.nqsv-64/read.cfg /unifyfs/rw.h5
+2024.02.25-23.11.33 Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-23.10.09-179133.nqsv-64/read.cfg
+2024.02.25-23.11.33 Read data file: /unifyfs/rw.h5
+2024.02.25-23.11.33 dims[0] = 524288 (total number for the file)
+2024.02.25-23.11.33 dims[1] = 256 (total number for the file)
+2024.02.25-23.11.33 dims[2] = 256 (total number for the file)
+2024.02.25-23.11.33 Total particles in the file: 34359738368
+2024.02.25-23.11.33 Number of particles available per rank: 16777216 
+2024.02.25-23.11.33 Opened HDF5 file... [/unifyfs/rw.h5]
+2024.02.25-23.11.33 
+2024.02.25-23.11.33 ================ Benchmark Configuration ==================
+2024.02.25-23.11.33 File: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-23.10.09-179133.nqsv-64/read.cfg
+2024.02.25-23.11.33 Number of particles per rank: 16777216
+2024.02.25-23.11.33 Number of time steps: 5
+2024.02.25-23.11.33 Emulated compute time per timestep: 0
+2024.02.25-23.11.33 Mode: SYNC
+2024.02.25-23.11.33 Collective metadata operations: NO
+2024.02.25-23.11.33 Collective buffering for data operations: NO
+2024.02.25-23.11.33 Number of dimensions: 3
+2024.02.25-23.11.33     Dim_1: 256
+2024.02.25-23.11.33     Dim_2: 256
+2024.02.25-23.11.33     Dim_3: 256
+2024.02.25-23.11.33 Strided access settings:
+2024.02.25-23.11.33     Stride size = 0
+2024.02.25-23.11.33     Block size = 0
+2024.02.25-23.11.33 ===========================================================
+2024.02.25-23.11.33 
+2024.02.25-23.11.33 Reading Timestep_0 ... 
+2024.02.25-23.11.43   Read 8 variable completed
+2024.02.25-23.11.43 Computing... 
+2024.02.25-23.11.43 Reading Timestep_1 ... 
+2024.02.25-23.11.53   Read 8 variable completed
+2024.02.25-23.11.53 Computing... 
+2024.02.25-23.11.53 Reading Timestep_2 ... 
+2024.02.25-23.12.04   Read 8 variable completed
+2024.02.25-23.12.04 Computing... 
+2024.02.25-23.12.04 Reading Timestep_3 ... 
+2024.02.25-23.12.15   Read 8 variable completed
+2024.02.25-23.12.15 Computing... 
+2024.02.25-23.12.15 Reading Timestep_4 ... 
+2024.02.25-23.12.25   Read 8 variable completed
+2024.02.25-23.12.26 
+2024.02.25-23.12.26 =================== Performance Results ==================
+2024.02.25-23.12.26 Total number of ranks: 2048
+2024.02.25-23.12.26 Total emulated compute time: 0.000 s
+2024.02.25-23.12.26 Total read size: 5.000 TB
+2024.02.25-23.12.26 Raw read time: 43.006 s
+2024.02.25-23.12.26 Metadata time: 9.215 s
+2024.02.25-23.12.26 Observed read completion time: 52.978 s
+2024.02.25-23.12.26 SYNC Raw read rate: 119.053 GB/s 
+2024.02.25-23.12.26 SYNC Observed read rate: 96.644 GB/s
+2024.02.25-23.12.26 ===========================================================
+2024.02.25-23.12.34 Attempting to call unifyfs_get_gfids()...
+2024.02.25-23.12.34 ...and done.  ret=0	num_gfids=2
+2024.02.25-23.12.34 GFIDs received:
+2024.02.25-23.12.34   40755 30081 30293       0 1708870240 /unifyfs
+2024.02.25-23.12.34  100644 30081 302935497558157368 1708870257 /unifyfs/rw.h5
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
+
+%NQSV(INFO): ------- Output from job:0016 -------
+
+%NQSV(INFO): ------- Output from job:0017 -------
+
+%NQSV(INFO): ------- Output from job:0018 -------
+
+%NQSV(INFO): ------- Output from job:0019 -------
+
+%NQSV(INFO): ------- Output from job:0020 -------
+
+%NQSV(INFO): ------- Output from job:0021 -------
+
+%NQSV(INFO): ------- Output from job:0022 -------
+
+%NQSV(INFO): ------- Output from job:0023 -------
+
+%NQSV(INFO): ------- Output from job:0024 -------
+
+%NQSV(INFO): ------- Output from job:0025 -------
+
+%NQSV(INFO): ------- Output from job:0026 -------
+
+%NQSV(INFO): ------- Output from job:0027 -------
+
+%NQSV(INFO): ------- Output from job:0028 -------
+
+%NQSV(INFO): ------- Output from job:0029 -------
+
+%NQSV(INFO): ------- Output from job:0030 -------
+
+%NQSV(INFO): ------- Output from job:0031 -------
+
+%NQSV(INFO): ------- Output from job:0032 -------
+
+%NQSV(INFO): ------- Output from job:0033 -------
+
+%NQSV(INFO): ------- Output from job:0034 -------
+
+%NQSV(INFO): ------- Output from job:0035 -------
+
+%NQSV(INFO): ------- Output from job:0036 -------
+
+%NQSV(INFO): ------- Output from job:0037 -------
+
+%NQSV(INFO): ------- Output from job:0038 -------
+
+%NQSV(INFO): ------- Output from job:0039 -------
+
+%NQSV(INFO): ------- Output from job:0040 -------
+
+%NQSV(INFO): ------- Output from job:0041 -------
+
+%NQSV(INFO): ------- Output from job:0042 -------
+
+%NQSV(INFO): ------- Output from job:0043 -------
+
+%NQSV(INFO): ------- Output from job:0044 -------
+
+%NQSV(INFO): ------- Output from job:0045 -------
+
+%NQSV(INFO): ------- Output from job:0046 -------
+
+%NQSV(INFO): ------- Output from job:0047 -------
+
+%NQSV(INFO): ------- Output from job:0048 -------
+
+%NQSV(INFO): ------- Output from job:0049 -------
+
+%NQSV(INFO): ------- Output from job:0050 -------
+
+%NQSV(INFO): ------- Output from job:0051 -------
+
+%NQSV(INFO): ------- Output from job:0052 -------
+
+%NQSV(INFO): ------- Output from job:0053 -------
+
+%NQSV(INFO): ------- Output from job:0054 -------
+
+%NQSV(INFO): ------- Output from job:0055 -------
+
+%NQSV(INFO): ------- Output from job:0056 -------
+
+%NQSV(INFO): ------- Output from job:0057 -------
+
+%NQSV(INFO): ------- Output from job:0058 -------
+
+%NQSV(INFO): ------- Output from job:0059 -------
+
+%NQSV(INFO): ------- Output from job:0060 -------
+
+%NQSV(INFO): ------- Output from job:0061 -------
+
+%NQSV(INFO): ------- Output from job:0062 -------
+
+%NQSV(INFO): ------- Output from job:0063 -------

@@ -1,0 +1,118 @@
+2024.02.25-21.44.33 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-21.44.32-179127.nqsv-1
+2024.02.25-21.44.33 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-unifyfs/2024.02.25-21.44.32-179127.nqsv-1
+2024.02.25-21.44.33 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179127.10/mpinodes -x PATH -x UNIFYFS_RUNSTATE_DIR -x UNIFYFS_LOGIO_CHUNK_SIZE -x UNIFYFS_LOG_DIR -x UNIFYFS_MARGO_SERVER_TIMEOUT -x UNIFYFS_DAEMONIZE -x UNIFYFS_LOGIO_SPILL_SIZE -x UNIFYFS_SERVER_INIT_TIMEOUT -x UNIFYFS_MARGO_CLIENT_POOL_SIZE -x UNIFYFS_CLIENT_NODE_LOCAL_EXTENTS -x UNIFYFS_SERVER_LOCAL_EXTENTS -x UNIFYFS_SERVER_MAX_APP_CLIENTS -x UNIFYFS_MARGO_SERVER_POOL_SIZE -x UNIFYFS_MOUNTPOINT -x UNIFYFS_CLIENT_LOCAL_EXTENTS -x UNIFYFS_MARGO_CLIENT_TIMEOUT -x UNIFYFS_MARGO_TCP -x UNIFYFS_LOG_VERBOSITY -x UNIFYFS_LOGIO_SHMEM_SIZE -x UNIFYFS_LOGIO_SPILL_DIR -np 1 -rf /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-21.44.32-179127.nqsv-1/rankfile unifyfsd --unifyfs-cleanup on --server-hostfile /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-21.44.32-179127.nqsv-1/unifyfsd.hosts --sharedfs-dir /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-unifyfs/2024.02.25-21.44.32-179127.nqsv-1
+2024.02.25-21.44.33 wait for unifyfsd to start
+2024.02.25-21.45.03 Attempting to call unifyfs_get_gfids()...
+2024.02.25-21.45.03 ...and done.  ret=0	num_gfids=1
+2024.02.25-21.45.03 GFIDs received:
+2024.02.25-21.45.03   40755 30081 30293       0 1708865103 /unifyfs
+2024.02.25-21.45.04 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179127.10/mpinodes -np 1 -map-by ppr:1:node dropcaches 3
+2024.02.25-21.45.04 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179127.10/mpinodes -mca io romio321 -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/unifyfs-develop-insgggyksgjztlflskmpth44w32is3b7/lib/libunifyfs_mpi_gotcha.so -x UNIFYFS_RUNSTATE_DIR -x UNIFYFS_LOGIO_CHUNK_SIZE -x UNIFYFS_LOG_DIR -x UNIFYFS_MARGO_SERVER_TIMEOUT -x UNIFYFS_DAEMONIZE -x UNIFYFS_LOGIO_SPILL_SIZE -x UNIFYFS_SERVER_INIT_TIMEOUT -x UNIFYFS_MARGO_CLIENT_POOL_SIZE -x UNIFYFS_CLIENT_NODE_LOCAL_EXTENTS -x UNIFYFS_SERVER_LOCAL_EXTENTS -x UNIFYFS_SERVER_MAX_APP_CLIENTS -x UNIFYFS_MARGO_SERVER_POOL_SIZE -x UNIFYFS_MOUNTPOINT -x UNIFYFS_CLIENT_LOCAL_EXTENTS -x UNIFYFS_MARGO_CLIENT_TIMEOUT -x UNIFYFS_MARGO_TCP -x UNIFYFS_LOG_VERBOSITY -x UNIFYFS_LOGIO_SHMEM_SIZE -x UNIFYFS_LOGIO_SPILL_DIR -x FI_UNIVERSE_SIZE=4096 -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-21.44.32-179127.nqsv-1/romio_hints -np 32 -map-by ppr:32:node -bind-to core h5bench_write /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-21.44.32-179127.nqsv-1/write.cfg /unifyfs/rw.h5
+2024.02.25-21.45.13 Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-21.44.32-179127.nqsv-1/write.cfg
+2024.02.25-21.45.13 Output data file: /unifyfs/rw.h5
+2024.02.25-21.45.13 
+2024.02.25-21.45.13 ================ Benchmark Configuration ==================
+2024.02.25-21.45.13 File: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-21.44.32-179127.nqsv-1/write.cfg
+2024.02.25-21.45.13 Number of particles per rank: 16777216
+2024.02.25-21.45.13 Number of time steps: 5
+2024.02.25-21.45.13 Emulated compute time per timestep: 0
+2024.02.25-21.45.13 Mode: SYNC
+2024.02.25-21.45.13 Collective metadata operations: NO
+2024.02.25-21.45.13 Collective buffering for data operations: NO
+2024.02.25-21.45.13 Number of dimensions: 3
+2024.02.25-21.45.13     Dim_1: 256
+2024.02.25-21.45.13     Dim_2: 256
+2024.02.25-21.45.13     Dim_3: 256
+2024.02.25-21.45.13 ===========================================================
+2024.02.25-21.45.13 
+2024.02.25-21.45.13 Start benchmark: h5bench_write
+2024.02.25-21.45.13 Number of particles per rank: 16 M
+2024.02.25-21.45.13 Total number of particles: 512M
+2024.02.25-21.45.13 Collective Metadata operations: OFF
+2024.02.25-21.45.15 Opened HDF5 file... 
+2024.02.25-21.45.15 Writing Timestep_0 ... 
+2024.02.25-21.45.17     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.25-21.45.17 Computing...
+2024.02.25-21.45.17 Writing Timestep_1 ... 
+2024.02.25-21.45.18     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.25-21.45.18 Computing...
+2024.02.25-21.45.18 Writing Timestep_2 ... 
+2024.02.25-21.45.20     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.25-21.45.20 Computing...
+2024.02.25-21.45.20 Writing Timestep_3 ... 
+2024.02.25-21.45.21     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.25-21.45.21 Computing...
+2024.02.25-21.45.21 Writing Timestep_4 ... 
+2024.02.25-21.45.23     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.25-21.45.23 
+2024.02.25-21.45.23 =================== Performance Results ==================
+2024.02.25-21.45.23 Total number of ranks: 32
+2024.02.25-21.45.23 Total emulated compute time: 0.000 s
+2024.02.25-21.45.23 Total write size: 80.000 GB
+2024.02.25-21.45.23 Raw write time: 7.534 s
+2024.02.25-21.45.23 Metadata time: 0.006 s
+2024.02.25-21.45.23 H5Fcreate() time: 0.016 s
+2024.02.25-21.45.23 H5Fflush() time: 0.107 s
+2024.02.25-21.45.23 H5Fclose() time: 0.051 s
+2024.02.25-21.45.23 Observed completion time: 7.967 s
+2024.02.25-21.45.23 SYNC Raw write rate: 10.617 GB/s 
+2024.02.25-21.45.23 SYNC Observed write rate: 10.041 GB/s
+2024.02.25-21.45.23 ===========================================================
+2024.02.25-21.45.32 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179127.10/mpinodes -np 1 -map-by ppr:1:node dropcaches 3
+2024.02.25-21.45.32 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179127.10/mpinodes -mca io romio321 -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/unifyfs-develop-insgggyksgjztlflskmpth44w32is3b7/lib/libunifyfs_mpi_gotcha.so -x UNIFYFS_RUNSTATE_DIR -x UNIFYFS_LOGIO_CHUNK_SIZE -x UNIFYFS_LOG_DIR -x UNIFYFS_MARGO_SERVER_TIMEOUT -x UNIFYFS_DAEMONIZE -x UNIFYFS_LOGIO_SPILL_SIZE -x UNIFYFS_SERVER_INIT_TIMEOUT -x UNIFYFS_MARGO_CLIENT_POOL_SIZE -x UNIFYFS_CLIENT_NODE_LOCAL_EXTENTS -x UNIFYFS_SERVER_LOCAL_EXTENTS -x UNIFYFS_SERVER_MAX_APP_CLIENTS -x UNIFYFS_MARGO_SERVER_POOL_SIZE -x UNIFYFS_MOUNTPOINT -x UNIFYFS_CLIENT_LOCAL_EXTENTS -x UNIFYFS_MARGO_CLIENT_TIMEOUT -x UNIFYFS_MARGO_TCP -x UNIFYFS_LOG_VERBOSITY -x UNIFYFS_LOGIO_SHMEM_SIZE -x UNIFYFS_LOGIO_SPILL_DIR -x FI_UNIVERSE_SIZE=4096 -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-21.44.32-179127.nqsv-1/romio_hints -np 32 -map-by ppr:32:node -bind-to core h5bench_read /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-21.44.32-179127.nqsv-1/read.cfg /unifyfs/rw.h5
+2024.02.25-21.45.41 Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-21.44.32-179127.nqsv-1/read.cfg
+2024.02.25-21.45.41 Read data file: /unifyfs/rw.h5
+2024.02.25-21.45.43 dims[0] = 8192 (total number for the file)
+2024.02.25-21.45.43 dims[1] = 256 (total number for the file)
+2024.02.25-21.45.43 dims[2] = 256 (total number for the file)
+2024.02.25-21.45.43 Total particles in the file: 536870912
+2024.02.25-21.45.43 Number of particles available per rank: 16777216 
+2024.02.25-21.45.43 Opened HDF5 file... [/unifyfs/rw.h5]
+2024.02.25-21.45.43 
+2024.02.25-21.45.43 ================ Benchmark Configuration ==================
+2024.02.25-21.45.43 File: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-unifyfs/2024.02.25-21.43.58-default/2024.02.25-21.44.32-179127.nqsv-1/read.cfg
+2024.02.25-21.45.43 Number of particles per rank: 16777216
+2024.02.25-21.45.43 Number of time steps: 5
+2024.02.25-21.45.43 Emulated compute time per timestep: 0
+2024.02.25-21.45.43 Mode: SYNC
+2024.02.25-21.45.43 Collective metadata operations: NO
+2024.02.25-21.45.43 Collective buffering for data operations: NO
+2024.02.25-21.45.43 Number of dimensions: 3
+2024.02.25-21.45.43     Dim_1: 256
+2024.02.25-21.45.43     Dim_2: 256
+2024.02.25-21.45.43     Dim_3: 256
+2024.02.25-21.45.43 Strided access settings:
+2024.02.25-21.45.43     Stride size = 0
+2024.02.25-21.45.43     Block size = 0
+2024.02.25-21.45.43 ===========================================================
+2024.02.25-21.45.43 
+2024.02.25-21.45.43 Reading Timestep_0 ... 
+2024.02.25-21.45.53   Read 8 variable completed
+2024.02.25-21.45.53 Computing... 
+2024.02.25-21.45.53 Reading Timestep_1 ... 
+2024.02.25-21.46.03   Read 8 variable completed
+2024.02.25-21.46.03 Computing... 
+2024.02.25-21.46.03 Reading Timestep_2 ... 
+2024.02.25-21.46.14   Read 8 variable completed
+2024.02.25-21.46.14 Computing... 
+2024.02.25-21.46.14 Reading Timestep_3 ... 
+2024.02.25-21.46.24   Read 8 variable completed
+2024.02.25-21.46.24 Computing... 
+2024.02.25-21.46.25 Reading Timestep_4 ... 
+2024.02.25-21.46.35   Read 8 variable completed
+2024.02.25-21.46.35 
+2024.02.25-21.46.35 =================== Performance Results ==================
+2024.02.25-21.46.35 Total number of ranks: 32
+2024.02.25-21.46.35 Total emulated compute time: 0.000 s
+2024.02.25-21.46.35 Total read size: 80.000 GB
+2024.02.25-21.46.35 Raw read time: 42.450 s
+2024.02.25-21.46.35 Metadata time: 9.273 s
+2024.02.25-21.46.35 Observed read completion time: 51.967 s
+2024.02.25-21.46.35 SYNC Raw read rate: 1.884 GB/s 
+2024.02.25-21.46.35 SYNC Observed read rate: 1.539 GB/s
+2024.02.25-21.46.35 ===========================================================
+2024.02.25-21.46.44 Attempting to call unifyfs_get_gfids()...
+2024.02.25-21.46.44 ...and done.  ret=0	num_gfids=2
+2024.02.25-21.46.44 GFIDs received:
+2024.02.25-21.46.44   40755 30081 30293       0 1708865103 /unifyfs
+2024.02.25-21.46.44  100644 30081 3029385899364408 1708865115 /unifyfs/rw.h5

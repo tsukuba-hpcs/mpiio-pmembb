@@ -1,0 +1,5 @@
+Attempting to call unifyfs_get_gfids()...
+...and done.  ret=0	num_gfids=2
+GFIDs received:
+  40755 30081 30293       0 1708870240 /unifyfs
+ 100644 30081 302935497558157368 1708870257 /unifyfs/rw.h5
