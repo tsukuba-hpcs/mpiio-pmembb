@@ -1,0 +1,170 @@
+2024.02.25-19.34.45 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-unifyfs/2024.02.25-19.34.08-ppn46/2024.02.25-19.34.44-179078.nqsv-1
+2024.02.25-19.34.45 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/rdbench-unifyfs/2024.02.25-19.34.44-179078.nqsv-1
+2024.02.25-19.34.45 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179078.10/mpinodes -x PATH -x UNIFYFS_RUNSTATE_DIR -x UNIFYFS_LOGIO_CHUNK_SIZE -x UNIFYFS_LOG_DIR -x UNIFYFS_MARGO_SERVER_TIMEOUT -x UNIFYFS_DAEMONIZE -x UNIFYFS_LOGIO_SPILL_SIZE -x UNIFYFS_SERVER_INIT_TIMEOUT -x UNIFYFS_MARGO_CLIENT_POOL_SIZE -x UNIFYFS_CLIENT_NODE_LOCAL_EXTENTS -x UNIFYFS_SERVER_LOCAL_EXTENTS -x UNIFYFS_SERVER_MAX_APP_CLIENTS -x UNIFYFS_MARGO_SERVER_POOL_SIZE -x UNIFYFS_MOUNTPOINT -x UNIFYFS_CLIENT_LOCAL_EXTENTS -x UNIFYFS_MARGO_CLIENT_TIMEOUT -x UNIFYFS_MARGO_TCP -x UNIFYFS_LOG_VERBOSITY -x UNIFYFS_LOGIO_SHMEM_SIZE -x UNIFYFS_LOGIO_SPILL_DIR -np 1 -rf /work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-unifyfs/2024.02.25-19.34.08-ppn46/2024.02.25-19.34.44-179078.nqsv-1/rankfile unifyfsd --unifyfs-cleanup on --server-hostfile /work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-unifyfs/2024.02.25-19.34.08-ppn46/2024.02.25-19.34.44-179078.nqsv-1/unifyfsd.hosts --sharedfs-dir /work/0/NBB/hiraga/work/mpiio-pmembb/backend/rdbench-unifyfs/2024.02.25-19.34.44-179078.nqsv-1
+2024.02.25-19.34.45 wait for unifyfsd to start
+2024.02.25-19.35.15 Attempting to call unifyfs_get_gfids()...
+2024.02.25-19.35.15 ...and done.  ret=0	num_gfids=1
+2024.02.25-19.35.15 GFIDs received:
+2024.02.25-19.35.15   40755 30081 30202       0 1708857315 /unifyfs
+2024.02.25-19.35.16 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179078.10/mpinodes -np 1 -map-by ppr:1:node dropcaches 3
+2024.02.25-19.35.16 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-unifyfs/2024.02.25-19.34.08-ppn46/2024.02.25-19.34.44-179078.nqsv-1/time_0.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.179078.10/mpinodes -np 48 -map-by ppr:48:node -bind-to core -mca io romio321 -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/unifyfs-develop-insgggyksgjztlflskmpth44w32is3b7/lib/libunifyfs_mpi_gotcha.so -x UNIFYFS_RUNSTATE_DIR -x UNIFYFS_LOGIO_CHUNK_SIZE -x UNIFYFS_LOG_DIR -x UNIFYFS_MARGO_SERVER_TIMEOUT -x UNIFYFS_DAEMONIZE -x UNIFYFS_LOGIO_SPILL_SIZE -x UNIFYFS_SERVER_INIT_TIMEOUT -x UNIFYFS_MARGO_CLIENT_POOL_SIZE -x UNIFYFS_CLIENT_NODE_LOCAL_EXTENTS -x UNIFYFS_SERVER_LOCAL_EXTENTS -x UNIFYFS_SERVER_MAX_APP_CLIENTS -x UNIFYFS_MARGO_SERVER_POOL_SIZE -x UNIFYFS_MOUNTPOINT -x UNIFYFS_CLIENT_LOCAL_EXTENTS -x UNIFYFS_MARGO_CLIENT_TIMEOUT -x UNIFYFS_MARGO_TCP -x UNIFYFS_LOG_VERBOSITY -x UNIFYFS_LOGIO_SHMEM_SIZE -x UNIFYFS_LOGIO_SPILL_DIR -x FI_UNIVERSE_SIZE=4096 -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-unifyfs/2024.02.25-19.34.08-ppn46/2024.02.25-19.34.44-179078.nqsv-1/romio_hints rdbench --length 49152 --output /unifyfs/o_ --nomkdir --iotype view --steps 640 --interval 64 --novalidate --disable-initial-output --prettify --xnp 6 --nosync
+2024.02.25-19.42.46 {
+2024.02.25-19.42.46     "version": "0.11.1",
+2024.02.25-19.42.46     "nprocs": 48,
+2024.02.25-19.42.46     "topology": [
+2024.02.25-19.42.46         48
+2024.02.25-19.42.46     ],
+2024.02.25-19.42.46     "xnp": 6,
+2024.02.25-19.42.46     "ynp": 8,
+2024.02.25-19.42.46     "L": 49152,
+2024.02.25-19.42.46     "chunkSizeX": 8192,
+2024.02.25-19.42.46     "chunkSizeY": 6144,
+2024.02.25-19.42.46     "collective": false,
+2024.02.25-19.42.46     "iotype": "view",
+2024.02.25-19.42.46     "sync": false,
+2024.02.25-19.42.46     "validate": false,
+2024.02.25-19.42.46     "steps": 640,
+2024.02.25-19.42.46     "interval": 64,
+2024.02.25-19.42.46     "fixedX": false,
+2024.02.25-19.42.46     "fixedY": false,
+2024.02.25-19.42.46     "initialOutput": false,
+2024.02.25-19.42.46     "nfiles": 10,
+2024.02.25-19.42.46     "fileSize": 19327352832,
+2024.02.25-19.42.46     "totalWriteSizeByte": 193273528320,
+2024.02.25-19.42.46     "calcTimeSec": 397.616980246,
+2024.02.25-19.42.46     "commTimeSec": 21.295055739,
+2024.02.25-19.42.46     "writeTimeSec": 17.510025584,
+2024.02.25-19.42.46     "writeBandwidthByte": 11037878122.61,
+2024.02.25-19.42.46     "initialTimeSec": 14.884019431,
+2024.02.25-19.42.46     "finalizeTimeSec": 14.04290604,
+2024.02.25-19.42.46     "phaseDurationsSec": [
+2024.02.25-19.42.46         [
+2024.02.25-19.42.46             "init",
+2024.02.25-19.42.46             14.884019431
+2024.02.25-19.42.46         ],
+2024.02.25-19.42.46         [
+2024.02.25-19.42.46             "comm",
+2024.02.25-19.42.46             3.188298244
+2024.02.25-19.42.46         ],
+2024.02.25-19.42.46         [
+2024.02.25-19.42.46             "calc",
+2024.02.25-19.42.46             39.812754722
+2024.02.25-19.42.46         ],
+2024.02.25-19.42.46         [
+2024.02.25-19.42.46             "write",
+2024.02.25-19.42.46             1.881650255
+2024.02.25-19.42.46         ],
+2024.02.25-19.42.46         [
+2024.02.25-19.42.46             "comm",
+2024.02.25-19.42.46             1.974107858
+2024.02.25-19.42.46         ],
+2024.02.25-19.42.46         [
+2024.02.25-19.42.46             "calc",
+2024.02.25-19.42.46             39.869980857
+2024.02.25-19.42.46         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "write",
+2024.02.25-19.42.47             1.775652122
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "comm",
+2024.02.25-19.42.47             2.256346823
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "calc",
+2024.02.25-19.42.47             39.784381583
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "write",
+2024.02.25-19.42.47             1.757295214
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "comm",
+2024.02.25-19.42.47             2.480866026
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "calc",
+2024.02.25-19.42.47             39.778763557
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "write",
+2024.02.25-19.42.47             1.789494591
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "comm",
+2024.02.25-19.42.47             1.921002605
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "calc",
+2024.02.25-19.42.47             39.912575953
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "write",
+2024.02.25-19.42.47             1.712796478
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "comm",
+2024.02.25-19.42.47             1.901181414
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "calc",
+2024.02.25-19.42.47             40.013352067
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "write",
+2024.02.25-19.42.47             1.838573193
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "comm",
+2024.02.25-19.42.47             2.224112719
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "calc",
+2024.02.25-19.42.47             39.901036735
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "write",
+2024.02.25-19.42.47             1.724715144
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "comm",
+2024.02.25-19.42.47             2.119722685
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "calc",
+2024.02.25-19.42.47             39.704397026
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "write",
+2024.02.25-19.42.47             1.7534228
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "comm",
+2024.02.25-19.42.47             1.811367172
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "calc",
+2024.02.25-19.42.47             39.927084152
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "write",
+2024.02.25-19.42.47             1.750381536
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "comm",
+2024.02.25-19.42.47             1.830210727
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "calc",
+2024.02.25-19.42.47             39.909350403
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "write",
+2024.02.25-19.42.47             1.742939449
+2024.02.25-19.42.47         ],
+2024.02.25-19.42.47         [
+2024.02.25-19.42.47             "finalize",
+2024.02.25-19.42.47             14.04290604
+2024.02.25-19.42.47         ]
+2024.02.25-19.42.47     ]
+2024.02.25-19.42.47 }

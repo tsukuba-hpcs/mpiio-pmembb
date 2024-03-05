@@ -1,0 +1,45 @@
+UNIFYFS CONFIG: unifyfs.cleanup = on
+UNIFYFS CONFIG: unifyfs.daemonize = on
+UNIFYFS CONFIG: unifyfs.mountpoint = /unifyfs
+UNIFYFS CONFIG: client.excl_private = on
+UNIFYFS CONFIG: client.fsync_persist = on
+UNIFYFS CONFIG: client.local_extents = on
+UNIFYFS CONFIG: client.node_local_extents = on
+UNIFYFS CONFIG: client.max_files = 128
+UNIFYFS CONFIG: client.super_magic = on
+UNIFYFS CONFIG: client.unlink_usecs = 0
+UNIFYFS CONFIG: client.write_index_size = 20971520
+UNIFYFS CONFIG: client.write_sync = off
+UNIFYFS CONFIG: log.verbosity = 3
+UNIFYFS CONFIG: log.file = unifyfsd.log
+UNIFYFS CONFIG: log.dir = /work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-unifyfs/2024.02.25-19.34.08-ppn46/2024.02.25-19.55.38-179072.nqsv-49/unifyfsd_log
+UNIFYFS CONFIG: log.on_error = off
+UNIFYFS CONFIG: logio.chunk_size = 65536
+UNIFYFS CONFIG: logio.shmem_size = 0
+UNIFYFS CONFIG: logio.spill_size = 1649267441664
+UNIFYFS CONFIG: logio.spill_dir = /pmem
+UNIFYFS CONFIG: margo.client_pool_size = 8
+UNIFYFS CONFIG: margo.client_timeout = 60000
+UNIFYFS CONFIG: margo.lazy_connect = on
+UNIFYFS CONFIG: margo.server_pool_size = 8
+UNIFYFS CONFIG: margo.server_timeout = 60000
+UNIFYFS CONFIG: margo.tcp = off
+UNIFYFS CONFIG: meta.range_size = 1048576
+UNIFYFS CONFIG: runstate.dir = /pmem
+UNIFYFS CONFIG: server.hostfile = /work/0/NBB/hiraga/work/mpiio-pmembb/raw/rdbench-unifyfs/2024.02.25-19.34.08-ppn46/2024.02.25-19.55.38-179072.nqsv-49/unifyfsd.hosts
+UNIFYFS CONFIG: server.init_timeout = 120
+UNIFYFS CONFIG: server.local_extents = on
+UNIFYFS CONFIG: server.max_app_clients = 4096
+UNIFYFS CONFIG: sharedfs.dir = /work/0/NBB/hiraga/work/mpiio-pmembb/backend/rdbench-unifyfs/2024.02.25-19.55.38-179072.nqsv-49
+2024-02-25T19:56:10 tid=2241446 @ collective_set_local_retval() [unifyfs_group_rpc.c:723] invalid collective request type 14
+2024-02-25T19:56:25 tid=2242367 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=1511587981
+2024-02-25T19:56:25 tid=2242367 @ request_manager_thread() [unifyfs_request_manager.c:1656] failed to process client rpc requests
+2024-02-25T19:57:08 tid=2242391 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=2079841140
+2024-02-25T19:57:58 tid=2242375 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=1891430157
+2024-02-25T19:58:48 tid=2242408 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=393516309
+2024-02-25T19:59:38 tid=2242408 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=558436844
+2024-02-25T20:00:27 tid=2242356 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=387770426
+2024-02-25T20:01:17 tid=2242395 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=636216950
+2024-02-25T20:02:57 tid=2242356 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=522513709
+2024-02-25T20:03:46 tid=2242383 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=232113873
+2024-02-25T20:04:36 tid=2242393 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=2131121660
