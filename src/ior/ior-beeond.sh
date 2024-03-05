@@ -5,7 +5,7 @@ source "${SCRIPT_DIR}/common.sh"
 TIMESTAMP="$(timestamp)"
 
 # default params 
-: ${ELAPSTIM_REQ:="24:00:00"}
+: ${ELAPSTIM_REQ:="1:00:00"}
 : ${LABEL:=default}
 
 JOB_FILE="$(remove_ext "$(this_file)").job.sh"
@@ -19,8 +19,8 @@ mkdir -p "${BACKEND_DIR}"
 
 nnodes_list=(
   # 32
-  64
-  # 1 2 4 8 16 32 64 #100 # 120
+  # 64
+  1 2 4 8 16 32 64 #100 # 120
   # 100
   # 16
   # 100 64 32

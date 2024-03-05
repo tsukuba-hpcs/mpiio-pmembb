@@ -5,7 +5,7 @@ source "${SCRIPT_DIR}/common.sh"
 TIMESTAMP="$(timestamp)"
 
 # default params 
-: ${ELAPSTIM_REQ:="24:00:00"}
+: ${ELAPSTIM_REQ:="2:00:00"}
 : ${LABEL:=default}
 
 JOB_FILE="$(remove_ext "$(this_file)").job.sh"
@@ -16,7 +16,8 @@ mkdir -p "${OUTPUT_DIR}"
 cd "${OUTPUT_DIR}"
 
 nnodes_list=(
-  1 2 4 8 16 32 64
+  # 1 2 4 8 16 32
+  64
 )
 niter=1
 
@@ -55,10 +56,10 @@ for nnodes in "${nnodes_list[@]}"; do
       cmd_qsub=(
         # qsub_lustre
         qsub
-        # -A NBBG
-        -A NBB
-        # -q "$(determine_queue "${nnodes}")"
-        -q gpu_low
+        -A NBBG
+        # -A NBB
+        -q "$(determine_queue "${nnodes}")"
+        # -q gpu_low
         -l elapstim_req="${ELAPSTIM_REQ}"
         -T openmpi
         -v NQSV_MPI_VER="${NQSV_MPI_VER}"

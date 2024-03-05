@@ -62,13 +62,35 @@ ppn_list=(
   48
 )
 
-
-# workflow_id=0
+workflow_id=0
 runid=0
 for ppn in "${ppn_list[@]}"; do
   np=$((NNODES * ppn))
   rdbench_length_per_node=$((48 * 2 ** 10)) # 48k * 48k * sizeof(double) = 18 GiB/node
   rdbench_length=$((rdbench_length_per_node * $(sqrt "$NNODES")))
+  xfer_size=$((rdbench_length_per_node * 8 / 6)) # sizeof(double)=8, xnp_per_node=6
+
+  echo "prepare test_dir"
+  test_dir="/beeond/${workflow_id}"
+  cmd_beegfs_ctl_set=(
+    /sbin/beegfs-ctl
+    --setpattern
+    --mount=/beeond
+    "--chunksize=${xfer_size}"
+    "--numtargets=${NNODES}"
+    "${test_dir}"
+  )
+  cmd_beegfs_ctl_get=(
+    /sbin/beegfs-ctl
+    --getentryinfo
+    --mount=/beeond
+    "${test_dir}"
+  )
+
+  mkdir -p "${test_dir}"
+  "${cmd_beegfs_ctl_set[@]}"
+  "${cmd_beegfs_ctl_get[@]}" \
+    >"${JOB_OUTPUT_DIR}/beegfs_getentryinfo_${workflow_id}.txt"
 
   cmd_mpirun=(
     mpirun
@@ -87,7 +109,7 @@ for ppn in "${ppn_list[@]}"; do
   cmd_rdbench=(
     rdbench
     --length "$rdbench_length"
-    --output "/beeond/o_"
+    --output "${test_dir}/o_"
     --nomkdir
     --iotype view
     --steps "$RDBENCH_STEPS"
@@ -126,11 +148,12 @@ for ppn in "${ppn_list[@]}"; do
     2> >(tee "${JOB_OUTPUT_DIR}/rdbench_stderr_${runid}.txt" >&2)
 
   # dump test dir
-  tree -s /beeond >"${JOB_OUTPUT_DIR}/out_tree_${ppn}"
+  tree -s "${test_dir}" >"${JOB_OUTPUT_DIR}/out_tree_${ppn}"
 
-  rm /beeond/*
+  rm -rf "${test_dir:?}"
 
   sleep 5
 
   runid=$((runid + 1))
+  workflow_id=$((workflow_id + 1))
 done

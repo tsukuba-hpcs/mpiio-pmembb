@@ -1,6 +1,6 @@
 #!/bin/bash
 export UNIFYFS_DAEMONIZE=on
-export UNIFYFS_MOUNTPOINT=/unifyfs
+export UNIFYFS_MOUNTPOINT=/scr/unifyfs
 export UNIFYFS_LOG_DIR=/work/0/NBB/hiraga/work/mpiio-pmembb/src/unifyfs
 export UNIFYFS_LOG_VERBOSITY=3
 export UNIFYFS_LOGIO_SPILL_DIR=/pmem

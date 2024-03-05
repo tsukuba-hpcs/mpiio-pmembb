@@ -3,14 +3,14 @@
 #PBS -A NBBG
 #PBS -l elapstim_req=0:30:00
 #PBS -T openmpi
-#PBS -v NQSV_MPI_VER=5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz
+#PBS -v NQSV_MPI_VER=5.0.0rc12-pmembb-eval-gcc-11.4.0-r5rhxc6
 #PBS -v USE_DEVDAX=pmemkv
 #PBS -v NUM_DEVDAX=1
 #------- Program execution -----------
 set -eu
 
 module load use.own
-module load "openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-fevlzaz"
+module load "openmpi/5.0.0rc12-pmembb-eval-gcc-11.4.0-r5rhxc6"
 
 # Requires
 # - SPACK_ENV_NAME
@@ -55,7 +55,8 @@ mkdir -p "${JOB_BACKEND_DIR}"
 trap 'rm -rf "${JOB_BACKEND_DIR}" ; exit 1' 1 2 3 15
 trap 'rm -rf "${JOB_BACKEND_DIR}" ; exit 0' EXIT
 
-ppn=48
+# ppn=48
+ppn=36
 np=$((NNODES*ppn))
 rdbench_length_per_node=$((48*2**10)) # 48k * 48k * sizeof(double) = 18 GiB/node
 rdbench_length=$((rdbench_length_per_node * $(sqrt "$NNODES")))

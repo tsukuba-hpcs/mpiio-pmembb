@@ -123,8 +123,8 @@ chlist \
   2> >(tee "${JOB_OUTPUT_DIR}/chlist.e.txt" >&2)
 
 ppn_list=(
-  36
-  # 48
+  # 36
+  48
 )
 
 # workflow_id=0

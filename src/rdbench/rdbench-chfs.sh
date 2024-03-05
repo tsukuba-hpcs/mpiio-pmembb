@@ -15,8 +15,7 @@ mkdir -p "${OUTPUT_DIR}"
 cd "${OUTPUT_DIR}"
 
 nnodes_list=(
-  # 1 4 9 16
-  25 36 49 64
+  1 4 9 16 25 36 49 64
   # 4
 )
 niter=1

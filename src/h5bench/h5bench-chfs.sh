@@ -5,7 +5,7 @@ source "${SCRIPT_DIR}/common.sh"
 TIMESTAMP="$(timestamp)"
 
 # default params 
-: ${ELAPSTIM_REQ:="3:00:00"}
+: ${ELAPSTIM_REQ:="1:00:00"}
 : ${LABEL:=default}
 
 JOB_FILE="$(remove_ext "$(this_file)").job.sh"
@@ -17,8 +17,9 @@ cd "${OUTPUT_DIR}"
 nnodes_list=(
   # 1 2 4 8 16 32 64
   64
+  # 4
 )
-niter=2
+niter=1
 
 param_set_list=(
   "

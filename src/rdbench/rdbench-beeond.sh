@@ -5,7 +5,7 @@ source "${SCRIPT_DIR}/common.sh"
 TIMESTAMP="$(timestamp)"
 
 # default params 
-: ${ELAPSTIM_REQ:="6:00:00"}
+: ${ELAPSTIM_REQ:="2:00:00"}
 : ${LABEL:=default}
 # : ${NQSV_MPI_VER:="5.0.0rc12-pmembb-gcc-11.4.0-u6s35fd"}
 
@@ -17,8 +17,7 @@ mkdir -p "${OUTPUT_DIR}"
 cd "${OUTPUT_DIR}"
 
 nnodes_list=(
-  # 1 4 9 16 25 36
-  49 64
+  1 4 9 16 25 36 49 64
   # 4
 )
 niter=1

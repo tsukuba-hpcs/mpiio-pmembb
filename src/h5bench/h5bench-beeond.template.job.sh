@@ -56,7 +56,8 @@ save_job_params() {
   "runid": ${runid},
   "lustre_version": "$(lfs --version | awk '{print $2}')",
   "spack_env_name": "${SPACK_ENV_NAME}",
-  "storageSystem": "BeeOND"
+  "storageSystem": "BeeOND",
+  "beeond_chunksize": ${beeond_chunk_size}
 }
 EOS
 }
@@ -66,10 +67,30 @@ runid=0
 ppn=32
 
 np=$((NNODES * ppn))
+beeond_chunk_size=$((512*2**10))
 
 echo "prepare test_dir"
 TEST_DIR="/beeond/${workflow_id}"
 mkdir -p "${TEST_DIR}"
+
+cmd_beegfs_ctl_set=(
+  /sbin/beegfs-ctl
+  --setpattern
+  --mount=/beeond
+  "--chunksize=${beeond_chunk_size}"
+  "--numtargets=${NNODES}"
+  "${TEST_DIR}"
+)
+cmd_beegfs_ctl_get=(
+  /sbin/beegfs-ctl
+  --getentryinfo
+  --mount=/beeond
+  "${TEST_DIR}"
+)
+
+"${cmd_beegfs_ctl_set[@]}"
+"${cmd_beegfs_ctl_get[@]}" \
+  >"${JOB_OUTPUT_DIR}/beegfs_getentryinfo_${workflow_id}.txt"
 
 args_mpirun_common=(
   "${nqsii_mpiopts_array[@]}"
@@ -99,9 +120,9 @@ wf_read="${JOB_OUTPUT_DIR}/read.json"
 export MPI_ARGS
 export TEST_DIR
 MPI_ARGS="${args_mpirun_write[*]}"
-envsubst < "${SCRIPT_DIR}/workflows/write.json" > "${wf_write}"
+envsubst <"${SCRIPT_DIR}/workflows/write.json" >"${wf_write}"
 MPI_ARGS="${args_mpirun_read[*]}"
-envsubst < "${SCRIPT_DIR}/workflows/read.json" > "${wf_read}"
+envsubst <"${SCRIPT_DIR}/workflows/read.json" >"${wf_read}"
 
 save_job_params
 # dropcaches
@@ -109,7 +130,7 @@ echo "${cmd_dropcaches[@]}"
 "${cmd_dropcaches[@]}"
 
 time_json -o "${JOB_OUTPUT_DIR}/time_${runid}.json" \
-h5bench -d "$wf_write"
+  h5bench -d "$wf_write"
 rsync -av --exclude='*.h5' "$TEST_DIR/" "$JOB_OUTPUT_DIR/"
 runid=$((runid + 1))
 save_job_params
@@ -119,13 +140,13 @@ echo "${cmd_dropcaches[@]}"
 "${cmd_dropcaches[@]}"
 
 time_json -o "${JOB_OUTPUT_DIR}/time_${runid}.json" \
-h5bench -d "$wf_read"
+  h5bench -d "$wf_read"
 rsync -av --exclude='*.h5' "$TEST_DIR/" "$JOB_OUTPUT_DIR/"
 runid=$((runid + 1))
 
 # dump h5 files
-tree -s "$TEST_DIR" > "${JOB_OUTPUT_DIR}/tree.txt"
-h5ls -r "$TEST_DIR/storage/rw.h5" > "${JOB_OUTPUT_DIR}/h5ls_rw.txt"
+tree -s "$TEST_DIR" >"${JOB_OUTPUT_DIR}/tree.txt"
+h5ls -r "$TEST_DIR/storage/rw.h5" >"${JOB_OUTPUT_DIR}/h5ls_rw.txt"
 
 runid=$((runid + 1))
 workflow_id=$((workflow_id + 1))

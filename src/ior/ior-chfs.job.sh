@@ -27,7 +27,7 @@ fi
 : "${CHFS_NIOTHREADS:=2}"
 : "${CHFS_RDMA_THRESH:=$((32*2**10))}"
 : "${CHFS_ASYNC_ACCESS:=0}"
-: "${CHFS_LOOKUP_LOCAL:=0}"
+: "${CHFS_LOOKUP_LOCAL:=1}"
 : "${FI_UNIVERSE_SIZE:=4096}"
 
 spack env activate "${SPACK_ENV_NAME}"
@@ -52,7 +52,8 @@ ROMIO_HINTS="${JOB_OUTPUT_DIR}/romio_hints"
 cp "${SCRIPT_DIR}/romio_hints/off" "${ROMIO_HINTS}"
 
 ppn_list=(
-  8
+  # 8
+  32
 )
 
 min_io_size_per_proc=$((20 * 2 ** 30)) # 20 GiB/proc, 20 * 32 ppn == 640 GiB/node

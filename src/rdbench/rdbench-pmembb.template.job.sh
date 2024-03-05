@@ -55,7 +55,8 @@ mkdir -p "${JOB_BACKEND_DIR}"
 trap 'rm -rf "${JOB_BACKEND_DIR}" ; exit 1' 1 2 3 15
 trap 'rm -rf "${JOB_BACKEND_DIR}" ; exit 0' EXIT
 
-ppn=48
+# ppn=48
+ppn=36
 np=$((NNODES*ppn))
 rdbench_length_per_node=$((48*2**10)) # 48k * 48k * sizeof(double) = 18 GiB/node
 rdbench_length=$((rdbench_length_per_node * $(sqrt "$NNODES")))

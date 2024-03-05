@@ -16,17 +16,17 @@ fi
 # - SCRIPT_DIR
 # - OUTPUT_DIR
 
-: "${CHFS_MOUNT_DIR:='/scr/chfs'}"
+# : "${CHFS_MOUNT_DIR:=/scr/chfs}"
 : "${CHFS_CHUNK_SIZE:=$((512 * 2 ** 10))}"
 : "${CHFS_NODE_LIST_CACHE_TIMEOUT:=0}"
 : "${CHFS_RPC_TIMEOUT_MSEC:=$((30 * 1000))}"
-: "${CHFS_LOG_PRIORITY:='notice'}"
+: "${CHFS_LOG_PRIORITY:=notice}"
 : "${CHFS_NTHREADS:=8}"
 : "${CHFS_NIOTHREADS:=2}"
 : "${CHFS_RDMA_THRESH:=$((32 * 2 ** 10))}"
 : "${CHFS_ASYNC_ACCESS:=0}"
 : "${CHFS_LOOKUP_LOCAL:=0}"
-: "${FI_UNIVERSE_SIZE:=4096}"
+: "${FI_UNIVERSE_SIZE:=8192}"
 
 spack env activate "${SPACK_ENV_NAME}"
 
@@ -41,6 +41,8 @@ JOB_OUTPUT_DIR="${OUTPUT_DIR}/${JOB_START}-${JOBID}-${NNODES}"
 
 echo "prepare the output directory: ${JOB_OUTPUT_DIR}"
 mkdir -p "${JOB_OUTPUT_DIR}"
+mkdir -p "${JOB_OUTPUT_DIR}/storage/write"
+mkdir -p "${JOB_OUTPUT_DIR}/storage/read"
 cp "$0" "${JOB_OUTPUT_DIR}"
 cp "${PBS_NODEFILE}" "${JOB_OUTPUT_DIR}"
 printenv >"${JOB_OUTPUT_DIR}/env.txt"
@@ -83,8 +85,9 @@ EOS
 
 # start chfs
 echo "clean up chfsd and chfuse of prev job"
-chfsctl -h "${PBS_NODEFILE}" -m "$CHFS_MOUNT_DIR" kill
-rm -rf "${CHFS_MOUNT_DIR:?}/"*
+# chfsctl -h "${PBS_NODEFILE}" -m "$CHFS_MOUNT_DIR" kill
+chfsctl -h "${PBS_NODEFILE}" kill
+# rm -rf "${CHFS_MOUNT_DIR:?}/"*
 
 args_chfsd=(
   -H 0
@@ -104,11 +107,11 @@ cmd_chfsctl=(
   -NUMACTL "--physcpubind 40-47"
   -D -c /dev/dax0.0
   -O "${args_chfsd[*]}"
-  -m "$CHFS_MOUNT_DIR"
+  # -m "$CHFS_MOUNT_DIR"
   start
 )
 
-mkdir -p "$CHFS_MOUNT_DIR"
+# mkdir -p "$CHFS_MOUNT_DIR"
 echo "${cmd_chfsctl[@]}"
 chfs_start="$("${cmd_chfsctl[@]}")"
 echo "$chfs_start"
@@ -124,15 +127,10 @@ chlist \
 workflow_id=0
 runid=0
 ppn=32
-
 np=$((NNODES * ppn))
 
-cd "${CHFS_MOUNT_DIR}"
-TEST_DIR="./${workflow_id}"
-
-args_mpirun_common=(
-  -f "$PBS_NODEFILE"
-  -bind-to core
+cmd_mpirun=(
+  mpirun
   -genv PATH="${PATH}"
   -genv FI_PROVIDER="verbs;ofi_rxm"
   -genv FI_UNIVERSE_SIZE="${FI_UNIVERSE_SIZE}"
@@ -145,51 +143,57 @@ args_mpirun_common=(
   -genv CHFS_RDMA_THRESH="${CHFS_RDMA_THRESH}"
   -genv CHFS_ASYNC_ACCESS="${CHFS_ASYNC_ACCESS}"
   -genv CHFS_LOOKUP_LOCAL="${CHFS_LOOKUP_LOCAL}"
-)
-args_mpirun_write=(
-  "${args_mpirun_common[@]}"
+  -f "$PBS_NODEFILE"
   -np "$np"
   -ppn "$ppn"
-)
-args_mpirun_read=(
-  "${args_mpirun_common[@]}"
-  -np "$np"
-  -ppn "$ppn"
+  -bind-to core
 )
 
-wf_write="${JOB_OUTPUT_DIR}/write.json"
-wf_read="${JOB_OUTPUT_DIR}/read.json"
+write_cfg="${JOB_OUTPUT_DIR}/write.cfg"
+read_cfg="${JOB_OUTPUT_DIR}/read.cfg"
+rw_h5="rw.h5"
 
-export MPI_ARGS
-export TEST_DIR
-MPI_ARGS="${args_mpirun_write[*]}"
-envsubst <"${SCRIPT_DIR}/workflows/write.json" >"${wf_write}"
-MPI_ARGS="${args_mpirun_read[*]}"
-envsubst <"${SCRIPT_DIR}/workflows/read.json" >"${wf_read}"
+cmd_h5bench_write=(
+  "${cmd_mpirun[@]}"
+  h5bench_write
+  "${write_cfg}"
+  "${rw_h5}"
+)
 
+cmd_h5bench_read=(
+  "${cmd_mpirun[@]}"
+  h5bench_read
+  "${read_cfg}"
+  "${rw_h5}"
+)
+
+# generate config files
+export JOB_OUTPUT_DIR
+envsubst <"${SCRIPT_DIR}/config/write.template.cfg" > "${write_cfg}"
+envsubst <"${SCRIPT_DIR}/config/read.template.cfg" > "${read_cfg}"
+
+# run h5bench_write
 save_job_params
-# dropcaches
+
 echo "${cmd_dropcaches[@]}"
 "${cmd_dropcaches[@]}"
 
-time_json -o "${JOB_OUTPUT_DIR}/time_${runid}.json" \
-  h5bench -d "$wf_write"
-rsync -av --exclude='*.h5' "$TEST_DIR/" "$JOB_OUTPUT_DIR/"
+echo "${cmd_h5bench_write[@]}"
+"${cmd_h5bench_write[@]}"
+
 runid=$((runid + 1))
+
+# echo "chfind"
+# chfind > "${JOB_OUTPUT_DIR}/chfind.txt"
+
+# run h5bench_read
 save_job_params
 
-# dropcaches
 echo "${cmd_dropcaches[@]}"
 "${cmd_dropcaches[@]}"
 
-time_json -o "${JOB_OUTPUT_DIR}/time_${runid}.json" \
-  h5bench -d "$wf_read"
-rsync -av --exclude='*.h5' "$TEST_DIR/" "$JOB_OUTPUT_DIR/"
-runid=$((runid + 1))
-
-# dump h5 files
-tree -s "$TEST_DIR" >"${JOB_OUTPUT_DIR}/tree.txt"
-# h5ls -r "$TEST_DIR/storage/rw.h5" >"${JOB_OUTPUT_DIR}/h5ls_rw.txt"
+echo "${cmd_h5bench_read[@]}"
+"${cmd_h5bench_read[@]}"
 
 runid=$((runid + 1))
 workflow_id=$((workflow_id + 1))
