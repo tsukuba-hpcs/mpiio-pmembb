@@ -1,0 +1,48 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.28-09.08.59 2024-02-28 09:08:59.888598204 +0900: <notice> chfs_err: KV_ERR_SERVER_DOWN
+
+============================================================
+Request ID:             180175.nqsv
+Request Name:           h5bench-chfs.job.sh
+Queue:                  gpu_low@nqsv
+Number of Jobs:         16
+User Name:              hiraga
+Group Name:             NBB
+Created Request Time:   Wed Feb 28 09:01:11 2024
+Started Request Time:   Wed Feb 28 09:07:38 2024
+Ended Request Time:     Wed Feb 28 09:09:04 2024
+Resources Information:
+  Elapse:               90S
+  Remaining Elapse:     10710S
+============================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------

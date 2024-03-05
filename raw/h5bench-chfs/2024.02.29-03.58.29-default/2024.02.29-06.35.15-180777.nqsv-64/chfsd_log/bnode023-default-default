@@ -1,0 +1,19 @@
+2024-02-29 07:01:50.717093324 +0900: <notice> handle_sig: signal 15 caught
+2024-02-29 07:02:19.214023790 +0900: <err> ring_rpc_set_prev (forward to ofi+verbs;ofi_rxm://10.110.0.43:52487): HG_PROTOCOL_ERROR
+2024-02-29 07:02:19.214126455 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.43:52487): HG_TIMEOUT
+2024-02-29 07:02:19.214137124 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.43:52487): HG_TIMEOUT
+2024-02-29 07:02:19.214132182 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.43:52487): HG_TIMEOUT
+2024-02-29 07:02:19.214172079 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.43:52487): HG_TIMEOUT
+2024-02-29 07:02:19.214175633 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.43:52487): HG_TIMEOUT
+2024-02-29 07:02:19.214207370 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.43:52487): HG_TIMEOUT
+2024-02-29 07:02:19.214440542 +0900: <notice> election: HG_TIMEOUT
+2024-02-29 07:02:19.214199590 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.43:52487): HG_TIMEOUT
+2024-02-29 07:02:19.214469092 +0900: <notice> election: HG_TIMEOUT
+2024-02-29 07:02:19.214476286 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.43:52487): HG_TIMEOUT
+2024-02-29 07:02:19.214491999 +0900: <notice> election: HG_TIMEOUT
+2024-02-29 07:02:19.214324501 +0900: <notice> election: HG_TIMEOUT
+2024-02-29 07:02:19.214516933 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.43:52487): HG_TIMEOUT
+2024-02-29 07:02:19.214425613 +0900: <notice> election: HG_TIMEOUT
+2024-02-29 07:02:19.214196137 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.43:52487): HG_TIMEOUT
+2024-02-29 07:02:19.214593405 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.43:52487): HG_TIMEOUT
+2024-02-29 07:02:19.214601103 +0900: <notice> election: HG_TIMEOUT

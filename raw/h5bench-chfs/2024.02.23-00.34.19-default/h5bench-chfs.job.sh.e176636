@@ -1,0 +1,47 @@
+2024.02.23-00.34.55 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-00.35.01 fusermount: mount failed: Operation not permitted
+2024.02.23-00.35.08 2024-02-23 00:35:08,249 h5bench - INFO - Starting h5bench Suite
+2024.02.23-00.35.08 2024-02-23 00:35:08,251 h5bench - WARNING - Base directory already exists: ./0/storage
+2024.02.23-00.35.08 2024-02-23 00:35:08,268 h5bench - INFO - Lustre support detected
+2024.02.23-00.35.08 2024-02-23 00:35:08,268 h5bench - DEBUG - LD_LIBRARY_PATH: /home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/lib64:/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/lib
+2024.02.23-00.35.08 2024-02-23 00:35:08,268 h5bench - DEBUG - DYLD_LIBRARY_PATH: 
+2024.02.23-00.35.08 2024-02-23 00:35:08,268 h5bench - DEBUG - LD_PRELOAD: 
+2024.02.23-00.35.08 2024-02-23 00:35:08,268 h5bench - INFO - JOBID: 0:176636.nqsv
+2024.02.23-00.35.08 2024-02-23 00:35:08,268 h5bench - INFO - h5bench [write] - Starting
+2024.02.23-00.35.08 2024-02-23 00:35:08,268 h5bench - INFO - h5bench [write] - DIR: ./0/storage/eb8dc5f5-0:176636.nqsv/
+2024.02.23-00.35.08 2024-02-23 00:35:08,269 h5bench - INFO - Parallel setup: mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176636.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.19-default/2024.02.23-00.34.55-176636.nqsv-1/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.119:45033 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 32 -ppn 32
+2024.02.23-00.35.08 2024-02-23 00:35:08,270 h5bench - INFO - mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176636.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.19-default/2024.02.23-00.34.55-176636.nqsv-1/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.119:45033 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 32 -ppn 32 /home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/h5bench-1.4-pmembb-jvuv2f7cuopzzaoyptexo3vvh7x2cjzq/bin//h5bench_write ./0/storage/eb8dc5f5-0:176636.nqsv/h5bench.cfg ./0/storage/rw.h5
+2024.02.23-00.35.23 2024-02-23 00:35:23,095 h5bench - INFO - SUCCESS (all output files are located at ./0/storage/eb8dc5f5-0:176636.nqsv)
+2024.02.23-00.35.23 2024-02-23 00:35:23,095 h5bench - INFO - Runtime: 14.8266079 seconds (elapsed time, includes allocation wait time)
+2024.02.23-00.35.23 2024-02-23 00:35:23,095 h5bench - INFO - h5bench [write] - Complete
+2024.02.23-00.35.23 2024-02-23 00:35:23,095 h5bench - INFO - Finishing h5bench Suite
+2024.02.23-00.35.24 2024-02-23 00:35:24,537 h5bench - INFO - Starting h5bench Suite
+2024.02.23-00.35.24 2024-02-23 00:35:24,539 h5bench - WARNING - Base directory already exists: ./0/storage
+2024.02.23-00.35.24 2024-02-23 00:35:24,556 h5bench - INFO - Lustre support detected
+2024.02.23-00.35.24 2024-02-23 00:35:24,556 h5bench - DEBUG - LD_LIBRARY_PATH: /home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/lib64:/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/lib
+2024.02.23-00.35.24 2024-02-23 00:35:24,556 h5bench - DEBUG - DYLD_LIBRARY_PATH: 
+2024.02.23-00.35.24 2024-02-23 00:35:24,556 h5bench - DEBUG - LD_PRELOAD: 
+2024.02.23-00.35.24 2024-02-23 00:35:24,556 h5bench - INFO - JOBID: 0:176636.nqsv
+2024.02.23-00.35.24 2024-02-23 00:35:24,557 h5bench - INFO - h5bench [read] - Starting
+2024.02.23-00.35.24 2024-02-23 00:35:24,557 h5bench - INFO - h5bench [read] - DIR: ./0/storage/7d600aff-0:176636.nqsv/
+2024.02.23-00.35.24 2024-02-23 00:35:24,557 h5bench - INFO - Parallel setup: mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176636.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.19-default/2024.02.23-00.34.55-176636.nqsv-1/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.119:45033 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 32 -ppn 32
+2024.02.23-00.35.24 2024-02-23 00:35:24,558 h5bench - INFO - mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176636.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.19-default/2024.02.23-00.34.55-176636.nqsv-1/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.119:45033 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 32 -ppn 32 /home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/h5bench-1.4-pmembb-jvuv2f7cuopzzaoyptexo3vvh7x2cjzq/bin//h5bench_read ./0/storage/7d600aff-0:176636.nqsv/h5bench.cfg ./0/storage/rw.h5
+2024.02.23-00.35.31 2024-02-23 00:35:31,888 h5bench - INFO - SUCCESS (all output files are located at ./0/storage/7d600aff-0:176636.nqsv)
+2024.02.23-00.35.31 2024-02-23 00:35:31,889 h5bench - INFO - Runtime: 7.3317127 seconds (elapsed time, includes allocation wait time)
+2024.02.23-00.35.31 2024-02-23 00:35:31,889 h5bench - INFO - h5bench [read] - Complete
+2024.02.23-00.35.31 2024-02-23 00:35:31,889 h5bench - INFO - Finishing h5bench Suite
+
+============================================================
+Request ID:             176636.nqsv
+Request Name:           h5bench-chfs.job.sh
+Queue:                  gen_S@nqsv
+Number of Jobs:         1
+User Name:              hiraga
+Group Name:             NBBG
+Created Request Time:   Fri Feb 23 00:34:19 2024
+Started Request Time:   Fri Feb 23 00:34:50 2024
+Ended Request Time:     Fri Feb 23 00:35:31 2024
+Resources Information:
+  Elapse:               45S
+  Remaining Elapse:     10755S
+============================================================

@@ -1,0 +1,31 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+
+============================================================
+Request ID:             180774.nqsv
+Request Name:           h5bench-chfs.job.sh
+Queue:                  gen_S@nqsv
+Number of Jobs:         8
+User Name:              hiraga
+Group Name:             NBBG
+Created Request Time:   Thu Feb 29 03:58:30 2024
+Started Request Time:   Thu Feb 29 04:07:36 2024
+Ended Request Time:     Thu Feb 29 04:08:36 2024
+Resources Information:
+  Elapse:               64S
+  Remaining Elapse:     10736S
+============================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------

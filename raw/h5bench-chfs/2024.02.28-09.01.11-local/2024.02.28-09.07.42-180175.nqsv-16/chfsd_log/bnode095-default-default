@@ -1,0 +1,7 @@
+2024-02-28 09:08:58.072307827 +0900: <err> inode_read RPC (respond): HG_PROTOCOL_ERROR
+2024-02-28 09:08:58.131128628 +0900: <err> inode_read RPC (respond): HG_PROTOCOL_ERROR
+2024-02-28 09:08:59.888380561 +0900: <err> fs_async_rpc_inode_read_rdma_bulk_wait (wait): HG_NOENTRY
+2024-02-28 09:08:59.888468147 +0900: <err> inode_read_rdma RPC (rpc_read_rdma_bulk) home/NBB/hiraga/rw.h5:1523146: HG_NOENTRY
+2024-02-28 09:08:59.888477385 +0900: <err> inode_read_rdma RPC: home/NBB/hiraga/rw.h5:1523146: KV_ERR_SERVER_DOWN
+2024-02-28 09:08:59.888616440 +0900: <err> inode_read RPC (respond): HG_PROTOCOL_ERROR
+2024-02-28 09:09:18.944566430 +0900: <notice> handle_sig: signal 15 caught

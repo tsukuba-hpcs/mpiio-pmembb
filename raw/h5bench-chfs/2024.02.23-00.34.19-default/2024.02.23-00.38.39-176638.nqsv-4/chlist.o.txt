@@ -1,0 +1,4 @@
+ofi+verbs;ofi_rxm://10.110.0.116:46182 ofi+verbs;ofi_rxm://10.110.0.116: 726980EA
+ofi+verbs;ofi_rxm://10.110.0.115:38325 ofi+verbs;ofi_rxm://10.110.0.115: 91FE4267
+ofi+verbs;ofi_rxm://10.110.0.113:58605 ofi+verbs;ofi_rxm://10.110.0.113: B14B8DBD
+ofi+verbs;ofi_rxm://10.110.0.118:40902 ofi+verbs;ofi_rxm://10.110.0.118: F1A24753

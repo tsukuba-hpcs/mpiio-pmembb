@@ -1,0 +1,200 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.38 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 Warning: the ECDSA host key for 'bnode101' differs from the key for the IP address '10.120.0.101'
+2024.02.23-03.10.39 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:21
+2024.02.23-03.10.39 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:130
+2024.02.23-03.10.39 Warning: the ECDSA host key for 'bnode101' differs from the key for the IP address '10.120.0.101'
+2024.02.23-03.10.39 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:21
+2024.02.23-03.10.39 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:130
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-03.10.39 Warning: the ECDSA host key for 'bnode101' differs from the key for the IP address '10.120.0.101'
+2024.02.23-03.10.39 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:21
+2024.02.23-03.10.39 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:130
+2024.02.23-03.11.24 Warning: the ECDSA host key for 'bnode101' differs from the key for the IP address '10.120.0.101'
+2024.02.23-03.11.24 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:21
+2024.02.23-03.11.24 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:130
+2024.02.23-03.11.25 Warning: the ECDSA host key for 'bnode101' differs from the key for the IP address '10.120.0.101'
+2024.02.23-03.11.25 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:21
+2024.02.23-03.11.25 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:130
+2024.02.23-03.11.31 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.31 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.32 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.32 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.32 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.33 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.33 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.33 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.33 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.34 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.34 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.34 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.35 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.35 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.35 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.36 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.36 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.36 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.37 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.37 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.37 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.38 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.38 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.38 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.39 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.39 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.39 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.39 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.40 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.40 Warning: the ECDSA host key for 'bnode101' differs from the key for the IP address '10.120.0.101'
+2024.02.23-03.11.40 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:21
+2024.02.23-03.11.40 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:130
+2024.02.23-03.11.40 Warning: the ECDSA host key for 'bnode101' differs from the key for the IP address '10.120.0.101'
+2024.02.23-03.11.40 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:21
+2024.02.23-03.11.40 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:130
+2024.02.23-03.11.40 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.40 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.41 fusermount: mount failed: Operation not permitted
+2024.02.23-03.11.47 Warning: the ECDSA host key for 'bnode101' differs from the key for the IP address '10.120.0.101'
+2024.02.23-03.11.47 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:21
+2024.02.23-03.11.47 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:130
+2024.02.23-03.11.48 2024-02-23 03:11:48,269 h5bench - INFO - Starting h5bench Suite
+2024.02.23-03.11.48 2024-02-23 03:11:48,270 h5bench - WARNING - Base directory already exists: ./0/storage
+2024.02.23-03.11.48 2024-02-23 03:11:48,300 h5bench - INFO - Lustre support detected
+2024.02.23-03.11.48 2024-02-23 03:11:48,300 h5bench - DEBUG - LD_LIBRARY_PATH: /home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/lib64:/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/lib
+2024.02.23-03.11.48 2024-02-23 03:11:48,300 h5bench - DEBUG - DYLD_LIBRARY_PATH: 
+2024.02.23-03.11.48 2024-02-23 03:11:48,300 h5bench - DEBUG - LD_PRELOAD: 
+2024.02.23-03.11.48 2024-02-23 03:11:48,300 h5bench - INFO - JOBID: 0:176632.nqsv
+2024.02.23-03.11.48 2024-02-23 03:11:48,300 h5bench - INFO - h5bench [write] - Starting
+2024.02.23-03.11.48 2024-02-23 03:11:48,300 h5bench - INFO - h5bench [write] - DIR: ./0/storage/c4d3d022-0:176632.nqsv/
+2024.02.23-03.11.48 2024-02-23 03:11:48,301 h5bench - INFO - Parallel setup: mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176632.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.01-default/2024.02.23-03.10.37-176632.nqsv-32/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.83:38939,ofi+verbs;ofi_rxm://10.110.0.92:54661,ofi+verbs;ofi_rxm://10.110.0.75:48771,ofi+verbs;ofi_rxm://10.110.0.112:49439,ofi+verbs;ofi_rxm://10.110.0.76:41765,ofi+verbs;ofi_rxm://10.110.0.74:34108,ofi+verbs;ofi_rxm://10.110.0.77:52250,ofi+verbs;ofi_rxm://10.110.0.89:35421,ofi+verbs;ofi_rxm://10.110.0.103:37022,ofi+verbs;ofi_rxm://10.110.0.97:52098,ofi+verbs;ofi_rxm://10.110.0.99:34598,ofi+verbs;ofi_rxm://10.110.0.81:52828,ofi+verbs;ofi_rxm://10.110.0.86:58072,ofi+verbs;ofi_rxm://10.110.0.95:55882,ofi+verbs;ofi_rxm://10.110.0.90:36020,ofi+verbs;ofi_rxm://10.110.0.101:49542,ofi+verbs;ofi_rxm://10.110.0.85:42334,ofi+verbs;ofi_rxm://10.110.0.94:56655,ofi+verbs;ofi_rxm://10.110.0.82:60487,ofi+verbs;ofi_rxm://10.110.0.100:41230,ofi+verbs;ofi_rxm://10.110.0.98:57003,ofi+verbs;ofi_rxm://10.110.0.87:59743,ofi+verbs;ofi_rxm://10.110.0.93:55158,ofi+verbs;ofi_rxm://10.110.0.84:36554,ofi+verbs;ofi_rxm://10.110.0.72:49953,ofi+verbs;ofi_rxm://10.110.0.78:35785,ofi+verbs;ofi_rxm://10.110.0.80:35565,ofi+verbs;ofi_rxm://10.110.0.91:37460,ofi+verbs;ofi_rxm://10.110.0.96:50206,ofi+verbs;ofi_rxm://10.110.0.73:33574,ofi+verbs;ofi_rxm://10.110.0.88:37712,ofi+verbs;ofi_rxm://10.110.0.79:40434 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 1024 -ppn 32
+2024.02.23-03.11.48 2024-02-23 03:11:48,302 h5bench - INFO - mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176632.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.01-default/2024.02.23-03.10.37-176632.nqsv-32/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.83:38939,ofi+verbs;ofi_rxm://10.110.0.92:54661,ofi+verbs;ofi_rxm://10.110.0.75:48771,ofi+verbs;ofi_rxm://10.110.0.112:49439,ofi+verbs;ofi_rxm://10.110.0.76:41765,ofi+verbs;ofi_rxm://10.110.0.74:34108,ofi+verbs;ofi_rxm://10.110.0.77:52250,ofi+verbs;ofi_rxm://10.110.0.89:35421,ofi+verbs;ofi_rxm://10.110.0.103:37022,ofi+verbs;ofi_rxm://10.110.0.97:52098,ofi+verbs;ofi_rxm://10.110.0.99:34598,ofi+verbs;ofi_rxm://10.110.0.81:52828,ofi+verbs;ofi_rxm://10.110.0.86:58072,ofi+verbs;ofi_rxm://10.110.0.95:55882,ofi+verbs;ofi_rxm://10.110.0.90:36020,ofi+verbs;ofi_rxm://10.110.0.101:49542,ofi+verbs;ofi_rxm://10.110.0.85:42334,ofi+verbs;ofi_rxm://10.110.0.94:56655,ofi+verbs;ofi_rxm://10.110.0.82:60487,ofi+verbs;ofi_rxm://10.110.0.100:41230,ofi+verbs;ofi_rxm://10.110.0.98:57003,ofi+verbs;ofi_rxm://10.110.0.87:59743,ofi+verbs;ofi_rxm://10.110.0.93:55158,ofi+verbs;ofi_rxm://10.110.0.84:36554,ofi+verbs;ofi_rxm://10.110.0.72:49953,ofi+verbs;ofi_rxm://10.110.0.78:35785,ofi+verbs;ofi_rxm://10.110.0.80:35565,ofi+verbs;ofi_rxm://10.110.0.91:37460,ofi+verbs;ofi_rxm://10.110.0.96:50206,ofi+verbs;ofi_rxm://10.110.0.73:33574,ofi+verbs;ofi_rxm://10.110.0.88:37712,ofi+verbs;ofi_rxm://10.110.0.79:40434 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 1024 -ppn 32 /home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/h5bench-1.4-pmembb-jvuv2f7cuopzzaoyptexo3vvh7x2cjzq/bin//h5bench_write ./0/storage/c4d3d022-0:176632.nqsv/h5bench.cfg ./0/storage/rw.h5
+2024.02.23-03.12.08 2024-02-23 03:12:08,337 h5bench - INFO - SUCCESS (all output files are located at ./0/storage/c4d3d022-0:176632.nqsv)
+2024.02.23-03.12.08 2024-02-23 03:12:08,337 h5bench - INFO - Runtime: 20.0367453 seconds (elapsed time, includes allocation wait time)
+2024.02.23-03.12.08 2024-02-23 03:12:08,338 h5bench - INFO - h5bench [write] - Complete
+2024.02.23-03.12.08 2024-02-23 03:12:08,338 h5bench - INFO - Finishing h5bench Suite
+2024.02.23-03.12.09 Warning: the ECDSA host key for 'bnode101' differs from the key for the IP address '10.120.0.101'
+2024.02.23-03.12.09 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:21
+2024.02.23-03.12.09 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:130
+2024.02.23-03.12.10 2024-02-23 03:12:10,276 h5bench - INFO - Starting h5bench Suite
+2024.02.23-03.12.10 2024-02-23 03:12:10,278 h5bench - WARNING - Base directory already exists: ./0/storage
+2024.02.23-03.12.10 2024-02-23 03:12:10,306 h5bench - INFO - Lustre support detected
+2024.02.23-03.12.10 2024-02-23 03:12:10,307 h5bench - DEBUG - LD_LIBRARY_PATH: /home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/lib64:/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/lib
+2024.02.23-03.12.10 2024-02-23 03:12:10,307 h5bench - DEBUG - DYLD_LIBRARY_PATH: 
+2024.02.23-03.12.10 2024-02-23 03:12:10,307 h5bench - DEBUG - LD_PRELOAD: 
+2024.02.23-03.12.10 2024-02-23 03:12:10,307 h5bench - INFO - JOBID: 0:176632.nqsv
+2024.02.23-03.12.10 2024-02-23 03:12:10,307 h5bench - INFO - h5bench [read] - Starting
+2024.02.23-03.12.10 2024-02-23 03:12:10,307 h5bench - INFO - h5bench [read] - DIR: ./0/storage/2b8a5d6c-0:176632.nqsv/
+2024.02.23-03.12.10 2024-02-23 03:12:10,307 h5bench - INFO - Parallel setup: mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176632.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.01-default/2024.02.23-03.10.37-176632.nqsv-32/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.83:38939,ofi+verbs;ofi_rxm://10.110.0.92:54661,ofi+verbs;ofi_rxm://10.110.0.75:48771,ofi+verbs;ofi_rxm://10.110.0.112:49439,ofi+verbs;ofi_rxm://10.110.0.76:41765,ofi+verbs;ofi_rxm://10.110.0.74:34108,ofi+verbs;ofi_rxm://10.110.0.77:52250,ofi+verbs;ofi_rxm://10.110.0.89:35421,ofi+verbs;ofi_rxm://10.110.0.103:37022,ofi+verbs;ofi_rxm://10.110.0.97:52098,ofi+verbs;ofi_rxm://10.110.0.99:34598,ofi+verbs;ofi_rxm://10.110.0.81:52828,ofi+verbs;ofi_rxm://10.110.0.86:58072,ofi+verbs;ofi_rxm://10.110.0.95:55882,ofi+verbs;ofi_rxm://10.110.0.90:36020,ofi+verbs;ofi_rxm://10.110.0.101:49542,ofi+verbs;ofi_rxm://10.110.0.85:42334,ofi+verbs;ofi_rxm://10.110.0.94:56655,ofi+verbs;ofi_rxm://10.110.0.82:60487,ofi+verbs;ofi_rxm://10.110.0.100:41230,ofi+verbs;ofi_rxm://10.110.0.98:57003,ofi+verbs;ofi_rxm://10.110.0.87:59743,ofi+verbs;ofi_rxm://10.110.0.93:55158,ofi+verbs;ofi_rxm://10.110.0.84:36554,ofi+verbs;ofi_rxm://10.110.0.72:49953,ofi+verbs;ofi_rxm://10.110.0.78:35785,ofi+verbs;ofi_rxm://10.110.0.80:35565,ofi+verbs;ofi_rxm://10.110.0.91:37460,ofi+verbs;ofi_rxm://10.110.0.96:50206,ofi+verbs;ofi_rxm://10.110.0.73:33574,ofi+verbs;ofi_rxm://10.110.0.88:37712,ofi+verbs;ofi_rxm://10.110.0.79:40434 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 1024 -ppn 32
+2024.02.23-03.12.10 2024-02-23 03:12:10,308 h5bench - INFO - mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176632.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.01-default/2024.02.23-03.10.37-176632.nqsv-32/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.83:38939,ofi+verbs;ofi_rxm://10.110.0.92:54661,ofi+verbs;ofi_rxm://10.110.0.75:48771,ofi+verbs;ofi_rxm://10.110.0.112:49439,ofi+verbs;ofi_rxm://10.110.0.76:41765,ofi+verbs;ofi_rxm://10.110.0.74:34108,ofi+verbs;ofi_rxm://10.110.0.77:52250,ofi+verbs;ofi_rxm://10.110.0.89:35421,ofi+verbs;ofi_rxm://10.110.0.103:37022,ofi+verbs;ofi_rxm://10.110.0.97:52098,ofi+verbs;ofi_rxm://10.110.0.99:34598,ofi+verbs;ofi_rxm://10.110.0.81:52828,ofi+verbs;ofi_rxm://10.110.0.86:58072,ofi+verbs;ofi_rxm://10.110.0.95:55882,ofi+verbs;ofi_rxm://10.110.0.90:36020,ofi+verbs;ofi_rxm://10.110.0.101:49542,ofi+verbs;ofi_rxm://10.110.0.85:42334,ofi+verbs;ofi_rxm://10.110.0.94:56655,ofi+verbs;ofi_rxm://10.110.0.82:60487,ofi+verbs;ofi_rxm://10.110.0.100:41230,ofi+verbs;ofi_rxm://10.110.0.98:57003,ofi+verbs;ofi_rxm://10.110.0.87:59743,ofi+verbs;ofi_rxm://10.110.0.93:55158,ofi+verbs;ofi_rxm://10.110.0.84:36554,ofi+verbs;ofi_rxm://10.110.0.72:49953,ofi+verbs;ofi_rxm://10.110.0.78:35785,ofi+verbs;ofi_rxm://10.110.0.80:35565,ofi+verbs;ofi_rxm://10.110.0.91:37460,ofi+verbs;ofi_rxm://10.110.0.96:50206,ofi+verbs;ofi_rxm://10.110.0.73:33574,ofi+verbs;ofi_rxm://10.110.0.88:37712,ofi+verbs;ofi_rxm://10.110.0.79:40434 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 1024 -ppn 32 /home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/h5bench-1.4-pmembb-jvuv2f7cuopzzaoyptexo3vvh7x2cjzq/bin//h5bench_read ./0/storage/2b8a5d6c-0:176632.nqsv/h5bench.cfg ./0/storage/rw.h5
+2024.02.23-03.12.23 2024-02-23 03:12:23,597 h5bench - INFO - SUCCESS (all output files are located at ./0/storage/2b8a5d6c-0:176632.nqsv)
+2024.02.23-03.12.23 2024-02-23 03:12:23,597 h5bench - INFO - Runtime: 13.2900960 seconds (elapsed time, includes allocation wait time)
+2024.02.23-03.12.23 2024-02-23 03:12:23,598 h5bench - INFO - h5bench [read] - Complete
+2024.02.23-03.12.23 2024-02-23 03:12:23,598 h5bench - INFO - Finishing h5bench Suite
+
+============================================================
+Request ID:             176632.nqsv
+Request Name:           h5bench-chfs.job.sh
+Queue:                  gpu_low@nqsv
+Number of Jobs:         32
+User Name:              hiraga
+Group Name:             NBB
+Created Request Time:   Fri Feb 23 00:34:01 2024
+Started Request Time:   Fri Feb 23 03:10:34 2024
+Ended Request Time:     Fri Feb 23 03:12:23 2024
+Resources Information:
+  Elapse:               113S
+  Remaining Elapse:     10687S
+============================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
+
+%NQSV(INFO): ------- Output from job:0016 -------
+
+%NQSV(INFO): ------- Output from job:0017 -------
+
+%NQSV(INFO): ------- Output from job:0018 -------
+
+%NQSV(INFO): ------- Output from job:0019 -------
+
+%NQSV(INFO): ------- Output from job:0020 -------
+
+%NQSV(INFO): ------- Output from job:0021 -------
+
+%NQSV(INFO): ------- Output from job:0022 -------
+
+%NQSV(INFO): ------- Output from job:0023 -------
+
+%NQSV(INFO): ------- Output from job:0024 -------
+
+%NQSV(INFO): ------- Output from job:0025 -------
+
+%NQSV(INFO): ------- Output from job:0026 -------
+
+%NQSV(INFO): ------- Output from job:0027 -------
+
+%NQSV(INFO): ------- Output from job:0028 -------
+
+%NQSV(INFO): ------- Output from job:0029 -------
+
+%NQSV(INFO): ------- Output from job:0030 -------
+
+%NQSV(INFO): ------- Output from job:0031 -------

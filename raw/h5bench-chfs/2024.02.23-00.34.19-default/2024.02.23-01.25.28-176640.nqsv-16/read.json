@@ -1,0 +1,30 @@
+{
+  "mpi": {
+    "command": "mpirun",
+    "configuration": "-f /var/opt/nec/nqsv/jsv/jobfile/0.176640.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.19-default/2024.02.23-01.25.28-176640.nqsv-16/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.60:43384,ofi+verbs;ofi_rxm://10.110.0.49:40090,ofi+verbs;ofi_rxm://10.110.0.53:35502,ofi+verbs;ofi_rxm://10.110.0.48:56239,ofi+verbs;ofi_rxm://10.110.0.59:51772,ofi+verbs;ofi_rxm://10.110.0.54:53071,ofi+verbs;ofi_rxm://10.110.0.57:60029,ofi+verbs;ofi_rxm://10.110.0.56:33647,ofi+verbs;ofi_rxm://10.110.0.58:36251,ofi+verbs;ofi_rxm://10.110.0.52:40964,ofi+verbs;ofi_rxm://10.110.0.61:56531,ofi+verbs;ofi_rxm://10.110.0.63:46190,ofi+verbs;ofi_rxm://10.110.0.51:43503,ofi+verbs;ofi_rxm://10.110.0.55:48625,ofi+verbs;ofi_rxm://10.110.0.62:33714,ofi+verbs;ofi_rxm://10.110.0.50:41734 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 512 -ppn 32"
+  },
+  "vol": {},
+  "file-system": {},
+  "directory": "./0/storage",
+  "benchmarks": [
+    {
+      "benchmark": "read",
+      "file": "rw.h5",
+      "configuration": {
+        "MEM_PATTERN": "CONTIG",
+        "FILE_PATTERN": "CONTIG",
+        "READ_OPTION": "FULL",
+        "TIMESTEPS": "5",
+        "COLLECTIVE_DATA": "NO",
+        "COLLECTIVE_METADATA": "NO",
+        "EMULATED_COMPUTE_TIME_PER_TIMESTEP": "0 s",
+        "NUM_DIMS": "3",
+        "DIM_1": "256",
+        "DIM_2": "256",
+        "DIM_3": "256",
+        "CSV_FILE": "output-read.csv",
+        "MODE": "SYNC"
+      }
+    }
+  ]
+}

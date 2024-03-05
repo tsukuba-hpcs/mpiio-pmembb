@@ -1,0 +1,62 @@
+2024.02.23-00.34.36 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.01-default/2024.02.23-00.34.36-176622.nqsv-1
+2024.02.23-00.34.36 clean up chfsd and chfuse of prev job
+2024.02.23-00.34.36 chfsctl -h /var/opt/nec/nqsv/jsv/jobfile/0.176622.10/nodelist -L /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.01-default/2024.02.23-00.34.36-176622.nqsv-1/chfsd_log -p verbs -x FI_UNIVERSE_SIZE=4096 -i 1 -NUMACTL --physcpubind 40-47 -D -c /dev/dax0.0 -O -H 0 -t 30000 -L 'notice' -T 8 -l 2 -m '/scr/chfs' start
+2024.02.23-00.34.42 CHFS_SERVER="ofi+verbs;ofi_rxm://10.110.0.113:35524"; export CHFS_SERVER;
+2024.02.23-00.34.42 wait for chfsd to start
+2024.02.23-00.34.48 ofi+verbs;ofi_rxm://10.110.0.113:35524 ofi+verbs;ofi_rxm://10.110.0.113: B14B8DBD
+2024.02.23-00.34.48 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176622.10/nodelist -np 1 -ppn 1 dropcaches 3
+2024.02.23-00.35.02 sending incremental file list
+2024.02.23-00.35.02 ./
+2024.02.23-00.35.02 storage/
+2024.02.23-00.35.02 storage/028e2327-0:176621.nqsv/
+2024.02.23-00.35.02 storage/028e2327-0:176621.nqsv/h5bench.cfg
+2024.02.23-00.35.02 storage/028e2327-0:176621.nqsv/output-write.csv
+2024.02.23-00.35.02 storage/028e2327-0:176621.nqsv/stderr
+2024.02.23-00.35.02 storage/028e2327-0:176621.nqsv/stdout
+2024.02.23-00.35.02 storage/33d4f090-0:176623.nqsv/
+2024.02.23-00.35.02 storage/33d4f090-0:176623.nqsv/h5bench.cfg
+2024.02.23-00.35.02 storage/33d4f090-0:176623.nqsv/output-write.csv
+2024.02.23-00.35.02 storage/33d4f090-0:176623.nqsv/stderr
+2024.02.23-00.35.02 storage/33d4f090-0:176623.nqsv/stdout
+2024.02.23-00.35.02 storage/56a17ff1-0:176622.nqsv/
+2024.02.23-00.35.02 storage/56a17ff1-0:176622.nqsv/h5bench.cfg
+2024.02.23-00.35.02 storage/56a17ff1-0:176622.nqsv/output-write.csv
+2024.02.23-00.35.02 storage/56a17ff1-0:176622.nqsv/stderr
+2024.02.23-00.35.02 storage/56a17ff1-0:176622.nqsv/stdout
+2024.02.23-00.35.02 storage/9cd60bc5-0:176624.nqsv/
+2024.02.23-00.35.02 storage/9cd60bc5-0:176624.nqsv/h5bench.cfg
+2024.02.23-00.35.02 storage/9cd60bc5-0:176624.nqsv/output-write.csv
+2024.02.23-00.35.02 storage/9cd60bc5-0:176624.nqsv/stderr
+2024.02.23-00.35.02 storage/9cd60bc5-0:176624.nqsv/stdout
+2024.02.23-00.35.02 storage/b25a3aa9-0:176621.nqsv/
+2024.02.23-00.35.02 storage/b25a3aa9-0:176621.nqsv/h5bench.cfg
+2024.02.23-00.35.02 storage/b25a3aa9-0:176621.nqsv/output-read.csv
+2024.02.23-00.35.02 storage/b25a3aa9-0:176621.nqsv/stderr
+2024.02.23-00.35.02 storage/b25a3aa9-0:176621.nqsv/stdout
+2024.02.23-00.35.02 
+2024.02.23-00.35.02 sent 55,769 bytes  received 431 bytes  112,400.00 bytes/sec
+2024.02.23-00.35.02 total size is 54,124  speedup is 0.96
+2024.02.23-00.35.03 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176622.10/nodelist -np 1 -ppn 1 dropcaches 3
+2024.02.23-00.35.12 sending incremental file list
+2024.02.23-00.35.12 ./
+2024.02.23-00.35.12 storage/
+2024.02.23-00.35.12 storage/578270c4-0:176623.nqsv/
+2024.02.23-00.35.12 storage/578270c4-0:176623.nqsv/h5bench.cfg
+2024.02.23-00.35.12 storage/578270c4-0:176623.nqsv/output-read.csv
+2024.02.23-00.35.12 storage/578270c4-0:176623.nqsv/stderr
+2024.02.23-00.35.12 storage/578270c4-0:176623.nqsv/stdout
+2024.02.23-00.35.12 storage/9cd60bc5-0:176624.nqsv/output-write.csv
+2024.02.23-00.35.12 storage/9cd60bc5-0:176624.nqsv/stdout
+2024.02.23-00.35.12 storage/e1fd1d6e-0:176622.nqsv/
+2024.02.23-00.35.12 storage/e1fd1d6e-0:176622.nqsv/h5bench.cfg
+2024.02.23-00.35.12 storage/e1fd1d6e-0:176622.nqsv/output-read.csv
+2024.02.23-00.35.12 storage/e1fd1d6e-0:176622.nqsv/stderr
+2024.02.23-00.35.12 storage/e1fd1d6e-0:176622.nqsv/stdout
+2024.02.23-00.35.12 storage/eb8dc5f5-0:176636.nqsv/
+2024.02.23-00.35.12 storage/eb8dc5f5-0:176636.nqsv/h5bench.cfg
+2024.02.23-00.35.12 storage/eb8dc5f5-0:176636.nqsv/output-write.csv
+2024.02.23-00.35.12 storage/eb8dc5f5-0:176636.nqsv/stderr
+2024.02.23-00.35.12 storage/eb8dc5f5-0:176636.nqsv/stdout
+2024.02.23-00.35.12 
+2024.02.23-00.35.12 sent 19,821 bytes  received 310 bytes  40,262.00 bytes/sec
+2024.02.23-00.35.12 total size is 71,332  speedup is 3.54

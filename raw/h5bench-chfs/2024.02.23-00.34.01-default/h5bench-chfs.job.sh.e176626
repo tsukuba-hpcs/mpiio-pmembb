@@ -1,0 +1,88 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.23-00.43.36 Warning: the ECDSA host key for 'bnode118' differs from the key for the IP address '10.120.0.118'
+2024.02.23-00.43.36 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:3
+2024.02.23-00.43.36 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:126
+2024.02.23-00.43.36 Warning: the ECDSA host key for 'bnode118' differs from the key for the IP address '10.120.0.118'
+2024.02.23-00.43.36 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:3
+2024.02.23-00.43.36 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:126
+2024.02.23-00.43.37 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-00.43.37 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-00.43.37 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-00.43.37 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.23-00.43.37 Warning: the ECDSA host key for 'bnode118' differs from the key for the IP address '10.120.0.118'
+2024.02.23-00.43.37 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:3
+2024.02.23-00.43.37 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:126
+2024.02.23-00.43.44 Warning: the ECDSA host key for 'bnode118' differs from the key for the IP address '10.120.0.118'
+2024.02.23-00.43.44 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:3
+2024.02.23-00.43.44 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:126
+2024.02.23-00.43.44 Warning: the ECDSA host key for 'bnode118' differs from the key for the IP address '10.120.0.118'
+2024.02.23-00.43.44 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:3
+2024.02.23-00.43.44 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:126
+2024.02.23-00.43.47 fusermount: mount failed: Operation not permitted
+2024.02.23-00.43.47 fusermount: mount failed: Operation not permitted
+2024.02.23-00.43.48 fusermount: mount failed: Operation not permitted
+2024.02.23-00.43.48 Warning: the ECDSA host key for 'bnode118' differs from the key for the IP address '10.120.0.118'
+2024.02.23-00.43.48 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:3
+2024.02.23-00.43.48 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:126
+2024.02.23-00.43.48 Warning: the ECDSA host key for 'bnode118' differs from the key for the IP address '10.120.0.118'
+2024.02.23-00.43.48 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:3
+2024.02.23-00.43.48 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:126
+2024.02.23-00.43.48 fusermount: mount failed: Operation not permitted
+2024.02.23-00.43.55 Warning: the ECDSA host key for 'bnode118' differs from the key for the IP address '10.120.0.118'
+2024.02.23-00.43.55 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:3
+2024.02.23-00.43.55 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:126
+2024.02.23-00.43.55 2024-02-23 00:43:55,567 h5bench - INFO - Starting h5bench Suite
+2024.02.23-00.43.55 2024-02-23 00:43:55,568 h5bench - WARNING - Base directory already exists: ./0/storage
+2024.02.23-00.43.55 2024-02-23 00:43:55,589 h5bench - INFO - Lustre support detected
+2024.02.23-00.43.55 2024-02-23 00:43:55,589 h5bench - DEBUG - LD_LIBRARY_PATH: /home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/lib64:/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/lib
+2024.02.23-00.43.55 2024-02-23 00:43:55,589 h5bench - DEBUG - DYLD_LIBRARY_PATH: 
+2024.02.23-00.43.55 2024-02-23 00:43:55,589 h5bench - DEBUG - LD_PRELOAD: 
+2024.02.23-00.43.55 2024-02-23 00:43:55,589 h5bench - INFO - JOBID: 0:176626.nqsv
+2024.02.23-00.43.55 2024-02-23 00:43:55,589 h5bench - INFO - h5bench [write] - Starting
+2024.02.23-00.43.55 2024-02-23 00:43:55,589 h5bench - INFO - h5bench [write] - DIR: ./0/storage/18883dbf-0:176626.nqsv/
+2024.02.23-00.43.55 2024-02-23 00:43:55,590 h5bench - INFO - Parallel setup: mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176626.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.01-default/2024.02.23-00.43.36-176626.nqsv-4/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.116:57403,ofi+verbs;ofi_rxm://10.110.0.115:55485,ofi+verbs;ofi_rxm://10.110.0.113:48808,ofi+verbs;ofi_rxm://10.110.0.118:49058 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 128 -ppn 32
+2024.02.23-00.43.55 2024-02-23 00:43:55,591 h5bench - INFO - mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176626.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.01-default/2024.02.23-00.43.36-176626.nqsv-4/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.116:57403,ofi+verbs;ofi_rxm://10.110.0.115:55485,ofi+verbs;ofi_rxm://10.110.0.113:48808,ofi+verbs;ofi_rxm://10.110.0.118:49058 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 128 -ppn 32 /home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/h5bench-1.4-pmembb-jvuv2f7cuopzzaoyptexo3vvh7x2cjzq/bin//h5bench_write ./0/storage/18883dbf-0:176626.nqsv/h5bench.cfg ./0/storage/rw.h5
+2024.02.23-00.44.10 2024-02-23 00:44:10,112 h5bench - INFO - SUCCESS (all output files are located at ./0/storage/18883dbf-0:176626.nqsv)
+2024.02.23-00.44.10 2024-02-23 00:44:10,113 h5bench - INFO - Runtime: 14.5229557 seconds (elapsed time, includes allocation wait time)
+2024.02.23-00.44.10 2024-02-23 00:44:10,113 h5bench - INFO - h5bench [write] - Complete
+2024.02.23-00.44.10 2024-02-23 00:44:10,113 h5bench - INFO - Finishing h5bench Suite
+2024.02.23-00.44.11 Warning: the ECDSA host key for 'bnode118' differs from the key for the IP address '10.120.0.118'
+2024.02.23-00.44.11 Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:3
+2024.02.23-00.44.11 Matching host key in /home/NBB/hiraga/.ssh/known_hosts:126
+2024.02.23-00.44.11 2024-02-23 00:44:11,742 h5bench - INFO - Starting h5bench Suite
+2024.02.23-00.44.11 2024-02-23 00:44:11,743 h5bench - WARNING - Base directory already exists: ./0/storage
+2024.02.23-00.44.11 2024-02-23 00:44:11,765 h5bench - INFO - Lustre support detected
+2024.02.23-00.44.11 2024-02-23 00:44:11,766 h5bench - DEBUG - LD_LIBRARY_PATH: /home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/lib64:/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/lib
+2024.02.23-00.44.11 2024-02-23 00:44:11,766 h5bench - DEBUG - DYLD_LIBRARY_PATH: 
+2024.02.23-00.44.11 2024-02-23 00:44:11,766 h5bench - DEBUG - LD_PRELOAD: 
+2024.02.23-00.44.11 2024-02-23 00:44:11,766 h5bench - INFO - JOBID: 0:176626.nqsv
+2024.02.23-00.44.11 2024-02-23 00:44:11,766 h5bench - INFO - h5bench [read] - Starting
+2024.02.23-00.44.11 2024-02-23 00:44:11,766 h5bench - INFO - h5bench [read] - DIR: ./0/storage/74377c2d-0:176626.nqsv/
+2024.02.23-00.44.11 2024-02-23 00:44:11,766 h5bench - INFO - Parallel setup: mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176626.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.01-default/2024.02.23-00.43.36-176626.nqsv-4/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.116:57403,ofi+verbs;ofi_rxm://10.110.0.115:55485,ofi+verbs;ofi_rxm://10.110.0.113:48808,ofi+verbs;ofi_rxm://10.110.0.118:49058 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 128 -ppn 32
+2024.02.23-00.44.11 2024-02-23 00:44:11,767 h5bench - INFO - mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176626.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.01-default/2024.02.23-00.43.36-176626.nqsv-4/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.116:57403,ofi+verbs;ofi_rxm://10.110.0.115:55485,ofi+verbs;ofi_rxm://10.110.0.113:48808,ofi+verbs;ofi_rxm://10.110.0.118:49058 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 128 -ppn 32 /home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/h5bench-1.4-pmembb-jvuv2f7cuopzzaoyptexo3vvh7x2cjzq/bin//h5bench_read ./0/storage/74377c2d-0:176626.nqsv/h5bench.cfg ./0/storage/rw.h5
+2024.02.23-00.44.20 2024-02-23 00:44:20,720 h5bench - INFO - SUCCESS (all output files are located at ./0/storage/74377c2d-0:176626.nqsv)
+2024.02.23-00.44.20 2024-02-23 00:44:20,721 h5bench - INFO - Runtime: 8.9541821 seconds (elapsed time, includes allocation wait time)
+2024.02.23-00.44.20 2024-02-23 00:44:20,721 h5bench - INFO - h5bench [read] - Complete
+2024.02.23-00.44.20 2024-02-23 00:44:20,721 h5bench - INFO - Finishing h5bench Suite
+
+============================================================
+Request ID:             176626.nqsv
+Request Name:           h5bench-chfs.job.sh
+Queue:                  gpu_low@nqsv
+Number of Jobs:         4
+User Name:              hiraga
+Group Name:             NBB
+Created Request Time:   Fri Feb 23 00:34:01 2024
+Started Request Time:   Fri Feb 23 00:43:33 2024
+Ended Request Time:     Fri Feb 23 00:44:20 2024
+Resources Information:
+  Elapse:               51S
+  Remaining Elapse:     10749S
+============================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------

@@ -1,0 +1,158 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.28-09.04.42 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.04.42-180182.nqsv-16
+2024.02.28-09.04.42 clean up chfsd and chfuse of prev job
+2024.02.28-09.04.43 chfsctl -h /var/opt/nec/nqsv/jsv/jobfile/0.180182.10/nodelist -L /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.04.42-180182.nqsv-16/chfsd_log -p verbs -x FI_UNIVERSE_SIZE=4096 -i 1 -NUMACTL --physcpubind 40-47 -D -c /dev/dax0.0 -O -H 0 -t 30000 -L notice -T 8 -l 2 start
+2024.02.28-09.05.11 CHFS_SERVER="ofi+verbs;ofi_rxm://10.110.0.92:43540,ofi+verbs;ofi_rxm://10.110.0.112:58450,ofi+verbs;ofi_rxm://10.110.0.97:41041,ofi+verbs;ofi_rxm://10.110.0.99:48527,ofi+verbs;ofi_rxm://10.110.0.109:59515,ofi+verbs;ofi_rxm://10.110.0.95:57473,ofi+verbs;ofi_rxm://10.110.0.94:60750,ofi+verbs;ofi_rxm://10.110.0.98:52905,ofi+verbs;ofi_rxm://10.110.0.93:57188,ofi+verbs;ofi_rxm://10.110.0.115:56771,ofi+verbs;ofi_rxm://10.110.0.111:33909,ofi+verbs;ofi_rxm://10.110.0.113:42138,ofi+verbs;ofi_rxm://10.110.0.108:46543,ofi+verbs;ofi_rxm://10.110.0.114:54489,ofi+verbs;ofi_rxm://10.110.0.96:54266,ofi+verbs;ofi_rxm://10.110.0.110:48404"; export CHFS_SERVER;
+2024.02.28-09.05.11 wait for chfsd to start
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.92:43540 ofi+verbs;ofi_rxm://10.110.0.92: 0854B6EF
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.112:58450 ofi+verbs;ofi_rxm://10.110.0.112: 11D10C87
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.97:41041 ofi+verbs;ofi_rxm://10.110.0.97: 21FED42B
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.99:48527 ofi+verbs;ofi_rxm://10.110.0.99: 2CF37DB8
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.109:59515 ofi+verbs;ofi_rxm://10.110.0.109: 50E21A14
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.95:57473 ofi+verbs;ofi_rxm://10.110.0.95: 585F660D
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.94:60750 ofi+verbs;ofi_rxm://10.110.0.94: 70341334
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.98:52905 ofi+verbs;ofi_rxm://10.110.0.98: 7A7191AA
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.93:57188 ofi+verbs;ofi_rxm://10.110.0.93: 8EBADD36
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.115:56771 ofi+verbs;ofi_rxm://10.110.0.115: 91FE4267
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.111:33909 ofi+verbs;ofi_rxm://10.110.0.111: A61977B7
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.113:42138 ofi+verbs;ofi_rxm://10.110.0.113: B14B8DBD
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.108:46543 ofi+verbs;ofi_rxm://10.110.0.108: B43CCE11
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.114:54489 ofi+verbs;ofi_rxm://10.110.0.114: B49E60DF
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.96:54266 ofi+verbs;ofi_rxm://10.110.0.96: DB387861
+2024.02.28-09.05.16 ofi+verbs;ofi_rxm://10.110.0.110:48404 ofi+verbs;ofi_rxm://10.110.0.110: F7C5C883
+2024.02.28-09.05.17 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.180182.10/nodelist -np 16 -ppn 1 dropcaches 3
+2024.02.28-09.05.17 mpirun -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.04.42-180182.nqsv-16/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.92:43540,ofi+verbs;ofi_rxm://10.110.0.112:58450,ofi+verbs;ofi_rxm://10.110.0.97:41041,ofi+verbs;ofi_rxm://10.110.0.99:48527,ofi+verbs;ofi_rxm://10.110.0.109:59515,ofi+verbs;ofi_rxm://10.110.0.95:57473,ofi+verbs;ofi_rxm://10.110.0.94:60750,ofi+verbs;ofi_rxm://10.110.0.98:52905,ofi+verbs;ofi_rxm://10.110.0.93:57188,ofi+verbs;ofi_rxm://10.110.0.115:56771,ofi+verbs;ofi_rxm://10.110.0.111:33909,ofi+verbs;ofi_rxm://10.110.0.113:42138,ofi+verbs;ofi_rxm://10.110.0.108:46543,ofi+verbs;ofi_rxm://10.110.0.114:54489,ofi+verbs;ofi_rxm://10.110.0.96:54266,ofi+verbs;ofi_rxm://10.110.0.110:48404 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=1 -f /var/opt/nec/nqsv/jsv/jobfile/0.180182.10/nodelist -np 512 -ppn 32 -bind-to core h5bench_write /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.04.42-180182.nqsv-16/write.cfg rw.h5
+2024.02.28-09.05.20 Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.04.42-180182.nqsv-16/write.cfg
+2024.02.28-09.05.20 Output data file: rw.h5
+2024.02.28-09.05.20 
+2024.02.28-09.05.20 ================ Benchmark Configuration ==================
+2024.02.28-09.05.20 File: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.04.42-180182.nqsv-16/write.cfg
+2024.02.28-09.05.20 Number of particles per rank: 16777216
+2024.02.28-09.05.20 Number of time steps: 5
+2024.02.28-09.05.20 Emulated compute time per timestep: 0
+2024.02.28-09.05.20 Mode: SYNC
+2024.02.28-09.05.20 Collective metadata operations: NO
+2024.02.28-09.05.20 Collective buffering for data operations: NO
+2024.02.28-09.05.20 Number of dimensions: 3
+2024.02.28-09.05.20     Dim_1: 256
+2024.02.28-09.05.20     Dim_2: 256
+2024.02.28-09.05.20     Dim_3: 256
+2024.02.28-09.05.20 ===========================================================
+2024.02.28-09.05.20 
+2024.02.28-09.05.20 Start benchmark: h5bench_write
+2024.02.28-09.05.20 Number of particles per rank: 16 M
+2024.02.28-09.05.20 Total number of particles: 8192M
+2024.02.28-09.05.20 Collective Metadata operations: OFF
+2024.02.28-09.05.23 Opened HDF5 file... 
+2024.02.28-09.05.23 Writing Timestep_0 ... 
+2024.02.28-09.05.36     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-09.05.36 Computing...
+2024.02.28-09.05.36 Writing Timestep_1 ... 
+2024.02.28-09.05.38     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-09.05.38 Computing...
+2024.02.28-09.05.38 Writing Timestep_2 ... 
+2024.02.28-09.05.40     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-09.05.40 Computing...
+2024.02.28-09.05.40 Writing Timestep_3 ... 
+2024.02.28-09.05.42     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-09.05.42 Computing...
+2024.02.28-09.05.42 Writing Timestep_4 ... 
+2024.02.28-09.05.43     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-09.05.44 
+2024.02.28-09.05.44 =================== Performance Results ==================
+2024.02.28-09.05.44 Total number of ranks: 512
+2024.02.28-09.05.44 Total emulated compute time: 0.000 s
+2024.02.28-09.05.44 Total write size: 1.250 TB
+2024.02.28-09.05.44 Raw write time: 20.508 s
+2024.02.28-09.05.44 Metadata time: 0.004 s
+2024.02.28-09.05.44 H5Fcreate() time: 1.792 s
+2024.02.28-09.05.44 H5Fflush() time: 0.806 s
+2024.02.28-09.05.44 H5Fclose() time: 0.002 s
+2024.02.28-09.05.44 Observed completion time: 23.121 s
+2024.02.28-09.05.44 SYNC Raw write rate: 62.414 GB/s 
+2024.02.28-09.05.44 SYNC Observed write rate: 55.359 GB/s
+2024.02.28-09.05.44 ===========================================================
+2024.02.28-09.05.47 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.180182.10/nodelist -np 16 -ppn 1 dropcaches 3
+2024.02.28-09.05.47 mpirun -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.04.42-180182.nqsv-16/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.92:43540,ofi+verbs;ofi_rxm://10.110.0.112:58450,ofi+verbs;ofi_rxm://10.110.0.97:41041,ofi+verbs;ofi_rxm://10.110.0.99:48527,ofi+verbs;ofi_rxm://10.110.0.109:59515,ofi+verbs;ofi_rxm://10.110.0.95:57473,ofi+verbs;ofi_rxm://10.110.0.94:60750,ofi+verbs;ofi_rxm://10.110.0.98:52905,ofi+verbs;ofi_rxm://10.110.0.93:57188,ofi+verbs;ofi_rxm://10.110.0.115:56771,ofi+verbs;ofi_rxm://10.110.0.111:33909,ofi+verbs;ofi_rxm://10.110.0.113:42138,ofi+verbs;ofi_rxm://10.110.0.108:46543,ofi+verbs;ofi_rxm://10.110.0.114:54489,ofi+verbs;ofi_rxm://10.110.0.96:54266,ofi+verbs;ofi_rxm://10.110.0.110:48404 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=1 -f /var/opt/nec/nqsv/jsv/jobfile/0.180182.10/nodelist -np 512 -ppn 32 -bind-to core h5bench_read /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.04.42-180182.nqsv-16/read.cfg rw.h5
+2024.02.28-09.05.50 Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.04.42-180182.nqsv-16/read.cfg
+2024.02.28-09.05.50 Read data file: rw.h5
+2024.02.28-09.05.52 dims[0] = 131072 (total number for the file)
+2024.02.28-09.05.52 dims[1] = 256 (total number for the file)
+2024.02.28-09.05.52 dims[2] = 256 (total number for the file)
+2024.02.28-09.05.52 Total particles in the file: 8589934592
+2024.02.28-09.05.52 Number of particles available per rank: 16777216 
+2024.02.28-09.05.52 Opened HDF5 file... [rw.h5]
+2024.02.28-09.05.52 
+2024.02.28-09.05.52 ================ Benchmark Configuration ==================
+2024.02.28-09.05.52 File: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.04.42-180182.nqsv-16/read.cfg
+2024.02.28-09.05.52 Number of particles per rank: 16777216
+2024.02.28-09.05.52 Number of time steps: 5
+2024.02.28-09.05.52 Emulated compute time per timestep: 0
+2024.02.28-09.05.52 Mode: SYNC
+2024.02.28-09.05.52 Collective metadata operations: NO
+2024.02.28-09.05.52 Collective buffering for data operations: NO
+2024.02.28-09.05.52 Number of dimensions: 3
+2024.02.28-09.05.52     Dim_1: 256
+2024.02.28-09.05.52     Dim_2: 256
+2024.02.28-09.05.52     Dim_3: 256
+2024.02.28-09.05.52 Strided access settings:
+2024.02.28-09.05.52     Stride size = 0
+2024.02.28-09.05.52     Block size = 0
+2024.02.28-09.05.52 ===========================================================
+2024.02.28-09.05.52 
+2024.02.28-09.05.52 Reading Timestep_0 ... 
+2024.02.28-09.05.58   Read 8 variable completed
+2024.02.28-09.05.58 Computing... 
+2024.02.28-09.05.58 Reading Timestep_1 ... 
+2024.02.28-09.05.59   Read 8 variable completed
+2024.02.28-09.05.59 Computing... 
+2024.02.28-09.05.59 Reading Timestep_2 ... 
+2024.02.28-09.06.00   Read 8 variable completed
+2024.02.28-09.06.00 Computing... 
+2024.02.28-09.06.00 Reading Timestep_3 ... 
+2024.02.28-09.06.01   Read 8 variable completed
+2024.02.28-09.06.01 Computing... 
+2024.02.28-09.06.01 Reading Timestep_4 ... 
+2024.02.28-09.06.03   Read 8 variable completed
+2024.02.28-09.06.03 
+2024.02.28-09.06.03 =================== Performance Results ==================
+2024.02.28-09.06.03 Total number of ranks: 512
+2024.02.28-09.06.03 Total emulated compute time: 0.000 s
+2024.02.28-09.06.03 Total read size: 1.250 TB
+2024.02.28-09.06.03 Raw read time: 10.811 s
+2024.02.28-09.06.03 Metadata time: 0.031 s
+2024.02.28-09.06.03 Observed read completion time: 11.063 s
+2024.02.28-09.06.03 SYNC Raw read rate: 118.397 GB/s 
+2024.02.28-09.06.03 SYNC Observed read rate: 115.698 GB/s
+2024.02.28-09.06.03 ===========================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------

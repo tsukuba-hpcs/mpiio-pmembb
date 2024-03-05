@@ -1,0 +1,111 @@
+2024.02.28-09.02.11 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.02.11-180178.nqsv-1
+2024.02.28-09.02.11 clean up chfsd and chfuse of prev job
+2024.02.28-09.02.12 chfsctl -h /var/opt/nec/nqsv/jsv/jobfile/0.180178.10/nodelist -L /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.02.11-180178.nqsv-1/chfsd_log -p verbs -x FI_UNIVERSE_SIZE=4096 -i 1 -NUMACTL --physcpubind 40-47 -D -c /dev/dax0.0 -O -H 0 -t 30000 -L notice -T 8 -l 2 start
+2024.02.28-09.02.17 CHFS_SERVER="ofi+verbs;ofi_rxm://10.110.0.107:60376"; export CHFS_SERVER;
+2024.02.28-09.02.17 wait for chfsd to start
+2024.02.28-09.02.22 ofi+verbs;ofi_rxm://10.110.0.107:60376 ofi+verbs;ofi_rxm://10.110.0.107: 5C075606
+2024.02.28-09.02.23 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.180178.10/nodelist -np 1 -ppn 1 dropcaches 3
+2024.02.28-09.02.23 mpirun -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.02.11-180178.nqsv-1/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.107:60376 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=1 -f /var/opt/nec/nqsv/jsv/jobfile/0.180178.10/nodelist -np 32 -ppn 32 -bind-to core h5bench_write /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.02.11-180178.nqsv-1/write.cfg rw.h5
+2024.02.28-09.02.25 Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.02.11-180178.nqsv-1/write.cfg
+2024.02.28-09.02.25 Output data file: rw.h5
+2024.02.28-09.02.25 
+2024.02.28-09.02.25 ================ Benchmark Configuration ==================
+2024.02.28-09.02.25 File: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.02.11-180178.nqsv-1/write.cfg
+2024.02.28-09.02.25 Number of particles per rank: 16777216
+2024.02.28-09.02.25 Number of time steps: 5
+2024.02.28-09.02.25 Emulated compute time per timestep: 0
+2024.02.28-09.02.25 Mode: SYNC
+2024.02.28-09.02.25 Collective metadata operations: NO
+2024.02.28-09.02.25 Collective buffering for data operations: NO
+2024.02.28-09.02.25 Number of dimensions: 3
+2024.02.28-09.02.25     Dim_1: 256
+2024.02.28-09.02.25     Dim_2: 256
+2024.02.28-09.02.25     Dim_3: 256
+2024.02.28-09.02.25 ===========================================================
+2024.02.28-09.02.25 
+2024.02.28-09.02.25 Start benchmark: h5bench_write
+2024.02.28-09.02.25 Number of particles per rank: 16 M
+2024.02.28-09.02.25 Total number of particles: 512M
+2024.02.28-09.02.25 Collective Metadata operations: OFF
+2024.02.28-09.02.27 Opened HDF5 file... 
+2024.02.28-09.02.27 Writing Timestep_0 ... 
+2024.02.28-09.02.30     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-09.02.30 Computing...
+2024.02.28-09.02.30 Writing Timestep_1 ... 
+2024.02.28-09.02.32     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-09.02.32 Computing...
+2024.02.28-09.02.32 Writing Timestep_2 ... 
+2024.02.28-09.02.33     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-09.02.33 Computing...
+2024.02.28-09.02.33 Writing Timestep_3 ... 
+2024.02.28-09.02.35     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-09.02.35 Computing...
+2024.02.28-09.02.35 Writing Timestep_4 ... 
+2024.02.28-09.02.37     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-09.02.37 
+2024.02.28-09.02.37 =================== Performance Results ==================
+2024.02.28-09.02.37 Total number of ranks: 32
+2024.02.28-09.02.37 Total emulated compute time: 0.000 s
+2024.02.28-09.02.37 Total write size: 80.000 GB
+2024.02.28-09.02.37 Raw write time: 9.894 s
+2024.02.28-09.02.37 Metadata time: 0.004 s
+2024.02.28-09.02.37 H5Fcreate() time: 0.836 s
+2024.02.28-09.02.37 H5Fflush() time: 0.022 s
+2024.02.28-09.02.37 H5Fclose() time: 0.001 s
+2024.02.28-09.02.37 Observed completion time: 10.767 s
+2024.02.28-09.02.37 SYNC Raw write rate: 8.085 GB/s 
+2024.02.28-09.02.37 SYNC Observed write rate: 7.430 GB/s
+2024.02.28-09.02.37 ===========================================================
+2024.02.28-09.02.39 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.180178.10/nodelist -np 1 -ppn 1 dropcaches 3
+2024.02.28-09.02.39 mpirun -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.02.11-180178.nqsv-1/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.107:60376 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=1 -f /var/opt/nec/nqsv/jsv/jobfile/0.180178.10/nodelist -np 32 -ppn 32 -bind-to core h5bench_read /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.02.11-180178.nqsv-1/read.cfg rw.h5
+2024.02.28-09.02.41 Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.02.11-180178.nqsv-1/read.cfg
+2024.02.28-09.02.41 Read data file: rw.h5
+2024.02.28-09.02.42 dims[0] = 8192 (total number for the file)
+2024.02.28-09.02.42 dims[1] = 256 (total number for the file)
+2024.02.28-09.02.42 dims[2] = 256 (total number for the file)
+2024.02.28-09.02.42 Total particles in the file: 536870912
+2024.02.28-09.02.42 Number of particles available per rank: 16777216 
+2024.02.28-09.02.42 Opened HDF5 file... [rw.h5]
+2024.02.28-09.02.42 
+2024.02.28-09.02.42 ================ Benchmark Configuration ==================
+2024.02.28-09.02.42 File: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-09.01.36-local/2024.02.28-09.02.11-180178.nqsv-1/read.cfg
+2024.02.28-09.02.42 Number of particles per rank: 16777216
+2024.02.28-09.02.42 Number of time steps: 5
+2024.02.28-09.02.42 Emulated compute time per timestep: 0
+2024.02.28-09.02.42 Mode: SYNC
+2024.02.28-09.02.42 Collective metadata operations: NO
+2024.02.28-09.02.42 Collective buffering for data operations: NO
+2024.02.28-09.02.42 Number of dimensions: 3
+2024.02.28-09.02.42     Dim_1: 256
+2024.02.28-09.02.42     Dim_2: 256
+2024.02.28-09.02.42     Dim_3: 256
+2024.02.28-09.02.42 Strided access settings:
+2024.02.28-09.02.42     Stride size = 0
+2024.02.28-09.02.42     Block size = 0
+2024.02.28-09.02.42 ===========================================================
+2024.02.28-09.02.42 
+2024.02.28-09.02.42 Reading Timestep_0 ... 
+2024.02.28-09.02.43   Read 8 variable completed
+2024.02.28-09.02.43 Computing... 
+2024.02.28-09.02.43 Reading Timestep_1 ... 
+2024.02.28-09.02.44   Read 8 variable completed
+2024.02.28-09.02.44 Computing... 
+2024.02.28-09.02.44 Reading Timestep_2 ... 
+2024.02.28-09.02.44   Read 8 variable completed
+2024.02.28-09.02.44 Computing... 
+2024.02.28-09.02.44 Reading Timestep_3 ... 
+2024.02.28-09.02.45   Read 8 variable completed
+2024.02.28-09.02.45 Computing... 
+2024.02.28-09.02.45 Reading Timestep_4 ... 
+2024.02.28-09.02.46   Read 8 variable completed
+2024.02.28-09.02.46 
+2024.02.28-09.02.46 =================== Performance Results ==================
+2024.02.28-09.02.46 Total number of ranks: 32
+2024.02.28-09.02.46 Total emulated compute time: 0.000 s
+2024.02.28-09.02.46 Total read size: 80.000 GB
+2024.02.28-09.02.46 Raw read time: 3.627 s
+2024.02.28-09.02.46 Metadata time: 0.006 s
+2024.02.28-09.02.46 Observed read completion time: 3.655 s
+2024.02.28-09.02.46 SYNC Raw read rate: 22.059 GB/s 
+2024.02.28-09.02.46 SYNC Observed read rate: 21.886 GB/s
+2024.02.28-09.02.46 ===========================================================

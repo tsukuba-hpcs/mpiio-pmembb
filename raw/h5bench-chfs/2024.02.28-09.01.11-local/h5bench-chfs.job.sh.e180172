@@ -1,0 +1,19 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+
+============================================================
+Request ID:             180172.nqsv
+Request Name:           h5bench-chfs.job.sh
+Queue:                  gpu_low@nqsv
+Number of Jobs:         2
+User Name:              hiraga
+Group Name:             NBB
+Created Request Time:   Wed Feb 28 09:01:11 2024
+Started Request Time:   Wed Feb 28 09:01:45 2024
+Ended Request Time:     Wed Feb 28 09:02:31 2024
+Resources Information:
+  Elapse:               50S
+  Remaining Elapse:     10750S
+============================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------

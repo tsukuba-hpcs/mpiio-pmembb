@@ -1,0 +1,84 @@
+[       4096]  ./0
+└── [       4096]  storage
+    ├── [       4096]  028e2327-0:176621.nqsv
+    │   ├── [        234]  h5bench.cfg
+    │   ├── [        308]  output-write.csv
+    │   ├── [      14810]  stderr
+    │   └── [       1645]  stdout
+    ├── [       4096]  058575d0-0:176637.nqsv
+    │   ├── [        250]  h5bench.cfg
+    │   ├── [        305]  output-read.csv
+    │   ├── [       7296]  stderr
+    │   └── [       1541]  stdout
+    ├── [       4096]  305f52dd-0:176638.nqsv
+    │   ├── [        234]  h5bench.cfg
+    │   ├── [        307]  output-write.csv
+    │   ├── [      14810]  stderr
+    │   └── [       1644]  stdout
+    ├── [       4096]  33d4f090-0:176623.nqsv
+    │   ├── [        234]  h5bench.cfg
+    │   ├── [        303]  output-write.csv
+    │   ├── [       3648]  stderr
+    │   └── [       1639]  stdout
+    ├── [       4096]  5454ca46-0:176624.nqsv
+    │   ├── [        250]  h5bench.cfg
+    │   ├── [        305]  output-read.csv
+    │   ├── [       7514]  stderr
+    │   └── [       1541]  stdout
+    ├── [       4096]  56a17ff1-0:176622.nqsv
+    │   ├── [        234]  h5bench.cfg
+    │   ├── [        303]  output-write.csv
+    │   ├── [       3648]  stderr
+    │   └── [       1639]  stdout
+    ├── [       4096]  578270c4-0:176623.nqsv
+    │   ├── [        250]  h5bench.cfg
+    │   ├── [        304]  output-read.csv
+    │   ├── [       3648]  stderr
+    │   └── [       1538]  stdout
+    ├── [       4096]  5ee5d212-0:176625.nqsv
+    │   ├── [        250]  h5bench.cfg
+    │   ├── [        305]  output-read.csv
+    │   ├── [       7296]  stderr
+    │   └── [       1541]  stdout
+    ├── [       4096]  7d600aff-0:176636.nqsv
+    │   ├── [        250]  h5bench.cfg
+    │   ├── [        304]  output-read.csv
+    │   ├── [       3648]  stderr
+    │   └── [       1538]  stdout
+    ├── [       4096]  98ea07b8-0:176625.nqsv
+    │   ├── [        234]  h5bench.cfg
+    │   ├── [        306]  output-write.csv
+    │   ├── [       7296]  stderr
+    │   └── [       1643]  stdout
+    ├── [       4096]  9cd60bc5-0:176624.nqsv
+    │   ├── [        234]  h5bench.cfg
+    │   ├── [        307]  output-write.csv
+    │   ├── [       7514]  stderr
+    │   └── [       1644]  stdout
+    ├── [       4096]  a07913c9-0:176638.nqsv
+    │   ├── [        250]  h5bench.cfg
+    │   ├── [        306]  output-read.csv
+    │   ├── [      14810]  stderr
+    │   └── [       1542]  stdout
+    ├── [       4096]  a50d6285-0:176637.nqsv
+    │   ├── [        234]  h5bench.cfg
+    │   ├── [        306]  output-write.csv
+    │   ├── [       7296]  stderr
+    │   └── [       1643]  stdout
+    ├── [       4096]  b25a3aa9-0:176621.nqsv
+    │   ├── [        250]  h5bench.cfg
+    │   ├── [        306]  output-read.csv
+    │   ├── [      14810]  stderr
+    │   └── [       1542]  stdout
+    ├── [       4096]  e1fd1d6e-0:176622.nqsv
+    │   ├── [        250]  h5bench.cfg
+    │   ├── [        304]  output-read.csv
+    │   ├── [       3648]  stderr
+    │   └── [       1538]  stdout
+    └── [       4096]  eb8dc5f5-0:176636.nqsv
+        ├── [        234]  h5bench.cfg
+        ├── [        304]  output-write.csv
+        ├── [       3648]  stderr
+        └── [       1640]  stdout
+
+18 directories, 64 files

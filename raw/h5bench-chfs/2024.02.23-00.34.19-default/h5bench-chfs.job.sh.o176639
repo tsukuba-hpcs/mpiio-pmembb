@@ -1,0 +1,164 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.23-01.25.37 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.19-default/2024.02.23-01.25.37-176639.nqsv-8
+2024.02.23-01.25.37 clean up chfsd and chfuse of prev job
+2024.02.23-01.25.38 chfsctl -h /var/opt/nec/nqsv/jsv/jobfile/0.176639.10/nodelist -L /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.23-00.34.19-default/2024.02.23-01.25.37-176639.nqsv-8/chfsd_log -p verbs -x FI_UNIVERSE_SIZE=4096 -i 1 -NUMACTL --physcpubind 40-47 -D -c /dev/dax0.0 -O -H 0 -t 30000 -L 'notice' -T 8 -l 2 -m '/scr/chfs' start
+2024.02.23-01.25.57 CHFS_SERVER="ofi+verbs;ofi_rxm://10.110.0.45:46567,ofi+verbs;ofi_rxm://10.110.0.41:56410,ofi+verbs;ofi_rxm://10.110.0.39:60528,ofi+verbs;ofi_rxm://10.110.0.47:48061,ofi+verbs;ofi_rxm://10.110.0.42:54458,ofi+verbs;ofi_rxm://10.110.0.44:52225,ofi+verbs;ofi_rxm://10.110.0.43:50133,ofi+verbs;ofi_rxm://10.110.0.40:52760"; export CHFS_SERVER;
+2024.02.23-01.25.57 wait for chfsd to start
+2024.02.23-01.26.03 ofi+verbs;ofi_rxm://10.110.0.45:46567 ofi+verbs;ofi_rxm://10.110.0.45: 22C38763
+2024.02.23-01.26.03 ofi+verbs;ofi_rxm://10.110.0.41:56410 ofi+verbs;ofi_rxm://10.110.0.41: 2DF0BC73
+2024.02.23-01.26.03 ofi+verbs;ofi_rxm://10.110.0.39:60528 ofi+verbs;ofi_rxm://10.110.0.39: 41E6734F
+2024.02.23-01.26.03 ofi+verbs;ofi_rxm://10.110.0.47:48061 ofi+verbs;ofi_rxm://10.110.0.47: 8D795409
+2024.02.23-01.26.03 ofi+verbs;ofi_rxm://10.110.0.42:54458 ofi+verbs;ofi_rxm://10.110.0.42: 932CA746
+2024.02.23-01.26.03 ofi+verbs;ofi_rxm://10.110.0.44:52225 ofi+verbs;ofi_rxm://10.110.0.44: C763818F
+2024.02.23-01.26.03 ofi+verbs;ofi_rxm://10.110.0.43:50133 ofi+verbs;ofi_rxm://10.110.0.43: D2502497
+2024.02.23-01.26.03 ofi+verbs;ofi_rxm://10.110.0.40:52760 ofi+verbs;ofi_rxm://10.110.0.40: ED28B6CA
+2024.02.23-01.26.04 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176639.10/nodelist -np 8 -ppn 1 dropcaches 3
+2024.02.23-01.26.20 sending incremental file list
+2024.02.23-01.26.20 ./
+2024.02.23-01.26.20 storage/
+2024.02.23-01.26.20 storage/0107a380-0:176627.nqsv/
+2024.02.23-01.26.20 storage/0107a380-0:176627.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/0107a380-0:176627.nqsv/output-write.csv
+2024.02.23-01.26.20 storage/0107a380-0:176627.nqsv/stderr
+2024.02.23-01.26.20 storage/0107a380-0:176627.nqsv/stdout
+2024.02.23-01.26.20 storage/028e2327-0:176621.nqsv/
+2024.02.23-01.26.20 storage/028e2327-0:176621.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/028e2327-0:176621.nqsv/output-write.csv
+2024.02.23-01.26.20 storage/028e2327-0:176621.nqsv/stderr
+2024.02.23-01.26.20 storage/028e2327-0:176621.nqsv/stdout
+2024.02.23-01.26.20 storage/058575d0-0:176637.nqsv/
+2024.02.23-01.26.20 storage/058575d0-0:176637.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/058575d0-0:176637.nqsv/output-read.csv
+2024.02.23-01.26.20 storage/058575d0-0:176637.nqsv/stderr
+2024.02.23-01.26.20 storage/058575d0-0:176637.nqsv/stdout
+2024.02.23-01.26.20 storage/18883dbf-0:176626.nqsv/
+2024.02.23-01.26.20 storage/18883dbf-0:176626.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/18883dbf-0:176626.nqsv/output-write.csv
+2024.02.23-01.26.20 storage/18883dbf-0:176626.nqsv/stderr
+2024.02.23-01.26.20 storage/18883dbf-0:176626.nqsv/stdout
+2024.02.23-01.26.20 storage/305f52dd-0:176638.nqsv/
+2024.02.23-01.26.20 storage/305f52dd-0:176638.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/305f52dd-0:176638.nqsv/output-write.csv
+2024.02.23-01.26.20 storage/305f52dd-0:176638.nqsv/stderr
+2024.02.23-01.26.20 storage/305f52dd-0:176638.nqsv/stdout
+2024.02.23-01.26.20 storage/33d4f090-0:176623.nqsv/
+2024.02.23-01.26.20 storage/33d4f090-0:176623.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/33d4f090-0:176623.nqsv/output-write.csv
+2024.02.23-01.26.20 storage/33d4f090-0:176623.nqsv/stderr
+2024.02.23-01.26.20 storage/33d4f090-0:176623.nqsv/stdout
+2024.02.23-01.26.20 storage/5454ca46-0:176624.nqsv/
+2024.02.23-01.26.20 storage/5454ca46-0:176624.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/5454ca46-0:176624.nqsv/output-read.csv
+2024.02.23-01.26.20 storage/5454ca46-0:176624.nqsv/stderr
+2024.02.23-01.26.20 storage/5454ca46-0:176624.nqsv/stdout
+2024.02.23-01.26.20 storage/56a17ff1-0:176622.nqsv/
+2024.02.23-01.26.20 storage/56a17ff1-0:176622.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/56a17ff1-0:176622.nqsv/output-write.csv
+2024.02.23-01.26.20 storage/56a17ff1-0:176622.nqsv/stderr
+2024.02.23-01.26.20 storage/56a17ff1-0:176622.nqsv/stdout
+2024.02.23-01.26.20 storage/578270c4-0:176623.nqsv/
+2024.02.23-01.26.20 storage/578270c4-0:176623.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/578270c4-0:176623.nqsv/output-read.csv
+2024.02.23-01.26.20 storage/578270c4-0:176623.nqsv/stderr
+2024.02.23-01.26.20 storage/578270c4-0:176623.nqsv/stdout
+2024.02.23-01.26.20 storage/5ee5d212-0:176625.nqsv/
+2024.02.23-01.26.20 storage/5ee5d212-0:176625.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/5ee5d212-0:176625.nqsv/output-read.csv
+2024.02.23-01.26.20 storage/5ee5d212-0:176625.nqsv/stderr
+2024.02.23-01.26.20 storage/5ee5d212-0:176625.nqsv/stdout
+2024.02.23-01.26.20 storage/67354c71-0:176627.nqsv/
+2024.02.23-01.26.20 storage/67354c71-0:176627.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/67354c71-0:176627.nqsv/output-read.csv
+2024.02.23-01.26.20 storage/67354c71-0:176627.nqsv/stderr
+2024.02.23-01.26.20 storage/67354c71-0:176627.nqsv/stdout
+2024.02.23-01.26.20 storage/74377c2d-0:176626.nqsv/
+2024.02.23-01.26.20 storage/74377c2d-0:176626.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/74377c2d-0:176626.nqsv/output-read.csv
+2024.02.23-01.26.20 storage/74377c2d-0:176626.nqsv/stderr
+2024.02.23-01.26.20 storage/74377c2d-0:176626.nqsv/stdout
+2024.02.23-01.26.20 storage/7d600aff-0:176636.nqsv/
+2024.02.23-01.26.20 storage/7d600aff-0:176636.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/7d600aff-0:176636.nqsv/output-read.csv
+2024.02.23-01.26.20 storage/7d600aff-0:176636.nqsv/stderr
+2024.02.23-01.26.20 storage/7d600aff-0:176636.nqsv/stdout
+2024.02.23-01.26.20 storage/98ea07b8-0:176625.nqsv/
+2024.02.23-01.26.20 storage/98ea07b8-0:176625.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/98ea07b8-0:176625.nqsv/output-write.csv
+2024.02.23-01.26.20 storage/98ea07b8-0:176625.nqsv/stderr
+2024.02.23-01.26.20 storage/98ea07b8-0:176625.nqsv/stdout
+2024.02.23-01.26.20 storage/9cd60bc5-0:176624.nqsv/
+2024.02.23-01.26.20 storage/9cd60bc5-0:176624.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/9cd60bc5-0:176624.nqsv/output-write.csv
+2024.02.23-01.26.20 storage/9cd60bc5-0:176624.nqsv/stderr
+2024.02.23-01.26.20 storage/9cd60bc5-0:176624.nqsv/stdout
+2024.02.23-01.26.20 storage/a07913c9-0:176638.nqsv/
+2024.02.23-01.26.20 storage/a07913c9-0:176638.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/a07913c9-0:176638.nqsv/output-read.csv
+2024.02.23-01.26.20 storage/a07913c9-0:176638.nqsv/stderr
+2024.02.23-01.26.20 storage/a07913c9-0:176638.nqsv/stdout
+2024.02.23-01.26.20 storage/a50d6285-0:176637.nqsv/
+2024.02.23-01.26.20 storage/a50d6285-0:176637.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/a50d6285-0:176637.nqsv/output-write.csv
+2024.02.23-01.26.20 storage/a50d6285-0:176637.nqsv/stderr
+2024.02.23-01.26.20 storage/a50d6285-0:176637.nqsv/stdout
+2024.02.23-01.26.20 storage/b25a3aa9-0:176621.nqsv/
+2024.02.23-01.26.20 storage/b25a3aa9-0:176621.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/b25a3aa9-0:176621.nqsv/output-read.csv
+2024.02.23-01.26.20 storage/b25a3aa9-0:176621.nqsv/stderr
+2024.02.23-01.26.20 storage/b25a3aa9-0:176621.nqsv/stdout
+2024.02.23-01.26.20 storage/bac9458e-0:176639.nqsv/
+2024.02.23-01.26.20 storage/bac9458e-0:176639.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/bac9458e-0:176639.nqsv/output-write.csv
+2024.02.23-01.26.20 storage/bac9458e-0:176639.nqsv/stderr
+2024.02.23-01.26.20 storage/bac9458e-0:176639.nqsv/stdout
+2024.02.23-01.26.20 storage/e1fd1d6e-0:176622.nqsv/
+2024.02.23-01.26.20 storage/e1fd1d6e-0:176622.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/e1fd1d6e-0:176622.nqsv/output-read.csv
+2024.02.23-01.26.20 storage/e1fd1d6e-0:176622.nqsv/stderr
+2024.02.23-01.26.20 storage/e1fd1d6e-0:176622.nqsv/stdout
+2024.02.23-01.26.20 storage/eb8dc5f5-0:176636.nqsv/
+2024.02.23-01.26.20 storage/eb8dc5f5-0:176636.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/eb8dc5f5-0:176636.nqsv/output-write.csv
+2024.02.23-01.26.20 storage/eb8dc5f5-0:176636.nqsv/stderr
+2024.02.23-01.26.20 storage/eb8dc5f5-0:176636.nqsv/stdout
+2024.02.23-01.26.20 storage/f24584ef-0:176640.nqsv/
+2024.02.23-01.26.20 storage/f24584ef-0:176640.nqsv/h5bench.cfg
+2024.02.23-01.26.20 storage/f24584ef-0:176640.nqsv/output-write.csv
+2024.02.23-01.26.20 storage/f24584ef-0:176640.nqsv/stderr
+2024.02.23-01.26.20 storage/f24584ef-0:176640.nqsv/stdout
+2024.02.23-01.26.21 
+2024.02.23-01.26.21 sent 325,346 bytes  received 1,827 bytes  218,115.33 bytes/sec
+2024.02.23-01.26.21 total size is 318,378  speedup is 0.97
+2024.02.23-01.26.22 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.176639.10/nodelist -np 8 -ppn 1 dropcaches 3
+2024.02.23-01.26.32 sending incremental file list
+2024.02.23-01.26.32 ./
+2024.02.23-01.26.32 storage/
+2024.02.23-01.26.32 storage/1d0a9df1-0:176640.nqsv/
+2024.02.23-01.26.32 storage/1d0a9df1-0:176640.nqsv/h5bench.cfg
+2024.02.23-01.26.32 storage/1d0a9df1-0:176640.nqsv/stderr
+2024.02.23-01.26.32 storage/1d0a9df1-0:176640.nqsv/stdout
+2024.02.23-01.26.32 storage/262fe718-0:176639.nqsv/
+2024.02.23-01.26.32 storage/262fe718-0:176639.nqsv/h5bench.cfg
+2024.02.23-01.26.32 storage/262fe718-0:176639.nqsv/output-read.csv
+2024.02.23-01.26.32 storage/262fe718-0:176639.nqsv/stderr
+2024.02.23-01.26.32 storage/262fe718-0:176639.nqsv/stdout
+2024.02.23-01.26.32 storage/f24584ef-0:176640.nqsv/output-write.csv
+2024.02.23-01.26.32 storage/f24584ef-0:176640.nqsv/stdout
+2024.02.23-01.26.32 
+2024.02.23-01.26.32 sent 37,427 bytes  received 232 bytes  75,318.00 bytes/sec
+2024.02.23-01.26.32 total size is 351,265  speedup is 9.33
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
