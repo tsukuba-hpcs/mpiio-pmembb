@@ -1,0 +1,8 @@
+ofi+verbs;ofi_rxm://10.110.0.83:57528 ofi+verbs;ofi_rxm://10.110.0.83: 0758FF87
+ofi+verbs;ofi_rxm://10.110.0.77:58378 ofi+verbs;ofi_rxm://10.110.0.77: 1B45D60E
+ofi+verbs;ofi_rxm://10.110.0.97:60869 ofi+verbs;ofi_rxm://10.110.0.97: 21FED42B
+ofi+verbs;ofi_rxm://10.110.0.105:42259 ofi+verbs;ofi_rxm://10.110.0.105: 30FCC423
+ofi+verbs;ofi_rxm://10.110.0.81:34502 ofi+verbs;ofi_rxm://10.110.0.81: 405D81CD
+ofi+verbs;ofi_rxm://10.110.0.107:47539 ofi+verbs;ofi_rxm://10.110.0.107: 5C075606
+ofi+verbs;ofi_rxm://10.110.0.106:55531 ofi+verbs;ofi_rxm://10.110.0.106: 7782EA80
+ofi+verbs;ofi_rxm://10.110.0.80:49667 ofi+verbs;ofi_rxm://10.110.0.80: B6432260

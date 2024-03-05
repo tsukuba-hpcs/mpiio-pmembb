@@ -1,0 +1,64 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.27.16 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-20.30.22 rm: 'chfs_test_file' を削除できません: そのようなファイルやディレクトリはありません
+
+============================================================
+Request ID:             176522.nqsv
+Request Name:           ior-chfs.job.sh
+Queue:                  gen_S@nqsv
+Number of Jobs:         16
+User Name:              hiraga
+Group Name:             NBBG
+Created Request Time:   Thu Feb 22 18:40:41 2024
+Started Request Time:   Thu Feb 22 20:27:11 2024
+Ended Request Time:     Thu Feb 22 20:30:22 2024
+Resources Information:
+  Elapse:               195S
+  Remaining Elapse:     10605S
+============================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
