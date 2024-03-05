@@ -1,0 +1,44 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.28-07.16.19 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.02.28-06.53.51-setpattern/2024.02.28-07.16.19-180068.nqsv-16
+2024.02.28-07.16.19 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-beeond/2024.02.28-07.16.19-180068.nqsv-16
+2024.02.28-07.16.19 prepare test_dir
+2024.02.28-07.16.19 New chunksize: 2097152
+2024.02.28-07.16.19 New number of storage targets: 16
+2024.02.28-07.16.19 
+2024.02.28-07.16.19 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.180068.10/mpinodes -np 16 -map-by ppr:1:node dropcaches 3
+2024.02.28-07.16.22 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.02.28-06.53.51-setpattern/2024.02.28-07.16.19-180068.nqsv-16/time_0.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.180068.10/mpinodes -x PATH -x ROMIO_FSTYPE_FORCE=ufs: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.02.28-06.53.51-setpattern/2024.02.28-07.16.19-180068.nqsv-16/romio_hints -mca hook_pmembb_enable false -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 256 -map-by ppr:16:node ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 8589934592 -t 2097152 -o /beeond/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.02.28-06.53.51-setpattern/2024.02.28-07.16.19-180068.nqsv-16/ior_summary_0.json -w
+2024.02.28-07.17.55 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.180068.10/mpinodes -np 16 -map-by ppr:1:node dropcaches 3
+2024.02.28-07.17.56 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.02.28-06.53.51-setpattern/2024.02.28-07.16.19-180068.nqsv-16/time_1.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.180068.10/mpinodes -x PATH -x ROMIO_FSTYPE_FORCE=ufs: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.02.28-06.53.51-setpattern/2024.02.28-07.16.19-180068.nqsv-16/romio_hints -mca hook_pmembb_enable false -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 256 -map-by ppr:16:node ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 8589934592 -t 2097152 -o /beeond/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.02.28-06.53.51-setpattern/2024.02.28-07.16.19-180068.nqsv-16/ior_summary_1.json -r -C -Q 1
+2024.02.28-07.18.25 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.180068.10/mpinodes -np 16 -map-by ppr:1:node dropcaches 3
+2024.02.28-07.18.26 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.02.28-06.53.51-setpattern/2024.02.28-07.16.19-180068.nqsv-16/time_2.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.180068.10/mpinodes -x PATH -x ROMIO_FSTYPE_FORCE=ufs: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.02.28-06.53.51-setpattern/2024.02.28-07.16.19-180068.nqsv-16/romio_hints -mca hook_pmembb_enable false -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 256 -map-by ppr:16:node ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 8589934592 -t 2097152 -o /beeond/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.02.28-06.53.51-setpattern/2024.02.28-07.16.19-180068.nqsv-16/ior_summary_2.json -r
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
