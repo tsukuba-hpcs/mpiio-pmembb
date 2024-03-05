@@ -1,0 +1,93 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.19-20.39.41 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.19-16.50.47-default/2024.02.19-20.39.41-174257.nqsv-32
+2024.02.19-20.39.41 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.19-20.39.41-174257.nqsv-32
+2024.02.19-20.39.41 prepare test_dir
+2024.02.19-20.39.41 /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.19-20.39.41-174257.nqsv-32/0
+2024.02.19-20.39.41 stripe_count:  1 stripe_size:   2097152 pattern:       raid0 stripe_offset: -1
+2024.02.19-20.39.41 
+2024.02.19-20.39.41 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.174257.10/mpinodes -np 32 -map-by ppr:1:node dropcaches 3
+2024.02.19-20.41.19 sending incremental file list
+2024.02.19-20.41.19 storage/
+2024.02.19-20.41.19 storage/0387a017-0:174257.nqsv/
+2024.02.19-20.41.19 storage/0387a017-0:174257.nqsv/h5bench.cfg
+2024.02.19-20.41.19 storage/0387a017-0:174257.nqsv/output-write.csv
+2024.02.19-20.41.19 storage/0387a017-0:174257.nqsv/stderr
+2024.02.19-20.41.19 storage/0387a017-0:174257.nqsv/stdout
+2024.02.19-20.41.19 
+2024.02.19-20.41.19 sent 171,128 bytes  received 100 bytes  342,456.00 bytes/sec
+2024.02.19-20.41.19 total size is 170,715  speedup is 1.00
+2024.02.19-20.41.19 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.174257.10/mpinodes -np 32 -map-by ppr:1:node dropcaches 3
+2024.02.19-20.42.47 sending incremental file list
+2024.02.19-20.42.47 ./
+2024.02.19-20.42.47 storage/
+2024.02.19-20.42.47 storage/8c5c85a2-0:174257.nqsv/
+2024.02.19-20.42.47 storage/8c5c85a2-0:174257.nqsv/h5bench.cfg
+2024.02.19-20.42.47 storage/8c5c85a2-0:174257.nqsv/output-read.csv
+2024.02.19-20.42.47 storage/8c5c85a2-0:174257.nqsv/stderr
+2024.02.19-20.42.47 storage/8c5c85a2-0:174257.nqsv/stdout
+2024.02.19-20.42.47 
+2024.02.19-20.42.47 sent 171,267 bytes  received 108 bytes  342,750.00 bytes/sec
+2024.02.19-20.42.47 total size is 341,429  speedup is 1.99
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
+
+%NQSV(INFO): ------- Output from job:0016 -------
+
+%NQSV(INFO): ------- Output from job:0017 -------
+
+%NQSV(INFO): ------- Output from job:0018 -------
+
+%NQSV(INFO): ------- Output from job:0019 -------
+
+%NQSV(INFO): ------- Output from job:0020 -------
+
+%NQSV(INFO): ------- Output from job:0021 -------
+
+%NQSV(INFO): ------- Output from job:0022 -------
+
+%NQSV(INFO): ------- Output from job:0023 -------
+
+%NQSV(INFO): ------- Output from job:0024 -------
+
+%NQSV(INFO): ------- Output from job:0025 -------
+
+%NQSV(INFO): ------- Output from job:0026 -------
+
+%NQSV(INFO): ------- Output from job:0027 -------
+
+%NQSV(INFO): ------- Output from job:0028 -------
+
+%NQSV(INFO): ------- Output from job:0029 -------
+
+%NQSV(INFO): ------- Output from job:0030 -------
+
+%NQSV(INFO): ------- Output from job:0031 -------

@@ -1,0 +1,33 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.19-16.53.36 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-pmembb/2024.02.19-16.50.47-default/2024.02.19-16.53.36-174250.nqsv-2
+2024.02.19-16.53.36 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.19-16.53.36-174250.nqsv-2
+2024.02.19-16.53.36 prepare test_dir
+2024.02.19-16.53.36 /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.19-16.53.36-174250.nqsv-2/0
+2024.02.19-16.53.36 stripe_count:  1 stripe_size:   2097152 pattern:       raid0 stripe_offset: -1
+2024.02.19-16.53.36 
+2024.02.19-16.53.36 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.174250.10/mpinodes -np 2 -map-by ppr:1:node dropcaches 3
+2024.02.19-16.54.59 sending incremental file list
+2024.02.19-16.54.59 storage/
+2024.02.19-16.54.59 storage/e0ee4adb-0:174250.nqsv/
+2024.02.19-16.54.59 storage/e0ee4adb-0:174250.nqsv/h5bench.cfg
+2024.02.19-16.54.59 storage/e0ee4adb-0:174250.nqsv/output-write.csv
+2024.02.19-16.54.59 storage/e0ee4adb-0:174250.nqsv/stderr
+2024.02.19-16.54.59 storage/e0ee4adb-0:174250.nqsv/stdout
+2024.02.19-16.54.59 
+2024.02.19-16.54.59 sent 13,424 bytes  received 100 bytes  27,048.00 bytes/sec
+2024.02.19-16.54.59 total size is 13,047  speedup is 0.96
+2024.02.19-16.54.59 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.174250.10/mpinodes -np 2 -map-by ppr:1:node dropcaches 3
+2024.02.19-16.56.19 sending incremental file list
+2024.02.19-16.56.19 ./
+2024.02.19-16.56.19 storage/
+2024.02.19-16.56.19 storage/ab0130a3-0:174250.nqsv/
+2024.02.19-16.56.19 storage/ab0130a3-0:174250.nqsv/h5bench.cfg
+2024.02.19-16.56.19 storage/ab0130a3-0:174250.nqsv/output-read.csv
+2024.02.19-16.56.19 storage/ab0130a3-0:174250.nqsv/stderr
+2024.02.19-16.56.19 storage/ab0130a3-0:174250.nqsv/stdout
+2024.02.19-16.56.19 
+2024.02.19-16.56.19 sent 13,573 bytes  received 108 bytes  27,362.00 bytes/sec
+2024.02.19-16.56.19 total size is 26,103  speedup is 1.91
+
+%NQSV(INFO): ------- Output from job:0001 -------

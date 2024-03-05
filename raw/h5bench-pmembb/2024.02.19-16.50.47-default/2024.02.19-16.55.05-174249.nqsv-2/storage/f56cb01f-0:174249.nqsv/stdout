@@ -1,0 +1,51 @@
+Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.19-16.55.05-174249.nqsv-2/0/storage/f56cb01f-0:174249.nqsv/h5bench.cfg
+Read data file: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.19-16.55.05-174249.nqsv-2/0/storage/rw.h5
+dims[0] = 16384 (total number for the file)
+dims[1] = 256 (total number for the file)
+dims[2] = 256 (total number for the file)
+Total particles in the file: 1073741824
+Number of particles available per rank: 16777216 
+Opened HDF5 file... [/work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.19-16.55.05-174249.nqsv-2/0/storage/rw.h5]
+
+================ Benchmark Configuration ==================
+File: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.19-16.55.05-174249.nqsv-2/0/storage/f56cb01f-0:174249.nqsv/h5bench.cfg
+Number of particles per rank: 16777216
+Number of time steps: 5
+Emulated compute time per timestep: 0
+Mode: SYNC
+Collective metadata operations: NO
+Collective buffering for data operations: NO
+Number of dimensions: 3
+    Dim_1: 256
+    Dim_2: 256
+    Dim_3: 256
+Strided access settings:
+    Stride size = 0
+    Block size = 0
+===========================================================
+
+Reading Timestep_0 ... 
+  Read 8 variable completed
+Computing... 
+Reading Timestep_1 ... 
+  Read 8 variable completed
+Computing... 
+Reading Timestep_2 ... 
+  Read 8 variable completed
+Computing... 
+Reading Timestep_3 ... 
+  Read 8 variable completed
+Computing... 
+Reading Timestep_4 ... 
+  Read 8 variable completed
+
+=================== Performance Results ==================
+Total number of ranks: 64
+Total emulated compute time: 0.000 s
+Total read size: 160.000 GB
+Raw read time: 1.364 s
+Metadata time: 0.010 s
+Observed read completion time: 1.444 s
+SYNC Raw read rate: 117.306 GB/s 
+SYNC Observed read rate: 110.810 GB/s
+===========================================================

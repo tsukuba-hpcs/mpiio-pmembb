@@ -1,0 +1,50 @@
+Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.20-02.40.27-174259.nqsv-64/0/storage/cfbf36b1-0:174259.nqsv/h5bench.cfg
+Output data file: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.20-02.40.27-174259.nqsv-64/0/storage/rw.h5
+
+================ Benchmark Configuration ==================
+File: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/h5bench-pmembb/2024.02.20-02.40.27-174259.nqsv-64/0/storage/cfbf36b1-0:174259.nqsv/h5bench.cfg
+Number of particles per rank: 16777216
+Number of time steps: 5
+Emulated compute time per timestep: 0
+Mode: SYNC
+Collective metadata operations: NO
+Collective buffering for data operations: NO
+Number of dimensions: 3
+    Dim_1: 256
+    Dim_2: 256
+    Dim_3: 256
+===========================================================
+
+Start benchmark: h5bench_write
+Number of particles per rank: 16 M
+Total number of particles: 32768M
+Collective Metadata operations: OFF
+Opened HDF5 file... 
+Writing Timestep_0 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+Computing...
+Writing Timestep_1 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+Computing...
+Writing Timestep_2 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+Computing...
+Writing Timestep_3 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+Computing...
+Writing Timestep_4 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+
+=================== Performance Results ==================
+Total number of ranks: 2048
+Total emulated compute time: 0.000 s
+Total write size: 5.000 TB
+Raw write time: 3.459 s
+Metadata time: 0.006 s
+H5Fcreate() time: 0.938 s
+H5Fflush() time: 0.227 s
+H5Fclose() time: 0.001 s
+Observed completion time: 4.798 s
+SYNC Raw write rate: 1.445 TB/s 
+SYNC Observed write rate: 1.042 TB/s
+===========================================================
