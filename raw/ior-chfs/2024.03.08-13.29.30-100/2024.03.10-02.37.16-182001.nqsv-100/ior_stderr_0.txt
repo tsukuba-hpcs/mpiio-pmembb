@@ -1,0 +1,312 @@
+Warning: the ECDSA host key for 'bnode011' differs from the key for the IP address '10.120.0.11'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:90
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:124
+Warning: the ECDSA host key for 'bnode018' differs from the key for the IP address '10.120.0.18'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:74
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:129
+Warning: the ECDSA host key for 'bnode101' differs from the key for the IP address '10.120.0.101'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:21
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:130
+Warning: the ECDSA host key for 'bnode020' differs from the key for the IP address '10.120.0.20'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:73
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:122
+Warning: the ECDSA host key for 'bnode050' differs from the key for the IP address '10.120.0.50'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:106
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:128
+Warning: the ECDSA host key for 'bnode077' differs from the key for the IP address '10.120.0.77'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:43
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:132
+Warning: the ECDSA host key for 'bnode067' differs from the key for the IP address '10.120.0.67'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:53
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:133
+2024-03-10 02:42:05.410105819 +0900: <err> fs_async_rpc_inode_sync_wait (wait): HG_TIMEOUT
+2024-03-10 02:42:05.410160725 +0900: <notice> chfs_sync (sync_wait): ofi+verbs;ofi_rxm://10.110.0.100:40946, HG_TIMEOUT
+[proxy:0:0@bnode003] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:0@bnode003] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:0@bnode003] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:1@bnode004] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:1@bnode004] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:1@bnode004] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:2@bnode005] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:2@bnode005] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:2@bnode005] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:3@bnode006] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:3@bnode006] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:3@bnode006] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:4@bnode007] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:4@bnode007] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:4@bnode007] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:5@bnode008] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:5@bnode008] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:5@bnode008] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:6@bnode009] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:6@bnode009] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:6@bnode009] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:7@bnode010] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:7@bnode010] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:7@bnode010] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:8@bnode011] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:8@bnode011] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:8@bnode011] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:10@bnode013] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:10@bnode013] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:10@bnode013] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:11@bnode014] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:11@bnode014] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:11@bnode014] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:12@bnode015] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:12@bnode015] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:12@bnode015] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:13@bnode016] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:13@bnode016] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:13@bnode016] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:14@bnode017] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:14@bnode017] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:14@bnode017] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:15@bnode018] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:15@bnode018] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:15@bnode018] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:16@bnode019] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:16@bnode019] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:16@bnode019] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:17@bnode020] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:17@bnode020] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:17@bnode020] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:18@bnode021] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:18@bnode021] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:18@bnode021] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:19@bnode022] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:19@bnode022] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:19@bnode022] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:20@bnode023] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:20@bnode023] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:20@bnode023] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:21@bnode024] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:21@bnode024] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:21@bnode024] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:22@bnode025] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:22@bnode025] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:22@bnode025] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:23@bnode026] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:23@bnode026] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:23@bnode026] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:24@bnode027] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:24@bnode027] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:24@bnode027] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:25@bnode028] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:25@bnode028] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:25@bnode028] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:26@bnode029] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:26@bnode029] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:26@bnode029] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:27@bnode030] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:27@bnode030] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:27@bnode030] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:28@bnode031] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:28@bnode031] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:28@bnode031] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:29@bnode032] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:29@bnode032] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:29@bnode032] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:30@bnode033] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:30@bnode033] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:30@bnode033] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:31@bnode034] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:31@bnode034] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:31@bnode034] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:32@bnode035] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:32@bnode035] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:32@bnode035] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:33@bnode036] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:33@bnode036] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:33@bnode036] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:34@bnode037] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:34@bnode037] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:34@bnode037] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:35@bnode038] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:35@bnode038] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:35@bnode038] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:36@bnode039] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:36@bnode039] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:36@bnode039] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:37@bnode040] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:37@bnode040] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:37@bnode040] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:38@bnode041] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:38@bnode041] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:38@bnode041] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:39@bnode042] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:39@bnode042] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:39@bnode042] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:40@bnode043] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:40@bnode043] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:40@bnode043] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:41@bnode044] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:41@bnode044] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:41@bnode044] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:42@bnode045] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:42@bnode045] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:42@bnode045] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:43@bnode046] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:43@bnode046] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:43@bnode046] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:44@bnode047] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:44@bnode047] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:44@bnode047] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:45@bnode048] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:45@bnode048] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:45@bnode048] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:47@bnode050] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:47@bnode050] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:47@bnode050] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:48@bnode051] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:48@bnode051] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:48@bnode051] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:49@bnode052] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:49@bnode052] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:49@bnode052] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:50@bnode053] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:50@bnode053] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:50@bnode053] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:51@bnode054] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:51@bnode054] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:51@bnode054] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:52@bnode055] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:52@bnode055] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:52@bnode055] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:53@bnode056] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:53@bnode056] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:53@bnode056] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:54@bnode057] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:54@bnode057] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:54@bnode057] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:55@bnode058] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:55@bnode058] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:55@bnode058] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:56@bnode059] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:56@bnode059] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:56@bnode059] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:57@bnode060] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:57@bnode060] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:57@bnode060] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:58@bnode061] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:58@bnode061] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:58@bnode061] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:59@bnode062] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:59@bnode062] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:59@bnode062] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:60@bnode063] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:60@bnode063] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:60@bnode063] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:61@bnode064] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:61@bnode064] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:61@bnode064] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:62@bnode065] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:62@bnode065] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:62@bnode065] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:63@bnode066] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:63@bnode066] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:63@bnode066] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:64@bnode067] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:64@bnode067] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:64@bnode067] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:65@bnode068] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:65@bnode068] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:65@bnode068] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:66@bnode069] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:66@bnode069] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:66@bnode069] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:67@bnode070] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:67@bnode070] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:67@bnode070] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:68@bnode071] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:68@bnode071] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:68@bnode071] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:69@bnode072] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:69@bnode072] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:69@bnode072] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:70@bnode073] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:70@bnode073] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:70@bnode073] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:71@bnode074] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:71@bnode074] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:71@bnode074] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:74@bnode077] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:74@bnode077] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:74@bnode077] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:75@bnode078] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:75@bnode078] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:75@bnode078] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:76@bnode079] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:76@bnode079] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:76@bnode079] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:77@bnode080] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:77@bnode080] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:77@bnode080] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:78@bnode081] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:78@bnode081] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:78@bnode081] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:79@bnode082] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:79@bnode082] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:79@bnode082] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:80@bnode083] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:80@bnode083] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:80@bnode083] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:81@bnode084] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:81@bnode084] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:81@bnode084] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:82@bnode085] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:82@bnode085] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:82@bnode085] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:83@bnode086] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:83@bnode086] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:83@bnode086] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:84@bnode087] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:84@bnode087] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:84@bnode087] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:85@bnode088] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:85@bnode088] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:85@bnode088] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:86@bnode089] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:86@bnode089] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:86@bnode089] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:87@bnode090] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:87@bnode090] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:87@bnode090] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:88@bnode091] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:88@bnode091] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:88@bnode091] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:89@bnode092] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:89@bnode092] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:89@bnode092] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:90@bnode093] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:90@bnode093] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:90@bnode093] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:92@bnode095] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:92@bnode095] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:92@bnode095] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:93@bnode096] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:93@bnode096] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:93@bnode096] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:94@bnode097] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:94@bnode097] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:94@bnode097] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:95@bnode098] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:95@bnode098] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:95@bnode098] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:96@bnode099] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:96@bnode099] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:96@bnode099] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:97@bnode100] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:97@bnode100] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:97@bnode100] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:98@bnode101] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:98@bnode101] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:98@bnode101] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[proxy:0:99@bnode102] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:899): assert (!closed) failed
+[proxy:0:99@bnode102] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:99@bnode102] main (pm/pmiserv/pmip.c:169): demux engine error waiting for event
+[mpiexec@bnode003] HYDT_bscu_wait_for_completion (tools/bootstrap/utils/bscu_wait.c:73): one of the processes terminated badly; aborting
+[mpiexec@bnode003] HYDT_bsci_wait_for_completion (tools/bootstrap/src/bsci_wait.c:21): launcher returned error waiting for completion
+[mpiexec@bnode003] HYD_pmci_wait_for_completion (pm/pmiserv/pmiserv_pmci.c:179): launcher returned error waiting for completion
+[mpiexec@bnode003] main (ui/mpich/mpiexec.c:325): process manager error waiting for completion

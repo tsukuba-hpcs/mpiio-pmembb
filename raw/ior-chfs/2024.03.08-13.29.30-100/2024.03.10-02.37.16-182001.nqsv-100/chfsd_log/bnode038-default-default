@@ -1,0 +1,2 @@
+2024-03-10 02:42:37.578868824 +0900: <notice> handle_sig: signal 15 caught
+2024-03-10 02:42:37.582409566 +0900: <err> coordinator RPC (get_input): HG_NOMEM

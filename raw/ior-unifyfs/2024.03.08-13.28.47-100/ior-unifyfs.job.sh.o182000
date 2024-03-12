@@ -1,0 +1,214 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.03.10-02.04.13 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.08-13.28.47-100/2024.03.10-02.04.12-182000.nqsv-100
+2024.03.10-02.04.13 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-unifyfs/2024.03.10-02.04.12-182000.nqsv-100
+2024.03.10-02.04.13 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182000.10/mpinodes -x PATH -x UNIFYFS_RUNSTATE_DIR -x UNIFYFS_LOGIO_CHUNK_SIZE -x UNIFYFS_LOG_DIR -x UNIFYFS_MARGO_SERVER_TIMEOUT -x UNIFYFS_DAEMONIZE -x UNIFYFS_LOGIO_SPILL_SIZE -x UNIFYFS_SERVER_INIT_TIMEOUT -x UNIFYFS_MARGO_CLIENT_POOL_SIZE -x UNIFYFS_CLIENT_NODE_LOCAL_EXTENTS -x UNIFYFS_SERVER_LOCAL_EXTENTS -x UNIFYFS_SERVER_MAX_APP_CLIENTS -x UNIFYFS_MARGO_SERVER_POOL_SIZE -x UNIFYFS_MOUNTPOINT -x UNIFYFS_CLIENT_LOCAL_EXTENTS -x UNIFYFS_MARGO_CLIENT_TIMEOUT -x UNIFYFS_MARGO_TCP -x UNIFYFS_LOG_VERBOSITY -x UNIFYFS_LOGIO_SHMEM_SIZE -x UNIFYFS_LOGIO_SPILL_DIR -np 100 -rf /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.08-13.28.47-100/2024.03.10-02.04.12-182000.nqsv-100/rankfile unifyfsd --unifyfs-cleanup on --server-hostfile /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.08-13.28.47-100/2024.03.10-02.04.12-182000.nqsv-100/unifyfsd.hosts --sharedfs-dir /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-unifyfs/2024.03.10-02.04.12-182000.nqsv-100
+2024.03.10-02.04.24 wait for unifyfsd to start
+2024.03.10-02.04.54 Attempting to call unifyfs_get_gfids()...
+2024.03.10-02.04.54 ...and done.  ret=0	num_gfids=1
+2024.03.10-02.04.54 GFIDs received:
+2024.03.10-02.04.54   40755 30081 30293       0 1710003894 /unifyfs
+2024.03.10-02.04.54 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182000.10/mpinodes -np 100 -map-by ppr:1:node dropcaches 3
+2024.03.10-02.05.04 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.08-13.28.47-100/2024.03.10-02.04.12-182000.nqsv-100/time_0.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182000.10/mpinodes -np 3200 -map-by ppr:32:node -bind-to core -mca io romio321 -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/unifyfs-develop-insgggyksgjztlflskmpth44w32is3b7/lib/libunifyfs_mpi_gotcha.so -x UNIFYFS_RUNSTATE_DIR -x UNIFYFS_LOGIO_CHUNK_SIZE -x UNIFYFS_LOG_DIR -x UNIFYFS_MARGO_SERVER_TIMEOUT -x UNIFYFS_DAEMONIZE -x UNIFYFS_LOGIO_SPILL_SIZE -x UNIFYFS_SERVER_INIT_TIMEOUT -x UNIFYFS_MARGO_CLIENT_POOL_SIZE -x UNIFYFS_CLIENT_NODE_LOCAL_EXTENTS -x UNIFYFS_SERVER_LOCAL_EXTENTS -x UNIFYFS_SERVER_MAX_APP_CLIENTS -x UNIFYFS_MARGO_SERVER_POOL_SIZE -x UNIFYFS_MOUNTPOINT -x UNIFYFS_CLIENT_LOCAL_EXTENTS -x UNIFYFS_MARGO_CLIENT_TIMEOUT -x UNIFYFS_MARGO_TCP -x UNIFYFS_LOG_VERBOSITY -x UNIFYFS_LOGIO_SHMEM_SIZE -x UNIFYFS_LOGIO_SPILL_DIR -x FI_UNIVERSE_SIZE=4096 -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.08-13.28.47-100/2024.03.10-02.04.12-182000.nqsv-100/romio_hints ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 4294967296 -t 1048576 -o /unifyfs/testfile0 -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.08-13.28.47-100/2024.03.10-02.04.12-182000.nqsv-100/ior_summary_0.json -w
+2024.03.10-02.05.37 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182000.10/mpinodes -np 100 -map-by ppr:1:node dropcaches 3
+2024.03.10-02.05.38 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.08-13.28.47-100/2024.03.10-02.04.12-182000.nqsv-100/time_1.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182000.10/mpinodes -np 3200 -map-by ppr:32:node -bind-to core -mca io romio321 -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/unifyfs-develop-insgggyksgjztlflskmpth44w32is3b7/lib/libunifyfs_mpi_gotcha.so -x UNIFYFS_RUNSTATE_DIR -x UNIFYFS_LOGIO_CHUNK_SIZE -x UNIFYFS_LOG_DIR -x UNIFYFS_MARGO_SERVER_TIMEOUT -x UNIFYFS_DAEMONIZE -x UNIFYFS_LOGIO_SPILL_SIZE -x UNIFYFS_SERVER_INIT_TIMEOUT -x UNIFYFS_MARGO_CLIENT_POOL_SIZE -x UNIFYFS_CLIENT_NODE_LOCAL_EXTENTS -x UNIFYFS_SERVER_LOCAL_EXTENTS -x UNIFYFS_SERVER_MAX_APP_CLIENTS -x UNIFYFS_MARGO_SERVER_POOL_SIZE -x UNIFYFS_MOUNTPOINT -x UNIFYFS_CLIENT_LOCAL_EXTENTS -x UNIFYFS_MARGO_CLIENT_TIMEOUT -x UNIFYFS_MARGO_TCP -x UNIFYFS_LOG_VERBOSITY -x UNIFYFS_LOGIO_SHMEM_SIZE -x UNIFYFS_LOGIO_SPILL_DIR -x FI_UNIVERSE_SIZE=4096 -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.08-13.28.47-100/2024.03.10-02.04.12-182000.nqsv-100/romio_hints ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 4294967296 -t 1048576 -o /unifyfs/testfile0 -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.08-13.28.47-100/2024.03.10-02.04.12-182000.nqsv-100/ior_summary_1.json -r -C -Q 1
+2024.03.10-02.23.03 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182000.10/mpinodes -np 100 -map-by ppr:1:node dropcaches 3
+2024.03.10-02.23.04 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.08-13.28.47-100/2024.03.10-02.04.12-182000.nqsv-100/time_2.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182000.10/mpinodes -np 3200 -map-by ppr:32:node -bind-to core -mca io romio321 -x PATH -x LD_PRELOAD=/home/NBB/hiraga/.cache/spack/opt/spack/linux-ubuntu20.04-icelake/gcc-11.4.0/unifyfs-develop-insgggyksgjztlflskmpth44w32is3b7/lib/libunifyfs_mpi_gotcha.so -x UNIFYFS_RUNSTATE_DIR -x UNIFYFS_LOGIO_CHUNK_SIZE -x UNIFYFS_LOG_DIR -x UNIFYFS_MARGO_SERVER_TIMEOUT -x UNIFYFS_DAEMONIZE -x UNIFYFS_LOGIO_SPILL_SIZE -x UNIFYFS_SERVER_INIT_TIMEOUT -x UNIFYFS_MARGO_CLIENT_POOL_SIZE -x UNIFYFS_CLIENT_NODE_LOCAL_EXTENTS -x UNIFYFS_SERVER_LOCAL_EXTENTS -x UNIFYFS_SERVER_MAX_APP_CLIENTS -x UNIFYFS_MARGO_SERVER_POOL_SIZE -x UNIFYFS_MOUNTPOINT -x UNIFYFS_CLIENT_LOCAL_EXTENTS -x UNIFYFS_MARGO_CLIENT_TIMEOUT -x UNIFYFS_MARGO_TCP -x UNIFYFS_LOG_VERBOSITY -x UNIFYFS_LOGIO_SHMEM_SIZE -x UNIFYFS_LOGIO_SPILL_DIR -x FI_UNIVERSE_SIZE=4096 -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.08-13.28.47-100/2024.03.10-02.04.12-182000.nqsv-100/romio_hints ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 4294967296 -t 1048576 -o /unifyfs/testfile0 -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.08-13.28.47-100/2024.03.10-02.04.12-182000.nqsv-100/ior_summary_2.json -r
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
+
+%NQSV(INFO): ------- Output from job:0016 -------
+
+%NQSV(INFO): ------- Output from job:0017 -------
+
+%NQSV(INFO): ------- Output from job:0018 -------
+
+%NQSV(INFO): ------- Output from job:0019 -------
+
+%NQSV(INFO): ------- Output from job:0020 -------
+
+%NQSV(INFO): ------- Output from job:0021 -------
+
+%NQSV(INFO): ------- Output from job:0022 -------
+
+%NQSV(INFO): ------- Output from job:0023 -------
+
+%NQSV(INFO): ------- Output from job:0024 -------
+
+%NQSV(INFO): ------- Output from job:0025 -------
+
+%NQSV(INFO): ------- Output from job:0026 -------
+
+%NQSV(INFO): ------- Output from job:0027 -------
+
+%NQSV(INFO): ------- Output from job:0028 -------
+
+%NQSV(INFO): ------- Output from job:0029 -------
+
+%NQSV(INFO): ------- Output from job:0030 -------
+
+%NQSV(INFO): ------- Output from job:0031 -------
+
+%NQSV(INFO): ------- Output from job:0032 -------
+
+%NQSV(INFO): ------- Output from job:0033 -------
+
+%NQSV(INFO): ------- Output from job:0034 -------
+
+%NQSV(INFO): ------- Output from job:0035 -------
+
+%NQSV(INFO): ------- Output from job:0036 -------
+
+%NQSV(INFO): ------- Output from job:0037 -------
+
+%NQSV(INFO): ------- Output from job:0038 -------
+
+%NQSV(INFO): ------- Output from job:0039 -------
+
+%NQSV(INFO): ------- Output from job:0040 -------
+
+%NQSV(INFO): ------- Output from job:0041 -------
+
+%NQSV(INFO): ------- Output from job:0042 -------
+
+%NQSV(INFO): ------- Output from job:0043 -------
+
+%NQSV(INFO): ------- Output from job:0044 -------
+
+%NQSV(INFO): ------- Output from job:0045 -------
+
+%NQSV(INFO): ------- Output from job:0046 -------
+
+%NQSV(INFO): ------- Output from job:0047 -------
+
+%NQSV(INFO): ------- Output from job:0048 -------
+
+%NQSV(INFO): ------- Output from job:0049 -------
+
+%NQSV(INFO): ------- Output from job:0050 -------
+
+%NQSV(INFO): ------- Output from job:0051 -------
+
+%NQSV(INFO): ------- Output from job:0052 -------
+
+%NQSV(INFO): ------- Output from job:0053 -------
+
+%NQSV(INFO): ------- Output from job:0054 -------
+
+%NQSV(INFO): ------- Output from job:0055 -------
+
+%NQSV(INFO): ------- Output from job:0056 -------
+
+%NQSV(INFO): ------- Output from job:0057 -------
+
+%NQSV(INFO): ------- Output from job:0058 -------
+
+%NQSV(INFO): ------- Output from job:0059 -------
+
+%NQSV(INFO): ------- Output from job:0060 -------
+
+%NQSV(INFO): ------- Output from job:0061 -------
+
+%NQSV(INFO): ------- Output from job:0062 -------
+
+%NQSV(INFO): ------- Output from job:0063 -------
+
+%NQSV(INFO): ------- Output from job:0064 -------
+
+%NQSV(INFO): ------- Output from job:0065 -------
+
+%NQSV(INFO): ------- Output from job:0066 -------
+
+%NQSV(INFO): ------- Output from job:0067 -------
+
+%NQSV(INFO): ------- Output from job:0068 -------
+
+%NQSV(INFO): ------- Output from job:0069 -------
+
+%NQSV(INFO): ------- Output from job:0070 -------
+
+%NQSV(INFO): ------- Output from job:0071 -------
+
+%NQSV(INFO): ------- Output from job:0072 -------
+
+%NQSV(INFO): ------- Output from job:0073 -------
+
+%NQSV(INFO): ------- Output from job:0074 -------
+
+%NQSV(INFO): ------- Output from job:0075 -------
+
+%NQSV(INFO): ------- Output from job:0076 -------
+
+%NQSV(INFO): ------- Output from job:0077 -------
+
+%NQSV(INFO): ------- Output from job:0078 -------
+
+%NQSV(INFO): ------- Output from job:0079 -------
+
+%NQSV(INFO): ------- Output from job:0080 -------
+
+%NQSV(INFO): ------- Output from job:0081 -------
+
+%NQSV(INFO): ------- Output from job:0082 -------
+
+%NQSV(INFO): ------- Output from job:0083 -------
+
+%NQSV(INFO): ------- Output from job:0084 -------
+
+%NQSV(INFO): ------- Output from job:0085 -------
+
+%NQSV(INFO): ------- Output from job:0086 -------
+
+%NQSV(INFO): ------- Output from job:0087 -------
+
+%NQSV(INFO): ------- Output from job:0088 -------
+
+%NQSV(INFO): ------- Output from job:0089 -------
+
+%NQSV(INFO): ------- Output from job:0090 -------
+
+%NQSV(INFO): ------- Output from job:0091 -------
+
+%NQSV(INFO): ------- Output from job:0092 -------
+
+%NQSV(INFO): ------- Output from job:0093 -------
+
+%NQSV(INFO): ------- Output from job:0094 -------
+
+%NQSV(INFO): ------- Output from job:0095 -------
+
+%NQSV(INFO): ------- Output from job:0096 -------
+
+%NQSV(INFO): ------- Output from job:0097 -------
+
+%NQSV(INFO): ------- Output from job:0098 -------
+
+%NQSV(INFO): ------- Output from job:0099 -------

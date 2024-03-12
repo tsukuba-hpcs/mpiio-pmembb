@@ -52,8 +52,8 @@ ppn_list=(
   16
 )
 
-# min_io_size_per_proc=$((20 * 2 ** 30)) # 20 GiB/proc, 20 * 16 ppn == 320 GiB/node
-min_io_size_per_proc=$((8 * 2 ** 30)) # 8 GiB/proc, 8 * 16 ppn == 128 GiB/node
+min_io_size_per_proc=$((20 * 2 ** 30)) # 20 GiB/proc, 20 * 16 ppn == 320 GiB/node
+# min_io_size_per_proc=$((8 * 2 ** 30)) # 8 GiB/proc, 8 * 16 ppn == 128 GiB/node
 # min_io_size_per_proc=$((4 * 2 ** 30)) # 4 GiB/proc, 4 * 16 ppn == 64 GiB/node
 
 segment_count_list=(
