@@ -1,0 +1,142 @@
+{
+  "Version": "3.3.0", 
+  "Began": "Wed Mar 13 10:57:29 2024", 
+  "Command line": "ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 40960 -b 524288 -t 524288 -o chfs_test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-chfs/2024.03.13-10.54.26-ppn8/2024.03.13-10.55.58-182865.nqsv-8/ior_summary_1.json -r -C -Q 1", 
+  "Machine": "Linux bnode007", 
+  "tests": [
+    {
+    "TestID": 0, 
+    "StartTime": "Wed Mar 13 10:57:29 2024"    , "Path": "/home/NBB/hiraga","Capacity": "100.0 GiB", "Used Capacity": "90.7%","Inodes": "5682.7 Mi", "Used Inodes" : "6.4%"
+, 
+    "Parameters": {
+      "testID": 0, 
+      "refnum": 0, 
+      "api": "MPIIO", 
+      "platform": "bnode(Linux)", 
+      "testFileName": "chfs_test_file", 
+      "hintsFileName": "(null)", 
+      "deadlineForStonewall": 0, 
+      "stoneWallingWearOut": 0, 
+      "maxTimeDuration": 0, 
+      "outlierThreshold": 0, 
+      "options": "(null)", 
+      "dryRun": 0, 
+      "nodes": 8, 
+      "memoryPerTask": 0, 
+      "memoryPerNode": 0, 
+      "tasksPerNode": 8, 
+      "repetitions": 1, 
+      "multiFile": 0, 
+      "interTestDelay": 0, 
+      "fsync": 1, 
+      "fsyncperwrite": 0, 
+      "useExistingTestFile": 0, 
+      "showHints": 0, 
+      "uniqueDir": 0, 
+      "individualDataSets": 0, 
+      "singleXferAttempt": 0, 
+      "readFile": 1, 
+      "writeFile": 0, 
+      "filePerProc": 0, 
+      "reorderTasks": 1, 
+      "reorderTasksRandom": 0, 
+      "reorderTasksRandomSeed": 0, 
+      "randomOffset": 0, 
+      "checkWrite": 0, 
+      "checkRead": 0, 
+      "preallocate": 0, 
+      "useFileView": 0, 
+      "setAlignment": 1, 
+      "storeFileOffset": 0, 
+      "useSharedFilePointer": 0, 
+      "useStridedDatatype": 0, 
+      "keepFile": 1, 
+      "keepFileWithError": 0, 
+      "quitOnError": 0, 
+      "verbose": 0, 
+      "data packet type": "t", 
+      "setTimeStampSignature/incompressibleSeed": -1401473791, 
+      "collective": 0, 
+      "segmentCount": 40960, 
+      "transferSize": 524288, 
+      "blockSize": 524288
+    }
+, 
+    "Options": {
+      "api": "MPIIO", 
+      "apiVersion": "(4.0)", 
+      "test filename": "chfs_test_file", 
+      "access": "single-shared-file", 
+      "type": "independent", 
+      "segments": 40960, 
+      "ordering in a file": "sequential", 
+      "ordering inter file": "constant task offset", 
+      "task offset": 1, 
+      "nodes": 8, 
+      "tasks": 64, 
+      "clients per node": 8, 
+      "repetitions": 1, 
+      "xfersize": "524288 bytes", 
+      "blocksize": "524288 bytes", 
+      "aggregate filesize": "1.25 TiB"
+    }
+, 
+    "Results": [
+      [             {
+        "access": "read", 
+        "bwMiB": 84339.1128, 
+        "blockKiB": 512.0000, 
+        "xferKiB": 512.0000, 
+        "iops": 170067.7631, 
+        "latency": 15.0367, 
+        "openTime": 0.1260, 
+        "wrRdTime": 15.4141, 
+        "closeTime": 0.0017, 
+        "totalTime": 15.5411
+      }
+]
+]
+, 
+  "max": {
+    "readMiB": 84339.1128, 
+    "readMB": 88435.9696
+  }
+
+}
+]
+, 
+"summary": [
+{
+  "operation": "read", 
+  "API": "MPIIO", 
+  "TestID": 0, 
+  "ReferenceNumber": 0, 
+  "segmentCount": 40960, 
+  "blockSize": 524288, 
+  "transferSize": 524288, 
+  "numTasks": 64, 
+  "tasksPerNode": 8, 
+  "repetitions": 1, 
+  "filePerProc": 0, 
+  "reorderTasks": 1, 
+  "taskPerNodeOffset": 1, 
+  "reorderTasksRandom": 0, 
+  "reorderTasksRandomSeed": 0, 
+  "segmentCount": 40960, 
+  "blockSize": 524288, 
+  "transferSize": 524288, 
+  "bwMaxMIB": 84339.1128, 
+  "bwMinMIB": 84339.1128, 
+  "bwMeanMIB": 84339.1128, 
+  "bwStdMIB": 0.0000, 
+  "OPsMax": 168678.2256, 
+  "OPsMin": 168678.2256, 
+  "OPsMean": 168678.2256, 
+  "OPsSD": 0.0000, 
+  "MeanTime": 15.5411, 
+  "xsizeMiB": 1310720.0000
+}
+]
+, 
+"Finished": "Wed Mar 13 10:57:45 2024"
+}

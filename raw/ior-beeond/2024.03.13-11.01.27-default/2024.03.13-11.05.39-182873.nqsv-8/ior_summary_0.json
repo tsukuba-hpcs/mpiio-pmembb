@@ -1,0 +1,141 @@
+{
+  "Version": "3.3.0", 
+  "Began": "Wed Mar 13 11:05:46 2024", 
+  "Command line": "ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 21474836480 -t 2097152 -o /beeond/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.01.27-default/2024.03.13-11.05.39-182873.nqsv-8/ior_summary_0.json -w", 
+  "Machine": "Linux bnode019", 
+  "tests": [
+    {
+    "TestID": 0, 
+    "StartTime": "Wed Mar 13 11:05:46 2024"    , "Path": "/beeond/0","Capacity": "15.4 TiB", "Used Capacity": "5.1%","Inodes": "0.0 Mi", "Used Inodes" : "-nan%"
+, 
+    "Parameters": {
+      "testID": 0, 
+      "refnum": 0, 
+      "api": "MPIIO", 
+      "platform": "bnode(Linux)", 
+      "testFileName": "/beeond/0/test_file", 
+      "hintsFileName": "(null)", 
+      "deadlineForStonewall": 0, 
+      "stoneWallingWearOut": 0, 
+      "maxTimeDuration": 0, 
+      "outlierThreshold": 0, 
+      "options": "(null)", 
+      "dryRun": 0, 
+      "nodes": 8, 
+      "memoryPerTask": 0, 
+      "memoryPerNode": 0, 
+      "tasksPerNode": 16, 
+      "repetitions": 1, 
+      "multiFile": 0, 
+      "interTestDelay": 0, 
+      "fsync": 1, 
+      "fsyncperwrite": 0, 
+      "useExistingTestFile": 0, 
+      "showHints": 0, 
+      "uniqueDir": 0, 
+      "individualDataSets": 0, 
+      "singleXferAttempt": 0, 
+      "readFile": 0, 
+      "writeFile": 1, 
+      "filePerProc": 0, 
+      "reorderTasks": 0, 
+      "reorderTasksRandom": 0, 
+      "reorderTasksRandomSeed": 0, 
+      "randomOffset": 0, 
+      "checkWrite": 0, 
+      "checkRead": 0, 
+      "preallocate": 0, 
+      "useFileView": 0, 
+      "setAlignment": 1, 
+      "storeFileOffset": 0, 
+      "useSharedFilePointer": 0, 
+      "useStridedDatatype": 0, 
+      "keepFile": 1, 
+      "keepFileWithError": 0, 
+      "quitOnError": 0, 
+      "verbose": 0, 
+      "data packet type": "t", 
+      "setTimeStampSignature/incompressibleSeed": -1401473791, 
+      "collective": 0, 
+      "segmentCount": 1, 
+      "transferSize": 2097152, 
+      "blockSize": 21474836480
+    }
+, 
+    "Options": {
+      "api": "MPIIO", 
+      "apiVersion": "(3.1)", 
+      "test filename": "/beeond/0/test_file", 
+      "access": "single-shared-file", 
+      "type": "independent", 
+      "segments": 1, 
+      "ordering in a file": "sequential", 
+      "ordering inter file": "no tasks offsets", 
+      "nodes": 8, 
+      "tasks": 128, 
+      "clients per node": 16, 
+      "repetitions": 1, 
+      "xfersize": "2 MiB", 
+      "blocksize": "20 GiB", 
+      "aggregate filesize": "2.50 TiB"
+    }
+, 
+    "Results": [
+      [             {
+        "access": "write", 
+        "bwMiB": 17234.5919, 
+        "blockKiB": 20971520.0000, 
+        "xferKiB": 2048.0000, 
+        "iops": 8624.5482, 
+        "latency": 0.0148, 
+        "openTime": 0.1262, 
+        "wrRdTime": 151.9755, 
+        "closeTime": 0.0018, 
+        "totalTime": 152.1034
+      }
+]
+]
+, 
+  "max": {
+    "writeMiB": 17234.5919, 
+    "writeMB": 18071.7794
+  }
+
+}
+]
+, 
+"summary": [
+{
+  "operation": "write", 
+  "API": "MPIIO", 
+  "TestID": 0, 
+  "ReferenceNumber": 0, 
+  "segmentCount": 1, 
+  "blockSize": 21474836480, 
+  "transferSize": 2097152, 
+  "numTasks": 128, 
+  "tasksPerNode": 16, 
+  "repetitions": 1, 
+  "filePerProc": 0, 
+  "reorderTasks": 0, 
+  "taskPerNodeOffset": 1, 
+  "reorderTasksRandom": 0, 
+  "reorderTasksRandomSeed": 0, 
+  "segmentCount": 1, 
+  "blockSize": 21474836480, 
+  "transferSize": 2097152, 
+  "bwMaxMIB": 17234.5919, 
+  "bwMinMIB": 17234.5919, 
+  "bwMeanMIB": 17234.5919, 
+  "bwStdMIB": 0.0000, 
+  "OPsMax": 8617.2959, 
+  "OPsMin": 8617.2959, 
+  "OPsMean": 8617.2959, 
+  "OPsSD": 0.0000, 
+  "MeanTime": 152.1034, 
+  "xsizeMiB": 2621440.0000
+}
+]
+, 
+"Finished": "Wed Mar 13 11:08:18 2024"
+}

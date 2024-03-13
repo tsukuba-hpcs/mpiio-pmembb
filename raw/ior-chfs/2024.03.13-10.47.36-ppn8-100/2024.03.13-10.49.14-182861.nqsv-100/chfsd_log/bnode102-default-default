@@ -1,0 +1,2 @@
+2024-03-13 10:54:21.962672505 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.65:40542): HG_TIMEOUT
+2024-03-13 10:54:21.963090486 +0900: <notice> election: HG_TIMEOUT
