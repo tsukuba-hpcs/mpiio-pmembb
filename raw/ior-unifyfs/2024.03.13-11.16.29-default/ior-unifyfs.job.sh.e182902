@@ -1,0 +1,17 @@
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+============================================================
+Request ID:             182902.nqsv
+Request Name:           ior-unifyfs.job.sh
+Queue:                  gpu_low@nqsv
+Number of Jobs:         1
+User Name:              hiraga
+Group Name:             NBB
+Created Request Time:   Wed Mar 13 11:16:29 2024
+Started Request Time:   Wed Mar 13 11:26:02 2024
+Ended Request Time:     Wed Mar 13 11:42:00 2024
+Resources Information:
+  Elapse:               962S
+  Remaining Elapse:     9838S
+============================================================

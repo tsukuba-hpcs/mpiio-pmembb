@@ -1,0 +1,4 @@
+Attempting to call unifyfs_get_gfids()...
+...and done.  ret=0	num_gfids=1
+GFIDs received:
+  40755 30081 30202       0 1710296797 /unifyfs

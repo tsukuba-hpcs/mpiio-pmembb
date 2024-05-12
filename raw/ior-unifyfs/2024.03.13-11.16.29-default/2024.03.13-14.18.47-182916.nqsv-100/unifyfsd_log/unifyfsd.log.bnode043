@@ -1,0 +1,163 @@
+UNIFYFS CONFIG: unifyfs.cleanup = on
+UNIFYFS CONFIG: unifyfs.daemonize = on
+UNIFYFS CONFIG: unifyfs.mountpoint = /unifyfs
+UNIFYFS CONFIG: client.excl_private = on
+UNIFYFS CONFIG: client.fsync_persist = on
+UNIFYFS CONFIG: client.local_extents = on
+UNIFYFS CONFIG: client.node_local_extents = on
+UNIFYFS CONFIG: client.max_files = 128
+UNIFYFS CONFIG: client.super_magic = on
+UNIFYFS CONFIG: client.unlink_usecs = 0
+UNIFYFS CONFIG: client.write_index_size = 20971520
+UNIFYFS CONFIG: client.write_sync = off
+UNIFYFS CONFIG: log.verbosity = 3
+UNIFYFS CONFIG: log.file = unifyfsd.log
+UNIFYFS CONFIG: log.dir = /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.13-11.16.29-default/2024.03.13-14.18.47-182916.nqsv-100/unifyfsd_log
+UNIFYFS CONFIG: log.on_error = off
+UNIFYFS CONFIG: logio.chunk_size = 1048576
+UNIFYFS CONFIG: logio.shmem_size = 0
+UNIFYFS CONFIG: logio.spill_size = 1649267441664
+UNIFYFS CONFIG: logio.spill_dir = /pmem
+UNIFYFS CONFIG: margo.client_pool_size = 8
+UNIFYFS CONFIG: margo.client_timeout = 60000
+UNIFYFS CONFIG: margo.lazy_connect = on
+UNIFYFS CONFIG: margo.server_pool_size = 8
+UNIFYFS CONFIG: margo.server_timeout = 60000
+UNIFYFS CONFIG: margo.tcp = off
+UNIFYFS CONFIG: meta.range_size = 1048576
+UNIFYFS CONFIG: runstate.dir = /pmem
+UNIFYFS CONFIG: server.hostfile = /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.13-11.16.29-default/2024.03.13-14.18.47-182916.nqsv-100/unifyfsd.hosts
+UNIFYFS CONFIG: server.init_timeout = 120
+UNIFYFS CONFIG: server.local_extents = on
+UNIFYFS CONFIG: server.max_app_clients = 4096
+UNIFYFS CONFIG: sharedfs.dir = /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-unifyfs/2024.03.13-14.18.47-182916.nqsv-100
+2024-03-13T14:19:19 tid=2862211 @ collective_set_local_retval() [unifyfs_group_rpc.c:723] invalid collective request type 14
+2024-03-13T14:19:31 tid=2862993 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=1511587981
+2024-03-13T14:19:31 tid=2862993 @ request_manager_thread() [unifyfs_request_manager.c:1656] failed to process client rpc requests
+2024-03-13T14:19:32 tid=2863005 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=809168262
+2024-03-13T14:23:08 tid=2863655 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863655 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863655 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[573] request 0 (gfid=809168262, offset=5631302959104, length=1048576)
+2024-03-13T14:23:08 tid=2863655 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863650 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863650 @ invoke_client_mread_req_complete_rpc() [margo_server.c:773] forward of mread-complete rpc to client failed
+2024-03-13T14:23:08 tid=2863664 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863650 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:715] mread[570] request 0 completion rpc failed (rc=1004)
+2024-03-13T14:23:08 tid=2863664 @ invoke_client_mread_req_complete_rpc() [margo_server.c:773] forward of mread-complete rpc to client failed
+2024-03-13T14:23:08 tid=2863650 @ rm_process_remote_chunk_responses() [unifyfs_request_manager.c:487] failed to handle chunk read responses
+2024-03-13T14:23:08 tid=2863664 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:715] mread[569] request 0 completion rpc failed (rc=1004)
+2024-03-13T14:23:08 tid=2863664 @ rm_process_remote_chunk_responses() [unifyfs_request_manager.c:487] failed to handle chunk read responses
+2024-03-13T14:23:08 tid=2863650 @ request_manager_thread() [unifyfs_request_manager.c:1668] failed to process remote chunk responses
+2024-03-13T14:23:08 tid=2863664 @ request_manager_thread() [unifyfs_request_manager.c:1668] failed to process remote chunk responses
+2024-03-13T14:23:08 tid=2863649 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863649 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863649 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[573] request 0 (gfid=809168262, offset=5523928776704, length=1048576)
+2024-03-13T14:23:08 tid=2863649 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863683 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863683 @ invoke_client_mread_req_complete_rpc() [margo_server.c:773] forward of mread-complete rpc to client failed
+2024-03-13T14:23:08 tid=2863666 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863666 @ invoke_client_mread_req_complete_rpc() [margo_server.c:773] forward of mread-complete rpc to client failed
+2024-03-13T14:23:08 tid=2863683 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:715] mread[571] request 0 completion rpc failed (rc=1004)
+2024-03-13T14:23:08 tid=2863683 @ rm_process_remote_chunk_responses() [unifyfs_request_manager.c:487] failed to handle chunk read responses
+2024-03-13T14:23:08 tid=2863666 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:715] mread[571] request 0 completion rpc failed (rc=1004)
+2024-03-13T14:23:08 tid=2863683 @ request_manager_thread() [unifyfs_request_manager.c:1668] failed to process remote chunk responses
+2024-03-13T14:23:08 tid=2863666 @ rm_process_remote_chunk_responses() [unifyfs_request_manager.c:487] failed to handle chunk read responses
+2024-03-13T14:23:08 tid=2863666 @ request_manager_thread() [unifyfs_request_manager.c:1668] failed to process remote chunk responses
+2024-03-13T14:23:08 tid=2863662 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863662 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863656 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863662 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[572] request 0 (gfid=809168262, offset=5627006943232, length=1048576)
+2024-03-13T14:23:08 tid=2863651 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863651 @ invoke_client_mread_req_complete_rpc() [margo_server.c:773] forward of mread-complete rpc to client failed
+2024-03-13T14:23:08 tid=2863651 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:715] mread[572] request 0 completion rpc failed (rc=1004)
+2024-03-13T14:23:08 tid=2863656 @ invoke_client_mread_req_complete_rpc() [margo_server.c:773] forward of mread-complete rpc to client failed
+2024-03-13T14:23:08 tid=2863662 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863656 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:715] mread[571] request 0 completion rpc failed (rc=1004)
+2024-03-13T14:23:08 tid=2863651 @ rm_process_remote_chunk_responses() [unifyfs_request_manager.c:487] failed to handle chunk read responses
+2024-03-13T14:23:08 tid=2863656 @ rm_process_remote_chunk_responses() [unifyfs_request_manager.c:487] failed to handle chunk read responses
+2024-03-13T14:23:08 tid=2863656 @ request_manager_thread() [unifyfs_request_manager.c:1668] failed to process remote chunk responses
+2024-03-13T14:23:08 tid=2863651 @ request_manager_thread() [unifyfs_request_manager.c:1668] failed to process remote chunk responses
+2024-03-13T14:23:08 tid=2863653 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863653 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863653 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[571] request 0 (gfid=809168262, offset=5622710927360, length=1048576)
+2024-03-13T14:23:08 tid=2863653 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863685 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863685 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863685 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[567] request 0 (gfid=809168262, offset=5498152681472, length=1048576)
+2024-03-13T14:23:08 tid=2863685 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863648 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863648 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863648 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[573] request 0 (gfid=809168262, offset=5592648253440, length=1048576)
+2024-03-13T14:23:08 tid=2863648 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863686 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863686 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863686 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[573] request 0 (gfid=809168262, offset=5511043874816, length=1048576)
+2024-03-13T14:23:08 tid=2863686 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863667 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863667 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863667 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[571] request 0 (gfid=809168262, offset=5571171319808, length=1048576)
+2024-03-13T14:23:08 tid=2863667 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863659 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863659 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863659 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[573] request 0 (gfid=809168262, offset=5601238188032, length=1048576)
+2024-03-13T14:23:08 tid=2863659 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863647 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863647 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863647 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[571] request 0 (gfid=809168262, offset=5575466287104, length=1048576)
+2024-03-13T14:23:08 tid=2863647 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863665 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863670 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863665 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863670 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863670 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[572] request 0 (gfid=809168262, offset=5545402564608, length=1048576)
+2024-03-13T14:23:08 tid=2863658 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863670 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863665 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[573] request 0 (gfid=809168262, offset=5579763351552, length=1048576)
+2024-03-13T14:23:08 tid=2863665 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863658 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863658 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[571] request 0 (gfid=809168262, offset=5596941123584, length=1048576)
+2024-03-13T14:23:08 tid=2863658 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863671 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863671 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863671 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[571] request 0 (gfid=809168262, offset=5558286417920, length=1048576)
+2024-03-13T14:23:08 tid=2863671 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863673 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863673 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863673 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[572] request 0 (gfid=809168262, offset=5566877401088, length=1048576)
+2024-03-13T14:23:08 tid=2863673 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863674 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863674 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863674 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[573] request 0 (gfid=809168262, offset=5605533155328, length=1048576)
+2024-03-13T14:23:08 tid=2863674 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863663 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863663 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863663 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[572] request 0 (gfid=809168262, offset=5609827074048, length=1048576)
+2024-03-13T14:23:08 tid=2863663 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863684 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863684 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863684 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[571] request 0 (gfid=809168262, offset=5506746810368, length=1048576)
+2024-03-13T14:23:08 tid=2863684 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863668 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863672 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863672 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863672 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[572] request 0 (gfid=809168262, offset=5519632760832, length=1048576)
+2024-03-13T14:23:08 tid=2863672 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863669 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863669 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863669 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[571] request 0 (gfid=809168262, offset=5502451843072, length=1048576)
+2024-03-13T14:23:08 tid=2863669 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863654 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863654 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863654 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[573] request 0 (gfid=809168262, offset=5584058318848, length=1048576)
+2024-03-13T14:23:08 tid=2863654 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863657 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863657 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863657 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[572] request 0 (gfid=809168262, offset=5618417008640, length=1048576)
+2024-03-13T14:23:08 tid=2863657 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863660 @ forward_to_client() [margo_server.c:615] margo_forward_timed() failed - HG_TIMEOUT
+2024-03-13T14:23:08 tid=2863660 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863660 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[566] request 0 (gfid=809168262, offset=5532511371264, length=1048576)
+2024-03-13T14:23:08 tid=2863660 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)
+2024-03-13T14:23:08 tid=2863668 @ invoke_client_mread_req_data_rpc() [margo_server.c:714] forward of mread-req-data rpc to client failed
+2024-03-13T14:23:08 tid=2863668 @ send_data_to_client() [unifyfs_request_manager.c:617] failed data rpc for mread[573] request 0 (gfid=809168262, offset=5588353286144, length=1048576)
+2024-03-13T14:23:08 tid=2863668 @ rm_handle_chunk_read_responses() [unifyfs_request_manager.c:678] failed to send data to client (ret=1004)

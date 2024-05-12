@@ -1,0 +1,79 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+============================================================
+Request ID:             182910.nqsv
+Request Name:           ior-unifyfs.job.sh
+Queue:                  gpu_low@nqsv
+Number of Jobs:         16
+User Name:              hiraga
+Group Name:             NBB
+Created Request Time:   Wed Mar 13 11:16:32 2024
+Started Request Time:   Wed Mar 13 11:47:39 2024
+Ended Request Time:     Wed Mar 13 12:04:22 2024
+Resources Information:
+  Elapse:               1007S
+  Remaining Elapse:     9793S
+============================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0002 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0003 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0004 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0005 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0006 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0007 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0008 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0009 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0010 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0011 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0012 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0013 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0014 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0
+
+%NQSV(INFO): ------- Output from job:0015 -------
+Loading openmpi/4.1.5/gcc11.4.0-cuda12.1.0
+  Loading requirement: cuda/12.1.0 ucx/1.13.1/cuda12.1.0

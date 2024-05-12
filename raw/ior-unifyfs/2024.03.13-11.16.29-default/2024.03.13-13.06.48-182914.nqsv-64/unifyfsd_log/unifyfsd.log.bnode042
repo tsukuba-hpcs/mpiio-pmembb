@@ -1,0 +1,43 @@
+UNIFYFS CONFIG: unifyfs.cleanup = on
+UNIFYFS CONFIG: unifyfs.daemonize = on
+UNIFYFS CONFIG: unifyfs.mountpoint = /unifyfs
+UNIFYFS CONFIG: client.excl_private = on
+UNIFYFS CONFIG: client.fsync_persist = on
+UNIFYFS CONFIG: client.local_extents = on
+UNIFYFS CONFIG: client.node_local_extents = on
+UNIFYFS CONFIG: client.max_files = 128
+UNIFYFS CONFIG: client.super_magic = on
+UNIFYFS CONFIG: client.unlink_usecs = 0
+UNIFYFS CONFIG: client.write_index_size = 20971520
+UNIFYFS CONFIG: client.write_sync = off
+UNIFYFS CONFIG: log.verbosity = 3
+UNIFYFS CONFIG: log.file = unifyfsd.log
+UNIFYFS CONFIG: log.dir = /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.13-11.16.29-default/2024.03.13-13.06.48-182914.nqsv-64/unifyfsd_log
+UNIFYFS CONFIG: log.on_error = off
+UNIFYFS CONFIG: logio.chunk_size = 1048576
+UNIFYFS CONFIG: logio.shmem_size = 0
+UNIFYFS CONFIG: logio.spill_size = 1649267441664
+UNIFYFS CONFIG: logio.spill_dir = /pmem
+UNIFYFS CONFIG: margo.client_pool_size = 8
+UNIFYFS CONFIG: margo.client_timeout = 60000
+UNIFYFS CONFIG: margo.lazy_connect = on
+UNIFYFS CONFIG: margo.server_pool_size = 8
+UNIFYFS CONFIG: margo.server_timeout = 60000
+UNIFYFS CONFIG: margo.tcp = off
+UNIFYFS CONFIG: meta.range_size = 1048576
+UNIFYFS CONFIG: runstate.dir = /pmem
+UNIFYFS CONFIG: server.hostfile = /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-unifyfs/2024.03.13-11.16.29-default/2024.03.13-13.06.48-182914.nqsv-64/unifyfsd.hosts
+UNIFYFS CONFIG: server.init_timeout = 120
+UNIFYFS CONFIG: server.local_extents = on
+UNIFYFS CONFIG: server.max_app_clients = 4096
+UNIFYFS CONFIG: sharedfs.dir = /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-unifyfs/2024.03.13-13.06.48-182914.nqsv-64
+2024-03-13T13:07:19 tid=4156811 @ collective_set_local_retval() [unifyfs_group_rpc.c:723] invalid collective request type 14
+2024-03-13T13:07:31 tid=4157585 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=1511587981
+2024-03-13T13:07:31 tid=4157585 @ request_manager_thread() [unifyfs_request_manager.c:1656] failed to process client rpc requests
+2024-03-13T13:07:31 tid=4157590 @ sm_set_fileattr() [unifyfs_service_manager.c:480] create requested for existing gfid=809168262
+# [2509938.822498] mercury->cls: [error] /tmp/hiraga/spack-stage/spack-stage-mercury-2.3.1-ox52kjgvascjnat4y4hj7tacxvinalkl/spack-src/src/mercury_core.c:1384
+ # hg_core_finalize(): HG addrs must be freed before finalizing HG (2 remaining)
+# [2509938.822514] mercury->cls: [error] /tmp/hiraga/spack-stage/spack-stage-mercury-2.3.1-ox52kjgvascjnat4y4hj7tacxvinalkl/spack-src/src/mercury_core.c:5739
+ # HG_Core_finalize(): Cannot finalize HG core class (0x55c500686720)
+# [2509938.822516] mercury->cls: [error] /tmp/hiraga/spack-stage/spack-stage-mercury-2.3.1-ox52kjgvascjnat4y4hj7tacxvinalkl/spack-src/src/mercury.c:1114
+ # HG_Finalize(): Could not finalize HG core class
