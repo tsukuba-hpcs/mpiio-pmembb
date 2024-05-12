@@ -1,0 +1,74 @@
+2024.02.28-07.41.49 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180118.nqsv-1
+2024.02.28-07.41.49 clean up chfsd and chfuse of prev job
+2024.02.28-07.41.50 chfsctl -h /var/opt/nec/nqsv/jsv/jobfile/0.180118.10/nodelist -L /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180118.nqsv-1/chfsd_log -p verbs -x FI_UNIVERSE_SIZE=4096 -i 1 -NUMACTL --physcpubind 40-47 -D -c /dev/dax0.0 -O -H 0 -t 30000 -L 'notice' -T 8 -l 2 start
+2024.02.28-07.41.55 CHFS_SERVER="ofi+verbs;ofi_rxm://10.110.0.116:38950"; export CHFS_SERVER;
+2024.02.28-07.41.55 wait for chfsd to start
+2024.02.28-07.42.01 ofi+verbs;ofi_rxm://10.110.0.116:38950 ofi+verbs;ofi_rxm://10.110.0.116: 726980EA
+2024.02.28-07.42.02 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.180118.10/nodelist -np 1 -ppn 1 dropcaches 3
+2024.02.28-07.42.02 mpirun -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180118.nqsv-1/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.116:38950 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=1 -f /var/opt/nec/nqsv/jsv/jobfile/0.180118.10/nodelist -np 32 -ppn 32 -bind-to core h5bench_write /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180118.nqsv-1/write.cfg /chfs/rw.h5
+2024.02.28-07.42.05 Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180118.nqsv-1/write.cfg
+2024.02.28-07.42.05 Output data file: /chfs/rw.h5
+2024.02.28-07.42.06 
+2024.02.28-07.42.06 ================ Benchmark Configuration ==================
+2024.02.28-07.42.06 File: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180118.nqsv-1/write.cfg
+2024.02.28-07.42.06 Number of particles per rank: 16777216
+2024.02.28-07.42.06 Number of time steps: 5
+2024.02.28-07.42.06 Emulated compute time per timestep: 0
+2024.02.28-07.42.06 Mode: SYNC
+2024.02.28-07.42.06 Collective metadata operations: NO
+2024.02.28-07.42.06 Collective buffering for data operations: NO
+2024.02.28-07.42.06 Number of dimensions: 3
+2024.02.28-07.42.06     Dim_1: 256
+2024.02.28-07.42.06     Dim_2: 256
+2024.02.28-07.42.06     Dim_3: 256
+2024.02.28-07.42.06 ===========================================================
+2024.02.28-07.42.06 
+2024.02.28-07.42.06 Start benchmark: h5bench_write
+2024.02.28-07.42.06 Number of particles per rank: 16 M
+2024.02.28-07.42.06 Total number of particles: 512M
+2024.02.28-07.42.06 Collective Metadata operations: OFF
+2024.02.28-07.42.07 Opened HDF5 file... 
+2024.02.28-07.42.07 Writing Timestep_0 ... 
+2024.02.28-07.42.09     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-07.42.09 Computing...
+2024.02.28-07.42.09 Writing Timestep_1 ... 
+2024.02.28-07.42.09     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-07.42.09 Computing...
+2024.02.28-07.42.09 Writing Timestep_2 ... 
+2024.02.28-07.42.09     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-07.42.09 Computing...
+2024.02.28-07.42.09 Writing Timestep_3 ... 
+2024.02.28-07.42.09     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-07.42.09 Computing...
+2024.02.28-07.42.09 Writing Timestep_4 ... 
+2024.02.28-07.42.36     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-07.42.41 
+2024.02.28-07.42.41 =================== Performance Results ==================
+2024.02.28-07.42.41 Total number of ranks: 32
+2024.02.28-07.42.41 Total emulated compute time: 0.000 s
+2024.02.28-07.42.41 Total write size: 80.000 GB
+2024.02.28-07.42.41 Raw write time: 0.938 s
+2024.02.28-07.42.41 Metadata time: 0.001 s
+2024.02.28-07.42.41 H5Fcreate() time: 0.021 s
+2024.02.28-07.42.41 H5Fflush() time: 24.643 s
+2024.02.28-07.42.41 H5Fclose() time: 0.000 s
+2024.02.28-07.42.41 Observed completion time: 25.628 s
+2024.02.28-07.42.41 SYNC Raw write rate: 85.300 GB/s 
+2024.02.28-07.42.41 SYNC Observed write rate: 3.121 GB/s
+2024.02.28-07.42.41 ===========================================================
+2024.02.28-07.42.42 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.180118.10/nodelist -np 1 -ppn 1 dropcaches 3
+2024.02.28-07.42.42 mpirun -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180118.nqsv-1/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.116:38950 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=1 -f /var/opt/nec/nqsv/jsv/jobfile/0.180118.10/nodelist -np 32 -ppn 32 -bind-to core h5bench_read /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180118.nqsv-1/read.cfg /chfs/rw.h5
+2024.02.28-07.42.44 Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180118.nqsv-1/read.cfg
+2024.02.28-07.42.44 Read data file: /chfs/rw.h5
+2024.02.28-07.42.46 Failed to read dimensions
+2024.02.28-07.42.46 
+2024.02.28-07.42.46 ===================================================================================
+2024.02.28-07.42.46 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+2024.02.28-07.42.46 =   PID 21369 RUNNING AT bnode116
+2024.02.28-07.42.46 =   EXIT CODE: 1
+2024.02.28-07.42.46 =   CLEANING UP REMAINING PROCESSES
+2024.02.28-07.42.46 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+2024.02.28-07.42.46 ===================================================================================
+2024.02.28-07.42.46 YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Hangup (signal 1)
+2024.02.28-07.42.46 This typically refers to a problem with your application.
+2024.02.28-07.42.46 Please see the FAQ page for debugging suggestions

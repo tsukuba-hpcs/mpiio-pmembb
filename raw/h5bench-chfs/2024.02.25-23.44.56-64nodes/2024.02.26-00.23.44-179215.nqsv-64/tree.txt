@@ -1,0 +1,14 @@
+[       4096]  ./0
+└── [       4096]  storage
+    ├── [       4096]  ad22d5c2-0:179215.nqsv
+    │   ├── [        234]  h5bench.cfg
+    │   ├── [        310]  output-write.csv
+    │   ├── [     234781]  stderr
+    │   └── [       1649]  stdout
+    └── [       4096]  c34ed3ee-0:179215.nqsv
+        ├── [        250]  h5bench.cfg
+        ├── [          0]  output-read.csv
+        ├── [       1705]  stderr
+        └── [        101]  stdout
+
+4 directories, 8 files

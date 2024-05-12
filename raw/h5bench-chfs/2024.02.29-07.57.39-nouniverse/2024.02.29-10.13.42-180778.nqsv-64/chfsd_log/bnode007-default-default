@@ -1,0 +1,13 @@
+2024-02-29 10:25:52.464164571 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.79:46090): HG_TIMEOUT
+2024-02-29 10:25:52.464542104 +0900: <notice> election: HG_TIMEOUT
+2024-02-29 10:25:52.464566070 +0900: <err> ring_fix_next: no more server
+2024-02-29 10:25:52.472716099 +0900: <notice> handle_sig: signal 15 caught
+2024-02-29 10:26:22.464781682 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.79:46090): HG_TIMEOUT
+2024-02-29 10:26:22.464870937 +0900: <notice> election: HG_TIMEOUT
+2024-02-29 10:26:22.464881140 +0900: <err> ring_fix_next: no more server
+2024-02-29 10:26:22.468194441 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.79:46090): HG_TIMEOUT
+2024-02-29 10:26:22.468204137 +0900: <notice> election: HG_TIMEOUT
+2024-02-29 10:26:22.468223142 +0900: <err> ring_fix_next: no more server
+2024-02-29 10:26:22.468198069 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.79:46090): HG_TIMEOUT
+2024-02-29 10:26:22.468308424 +0900: <notice> election: HG_TIMEOUT
+2024-02-29 10:26:22.468317314 +0900: <err> ring_fix_next: no more server

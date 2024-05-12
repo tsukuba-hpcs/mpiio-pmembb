@@ -1,0 +1,2 @@
+2024-02-26 00:59:54.153184799 +0900: <notice> handle_sig: signal 15 caught
+2024-02-26 01:00:22.433782905 +0900: <err> ring_rpc_set_next (forward to ofi+verbs;ofi_rxm://10.110.0.17:44640): HG_PROTOCOL_ERROR

@@ -1,0 +1,19 @@
+Configuration file: ./0/storage/89ebf18e-0:179216.nqsv/h5bench.cfg
+Output data file: ./0/storage/rw.h5
+
+================ Benchmark Configuration ==================
+File: ./0/storage/89ebf18e-0:179216.nqsv/h5bench.cfg
+Number of particles per rank: 16777216
+Number of time steps: 5
+Emulated compute time per timestep: 0
+Mode: SYNC
+Collective metadata operations: NO
+Collective buffering for data operations: NO
+Number of dimensions: 3
+    Dim_1: 256
+    Dim_2: 256
+    Dim_3: 256
+===========================================================
+
+Start benchmark: h5bench_write
+Number of particles per rank: 16 M

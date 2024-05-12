@@ -1,0 +1,7 @@
+Warning: the ECDSA host key for 'bnode050' differs from the key for the IP address '10.120.0.50'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:106
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:128
+[mpiexec@bnode039] control_cb (pm/pmiserv/pmiserv_cb.c:206): assert (!closed) failed
+[mpiexec@bnode039] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[mpiexec@bnode039] HYD_pmci_wait_for_completion (pm/pmiserv/pmiserv_pmci.c:160): error waiting for event
+[mpiexec@bnode039] main (ui/mpich/mpiexec.c:325): process manager error waiting for completion

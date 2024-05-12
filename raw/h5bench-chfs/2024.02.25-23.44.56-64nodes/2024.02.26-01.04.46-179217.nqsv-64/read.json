@@ -1,0 +1,30 @@
+{
+  "mpi": {
+    "command": "mpirun",
+    "configuration": "-f /var/opt/nec/nqsv/jsv/jobfile/0.179217.10/nodelist -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.25-23.44.56-64nodes/2024.02.26-01.04.46-179217.nqsv-64/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.32:39590,ofi+verbs;ofi_rxm://10.110.0.35:36171,ofi+verbs;ofi_rxm://10.110.0.92:51665,ofi+verbs;ofi_rxm://10.110.0.104:40471,ofi+verbs;ofi_rxm://10.110.0.112:52082,ofi+verbs;ofi_rxm://10.110.0.76:49824,ofi+verbs;ofi_rxm://10.110.0.77:41743,ofi+verbs;ofi_rxm://10.110.0.89:39531,ofi+verbs;ofi_rxm://10.110.0.103:42696,ofi+verbs;ofi_rxm://10.110.0.97:35919,ofi+verbs;ofi_rxm://10.110.0.37:52152,ofi+verbs;ofi_rxm://10.110.0.14:54515,ofi+verbs;ofi_rxm://10.110.0.10:60384,ofi+verbs;ofi_rxm://10.110.0.7:48504,ofi+verbs;ofi_rxm://10.110.0.23:35044,ofi+verbs;ofi_rxm://10.110.0.99:37543,ofi+verbs;ofi_rxm://10.110.0.105:36111,ofi+verbs;ofi_rxm://10.110.0.34:48437,ofi+verbs;ofi_rxm://10.110.0.81:46793,ofi+verbs;ofi_rxm://10.110.0.86:42650,ofi+verbs;ofi_rxm://10.110.0.36:44317,ofi+verbs;ofi_rxm://10.110.0.28:52047,ofi+verbs;ofi_rxm://10.110.0.18:45435,ofi+verbs;ofi_rxm://10.110.0.109:55268,ofi+verbs;ofi_rxm://10.110.0.95:40209,ofi+verbs;ofi_rxm://10.110.0.107:56803,ofi+verbs;ofi_rxm://10.110.0.90:41115,ofi+verbs;ofi_rxm://10.110.0.101:44698,ofi+verbs;ofi_rxm://10.110.0.85:49951,ofi+verbs;ofi_rxm://10.110.0.94:57662,ofi+verbs;ofi_rxm://10.110.0.33:36330,ofi+verbs;ofi_rxm://10.110.0.82:51866 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=0 -np 2048 -ppn 32"
+  },
+  "vol": {},
+  "file-system": {},
+  "directory": "./0/storage",
+  "benchmarks": [
+    {
+      "benchmark": "read",
+      "file": "rw.h5",
+      "configuration": {
+        "MEM_PATTERN": "CONTIG",
+        "FILE_PATTERN": "CONTIG",
+        "READ_OPTION": "FULL",
+        "TIMESTEPS": "5",
+        "COLLECTIVE_DATA": "NO",
+        "COLLECTIVE_METADATA": "NO",
+        "EMULATED_COMPUTE_TIME_PER_TIMESTEP": "0 s",
+        "NUM_DIMS": "3",
+        "DIM_1": "256",
+        "DIM_2": "256",
+        "DIM_3": "256",
+        "CSV_FILE": "output-read.csv",
+        "MODE": "SYNC"
+      }
+    }
+  ]
+}

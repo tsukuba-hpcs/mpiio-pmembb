@@ -1,0 +1,50 @@
+Configuration file: ./0/storage/ad22d5c2-0:179215.nqsv/h5bench.cfg
+Output data file: ./0/storage/rw.h5
+
+================ Benchmark Configuration ==================
+File: ./0/storage/ad22d5c2-0:179215.nqsv/h5bench.cfg
+Number of particles per rank: 16777216
+Number of time steps: 5
+Emulated compute time per timestep: 0
+Mode: SYNC
+Collective metadata operations: NO
+Collective buffering for data operations: NO
+Number of dimensions: 3
+    Dim_1: 256
+    Dim_2: 256
+    Dim_3: 256
+===========================================================
+
+Start benchmark: h5bench_write
+Number of particles per rank: 16 M
+Total number of particles: 32768M
+Collective Metadata operations: OFF
+Opened HDF5 file... 
+Writing Timestep_0 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+Computing...
+Writing Timestep_1 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+Computing...
+Writing Timestep_2 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+Computing...
+Writing Timestep_3 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+Computing...
+Writing Timestep_4 ... 
+    data_write_contig_contig_MD_array: Finished writing time step 
+
+=================== Performance Results ==================
+Total number of ranks: 2048
+Total emulated compute time: 0.000 s
+Total write size: 5.000 TB
+Raw write time: 12.169 s
+Metadata time: 0.004 s
+H5Fcreate() time: 26.297 s
+H5Fflush() time: 0.154 s
+H5Fclose() time: 0.003 s
+Observed completion time: 38.639 s
+SYNC Raw write rate: 420.731 GB/s 
+SYNC Observed write rate: 132.509 GB/s
+===========================================================

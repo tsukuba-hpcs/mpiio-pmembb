@@ -1,0 +1,22 @@
+Warning: the ECDSA host key for 'bnode011' differs from the key for the IP address '10.120.0.11'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:90
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:124
+Warning: the ECDSA host key for 'bnode101' differs from the key for the IP address '10.120.0.101'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:21
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:130
+Warning: the ECDSA host key for 'bnode018' differs from the key for the IP address '10.120.0.18'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:74
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:129
+Warning: the ECDSA host key for 'bnode111' differs from the key for the IP address '10.120.0.111'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:9
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:123
+Warning: the ECDSA host key for 'bnode077' differs from the key for the IP address '10.120.0.77'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:43
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:132
+Warning: the ECDSA host key for 'bnode020' differs from the key for the IP address '10.120.0.20'
+Offending key for IP in /home/NBB/hiraga/.ssh/known_hosts:73
+Matching host key in /home/NBB/hiraga/.ssh/known_hosts:122
+[mpiexec@bnode007] control_cb (pm/pmiserv/pmiserv_cb.c:206): assert (!closed) failed
+[mpiexec@bnode007] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[mpiexec@bnode007] HYD_pmci_wait_for_completion (pm/pmiserv/pmiserv_pmci.c:160): error waiting for event
+[mpiexec@bnode007] main (ui/mpich/mpiexec.c:325): process manager error waiting for completion

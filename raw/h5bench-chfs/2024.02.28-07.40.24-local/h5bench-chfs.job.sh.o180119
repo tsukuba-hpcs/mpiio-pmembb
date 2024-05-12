@@ -1,0 +1,79 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.28-07.41.49 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180119.nqsv-2
+2024.02.28-07.41.49 clean up chfsd and chfuse of prev job
+2024.02.28-07.41.50 chfsctl -h /var/opt/nec/nqsv/jsv/jobfile/0.180119.10/nodelist -L /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180119.nqsv-2/chfsd_log -p verbs -x FI_UNIVERSE_SIZE=4096 -i 1 -NUMACTL --physcpubind 40-47 -D -c /dev/dax0.0 -O -H 0 -t 30000 -L 'notice' -T 8 -l 2 start
+2024.02.28-07.41.57 CHFS_SERVER="ofi+verbs;ofi_rxm://10.110.0.117:36415,ofi+verbs;ofi_rxm://10.110.0.118:44464"; export CHFS_SERVER;
+2024.02.28-07.41.57 wait for chfsd to start
+2024.02.28-07.42.03 ofi+verbs;ofi_rxm://10.110.0.117:36415 ofi+verbs;ofi_rxm://10.110.0.117: 89E9ADD3
+2024.02.28-07.42.03 ofi+verbs;ofi_rxm://10.110.0.118:44464 ofi+verbs;ofi_rxm://10.110.0.118: F1A24753
+2024.02.28-07.42.03 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.180119.10/nodelist -np 2 -ppn 1 dropcaches 3
+2024.02.28-07.42.04 mpirun -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180119.nqsv-2/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.117:36415,ofi+verbs;ofi_rxm://10.110.0.118:44464 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=1 -f /var/opt/nec/nqsv/jsv/jobfile/0.180119.10/nodelist -np 64 -ppn 32 -bind-to core h5bench_write /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180119.nqsv-2/write.cfg /chfs/rw.h5
+2024.02.28-07.42.06 Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180119.nqsv-2/write.cfg
+2024.02.28-07.42.06 Output data file: /chfs/rw.h5
+2024.02.28-07.42.06 
+2024.02.28-07.42.06 ================ Benchmark Configuration ==================
+2024.02.28-07.42.06 File: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180119.nqsv-2/write.cfg
+2024.02.28-07.42.06 Number of particles per rank: 16777216
+2024.02.28-07.42.06 Number of time steps: 5
+2024.02.28-07.42.06 Emulated compute time per timestep: 0
+2024.02.28-07.42.06 Mode: SYNC
+2024.02.28-07.42.06 Collective metadata operations: NO
+2024.02.28-07.42.06 Collective buffering for data operations: NO
+2024.02.28-07.42.06 Number of dimensions: 3
+2024.02.28-07.42.06     Dim_1: 256
+2024.02.28-07.42.06     Dim_2: 256
+2024.02.28-07.42.06     Dim_3: 256
+2024.02.28-07.42.06 ===========================================================
+2024.02.28-07.42.06 
+2024.02.28-07.42.06 Start benchmark: h5bench_write
+2024.02.28-07.42.06 Number of particles per rank: 16 M
+2024.02.28-07.42.06 Total number of particles: 1024M
+2024.02.28-07.42.06 Collective Metadata operations: OFF
+2024.02.28-07.42.07 Opened HDF5 file... 
+2024.02.28-07.42.14 Writing Timestep_0 ... 
+2024.02.28-07.43.05     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-07.43.05 Computing...
+2024.02.28-07.43.05 Writing Timestep_1 ... 
+2024.02.28-07.43.05     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-07.43.05 Computing...
+2024.02.28-07.43.05 Writing Timestep_2 ... 
+2024.02.28-07.43.05     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-07.43.05 Computing...
+2024.02.28-07.43.05 Writing Timestep_3 ... 
+2024.02.28-07.43.05     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-07.43.05 Computing...
+2024.02.28-07.43.05 Writing Timestep_4 ... 
+2024.02.28-07.43.05     data_write_contig_contig_MD_array: Finished writing time step 
+2024.02.28-07.43.16 
+2024.02.28-07.43.16 =================== Performance Results ==================
+2024.02.28-07.43.16 Total number of ranks: 64
+2024.02.28-07.43.16 Total emulated compute time: 0.000 s
+2024.02.28-07.43.16 Total write size: 160.000 GB
+2024.02.28-07.43.16 Raw write time: 0.000 s
+2024.02.28-07.43.16 Metadata time: 2.586 s
+2024.02.28-07.43.16 H5Fcreate() time: 0.046 s
+2024.02.28-07.43.16 H5Fflush() time: 52.906 s
+2024.02.28-07.43.16 H5Fclose() time: 0.000 s
+2024.02.28-07.43.16 Observed completion time: 55.572 s
+2024.02.28-07.43.16 SYNC Raw write rate: 1070.205 TB/s 
+2024.02.28-07.43.16 SYNC Observed write rate: 2.879 GB/s
+2024.02.28-07.43.16 ===========================================================
+2024.02.28-07.43.18 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.180119.10/nodelist -np 2 -ppn 1 dropcaches 3
+2024.02.28-07.43.18 mpirun -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_PROVIDER=verbs;ofi_rxm -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180119.nqsv-2/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.117:36415,ofi+verbs;ofi_rxm://10.110.0.118:44464 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=1 -f /var/opt/nec/nqsv/jsv/jobfile/0.180119.10/nodelist -np 64 -ppn 32 -bind-to core h5bench_read /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180119.nqsv-2/read.cfg /chfs/rw.h5
+2024.02.28-07.43.20 Configuration file: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/h5bench-chfs/2024.02.28-07.40.24-local/2024.02.28-07.41.49-180119.nqsv-2/read.cfg
+2024.02.28-07.43.20 Read data file: /chfs/rw.h5
+2024.02.28-07.43.24 Failed to read dimensions
+2024.02.28-07.43.25 
+2024.02.28-07.43.25 ===================================================================================
+2024.02.28-07.43.25 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+2024.02.28-07.43.25 =   PID 4172847 RUNNING AT bnode117
+2024.02.28-07.43.25 =   EXIT CODE: 1
+2024.02.28-07.43.25 =   CLEANING UP REMAINING PROCESSES
+2024.02.28-07.43.25 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+2024.02.28-07.43.25 ===================================================================================
+2024.02.28-07.43.25 YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Hangup (signal 1)
+2024.02.28-07.43.25 This typically refers to a problem with your application.
+2024.02.28-07.43.25 Please see the FAQ page for debugging suggestions
+
+%NQSV(INFO): ------- Output from job:0001 -------
