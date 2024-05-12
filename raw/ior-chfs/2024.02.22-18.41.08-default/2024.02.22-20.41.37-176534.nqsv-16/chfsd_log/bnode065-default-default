@@ -1,0 +1,25 @@
+2024-02-22 20:44:56.246238793 +0900: <notice> handle_sig: signal 15 caught
+2024-02-22 20:45:26.236396561 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.81:33481): HG_TIMEOUT
+2024-02-22 20:45:26.236527782 +0900: <notice> start_election: HG_TIMEOUT
+2024-02-22 20:45:26.236537552 +0900: <err> ring_fix_next: no more server
+2024-02-22 20:45:26.239831451 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.81:33481): HG_TIMEOUT
+2024-02-22 20:45:26.239835686 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.81:33481): HG_TIMEOUT
+2024-02-22 20:45:26.239837426 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.81:33481): HG_TIMEOUT
+2024-02-22 20:45:26.239925518 +0900: <notice> election: HG_TIMEOUT
+2024-02-22 20:45:26.240015807 +0900: <err> ring_fix_next: no more server
+2024-02-22 20:45:26.240004563 +0900: <notice> election: HG_TIMEOUT
+2024-02-22 20:45:26.240037549 +0900: <err> ring_fix_next: no more server
+2024-02-22 20:45:26.239964585 +0900: <notice> election: HG_TIMEOUT
+2024-02-22 20:45:26.240056641 +0900: <err> ring_fix_next: no more server
+2024-02-22 20:45:26.245385750 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.81:33481): HG_TIMEOUT
+2024-02-22 20:45:26.245397388 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.81:33481): HG_TIMEOUT
+2024-02-22 20:45:26.245448869 +0900: <notice> election: HG_TIMEOUT
+2024-02-22 20:45:26.245457131 +0900: <err> ring_fix_next: no more server
+2024-02-22 20:45:26.245438933 +0900: <notice> election: HG_TIMEOUT
+2024-02-22 20:45:26.245478666 +0900: <err> ring_fix_next: no more server
+2024-02-22 20:45:26.245397466 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.81:33481): HG_TIMEOUT
+2024-02-22 20:45:26.245498987 +0900: <notice> election: HG_TIMEOUT
+2024-02-22 20:45:26.245505696 +0900: <err> ring_fix_next: no more server
+2024-02-22 20:45:26.245399624 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.81:33481): HG_TIMEOUT
+2024-02-22 20:45:26.245517061 +0900: <notice> election: HG_TIMEOUT
+2024-02-22 20:45:26.245522429 +0900: <err> ring_fix_next: no more server

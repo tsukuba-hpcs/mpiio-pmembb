@@ -1,0 +1,307 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.03.13-10.34.51 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-chfs/2024.03.13-10.34.06-ppn16-100/2024.03.13-10.34.51-182853.nqsv-100
+2024.03.13-10.34.51 clean up chfsd and chfuse of prev job
+2024.03.13-10.34.58 chfsctl -h /var/opt/nec/nqsv/jsv/jobfile/0.182853.10/nodelist -L /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-chfs/2024.03.13-10.34.06-ppn16-100/2024.03.13-10.34.51-182853.nqsv-100/chfsd_log -p verbs -x FI_UNIVERSE_SIZE=4096 -i 1 -NUMACTL --physcpubind 40-47 -D -c /dev/dax0.0 -O -H 0 -t 30000 -L 'notice' -T 8 -l 2 start
+2024.03.13-10.37.32 CHFS_SERVER="ofi+verbs;ofi_rxm://10.110.0.32:38526,ofi+verbs;ofi_rxm://10.110.0.17:45332,ofi+verbs;ofi_rxm://10.110.0.60:43173,ofi+verbs;ofi_rxm://10.110.0.35:52584,ofi+verbs;ofi_rxm://10.110.0.83:56283,ofi+verbs;ofi_rxm://10.110.0.92:43748,ofi+verbs;ofi_rxm://10.110.0.104:47859,ofi+verbs;ofi_rxm://10.110.0.49:48560,ofi+verbs;ofi_rxm://10.110.0.112:45056,ofi+verbs;ofi_rxm://10.110.0.46:47334,ofi+verbs;ofi_rxm://10.110.0.89:56175,ofi+verbs;ofi_rxm://10.110.0.103:49436,ofi+verbs;ofi_rxm://10.110.0.53:54693,ofi+verbs;ofi_rxm://10.110.0.48:60293,ofi+verbs;ofi_rxm://10.110.0.97:52821,ofi+verbs;ofi_rxm://10.110.0.45:56957,ofi+verbs;ofi_rxm://10.110.0.37:34886,ofi+verbs;ofi_rxm://10.110.0.14:43905,ofi+verbs;ofi_rxm://10.110.0.59:40033,ofi+verbs;ofi_rxm://10.110.0.10:49632,ofi+verbs;ofi_rxm://10.110.0.57:54933,ofi+verbs;ofi_rxm://10.110.0.7:40630,ofi+verbs;ofi_rxm://10.110.0.65:42228,ofi+verbs;ofi_rxm://10.110.0.23:56135,ofi+verbs;ofi_rxm://10.110.0.67:38226,ofi+verbs;ofi_rxm://10.110.0.99:42238,ofi+verbs;ofi_rxm://10.110.0.41:50808,ofi+verbs;ofi_rxm://10.110.0.105:60550,ofi+verbs;ofi_rxm://10.110.0.16:56528,ofi+verbs;ofi_rxm://10.110.0.34:54800,ofi+verbs;ofi_rxm://10.110.0.81:52215,ofi+verbs;ofi_rxm://10.110.0.39:50504"; export CHFS_SERVER;
+2024.03.13-10.37.32 wait for chfsd to start
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.32:38526 ofi+verbs;ofi_rxm://10.110.0.32: 00BA636F
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.17:45332 ofi+verbs;ofi_rxm://10.110.0.17: 014DB155
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.60:43173 ofi+verbs;ofi_rxm://10.110.0.60: 01BC07AA
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.35:52584 ofi+verbs;ofi_rxm://10.110.0.35: 01DA3029
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.83:56283 ofi+verbs;ofi_rxm://10.110.0.83: 0758FF87
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.92:43748 ofi+verbs;ofi_rxm://10.110.0.92: 0854B6EF
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.104:47859 ofi+verbs;ofi_rxm://10.110.0.104: 0B1B1C1C
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.49:48560 ofi+verbs;ofi_rxm://10.110.0.49: 0BC3AA37
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.112:45056 ofi+verbs;ofi_rxm://10.110.0.112: 11D10C87
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.46:47334 ofi+verbs;ofi_rxm://10.110.0.46: 12B83AEE
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.89:56175 ofi+verbs;ofi_rxm://10.110.0.89: 1BCFFB27
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.103:49436 ofi+verbs;ofi_rxm://10.110.0.103: 1BFA9639
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.53:54693 ofi+verbs;ofi_rxm://10.110.0.53: 1CE82569
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.48:60293 ofi+verbs;ofi_rxm://10.110.0.48: 1E8679C0
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.97:52821 ofi+verbs;ofi_rxm://10.110.0.97: 21FED42B
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.45:56957 ofi+verbs;ofi_rxm://10.110.0.45: 22C38763
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.37:34886 ofi+verbs;ofi_rxm://10.110.0.37: 24B78DA6
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.14:43905 ofi+verbs;ofi_rxm://10.110.0.14: 24E53B19
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.59:40033 ofi+verbs;ofi_rxm://10.110.0.59: 25702780
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.10:49632 ofi+verbs;ofi_rxm://10.110.0.10: 26CECE38
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.57:54933 ofi+verbs;ofi_rxm://10.110.0.57: 26FDD634
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.7:40630 ofi+verbs;ofi_rxm://10.110.0.7: 27F317C9
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.65:42228 ofi+verbs;ofi_rxm://10.110.0.65: 29C3CC44
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.23:56135 ofi+verbs;ofi_rxm://10.110.0.23: 2BBCBB3B
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.67:38226 ofi+verbs;ofi_rxm://10.110.0.67: 2CBB7CF0
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.99:42238 ofi+verbs;ofi_rxm://10.110.0.99: 2CF37DB8
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.41:50808 ofi+verbs;ofi_rxm://10.110.0.41: 2DF0BC73
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.105:60550 ofi+verbs;ofi_rxm://10.110.0.105: 30FCC423
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.16:56528 ofi+verbs;ofi_rxm://10.110.0.16: 38E6BE3D
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.34:54800 ofi+verbs;ofi_rxm://10.110.0.34: 3EEEF796
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.81:52215 ofi+verbs;ofi_rxm://10.110.0.81: 405D81CD
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.39:50504 ofi+verbs;ofi_rxm://10.110.0.39: 41E6734F
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.86:49092 ofi+verbs;ofi_rxm://10.110.0.86: 4B31D88F
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.28:55509 ofi+verbs;ofi_rxm://10.110.0.28: 5030222D
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.18:60369 ofi+verbs;ofi_rxm://10.110.0.18: 5063BCE6
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.56:43954 ofi+verbs;ofi_rxm://10.110.0.56: 510FE123
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.95:56944 ofi+verbs;ofi_rxm://10.110.0.95: 585F660D
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.107:42021 ofi+verbs;ofi_rxm://10.110.0.107: 5C075606
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.58:38948 ofi+verbs;ofi_rxm://10.110.0.58: 5E0671AC
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.90:34184 ofi+verbs;ofi_rxm://10.110.0.90: 6535955C
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.101:58170 ofi+verbs;ofi_rxm://10.110.0.101: 6D1FDC90
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.85:55093 ofi+verbs;ofi_rxm://10.110.0.85: 6D40397E
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.94:58071 ofi+verbs;ofi_rxm://10.110.0.94: 70341334
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.33:36521 ofi+verbs;ofi_rxm://10.110.0.33: 74D35365
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.82:39544 ofi+verbs;ofi_rxm://10.110.0.82: 75D5BA08
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.6:60308 ofi+verbs;ofi_rxm://10.110.0.6: 75E39CE4
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.106:36838 ofi+verbs;ofi_rxm://10.110.0.106: 7782EA80
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.100:43783 ofi+verbs;ofi_rxm://10.110.0.100: 77F365C3
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.98:42893 ofi+verbs;ofi_rxm://10.110.0.98: 7A7191AA
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.87:40741 ofi+verbs;ofi_rxm://10.110.0.87: 7CDD7770
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.70:54581 ofi+verbs;ofi_rxm://10.110.0.70: 7CEDAF2D
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.12:56230 ofi+verbs;ofi_rxm://10.110.0.12: 7E9A504F
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.61:60676 ofi+verbs;ofi_rxm://10.110.0.61: 7F6C2AB4
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.63:46479 ofi+verbs;ofi_rxm://10.110.0.63: 828E1499
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.27:54428 ofi+verbs;ofi_rxm://10.110.0.27: 8A6ED954
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.51:56964 ofi+verbs;ofi_rxm://10.110.0.51: 8AE5F487
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.47:33653 ofi+verbs;ofi_rxm://10.110.0.47: 8D795409
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.93:58636 ofi+verbs;ofi_rxm://10.110.0.93: 8EBADD36
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.9:59948 ofi+verbs;ofi_rxm://10.110.0.9: 8FE6FE6D
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.31:48119 ofi+verbs;ofi_rxm://10.110.0.31: 9248C64A
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.42:49764 ofi+verbs;ofi_rxm://10.110.0.42: 932CA746
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.5:53574 ofi+verbs;ofi_rxm://10.110.0.5: 96919BD8
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.4:34684 ofi+verbs;ofi_rxm://10.110.0.4: 9D6E6E87
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.21:51347 ofi+verbs;ofi_rxm://10.110.0.21: 9F8B2D68
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.84:44635 ofi+verbs;ofi_rxm://10.110.0.84: A11E18EA
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.102:47567 ofi+verbs;ofi_rxm://10.110.0.102: A3933967
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.72:58640 ofi+verbs;ofi_rxm://10.110.0.72: A803933F
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.15:57730 ofi+verbs;ofi_rxm://10.110.0.15: A87EEA73
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.78:38261 ofi+verbs;ofi_rxm://10.110.0.78: AB8BDCCE
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.113:33004 ofi+verbs;ofi_rxm://10.110.0.113: B14B8DBD
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.64:37122 ofi+verbs;ofi_rxm://10.110.0.64: B1627ECA
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.114:39194 ofi+verbs;ofi_rxm://10.110.0.114: B49E60DF
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.80:40813 ofi+verbs;ofi_rxm://10.110.0.80: B6432260
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.26:60928 ofi+verbs;ofi_rxm://10.110.0.26: B685CBA7
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.11:54403 ofi+verbs;ofi_rxm://10.110.0.11: BEAA6507
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.71:44259 ofi+verbs;ofi_rxm://10.110.0.71: BEEB0E69
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.22:51990 ofi+verbs;ofi_rxm://10.110.0.22: C676AA21
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.44:53037 ofi+verbs;ofi_rxm://10.110.0.44: C763818F
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.30:41415 ofi+verbs;ofi_rxm://10.110.0.30: CE2FC80C
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.20:56133 ofi+verbs;ofi_rxm://10.110.0.20: D02DD4A0
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.43:37592 ofi+verbs;ofi_rxm://10.110.0.43: D2502497
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.29:32823 ofi+verbs;ofi_rxm://10.110.0.29: D2F9D402
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.66:47957 ofi+verbs;ofi_rxm://10.110.0.66: D3AF8434
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.91:40082 ofi+verbs;ofi_rxm://10.110.0.91: D4F23A28
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.55:44581 ofi+verbs;ofi_rxm://10.110.0.55: D6179E4C
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.38:53046 ofi+verbs;ofi_rxm://10.110.0.38: D8BA8DEF
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.96:38704 ofi+verbs;ofi_rxm://10.110.0.96: DB387861
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.3:52204 ofi+verbs;ofi_rxm://10.110.0.3: DCD1228D
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.24:53093 ofi+verbs;ofi_rxm://10.110.0.24: DF63C9AF
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.62:50391 ofi+verbs;ofi_rxm://10.110.0.62: E1F4545A
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.88:44628 ofi+verbs;ofi_rxm://10.110.0.88: E7B6D7BA
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.19:47744 ofi+verbs;ofi_rxm://10.110.0.19: E7F812B4
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.79:60382 ofi+verbs;ofi_rxm://10.110.0.79: E82B6794
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.40:42124 ofi+verbs;ofi_rxm://10.110.0.40: ED28B6CA
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.13:56589 ofi+verbs;ofi_rxm://10.110.0.13: EF693E0A
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.68:50347 ofi+verbs;ofi_rxm://10.110.0.68: EFAC3385
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.50:52734 ofi+verbs;ofi_rxm://10.110.0.50: F1A773A8
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.25:39884 ofi+verbs;ofi_rxm://10.110.0.25: F1B82F0B
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.69:57351 ofi+verbs;ofi_rxm://10.110.0.69: F5161B41
+2024.03.13-10.37.37 ofi+verbs;ofi_rxm://10.110.0.8:47094 ofi+verbs;ofi_rxm://10.110.0.8: FF0D0B7D
+2024.03.13-10.37.38 mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.182853.10/nodelist -np 100 -ppn 1 dropcaches 3
+2024.03.13-10.37.45 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-chfs/2024.03.13-10.34.06-ppn16-100/2024.03.13-10.34.51-182853.nqsv-100/time_0.json mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.182853.10/nodelist -np 1600 -ppn 16 -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-chfs/2024.03.13-10.34.06-ppn16-100/2024.03.13-10.34.51-182853.nqsv-100/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.32:38526,ofi+verbs;ofi_rxm://10.110.0.17:45332,ofi+verbs;ofi_rxm://10.110.0.60:43173,ofi+verbs;ofi_rxm://10.110.0.35:52584,ofi+verbs;ofi_rxm://10.110.0.83:56283,ofi+verbs;ofi_rxm://10.110.0.92:43748,ofi+verbs;ofi_rxm://10.110.0.104:47859,ofi+verbs;ofi_rxm://10.110.0.49:48560,ofi+verbs;ofi_rxm://10.110.0.112:45056,ofi+verbs;ofi_rxm://10.110.0.46:47334,ofi+verbs;ofi_rxm://10.110.0.89:56175,ofi+verbs;ofi_rxm://10.110.0.103:49436,ofi+verbs;ofi_rxm://10.110.0.53:54693,ofi+verbs;ofi_rxm://10.110.0.48:60293,ofi+verbs;ofi_rxm://10.110.0.97:52821,ofi+verbs;ofi_rxm://10.110.0.45:56957,ofi+verbs;ofi_rxm://10.110.0.37:34886,ofi+verbs;ofi_rxm://10.110.0.14:43905,ofi+verbs;ofi_rxm://10.110.0.59:40033,ofi+verbs;ofi_rxm://10.110.0.10:49632,ofi+verbs;ofi_rxm://10.110.0.57:54933,ofi+verbs;ofi_rxm://10.110.0.7:40630,ofi+verbs;ofi_rxm://10.110.0.65:42228,ofi+verbs;ofi_rxm://10.110.0.23:56135,ofi+verbs;ofi_rxm://10.110.0.67:38226,ofi+verbs;ofi_rxm://10.110.0.99:42238,ofi+verbs;ofi_rxm://10.110.0.41:50808,ofi+verbs;ofi_rxm://10.110.0.105:60550,ofi+verbs;ofi_rxm://10.110.0.16:56528,ofi+verbs;ofi_rxm://10.110.0.34:54800,ofi+verbs;ofi_rxm://10.110.0.81:52215,ofi+verbs;ofi_rxm://10.110.0.39:50504 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=1 ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 40960 -b 524288 -t 524288 -o chfs_test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-chfs/2024.03.13-10.34.06-ppn16-100/2024.03.13-10.34.51-182853.nqsv-100/ior_summary_0.json -w
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
+
+%NQSV(INFO): ------- Output from job:0016 -------
+
+%NQSV(INFO): ------- Output from job:0017 -------
+
+%NQSV(INFO): ------- Output from job:0018 -------
+
+%NQSV(INFO): ------- Output from job:0019 -------
+
+%NQSV(INFO): ------- Output from job:0020 -------
+
+%NQSV(INFO): ------- Output from job:0021 -------
+
+%NQSV(INFO): ------- Output from job:0022 -------
+
+%NQSV(INFO): ------- Output from job:0023 -------
+
+%NQSV(INFO): ------- Output from job:0024 -------
+
+%NQSV(INFO): ------- Output from job:0025 -------
+
+%NQSV(INFO): ------- Output from job:0026 -------
+
+%NQSV(INFO): ------- Output from job:0027 -------
+
+%NQSV(INFO): ------- Output from job:0028 -------
+
+%NQSV(INFO): ------- Output from job:0029 -------
+
+%NQSV(INFO): ------- Output from job:0030 -------
+
+%NQSV(INFO): ------- Output from job:0031 -------
+
+%NQSV(INFO): ------- Output from job:0032 -------
+
+%NQSV(INFO): ------- Output from job:0033 -------
+
+%NQSV(INFO): ------- Output from job:0034 -------
+
+%NQSV(INFO): ------- Output from job:0035 -------
+
+%NQSV(INFO): ------- Output from job:0036 -------
+
+%NQSV(INFO): ------- Output from job:0037 -------
+
+%NQSV(INFO): ------- Output from job:0038 -------
+
+%NQSV(INFO): ------- Output from job:0039 -------
+
+%NQSV(INFO): ------- Output from job:0040 -------
+
+%NQSV(INFO): ------- Output from job:0041 -------
+
+%NQSV(INFO): ------- Output from job:0042 -------
+
+%NQSV(INFO): ------- Output from job:0043 -------
+
+%NQSV(INFO): ------- Output from job:0044 -------
+
+%NQSV(INFO): ------- Output from job:0045 -------
+
+%NQSV(INFO): ------- Output from job:0046 -------
+
+%NQSV(INFO): ------- Output from job:0047 -------
+
+%NQSV(INFO): ------- Output from job:0048 -------
+
+%NQSV(INFO): ------- Output from job:0049 -------
+
+%NQSV(INFO): ------- Output from job:0050 -------
+
+%NQSV(INFO): ------- Output from job:0051 -------
+
+%NQSV(INFO): ------- Output from job:0052 -------
+
+%NQSV(INFO): ------- Output from job:0053 -------
+
+%NQSV(INFO): ------- Output from job:0054 -------
+
+%NQSV(INFO): ------- Output from job:0055 -------
+
+%NQSV(INFO): ------- Output from job:0056 -------
+
+%NQSV(INFO): ------- Output from job:0057 -------
+
+%NQSV(INFO): ------- Output from job:0058 -------
+
+%NQSV(INFO): ------- Output from job:0059 -------
+
+%NQSV(INFO): ------- Output from job:0060 -------
+
+%NQSV(INFO): ------- Output from job:0061 -------
+
+%NQSV(INFO): ------- Output from job:0062 -------
+
+%NQSV(INFO): ------- Output from job:0063 -------
+
+%NQSV(INFO): ------- Output from job:0064 -------
+
+%NQSV(INFO): ------- Output from job:0065 -------
+
+%NQSV(INFO): ------- Output from job:0066 -------
+
+%NQSV(INFO): ------- Output from job:0067 -------
+
+%NQSV(INFO): ------- Output from job:0068 -------
+
+%NQSV(INFO): ------- Output from job:0069 -------
+
+%NQSV(INFO): ------- Output from job:0070 -------
+
+%NQSV(INFO): ------- Output from job:0071 -------
+
+%NQSV(INFO): ------- Output from job:0072 -------
+
+%NQSV(INFO): ------- Output from job:0073 -------
+
+%NQSV(INFO): ------- Output from job:0074 -------
+
+%NQSV(INFO): ------- Output from job:0075 -------
+
+%NQSV(INFO): ------- Output from job:0076 -------
+
+%NQSV(INFO): ------- Output from job:0077 -------
+
+%NQSV(INFO): ------- Output from job:0078 -------
+
+%NQSV(INFO): ------- Output from job:0079 -------
+
+%NQSV(INFO): ------- Output from job:0080 -------
+
+%NQSV(INFO): ------- Output from job:0081 -------
+
+%NQSV(INFO): ------- Output from job:0082 -------
+
+%NQSV(INFO): ------- Output from job:0083 -------
+
+%NQSV(INFO): ------- Output from job:0084 -------
+
+%NQSV(INFO): ------- Output from job:0085 -------
+
+%NQSV(INFO): ------- Output from job:0086 -------
+
+%NQSV(INFO): ------- Output from job:0087 -------
+
+%NQSV(INFO): ------- Output from job:0088 -------
+
+%NQSV(INFO): ------- Output from job:0089 -------
+
+%NQSV(INFO): ------- Output from job:0090 -------
+
+%NQSV(INFO): ------- Output from job:0091 -------
+
+%NQSV(INFO): ------- Output from job:0092 -------
+
+%NQSV(INFO): ------- Output from job:0093 -------
+
+%NQSV(INFO): ------- Output from job:0094 -------
+
+%NQSV(INFO): ------- Output from job:0095 -------
+
+%NQSV(INFO): ------- Output from job:0096 -------
+
+%NQSV(INFO): ------- Output from job:0097 -------
+
+%NQSV(INFO): ------- Output from job:0098 -------
+
+%NQSV(INFO): ------- Output from job:0099 -------

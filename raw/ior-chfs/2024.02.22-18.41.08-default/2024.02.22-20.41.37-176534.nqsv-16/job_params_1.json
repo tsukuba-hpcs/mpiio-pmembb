@@ -1,0 +1,19 @@
+{
+  "nnodes": 16,
+  "ppn": 32,
+  "np": 512,
+  "jobid": "176534.nqsv",
+  "runid": 1,
+  "lustre_version": "2.12.9_ddn38",
+  "spack_env_name": "chfs",
+  "storageSystem": "CHFS",
+  "chfs_chunk_size": 524288,
+  "chfs_log_priority": "'notice'",
+  "chfs_nthreads": 8,
+  "chfs_niothreads": 2,
+  "chfs_rdma_thresh": 32768,
+  "chfs_async_access": 0,
+  "chfs_lookup_local": 0,
+  "chfs_version": "3.0.1",
+  "fi_universe_size": 4096
+}

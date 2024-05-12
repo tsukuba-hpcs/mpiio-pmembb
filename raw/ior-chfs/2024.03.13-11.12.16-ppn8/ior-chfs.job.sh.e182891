@@ -1,0 +1,17 @@
+2024.03.13-11.13.13 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.03.13-11.14.49 rm: 'chfs_test_file' を削除できません: そのようなファイルやディレクトリはありません
+
+============================================================
+Request ID:             182891.nqsv
+Request Name:           ior-chfs.job.sh
+Queue:                  gpu_low@nqsv
+Number of Jobs:         1
+User Name:              hiraga
+Group Name:             NBB
+Created Request Time:   Wed Mar 13 11:12:31 2024
+Started Request Time:   Wed Mar 13 11:13:08 2024
+Ended Request Time:     Wed Mar 13 11:14:49 2024
+Resources Information:
+  Elapse:               105S
+  Remaining Elapse:     495S
+============================================================

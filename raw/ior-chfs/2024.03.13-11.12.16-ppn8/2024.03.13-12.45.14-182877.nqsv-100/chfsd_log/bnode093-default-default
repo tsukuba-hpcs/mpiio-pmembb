@@ -1,0 +1,2 @@
+2024-03-13 12:50:29.270722078 +0900: <notice> handle_sig: signal 15 caught
+2024-03-13 12:50:29.271187421 +0900: <err> ring_rpc_set_next (forward to ofi+verbs;ofi_rxm://10.110.0.65:42844): HG_TIMEOUT

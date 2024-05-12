@@ -1,0 +1,8 @@
+2024-03-13 12:56:56.980989360 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.56:37995): HG_TIMEOUT
+2024-03-13 12:56:56.980992952 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.56:37995): HG_TIMEOUT
+2024-03-13 12:56:56.980989210 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.56:37995): HG_TIMEOUT
+2024-03-13 12:56:56.980990351 +0900: <err> ring_rpc_election (forward to ofi+verbs;ofi_rxm://10.110.0.56:37995): HG_TIMEOUT
+2024-03-13 12:56:56.981367801 +0900: <notice> election: HG_TIMEOUT
+2024-03-13 12:56:56.981401009 +0900: <notice> election: HG_TIMEOUT
+2024-03-13 12:56:56.981432816 +0900: <notice> election: HG_TIMEOUT
+2024-03-13 12:56:56.981463326 +0900: <notice> election: HG_TIMEOUT

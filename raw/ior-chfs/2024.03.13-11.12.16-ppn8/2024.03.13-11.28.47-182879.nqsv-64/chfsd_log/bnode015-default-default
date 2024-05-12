@@ -1,0 +1,2 @@
+2024-03-13 11:32:58.923000610 +0900: <notice> handle_sig: signal 15 caught
+2024-03-13 11:32:58.923002833 +0900: <err> election RPC (get_input): HG_NOMEM

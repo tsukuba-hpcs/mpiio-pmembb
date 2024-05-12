@@ -1,0 +1,27 @@
+Command exited with non-zero status 15
+{
+  "Command": "mpirun -f /var/opt/nec/nqsv/jsv/jobfile/0.182853.10/nodelist -np 1600 -ppn 16 -bind-to core -genv PATH=/home/NBB/hiraga/.cache/spack/var/spack/environments/chfs/.spack-env/view/bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/bin:/home/NBB/hiraga/.cache/spack/bin:/home/NBB/hiraga/.local/bin:/home/NBB/hiraga/.bin:/system/apps/ubuntu/20.04-202210/oneapi/2022.3.1/intelpython/latest/condabin:/bin:/usr/bin:/usr/ucb:/snap/bin:/system/tool/bin:/opt/nec/nqsv/bin:/opt/memverge/bin -genv FI_UNIVERSE_SIZE=4096 -genv ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-chfs/2024.03.13-10.34.06-ppn16-100/2024.03.13-10.34.51-182853.nqsv-100/romio_hints -genv ROMIO_FSTYPE_FORCE=chfs: -genv CHFS_SERVER=ofi+verbs;ofi_rxm://10.110.0.32:38526,ofi+verbs;ofi_rxm://10.110.0.17:45332,ofi+verbs;ofi_rxm://10.110.0.60:43173,ofi+verbs;ofi_rxm://10.110.0.35:52584,ofi+verbs;ofi_rxm://10.110.0.83:56283,ofi+verbs;ofi_rxm://10.110.0.92:43748,ofi+verbs;ofi_rxm://10.110.0.104:47859,ofi+verbs;ofi_rxm://10.110.0.49:48560,ofi+verbs;ofi_rxm://10.110.0.112:45056,ofi+verbs;ofi_rxm://10.110.0.46:47334,ofi+verbs;ofi_rxm://10.110.0.89:56175,ofi+verbs;ofi_rxm://10.110.0.103:49436,ofi+verbs;ofi_rxm://10.110.0.53:54693,ofi+verbs;ofi_rxm://10.110.0.48:60293,ofi+verbs;ofi_rxm://10.110.0.97:52821,ofi+verbs;ofi_rxm://10.110.0.45:56957,ofi+verbs;ofi_rxm://10.110.0.37:34886,ofi+verbs;ofi_rxm://10.110.0.14:43905,ofi+verbs;ofi_rxm://10.110.0.59:40033,ofi+verbs;ofi_rxm://10.110.0.10:49632,ofi+verbs;ofi_rxm://10.110.0.57:54933,ofi+verbs;ofi_rxm://10.110.0.7:40630,ofi+verbs;ofi_rxm://10.110.0.65:42228,ofi+verbs;ofi_rxm://10.110.0.23:56135,ofi+verbs;ofi_rxm://10.110.0.67:38226,ofi+verbs;ofi_rxm://10.110.0.99:42238,ofi+verbs;ofi_rxm://10.110.0.41:50808,ofi+verbs;ofi_rxm://10.110.0.105:60550,ofi+verbs;ofi_rxm://10.110.0.16:56528,ofi+verbs;ofi_rxm://10.110.0.34:54800,ofi+verbs;ofi_rxm://10.110.0.81:52215,ofi+verbs;ofi_rxm://10.110.0.39:50504 -genv CHFS_RPC_TIMEOUT_MSEC=30000 -genv CHFS_NODE_LIST_CACHE_TIMEOUT=0 -genv CHFS_CHUNK_SIZE=524288 -genv CHFS_RDMA_THRESH=32768 -genv CHFS_ASYNC_ACCESS=0 -genv CHFS_LOOKUP_LOCAL=1 ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 40960 -b 524288 -t 524288 -o chfs_test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-chfs/2024.03.13-10.34.06-ppn16-100/2024.03.13-10.34.51-182853.nqsv-100/ior_summary_0.json -w",
+  "UnsharedDataSize(KB)": 0,
+  "ElapsedTime": "4:58.21",
+  "MajorPageFaults": 13,
+  "FileSystemInputs": 15896,
+  "TotalMemory(KB)": 0,
+  "MaxResidentSetSize(KB)": 188664,
+  "FileSystemOutputs": 560,
+  "CpuUsage": "1555%",
+  "MinorPageFaults": 881196,
+  "SystemCpuSeconds": 1669.29,
+  "UserCpuSeconds": 2969.60,
+  "Swaps": 0,
+  "SharedTextSize(KB)": 0,
+  "PageSize(Bytes)": 4096,
+  "InvoluntaryContextSwitches": 55676,
+  "ElapsedTime(Seconds)": 298.21,
+  "SignalsDelivered": 0,
+  "UnsharedStackSize(KB)": 0,
+  "SocketMessagesReceived": 0,
+  "SocketMessagesSent": 0,
+  "AverageResidentSetSize(KB)": 0,
+  "VoluntaryContextSwitches": 94066,
+  "ExitStatus": 15
+}

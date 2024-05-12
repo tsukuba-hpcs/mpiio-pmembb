@@ -1,0 +1,40 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.02.22-18.51.50 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-18.51.50 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-18.51.50 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-18.51.50 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-18.51.50 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-18.51.50 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-18.51.50 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-18.51.50 fusermount: entry for /scr/chfs not found in /etc/mtab
+2024.02.22-18.53.10 rm: 'chfs_test_file' を削除できません: そのようなファイルやディレクトリはありません
+
+============================================================
+Request ID:             176542.nqsv
+Request Name:           ior-chfs.job.sh
+Queue:                  gen_S@nqsv
+Number of Jobs:         8
+User Name:              hiraga
+Group Name:             NBBG
+Created Request Time:   Thu Feb 22 18:43:05 2024
+Started Request Time:   Thu Feb 22 18:51:45 2024
+Ended Request Time:     Thu Feb 22 18:53:10 2024
+Resources Information:
+  Elapse:               89S
+  Remaining Elapse:     10711S
+============================================================
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------

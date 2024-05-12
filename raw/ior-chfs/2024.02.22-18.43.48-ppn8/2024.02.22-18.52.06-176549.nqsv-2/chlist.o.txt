@@ -1,0 +1,2 @@
+ofi+verbs;ofi_rxm://10.110.0.104:43205 ofi+verbs;ofi_rxm://10.110.0.104: 0B1B1C1C
+ofi+verbs;ofi_rxm://10.110.0.21:33189 ofi+verbs;ofi_rxm://10.110.0.21: 9F8B2D68
