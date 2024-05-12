@@ -1,0 +1,20 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.03.13-11.28.52 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-11.28.52-182898.nqsv-4
+2024.03.13-11.28.52 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-beeond/2024.03.13-11.28.52-182898.nqsv-4
+2024.03.13-11.28.52 prepare test_dir
+2024.03.13-11.28.52 New chunksize: 2097152
+2024.03.13-11.28.52 New number of storage targets: 4
+2024.03.13-11.28.52 
+2024.03.13-11.28.52 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182898.10/mpinodes -np 4 -map-by ppr:1:node dropcaches 3
+2024.03.13-11.28.54 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-11.28.52-182898.nqsv-4/time_0.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182898.10/mpinodes -x PATH -x ROMIO_FSTYPE_FORCE=ufs: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-11.28.52-182898.nqsv-4/romio_hints -mca hook_pmembb_enable false -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 64 -map-by ppr:16:node ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 21474836480 -t 2097152 -o /beeond/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-11.28.52-182898.nqsv-4/ior_summary_0.json -w
+2024.03.13-11.31.27 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182898.10/mpinodes -np 4 -map-by ppr:1:node dropcaches 3
+2024.03.13-11.31.28 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-11.28.52-182898.nqsv-4/time_1.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182898.10/mpinodes -x PATH -x ROMIO_FSTYPE_FORCE=ufs: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-11.28.52-182898.nqsv-4/romio_hints -mca hook_pmembb_enable false -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 64 -map-by ppr:16:node ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 21474836480 -t 2097152 -o /beeond/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-11.28.52-182898.nqsv-4/ior_summary_1.json -r -C -Q 1
+2024.03.13-11.32.16 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182898.10/mpinodes -np 4 -map-by ppr:1:node dropcaches 3
+2024.03.13-11.32.17 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-11.28.52-182898.nqsv-4/time_2.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182898.10/mpinodes -x PATH -x ROMIO_FSTYPE_FORCE=ufs: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-11.28.52-182898.nqsv-4/romio_hints -mca hook_pmembb_enable false -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 64 -map-by ppr:16:node ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 21474836480 -t 2097152 -o /beeond/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-11.28.52-182898.nqsv-4/ior_summary_2.json -r
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------

@@ -1,0 +1,212 @@
+
+%NQSV(INFO): ------- Output from job:0000 -------
+2024.03.13-12.58.30 prepare the output directory: /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-12.58.30-182893.nqsv-100
+2024.03.13-12.58.30 prepare backend dir: /work/0/NBB/hiraga/work/mpiio-pmembb/backend/ior-beeond/2024.03.13-12.58.30-182893.nqsv-100
+2024.03.13-12.58.30 prepare test_dir
+2024.03.13-12.58.30 New chunksize: 2097152
+2024.03.13-12.58.30 New number of storage targets: 100
+2024.03.13-12.58.30 
+2024.03.13-12.58.30 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182893.10/mpinodes -np 100 -map-by ppr:1:node dropcaches 3
+2024.03.13-12.58.33 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-12.58.30-182893.nqsv-100/time_0.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182893.10/mpinodes -x PATH -x ROMIO_FSTYPE_FORCE=ufs: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-12.58.30-182893.nqsv-100/romio_hints -mca hook_pmembb_enable false -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 1600 -map-by ppr:16:node ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 21474836480 -t 2097152 -o /beeond/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-12.58.30-182893.nqsv-100/ior_summary_0.json -w
+2024.03.13-13.02.00 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182893.10/mpinodes -np 100 -map-by ppr:1:node dropcaches 3
+2024.03.13-13.02.03 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-12.58.30-182893.nqsv-100/time_1.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182893.10/mpinodes -x PATH -x ROMIO_FSTYPE_FORCE=ufs: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-12.58.30-182893.nqsv-100/romio_hints -mca hook_pmembb_enable false -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 1600 -map-by ppr:16:node ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 21474836480 -t 2097152 -o /beeond/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-12.58.30-182893.nqsv-100/ior_summary_1.json -r -C -Q 1
+2024.03.13-13.03.04 mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182893.10/mpinodes -np 100 -map-by ppr:1:node dropcaches 3
+2024.03.13-13.03.06 time_json -o /work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-12.58.30-182893.nqsv-100/time_2.json mpirun --leave-session-attached -hostfile /var/opt/nec/nqsv/jsv/jobfile/0.182893.10/mpinodes -x PATH -x ROMIO_FSTYPE_FORCE=ufs: -x ROMIO_HINTS=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-12.58.30-182893.nqsv-100/romio_hints -mca hook_pmembb_enable false -mca io romio341 -mca osc ucx -mca pml ucx -mca osc_ucx_acc_single_intrinsic true -np 1600 -map-by ppr:16:node ior -a MPIIO -l timestamp -g -G -1401473791 -k -e -i 1 -s 1 -b 21474836480 -t 2097152 -o /beeond/0/test_file -O summaryFormat=JSON -O summaryFile=/work/0/NBB/hiraga/work/mpiio-pmembb/raw/ior-beeond/2024.03.13-11.13.53-default/2024.03.13-12.58.30-182893.nqsv-100/ior_summary_2.json -r
+
+%NQSV(INFO): ------- Output from job:0001 -------
+
+%NQSV(INFO): ------- Output from job:0002 -------
+
+%NQSV(INFO): ------- Output from job:0003 -------
+
+%NQSV(INFO): ------- Output from job:0004 -------
+
+%NQSV(INFO): ------- Output from job:0005 -------
+
+%NQSV(INFO): ------- Output from job:0006 -------
+
+%NQSV(INFO): ------- Output from job:0007 -------
+
+%NQSV(INFO): ------- Output from job:0008 -------
+
+%NQSV(INFO): ------- Output from job:0009 -------
+
+%NQSV(INFO): ------- Output from job:0010 -------
+
+%NQSV(INFO): ------- Output from job:0011 -------
+
+%NQSV(INFO): ------- Output from job:0012 -------
+
+%NQSV(INFO): ------- Output from job:0013 -------
+
+%NQSV(INFO): ------- Output from job:0014 -------
+
+%NQSV(INFO): ------- Output from job:0015 -------
+
+%NQSV(INFO): ------- Output from job:0016 -------
+
+%NQSV(INFO): ------- Output from job:0017 -------
+
+%NQSV(INFO): ------- Output from job:0018 -------
+
+%NQSV(INFO): ------- Output from job:0019 -------
+
+%NQSV(INFO): ------- Output from job:0020 -------
+
+%NQSV(INFO): ------- Output from job:0021 -------
+
+%NQSV(INFO): ------- Output from job:0022 -------
+
+%NQSV(INFO): ------- Output from job:0023 -------
+
+%NQSV(INFO): ------- Output from job:0024 -------
+
+%NQSV(INFO): ------- Output from job:0025 -------
+
+%NQSV(INFO): ------- Output from job:0026 -------
+
+%NQSV(INFO): ------- Output from job:0027 -------
+
+%NQSV(INFO): ------- Output from job:0028 -------
+
+%NQSV(INFO): ------- Output from job:0029 -------
+
+%NQSV(INFO): ------- Output from job:0030 -------
+
+%NQSV(INFO): ------- Output from job:0031 -------
+
+%NQSV(INFO): ------- Output from job:0032 -------
+
+%NQSV(INFO): ------- Output from job:0033 -------
+
+%NQSV(INFO): ------- Output from job:0034 -------
+
+%NQSV(INFO): ------- Output from job:0035 -------
+
+%NQSV(INFO): ------- Output from job:0036 -------
+
+%NQSV(INFO): ------- Output from job:0037 -------
+
+%NQSV(INFO): ------- Output from job:0038 -------
+
+%NQSV(INFO): ------- Output from job:0039 -------
+
+%NQSV(INFO): ------- Output from job:0040 -------
+
+%NQSV(INFO): ------- Output from job:0041 -------
+
+%NQSV(INFO): ------- Output from job:0042 -------
+
+%NQSV(INFO): ------- Output from job:0043 -------
+
+%NQSV(INFO): ------- Output from job:0044 -------
+
+%NQSV(INFO): ------- Output from job:0045 -------
+
+%NQSV(INFO): ------- Output from job:0046 -------
+
+%NQSV(INFO): ------- Output from job:0047 -------
+
+%NQSV(INFO): ------- Output from job:0048 -------
+
+%NQSV(INFO): ------- Output from job:0049 -------
+
+%NQSV(INFO): ------- Output from job:0050 -------
+
+%NQSV(INFO): ------- Output from job:0051 -------
+
+%NQSV(INFO): ------- Output from job:0052 -------
+
+%NQSV(INFO): ------- Output from job:0053 -------
+
+%NQSV(INFO): ------- Output from job:0054 -------
+
+%NQSV(INFO): ------- Output from job:0055 -------
+
+%NQSV(INFO): ------- Output from job:0056 -------
+
+%NQSV(INFO): ------- Output from job:0057 -------
+
+%NQSV(INFO): ------- Output from job:0058 -------
+
+%NQSV(INFO): ------- Output from job:0059 -------
+
+%NQSV(INFO): ------- Output from job:0060 -------
+
+%NQSV(INFO): ------- Output from job:0061 -------
+
+%NQSV(INFO): ------- Output from job:0062 -------
+
+%NQSV(INFO): ------- Output from job:0063 -------
+
+%NQSV(INFO): ------- Output from job:0064 -------
+
+%NQSV(INFO): ------- Output from job:0065 -------
+
+%NQSV(INFO): ------- Output from job:0066 -------
+
+%NQSV(INFO): ------- Output from job:0067 -------
+
+%NQSV(INFO): ------- Output from job:0068 -------
+
+%NQSV(INFO): ------- Output from job:0069 -------
+
+%NQSV(INFO): ------- Output from job:0070 -------
+
+%NQSV(INFO): ------- Output from job:0071 -------
+
+%NQSV(INFO): ------- Output from job:0072 -------
+
+%NQSV(INFO): ------- Output from job:0073 -------
+
+%NQSV(INFO): ------- Output from job:0074 -------
+
+%NQSV(INFO): ------- Output from job:0075 -------
+
+%NQSV(INFO): ------- Output from job:0076 -------
+
+%NQSV(INFO): ------- Output from job:0077 -------
+
+%NQSV(INFO): ------- Output from job:0078 -------
+
+%NQSV(INFO): ------- Output from job:0079 -------
+
+%NQSV(INFO): ------- Output from job:0080 -------
+
+%NQSV(INFO): ------- Output from job:0081 -------
+
+%NQSV(INFO): ------- Output from job:0082 -------
+
+%NQSV(INFO): ------- Output from job:0083 -------
+
+%NQSV(INFO): ------- Output from job:0084 -------
+
+%NQSV(INFO): ------- Output from job:0085 -------
+
+%NQSV(INFO): ------- Output from job:0086 -------
+
+%NQSV(INFO): ------- Output from job:0087 -------
+
+%NQSV(INFO): ------- Output from job:0088 -------
+
+%NQSV(INFO): ------- Output from job:0089 -------
+
+%NQSV(INFO): ------- Output from job:0090 -------
+
+%NQSV(INFO): ------- Output from job:0091 -------
+
+%NQSV(INFO): ------- Output from job:0092 -------
+
+%NQSV(INFO): ------- Output from job:0093 -------
+
+%NQSV(INFO): ------- Output from job:0094 -------
+
+%NQSV(INFO): ------- Output from job:0095 -------
+
+%NQSV(INFO): ------- Output from job:0096 -------
+
+%NQSV(INFO): ------- Output from job:0097 -------
+
+%NQSV(INFO): ------- Output from job:0098 -------
+
+%NQSV(INFO): ------- Output from job:0099 -------
