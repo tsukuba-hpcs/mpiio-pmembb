@@ -1,7 +1,7 @@
 #!/bin/bash
 #------- qsub option -----------
 #PBS -A NBBG
-#PBS -l elapstim_req=0:30:00
+#PBS -l elapstim_req=3:00:00
 #PBS -T openmpi
 #PBS -v NQSV_MPI_VER=${NQSV_MPI_VER}
 #PBS -v USE_DEVDAX=pmemkv
@@ -9,6 +9,7 @@
 #------- Program execution -----------
 set -eu
 
+module purge
 module load use.own
 module load "openmpi/$NQSV_MPI_VER"
 
@@ -17,9 +18,6 @@ module load "openmpi/$NQSV_MPI_VER"
 # - SCRIPT_DIR
 # - OUTPUT_DIR
 # - BACKEND_DIR
-
-: ${RDBENCH_STEPS:=640}
-: ${RDBENCH_INTERVAL:=64}
 
 spack env activate "${SPACK_ENV_NAME}"
 
@@ -55,11 +53,26 @@ mkdir -p "${JOB_BACKEND_DIR}"
 trap 'rm -rf "${JOB_BACKEND_DIR}" ; exit 1' 1 2 3 15
 trap 'rm -rf "${JOB_BACKEND_DIR}" ; exit 0' EXIT
 
-# ppn=48
+
+
 ppn=36
 np=$((NNODES*ppn))
+IFS=$' \t\n' read tile_np_x tile_np_y <<< "$(dims_create_2d "${np}")"
+tile_elem_size=8
+tile_nelem_x=$((8*2**10)) # 8K * 8 = 64KB
+tile_nelem_y=1
+
+ior_segment_count=1
+ior_block_size=$((tile_nelem_x * tile_nelem_y * tile_elem_size))
+ior_xfer_size=$((tile_np_x * tile_nelem_x * tile_elem_size))
+
+
 rdbench_length_per_node=$((48*2**10)) # 48k * 48k * sizeof(double) = 18 GiB/node
 rdbench_length=$((rdbench_length_per_node * $(sqrt "$NNODES")))
+
+ior_segment_count=1
+ior_block_size=$((rdbench_length_per_node * rdbench_length_per_node * 8 / ppn))
+ior_xfer_size=$((rdbench_length * 8)) # 48k * 8node (for 64nodes job) * sizeof(double) = 3M = x方向の長さ
 
 
 cmd_mpirun=(
@@ -73,6 +86,7 @@ cmd_mpirun=(
   -mca hook_pmembb_pmem_size "${PMEM_SIZE}"
   -mca io romio341
   -mca osc ucx
+  -mca osc_ucx_tls rc_mlx5
   -mca osc_ucx_acc_single_intrinsic true
   -np "$np"
   -map-by "ppr:${ppn}:node"
@@ -119,21 +133,16 @@ save_job_params() {
   "lustre_stripe_size": ${stripe_size},
   "lustre_stripe_count": ${stripe_count},
   "spack_env_name": "${SPACK_ENV_NAME}",
-  "storageSystem": "PEANUTS"
+  "storageSystem": "PEANUTS",
+  "ior_segment_count": $ior_segment_count,
+  "ior_block_size": $ior_block_size,
+  "ior_xfer_size": $ior_xfer_size
 }
 EOS
 }
 
 # workflow_id=0
 runid=0
-
-cmd_benchmark=(
-  time_json -o "${JOB_OUTPUT_DIR}/time_${runid}.json"
-  "${cmd_mpirun[@]}"
-  -mca hook_pmembb_load false
-  -mca hook_pmembb_save true
-  "${cmd_rdbench[@]}"
-)
 
 test_dir="$JOB_BACKEND_DIR"
 
@@ -154,6 +163,14 @@ echo "${cmd_dropcaches[@]}"
 "${cmd_dropcaches[@]}"
 
 # rdbench
+cmd_benchmark=(
+  time_json -o "${JOB_OUTPUT_DIR}/time_${runid}.json"
+  "${cmd_mpirun[@]}"
+  -mca hook_pmembb_load false
+  -mca hook_pmembb_save true
+  "${cmd_rdbench[@]}"
+)
+
 echo "${cmd_benchmark[@]}"
 "${cmd_benchmark[@]}" \
   > >(tee "${JOB_OUTPUT_DIR}/rdbench_stdout_${runid}.json") \
@@ -161,3 +178,48 @@ echo "${cmd_benchmark[@]}"
 
 # dump test dir
 tree -s "${JOB_BACKEND_DIR}" > "${JOB_OUTPUT_DIR}/out_tree"
+
+## find test_file
+test_file=$(find "${test_dir}" -name "o_*.bin" | sort -n | head -1)
+
+cmd_ior=(
+  ior
+  -a MPIIO
+  -l timestamp   # --data
+  -g             # intraTestBarriers – use barriers between open, write/read, and close
+  -G -1401473791 # setTimeStampSignature – set value for time stamp signature
+  -k             # keepFile – don’t remove the test file(s) on program exit
+  -e             # fsync
+  -o "$test_file"
+  -O "summaryFormat=JSON"
+)
+
+
+for ((iter=0; iter<2; iter+=1)); do
+  # ior
+  runid=$((runid + 1))
+
+  save_job_params
+
+  # dropcaches
+  echo "${cmd_dropcaches[@]}"
+  "${cmd_dropcaches[@]}"
+
+  cmd_segmented_read=(
+    time_json -o "${JOB_OUTPUT_DIR}/time_${runid}.json"
+    "${cmd_mpirun[@]}"
+    -mca hook_pmembb_load true
+    -mca hook_pmembb_save true
+    "${cmd_ior[@]}"
+    -O "summaryFile=${JOB_OUTPUT_DIR}/ior_summary_${runid}.json"
+    -r
+    -s "$ior_segment_count"
+    -b "$ior_block_size"
+    -t "$ior_xfer_size"
+  )
+
+  echo "${cmd_segmented_read[@]}"
+  "${cmd_segmented_read[@]}" \
+    > "${JOB_OUTPUT_DIR}/ior_stdout_${runid}.txt" \
+    2> "${JOB_OUTPUT_DIR}/ior_stderr_${runid}.txt"
+done

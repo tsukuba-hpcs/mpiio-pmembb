@@ -1,3 +1,5 @@
 ior-pmembb.job.sh
 ior-strided-pmembb.job.sh
 ior-beeond.job.sh
+ior-seg-stride-pmembb.job.sh
+ior-tile-pmembb.job.sh

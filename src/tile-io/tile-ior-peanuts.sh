@@ -7,6 +7,7 @@ TIMESTAMP="$(timestamp)"
 # default params 
 : ${ELAPSTIM_REQ:="3:00:00"}
 : ${LABEL:=default}
+# : ${NQSV_MPI_VER:="5.0.0rc12-pmembb-gcc-11.4.0-u6s35fd"}
 
 JOB_FILE="$(remove_ext "$(this_file)").job.sh"
 JOB_TEMPLATE_FILE="$(remove_ext "$(this_file)").template.job.sh"
@@ -18,23 +19,22 @@ cd "${OUTPUT_DIR}"
 mkdir -p "${BACKEND_DIR}"
 
 nnodes_list=(
-  # 1 2 4 8 16 32 64
-  # 64 32 16 8 4 2 1
-  100
-  # 16
+  # 1 4 9 16 25 36 49 64
+  # 64 49 36 25 16 9 4 1
+  16
+  # 4
 )
 niter=1
-
 
 param_set_list=(
   "
   SPACK_ENV_NAME=mpiio-pmembb
   NQSV_MPI_VER=5.0.0rc12-pmembb-eval-gcc-11.4.0-3u2cbvf
   "
-  "
-  SPACK_ENV_NAME=mpiio-pmembb-deferred-open
-  NQSV_MPI_VER=5.0.0rc12-pmembb-eval-gcc-11.4.0-7cduzow
-  "
+  # "
+  # SPACK_ENV_NAME=mpiio-pmembb-deferred-open
+  # NQSV_MPI_VER=5.0.0rc12-pmembb-eval-gcc-11.4.0-7cduzow
+  # "
 )
 
 for nnodes in "${nnodes_list[@]}"; do
@@ -47,7 +47,6 @@ for nnodes in "${nnodes_list[@]}"; do
       envsubst < "${JOB_TEMPLATE_FILE}" '$NQSV_MPI_VER' > "$JOB_FILE"
 
       cmd_qsub=(
-        # qsub_lustre
         qsub
         # -A NBBG
         -A NBB

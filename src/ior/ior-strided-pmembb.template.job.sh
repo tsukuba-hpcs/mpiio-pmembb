@@ -76,19 +76,36 @@ save_job_params() {
   "lustre_version": "$(lfs --version | awk '{print $2}')",
   "lustre_stripe_size": ${stripe_size},
   "lustre_stripe_count": ${stripe_count},
-  "spack_env_name": "${SPACK_ENV_NAME}"
+  "spack_env_name": "${SPACK_ENV_NAME}",
+  "storageSystem": "PEANUTS",
+  "ior_w_segment_count": $ior_w_segment_count,
+  "ior_w_block_size": $ior_w_block_size,
+  "ior_w_xfer_size": $ior_w_xfer_size,
+  "ior_r_segment_count": $ior_r_segment_count,
+  "ior_r_block_size": $ior_r_block_size,
+  "ior_r_xfer_size": $ior_r_xfer_size
 }
 EOS
 }
 
-workflow_id=0
-runid=0
 ppn=8
 np=$((NNODES * ppn))
+
+ior_w_segment_count=$((128 * 2 ** 10))
+ior_w_block_size=$((4 * 2 ** 10))
+ior_w_xfer_size=$ior_w_block_size
+
+ior_r_segment_count=1
+ior_r_block_size=$((ior_w_segment_count * ior_w_block_size))
+ior_r_xfer_size=$((512 * ior_w_block_size))
+
 stripe_count=$np
 if [ $stripe_count -gt $max_stripe_count ]; then
   stripe_count=$max_stripe_count
 fi
+
+workflow_id=0
+runid=0
 
 echo "prepare test_dir"
 test_dir="${JOB_BACKEND_DIR}/${workflow_id}"
@@ -103,7 +120,7 @@ cmd_lfs_setstripe=(
   --stripe-size "${stripe_size}"
   "${test_dir}"
 )
-"${cmd_lfs_setstripe[@]}"
+# "${cmd_lfs_setstripe[@]}"
 lfs getstripe "${test_dir}"
 
 cmd_mpirun=(
@@ -117,7 +134,8 @@ cmd_mpirun=(
   -mca hook_pmembb_pmem_size "${PMEM_SIZE}"
   -mca io romio341
   -mca osc ucx
-  -mca pml ucx
+  -mca osc_ucx_tls rc_mlx5
+  # -mca pml ucx
   -mca osc_ucx_acc_single_intrinsic true
   -np "$np"
   -map-by "ppr:${ppn}:node"
@@ -130,20 +148,12 @@ cmd_ior=(
   -g             # intraTestBarriers – use barriers between open, write/read, and close
   -G -1401473791 # setTimeStampSignature – set value for time stamp signature
   -k             # keepFile – don’t remove the test file(s) on program exit
-  # -e             # fsync
-  -i 1
+  -e             # fsync
   -o "$test_file"
-  # -D 50
-  # -O "stoneWallingWearOut=1"
   -O "summaryFormat=JSON"
 )
 
-min_io_size_per_proc=$((256 * 2 ** 20))
-
 # write
-xfer_size=$((1 * 2 ** 10)) # 1KiB write
-segment_count=$((min_io_size_per_proc / xfer_size))
-block_size=$xfer_size
 
 save_job_params
 
@@ -158,10 +168,10 @@ cmd_write=(
   -mca hook_pmembb_load false
   -mca hook_pmembb_save true
   "${cmd_ior[@]}"
-  -s "$segment_count"
-  -b "$block_size"
-  -t "$xfer_size"
-  # -O "stoneWallingStatusFile=${JOB_OUTPUT_DIR}/ior_stonewall_${runid}"
+  -i 1
+  -s "$ior_w_segment_count"
+  -b "$ior_w_block_size"
+  -t "$ior_w_xfer_size"
   -O "summaryFile=${JOB_OUTPUT_DIR}/ior_summary_${runid}.json"
   -w
 )
@@ -171,107 +181,37 @@ echo "${cmd_write[@]}"
   >"${JOB_OUTPUT_DIR}/ior_stdout_${runid}.txt" \
   2>"${JOB_OUTPUT_DIR}/ior_stderr_${runid}.txt"
 
-runid=$((runid + 1))
-save_job_params
 
-# dropcaches
-echo "${cmd_dropcaches[@]}"
-"${cmd_dropcaches[@]}"
+for ((iter=0; iter<2; iter+=1)); do
+  runid=$((runid + 1))
 
-# warm up
-cmd_read_remote=(
-  time_json -o "${JOB_OUTPUT_DIR}/time_warn.json"
-  "${cmd_mpirun[@]}"
-  -mca hook_pmembb_load true
-  -mca hook_pmembb_save true
-  "${cmd_ior[@]}"
-  -s 1
-  -b "$block_size"
-  -t "$xfer_size"
-  -r
-)
-echo "${cmd_read_remote[@]}"
-"${cmd_read_remote[@]}"
+  # read segmented
+  save_job_params
 
-# read remote
-cmd_read_remote=(
-  time_json -o "${JOB_OUTPUT_DIR}/time_${runid}.json"
-  "${cmd_mpirun[@]}"
-  -mca hook_pmembb_load true
-  -mca hook_pmembb_save false
-  "${cmd_ior[@]}"
-  -s "$segment_count"
-  -b "$block_size"
-  -t "$xfer_size"
-  # -O "stoneWallingStatusFile=${JOB_OUTPUT_DIR}/ior_stonewall_${runid}"
-  -O "summaryFile=${JOB_OUTPUT_DIR}/ior_summary_${runid}.json"
-  -r
-  -C
-  -Q 1
-)
+  # dropcaches
+  echo "${cmd_dropcaches[@]}"
+  "${cmd_dropcaches[@]}"
 
-echo "${cmd_read_remote[@]}"
-"${cmd_read_remote[@]}" \
-  >"${JOB_OUTPUT_DIR}/ior_stdout_${runid}.txt" \
-  2>"${JOB_OUTPUT_DIR}/ior_stderr_${runid}.txt"
+  cmd_read_segmented=(
+    time_json -o "${JOB_OUTPUT_DIR}/time_${runid}.json"
+    "${cmd_mpirun[@]}"
+    -mca hook_pmembb_load true
+    -mca hook_pmembb_save true
+    "${cmd_ior[@]}"
+    -i 1
+    -s "$ior_r_segment_count"
+    -b "$ior_r_block_size"
+    -t "$ior_r_xfer_size"
+    -O "summaryFile=${JOB_OUTPUT_DIR}/ior_summary_${runid}.json"
+    -r
+  )
 
-runid=$((runid + 1))
-save_job_params
+  echo "${cmd_read_segmented[@]}"
+  "${cmd_read_segmented[@]}" \
+    >"${JOB_OUTPUT_DIR}/ior_stdout_${runid}.txt" \
+    2>"${JOB_OUTPUT_DIR}/ior_stderr_${runid}.txt"
 
-# dropcaches
-echo "${cmd_dropcaches[@]}"
-"${cmd_dropcaches[@]}"
-
-# read local
-cmd_read_local=(
-  time_json -o "${JOB_OUTPUT_DIR}/time_${runid}.json"
-  "${cmd_mpirun[@]}"
-  -mca hook_pmembb_load true
-  -mca hook_pmembb_save false
-  "${cmd_ior[@]}"
-  -s "$segment_count"
-  -b "$block_size"
-  -t "$xfer_size"
-  # -O "stoneWallingStatusFile=${JOB_OUTPUT_DIR}/ior_stonewall_${runid}"
-  -O "summaryFile=${JOB_OUTPUT_DIR}/ior_summary_${runid}.json"
-  -r
-)
-
-echo "${cmd_read_local[@]}"
-"${cmd_read_local[@]}" \
-  >"${JOB_OUTPUT_DIR}/ior_stdout_${runid}.txt" \
-  2>"${JOB_OUTPUT_DIR}/ior_stderr_${runid}.txt"
-
-runid=$((runid + 1))
-
-# read segmented
-segment_count=1
-block_size=$min_io_size_per_proc
-xfer_size=$((1 * 2 ** 20)) # 1MiB read
-save_job_params
-
-# dropcaches
-echo "${cmd_dropcaches[@]}"
-"${cmd_dropcaches[@]}"
-
-cmd_read_segmented=(
-  time_json -o "${JOB_OUTPUT_DIR}/time_${runid}.json"
-  "${cmd_mpirun[@]}"
-  -mca hook_pmembb_load true
-  -mca hook_pmembb_save false
-  "${cmd_ior[@]}"
-  -s "$segment_count"
-  -b "$block_size"
-  -t "$xfer_size"
-  # -O "stoneWallingStatusFile=${JOB_OUTPUT_DIR}/ior_stonewall_${runid}"
-  -O "summaryFile=${JOB_OUTPUT_DIR}/ior_summary_${runid}.json"
-  -r
-)
-
-echo "${cmd_read_segmented[@]}"
-"${cmd_read_segmented[@]}" \
-  >"${JOB_OUTPUT_DIR}/ior_stdout_${runid}.txt" \
-  2>"${JOB_OUTPUT_DIR}/ior_stderr_${runid}.txt"
+done
 
 runid=$((runid + 1))
 workflow_id=$((workflow_id + 1))

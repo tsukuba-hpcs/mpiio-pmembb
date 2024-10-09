@@ -18,13 +18,12 @@ cd "${OUTPUT_DIR}"
 mkdir -p "${BACKEND_DIR}"
 
 nnodes_list=(
-  # 1 2 4 8 16 32 64
-  # 64 32 16 8 4 2 1
-  100
+  # 1 4 9 16 25 36 49 64
+  64 49 36 25 16 9 4 1
   # 16
+  # 4
 )
 niter=1
-
 
 param_set_list=(
   "
@@ -47,7 +46,6 @@ for nnodes in "${nnodes_list[@]}"; do
       envsubst < "${JOB_TEMPLATE_FILE}" '$NQSV_MPI_VER' > "$JOB_FILE"
 
       cmd_qsub=(
-        # qsub_lustre
         qsub
         # -A NBBG
         -A NBB

@@ -3,10 +3,7 @@ set -eu
 
 np=4
 ppn=2
-segment_count=1
-block_size=4K
-xfer_size=1k
-test_file="./ior_testfile"
+test_file="./tile_testfile"
 
 ROMIO_HINTS="$(pwd)/ior/romio_hints/off"
 
@@ -29,33 +26,26 @@ cmd_mpirun=(
   -map-by "ppr:${ppn}:node"
 )
 
-cmd_ior=(
-  ior
-  -a MPIIO
-  --mpiio.useStridedDatatype
-  --mpiio.useFileView
-  -l timestamp   # --data
-  -g             # intraTestBarriers – use barriers between open, write/read, and close
-  -G -1401473791 # setTimeStampSignature – set value for time stamp signature
-  -k # keepFile – don’t remove the test file(s) on program exit
-  -e # fsync
-  # -F # file-per-process
-  -i 1
-  -s "$segment_count"
-  -b "$block_size"
-  -t "$xfer_size"
-  -o "$test_file"
-  # -w
-  # -D 300
-  # -O "stoneWallingWearOut=1"
-  # -O "stoneWallingStatusFile=${JOB_OUTPUT_DIR}/ior_stonewall_${runid}"
-  # -O "summaryFormat=JSON"
-  # -O "summaryFile=${JOB_OUTPUT_DIR}/ior_summary_${runid}.json"
+cmd_tile=(
+  "${cmd_mpirun[@]}"
+  mpi-tile-io
+    --filename "$test_file"
+    --nr_tiles_x 2
+    --nr_tiles_y 2
+    --sz_tile_x 1024
+    --sz_tile_y 2
+    --sz_element 8
+    --overlap_x 0
+    --overlap_y 0
+    --collective
 )
 
+echo "${cmd_tile[@]}"
+"${cmd_tile[@]}"
 
-echo "${cmd_mpirun[@]}" "${cmd_ior[@]}" -w -r
-"${cmd_mpirun[@]}" "${cmd_ior[@]}" -w -r
+
+# echo "${cmd_mpirun[@]}" "${cmd_ior[@]}" -w -r
+# "${cmd_mpirun[@]}" "${cmd_ior[@]}" -w -r
 
 # echo "${cmd_ior[@]}" -w -r -R
 # "${cmd_ior[@]}" -w -r -R
